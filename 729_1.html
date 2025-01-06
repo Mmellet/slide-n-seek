@@ -19,10 +19,21 @@
 
   <!-- Code syntax highlighting -->
   <link rel="stylesheet" href="lib/css/zenburn.css">
-
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
   <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
     * {
       box-sizing: border-box
     }
@@ -223,6 +234,46 @@
   margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
 }
 */
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
   </style>
 
 
@@ -242,109 +293,492 @@
       <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
 
       <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
-      <section data-background-image="media/chute.png" data-background-size="2000px" background-color="#21211c">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
         <div id="fondop">
 
           <h2>ELD729 | Révision éditoriale</h2>
-          <h3></h3>
+          <h5 style="font-size: 30px;">6 Janvier : Introduction au cours et à ses objectifs</h5>
+          <small>du 6 janvier au 14 avril - Lundi de 18h30 à 21h20</small>
         </div>
 
-
-
       </section>
 
 
+      <section class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Changements <b>récurrents</b> de local</p>
+          <table>
+            <caption>
+              </br>
+              <i>Vérifiez le panneau d'affichage du hall</i>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Séance Local</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col" class="column-9">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th scope="col">13</th>
+                <th scope="col">14</th>
+                <th scope="col">15</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5665</th>
+                <td class="cadetblue"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="cadetblue"></td>
+                <td colspan="2"></td>
+                <td class="cadetblue"></td>
+                <td class="column-9"></td>
+                <td></td>
+                <td class="cadetblue"></td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5605</th>
+                <td></td>
+                <td colspan="2" class="yellow"></td>
+                <td colspan="2"></td>
+                <td colspan="2" class="yellow"></td>
+                <td></td>
+                <td class="column-9"></td>
+                <td class="yellow"></td>
+                <td colspan="5"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5615</th>
+                <td colspan="8"></td>
+                <td class="column-9"></td>
+                <td colspan="2"></td>
+                <td colspan="4" class="hotpink"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <style>
+        .fond-section {
+          background-image: url('media/chute.png');
+          background-size: 1600px;
+        }
+
+        .gradient-column {
+          background: repeating-linear-gradient(to left top, white, rgba(165, 158, 158, 0.596) 15px);
+        }
+
+        .cadetblue {
+          background-color: cadetblue;
+        }
+
+        .yellow {
+          background-color: rgb(214, 159, 18);
+        }
+
+        .hotpink {
+          background-color: hotpink;
+
+        }
+
+        .column-9 {
+          background: rgba(128, 128, 128, 0.425);
+        }
+      </style>
 
 
-      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
-        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
           <div id="fondop2">
-            <h3></h3>
+            <h5>Fonctionnement et objectifs</h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Objectifs</p>
+            <ul>
+              <li>acquérir les connaissances nécessaires à la révision et à la supervision de la révision en contexte
+                éditorial</li>
+              <small>théoriques, méthodologiques et pratiques</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contenus</p>
+            <ul>
+              <li>Principes, outils et techniques</li>
+              <small>conventions, alternatives, émergences</small>
+              <li>Difficultés les plus courantes en français</li>
+              <small>orthographe, syntaxe, grammaire, vocabulaire</small>
+              <li>Codes de mise en page et normes typographiques</li>
+              <small><i>image</i> du texte</small>
+              <li>Types de révision selon les types de littératures</li>
+              <small>fictionnelle, technique, scientifique, politique etc.</small>
+              <li>Typologie des révisions</li>
+              <small>variantes, diversité, </small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Fonctionnement
+              </br><small>cours entièrement en présence</small></p>
+            <ul>
+              <li>Exposés, présentations et analyses</li>
+              <small>principes, notions, outils, méthodes</small>
+              <li>Exercices en classe</li>
+              <small>expérience, exploration, entraînement</small>
+              <li>Pratique encadrée d'outils ou de systèmes</li>
+              <small>manuscrits et numériques</small>
+              </br>
+              </br><small>+ une conférence</small>
+            </ul>
+
           </div>
         </section>
 
 
 
-
       </section>
 
-      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
-        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
-          <div id="fondop2">
-            <h3></h3>
-          </div>
-        </section>
-
-
-      </section>
-
-
-      <section data-background-image="media/chute.png" data-background-size="1800px" background-color="#21211c">
-        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
           <div id="fondop2">
             <h3>Calendrier des séances</h3>
           </div>
         </section>
 
-        <section data-background-color="#fff" data-background-image="media/edito.jpg" data-background-size="1700px"
+        <section data-background-color="#fff" data-background-image="media/729_autoedition.jpg"
+          data-background-size="1500px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 2 - Qu’est-ce qu’un·e réviseur·euse ? </b></br>
+              Fonctions, étapes, conditions de la révision éditoriale </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 3 - Outiller la révision </b></br>
+              Présentation des différentes ressources et méthodes de révision </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_dico.jpg" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+          <p style="font-variant: small-caps;background-color: honeydew;">Points de langue x 3</p>
+
+          <div id="fondop2">
+            <p><b>Séance 4 - Orthographe, vocabulaire et lexique</b></br>
+            </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 5 - Grammaire, syntaxe et ponctuation</b></br>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 6 - Typologie des erreurs courantes</b></br>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_annotation.jpg"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 7 - La bonne écriture </b></br>
+              Approche du style et de l'expression </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 8 - Révision de fond </b></br>
+              Cohérence, pertinence et fluidité </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_cat.jpg" data-background-size="1500px"
           data-transition="linear" data-transition-speed="fast">
           <div id="fondop2">
 
-            <p><b>Séance - </b></br> </p>
+            <p><b>Semaine de lecture</b></br></p>
           </div>
+
         </section>
 
+        <section data-background-color="#fff" data-background-image="media/729_typographie.jpg"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 10 - Les signes de la page à l'écran</b></br>
+              Codes et conventions typographiques </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_lecture.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 11 - Les littératures révisées </b></br>
+              Les différents types de révision et registres de langue</p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 12 - Une révision, un public </b></br>
+              Publics cibles, attentes, accessibilités</p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_misepage.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 13 - Image du texte et mise en page </b></br>
+              Normes et types de documents</p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_epicene.png"
+          data-background-size="1600px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 14 - Nouvelles pratiques de la révision </b></br>
+              Féminisation, inclusion et expérimentation</p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 15 - <i>Conférence de Lula Carballo sur la relecture sensible</i> </b></br>
+              et clôture du cours</p>
+          </div>
+
+        </section>
       </section>
 
 
-      <section data-background-image="media/chute.png" data-background-size="1800px">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
 
-        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
           <div id="fondop2">
             <h4>Modalités d'évaluation</h4>
           </div>
         </section>
 
 
-        <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
           <div id="fondop2">
             <h6>Modes</h6>
             <ul>
-              <li><i class="material-icons">double_arrow</i> </li>
-              <li><i class="material-icons">star_half</i> </li>
-              <li><i class="material-icons">star</i></li>
+              <li><i class="material-icons">double_arrow</i> Participation (10%)</li>
+              <small>continue, présence, participations aux échanges et activités</small>
+
+              <li><i class="material-icons">star_half</i> Travaux pratiques de révision (60%)</li>
+              <small>4 travaux pratiques (15% chaque)</small>
+              </br><small>3 et 17 février, 10 mars, 7 avril</small>
+              <li><i class="material-icons">star</i> Travail final (30%)</li>
+              <small>mandat de correction d'épreuve + feuille de route</small>
+              </br><small>21 avril</small>
             </ul>
           </div>
 
         </section>
 
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star_half</i>
+            <p style="font-variant: small-caps;"> Travaux pratiques de révision</br>
+              <small>TP x 4 </small></p>
+            <ul>
+              <li>régularité des travaux</li>
+              <small>présentation 1/2 semaines avant le rendu</small>
+              <li>révision croissante</li>
+              <small>TP1 : révision linguistique manuscrite</small>
+              </br> <small>TP2 : révision linguistique numérique</small>
+              </br><small>TP3 : révision de fond versionnée</small>
+              </br><small>TP4 : révision linguistique et typographique avec suivi</small>
+              <li>Feuille de route justifiant et documentant la révision</li>
+              <small>pour TP2, TP3, TP4</small>
+            </ul>
 
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star</i>
+            <p style="font-variant: small-caps;"> Travaux final</br>
+              <small>correction d'épreuve</small></p>
+            <ul>
+              <li>un choix parmi plusieurs possibilités</li>
+              <small>mode manuscrit</small>
+              </br> <small>mode numérique (traitement de texte)</small>
+              </br><small>mode numérique versionné</small>
+              <li>+ Feuille de route justifiant et documentant la révision</li>
+            </ul>
+
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Présentation des travaux rendus</h6>
+            <ul>
+              <li>Différents supports à respecter pour les TP</li>
+              <small>TP1 : papier ; TP2 : docx ; TP3 : git</small>
+              </br><small>TP final selon le choix : manuscrit, docx, git</small>
+              <li>Pour les feuilles de route : PDF à déposer sur Moodle</li>
+              <small>Interligne double (pour les commentaires)</small>
+              <li>Nommage clair des documents</li>
+              <small>Nom_TP1 ; Nom_TP1_F (pour feuille de route) ; Nom_TPF (pour travail final)</small>
+              </br><small>pas de diacritiques, d'accents ou d'espaces</small>
+            </ul>
+            <p>
+              <small>pénalités : -->| 20% pour fautes de langue</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Plagiat</h4>
+            <ul>
+              <li>≠ Paraphrase</li>
+              <li>Déclarer les sources & références</li>
+              <small>documenter votre travail</small>
+              <li>Éthique intellectuelle</li>
+              <small>honêteté et humilité</small>
+            </ul>
+            <p><a
+                href="https://www.usherbrooke.ca/flsh/etudes/documents-officiels-guides-et-formulaires/plagiat-et-integrite-intellectuelle"
+                target="_blank">Documentation</a> & <a
+                href="https://ruor.uottawa.ca/bitstream/10393/12793/4/Vandendorpe_Christian_1992_Le_plagiat.htm"
+                target="_blank">Définition (Vanderdorpe 1992)</a></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Assistance IA</h4>
+            <p><i>Le recours à des outils relevant de l’ia dans le cas de la composition
+                ou de la reformulation des travaux n’est pas permis </i>
+              </br><small>(outils de correction automatique)</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Recommandations</p>
+            <ul>
+              <li><i class="material-icons">diversity_1</i> Amabilité/Patience dans les échanges</li>
+              <li><i class="material-symbols-outlined">
+                  computer
+                </i> Bon usage de la machine</li>
+              <li><i class="material-icons">title</i> Nommage des fichiers : noms courts et clairs, pas de caractères
+                spéciaux, pas d'accents, pas d'espaces</li>
+
+            </ul>
+          </div>
+        </section>
       </section>
 
-      <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1800px"
+      <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="2000px"
         data-transition="linear" data-transition-speed="fast">
-        <section data-background-color="#fff" data-background-image="media/chute.png" data-background-size="1800px"
+        <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="2000px"
           data-transition="linear" data-transition-speed="fast">
           <div id="fondop2">
 
-            <h6>Ressources documentaires</h6>
+            <h6>Ressources</h6>
 
 
           </div>
         </section>
 
+        <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
 
+            <p style="font-variant: small-caps;">Autour du cours</p>
+            <ul>
+              <li><i class="material-icons">school</i> <a href="https://moodle.usherbrooke.ca/course/view.php?id=38896"
+                  target="_blank">Moodle</a></li>
+              <li><i class="material-icons">library_books</i> Bibliographie Zotero <a
+                  href="https://www.zotero.org/groups/5784867/eld729-2024/library" target="_blank">ELD729-2024</a> ou <a
+                  href="https://moodle.usherbrooke.ca/pluginfile.php/4552834/mod_label/intro/bib.pdf?time=1736105715198">Document
+                  PDF</a>
+              </li>
+              <li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4552834/mod_label/intro/lexique.pdf">Lexique</a></li>
+              <li>en + : <a href="https://www.usherbrooke.ca/biblio/">Service des bibliothèques et archives UdeS</a>
+              </li>
+            </ul>
 
+          </div>
+        </section>
+        <section data-background-color="#fff" data-background-image="media/O_zotero.svg" data-background-size="800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Zotero</p>
+            <ul>
+              <li><i class="material-icons">library_books</i> Logiciel de gestion de références gratuit, libre et open
+                source</li>
+              <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register"
+                  target="_blank">Compte en ligne</a> /
+                <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local)</li>
+              <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/"
+                  target="_blank">Documentation</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+            <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
+
+            <ul>
+              <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+
+              <li>Campus de Longueuil, L-12732</br>
+                450 463-1835, poste 61872
+                </br> en présence : lundi, mercredi, vendredi</li>
+              <small>prise de rdv par courriel</small>
+            </ul>
+
+          </div>
+        </section>
 
       </section>
 
 
 
 
-      <section data-background-image="media/chute.png" data-background-size="1800px">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
         <div id="fondop2">
           <h6>Tour de classe</h6>
-
+          <ul class="icone-liste">
+            <li>
+              <i class="material-icons">person</i> Nom, formation</li>
+            <li> <i class="material-icons">computer</i> OS Machine</li>
+          </ul>
         </div>
       </section>
 
@@ -355,38 +789,168 @@
 
 
 
-      <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
-        <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
           <div id="fondop2">
-            <h3></h3>
+            <h3>Introduction à la révision éditoriale</h3>
           </div>
         </section>
 
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Historique de l'enseignement de la révision</p>
+
+            <ul>
+              <li>1974 : premier cours de révision à l'UdeM</li>
+              <li>Lien avec l'activité de traduction</li>
+              <small>années 1970 : augmentation des traduction // besoin de révision</small>
+              </br><small>développement de formation en révision</small>
+              </br><small>distinction de la révision unilingue</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Révision comme examen attentif d'un texte avant sa publication
+              </br><small>attention à la langue, à la typographie, au fond, etc.</small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice :
+              </br><small>effets de lecture de textes erronés
+                </br><a href="https://moodle.usherbrooke.ca/pluginfile.php/4556333/mod_label/intro/corpus1.pdf">source</a></small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Erreurs des littéraires</p>
+            <ul>
+              <li>« Je n'avais pas voulu, involontairemente, répondre à la question. »</li>
+              <small><i>À la recherche du temps perdu</i>, Proust</small>
+              <li>« Sous le pont Mirabeau coule la Seine
+                / Et nos amours »</li>
+              <small><i>Pont Mirabeau</i>, Apollinaire</small>
+              <li>« C'est ce que je demande, s'écria-t-elle, en se levant debout. »</li>
+              <small><i>Le Rouge et le noir</i>, Stendhal</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Objectif : Transmettre efficacement un message
+              </br><small>dans le processus de structuration, diffusion et légitimation de l'édition</small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes de révision
+            </br> <small>selon la nature de l'intervention</small></p>
+            
+            <ul>
+<li>révision professionnelle</li>
+<small>intervention d'un tiers de métier</small>
+<li>relecture ou autorévision</li>
+<small>intervention de l'auteur.rice/traducteur.rice sur son propre texte</small>
+<li>révision réciproque ou interrévision</li>
+<small>intervention mutuelle</small>    
+<li>révision collective</li>
+<small>intervention d'un groupe de collaborateur.rices</small>      
+</ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Types de révision
+            </br> <small>selon les aspects prioritaires</small></p>
+            
+            <ul>
+<li>révision linguistique ou <i>de forme</i></li>
+<small>attention à la langue, au style, à la lisibilité</small>
+</br><small><i>scientific editing</i></small>
+
+<li>révision éditoriale ou <i>de fond</i></li>
+<small>attention à la cohérence du propos, à la clarté de l'expression</small>
+            </br><small><i>scientific revising</i></small>
+<li>préparation de copie</li>
+<small>attention à la mise en page et à l'uniformisation du texte</small>    
+<li>correction d'épreuves</li>
+<small>attention à la forme finale du texte avant publication</small>      
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rapports de révision
+            </br> <small>selon le dialogue avec d'autres instances</small></p>
+            
+            <ul>
+<li>révision pragmatique</li>
+<small>mise en conformité du texte sans communication entre les instances</small>
+<li>révision didactique</li>
+<small>révision sous la forme d'exercice</small>
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Autres aspects
+            </br> <small>à partir du monde anglophone</small></p>
+            
+            <ul>
+              <li>relecture ou <i>proofreading</i></li>
+          <small>édition mécanique</small>
+              <li>révision ou <i>line editing</i></li>
+            <small>articulation avec la charte rédactionnelle</small>
+          <li>vérification des faits ou <i>fact-checking</i></li>
+        <small>validité des propos</small>
+        <li>optimisation ou <i>SEO</i></li>
+        <small>structuration et indexation sémantique</small>
+      <li>mise à jour ou <i>content refreshing</i>
+      </li>  
+    <li>réécriture ou <i>rewriting</i></li>
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Révision résumé
+              </br><small>style, grammaire,fond, mise en page, indexation</small>
+            </br><small>transmission efficace avec une attention à la lisibilité (selon les différentes définitions)</small>
+            
+            
+            </p>
+
+          </div>
+        </section>
+
+
+   
+
       </section>
 
 
-      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
         <div id="fondop2">
-
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
         </div>
 
 
       </section>
 
-      <section data-background-image="media/chute.png" data-background-size="1600px" data-background-color="#f1eded">
-        <div id="fondop2">
-          <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
 
-          <ul>
-            <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
-
-            <li>Campus de Longueuil, L-12732</br>
-              450 463-1835, poste 61872
-              </br>lundi, mardi, mercredi</li>
-          </ul>
-        </div>
-
-      </section>
 
     </div>
 

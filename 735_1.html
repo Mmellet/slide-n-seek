@@ -1,0 +1,949 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">8 Janvier : Introduction au cours</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Fonctionnement et objectifs</h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Objectifs</p>
+            <ul>
+              <li>acquérir les outils, méthodes, notions pour gérer un projet éditorial</li>
+              <small>de la conception à la réalisation + diffusion</small>
+              <li>savoir analyser des projets éditoriaux</li>
+              <small>viabilité, processus, impact</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contenus</p>
+            <ul>
+              <li>
+                éléments théoriques
+              </li>
+              <small>notions, philosophies, perspectives</small>
+              <li>éléments pratiques</li>
+              <small>méthodologies, outils, processus</small>
+              <li>éléments applicatifs</li>
+              <small>scénarios, exercices, projections</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Fonctionnement
+              </br><small>cours entièrement en présence</small></p>
+            <ul>
+              <li>Présentation théorique et pratique</li>
+
+              <li>Travail de groupe</li>
+              <small>exercices, rédaction, élaboration collective</small>
+              <li>+ des Conférences</li>
+              <small>pour des expertises diverses sur la gestion de projets</small>
+              </br>
+            </ul>
+
+          </div>
+        </section>
+
+
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Calendrier des séances</h3>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/735_projet.webp" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+       
+          <div id="fondop2">
+
+            <p><b>Séance 2 - Qu'est ce qu'un projet éditorial ?</b></br> </p>
+          Réalités et vision stratégique</div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/735_dossier.jpg" data-background-size="1500px"
+        data-transition="linear" data-transition-speed="fast">
+      
+        <p style="font-variant: small-caps;background-color: rgb(249, 240, 255);">Le dossier de projet</p>
+
+        <div id="fondop2">
+
+          <p><b>Séance 3 - Recherches et ligne éditoriale </b></br> </p>
+      </div>
+        <div id="fondop2">
+
+          <p><b>Séance 4 - Planification et gestion des ressources</b></br> </p>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/735_tableau.jpg" data-background-size="1500px"
+      data-transition="linear" data-transition-speed="fast">
+    
+
+      <div id="fondop2">
+
+        <p><b>Séance 5 - Expertises et tâches : la liste des expertises</b></br> </p>
+</div>
+      <div id="fondop2">
+
+        <p><b>Séance 6 - Phases et temporalités : le calendrier de production</b></br> </p>
+      </div>
+
+      <div id="fondop2">
+
+        <p><b>Séance 7 - Suivis, relectures et évaluations</b></br> </p>
+      </div>
+    </section>
+
+    <section data-background-color="#fff" data-background-image="media/735_exam.jpg" data-background-size="1500px"
+    data-transition="linear" data-transition-speed="fast">
+ 
+    <div id="fondop2">
+
+      <p><b>Séance 8 - Examen sur table</b></br> </p>
+  </div>
+  </section>
+
+  <section data-background-color="#fff" data-background-image="media/735_lecture.jpg" data-background-size="1700px"
+  data-transition="linear" data-transition-speed="fast">
+
+  <div id="fondop2">
+
+    <p><b>Séance 9 - Semaine de lecture</b></br> </p>
+</div>
+</section>
+
+<section data-background-color="#fff" data-background-image="media/735_budget.png" data-background-size="1800px"
+data-transition="linear" data-transition-speed="fast">
+<p style="font-variant: small-caps;background-color: rgb(249, 240, 255);">Le budget du projet</p>
+
+<div id="fondop2">
+
+  <p><b>Séance 10 - <i>Conférence de Séléna Bernard</i></b></br>Commercialisation et marketing </p>
+</div>
+<div id="fondop2">
+
+  <p><b>Séance 11 - Finances et rentabilités</b></br> </p></div>
+</section>
+
+
+      <section data-background-color="#fff" data-background-image="media/735_fly.jpg" data-background-size="1700px"
+data-transition="linear" data-transition-speed="fast">
+<p style="font-variant: small-caps;background-color: rgb(249, 240, 255);">Mise en situation</p>
+
+<div id="fondop2">
+
+  <p><b>Séance 12 - Gestion des imprévus et adaptation</b></br> </p>
+</div>
+<div id="fondop2">
+
+  <p><b>Séance 13 -  <i>Conférence d'Angelica Brachelente</i></b></br> 
+  Le projet et l'humain</p></div>
+
+
+  <div id="fondop2">
+
+    <p><b>Séance 14 -  <i>Conférence de Giulia Ferreti</i></b></br> 
+    Le projet éditorial de recherche scientifique</p></div>
+</section>
+
+<section data-background-color="#fff" data-background-image="media/735_green.jpeg" data-background-size="1700px"
+data-transition="linear" data-transition-speed="fast">
+
+<div id="fondop2">
+
+  <p><b>Séance 15 - Clôture et ouverture du cours</b></br>Les impacts écologiques du projet </p>
+</div>
+</section>
+
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Modalités d'évaluation</h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Modes</h6>
+            <ul>
+              <li><i class="material-icons">double_arrow</i> Participation (15%)</li>
+              <small>continue, présence, bonne conduite, participations aux échanges et activités</small>
+
+              <li><i class="material-icons">star_half</i> Examen théorique de mi-session (30%)</li>
+              <small>en classe le 26 février</small>
+              <li><i class="material-icons">star</i> Travail d'équipe (55%)</li>
+             
+              <small>travail d'équipe intermédiaire pour le 12 février (20%)</small>
+             </br> <small>travail d'équipe finl pour le 23 avril (35%)</small>
+                  
+            </ul>
+            <p>
+              <small>pénalités : 10% par jour de retard | 1% par faute</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <i class="material-icons">star_half</i>
+          <p style="font-variant: small-caps;"> Examen théorique de mi-session</br>
+            <small>le 26 février</small></p>
+          <ul>
+            <li>Questions à développement sur des notions et principes du cours</li>
+            <small>rédaction des réponses</small>
+            <li>En classe sur papier </li>
+            <small>pas de notes autorisées</small>
+            
+          </ul>
+
+        </div>
+
+      </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star</i>
+            <p style="font-variant: small-caps;"> Travail d'équipe</br>
+              <small>par groupe de 4-5</small></p>
+            <ul>
+              <li>travail d'équipe intermédiaire (20%) pour le 12 février</li>
+              <small>dossier de projet (7 à 8 000 caractères)</small>
+              <li>travail d'équipe final (35%) pour le 23 avril</li>
+              <small>plan de projet complet (15 000 caractères)</small>
+            </ul>
+
+          </div>
+
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Présentation des travaux rendus</h6>
+            <ul>
+              <li>PDF (sauf pour les tableaux)</li>
+              <small>interligne double (pour les commentaires)</small>
+              <li>Nommage clair des documents</li>
+              <small>Groupe1_TE_I (pour travail d'équipe intermédiaire) ; Groupe1_TE_F </small>
+              </br><small>pas de diacritiques, d'accents ou d'espaces</small>
+            </ul>
+            <p>
+              <small>pénalités : -->| 20% pour fautes de langue</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Plagiat</h4>
+            <ul>
+              <li>≠ Paraphrase</li>
+              <li>Déclarer les sources & références</li>
+              <small>documenter votre travail</small>
+              <li>Éthique intellectuelle</li>
+              <small>honnêteté et humilité</small>
+            </ul>
+            <p><a
+                href="https://www.usherbrooke.ca/flsh/etudes/documents-officiels-guides-et-formulaires/plagiat-et-integrite-intellectuelle"
+                target="_blank">Documentation</a></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Assistance IA</h4>
+            <p><i>Le recours à des outils relevant de l’ia dans le cas de la composition
+              ou de la reformulation des travaux n’est pas permis </i>
+            </br><small>(outils de rédaction automatique)</small></p>
+      
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Recommandations</h4>
+            <ul>
+              <li><i class="material-icons">diversity_1</i> et <i class="material-symbols-outlined">
+                computer
+              </i> Amabilité/Patience dans les échanges</li>
+              <small>avec les humains et les machines</small>
+       <li>Travail de groupe respectueux</li>
+       <small>écoute réciproque, attention au niveau sonore</small>
+            </br><small>autonomie et co-organisation</small>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/735_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/735_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Ressources</h6>
+
+
+          </div>
+        </section>
+        
+
+        <section data-background-color="#fff" data-background-image="media/735_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Autour du cours</p>
+            <ul>
+              <li><i class="material-icons">school</i> <a href="https://moodle.usherbrooke.ca/course/view.php?id=38079"
+                  target="_blank">Moodle</a></li>
+              
+              <li><a href="">Document synthèse</a> <i>à venir</i></li>
+              </li>
+            </ul>
+
+          </div>
+        </section>
+       
+        <section data-background-color="#fff" data-background-image="media/735_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+            <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
+
+            <ul>
+              <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+
+              <li>Campus de Longueuil, L-12732</br>
+                450 463-1835, poste 61872
+                </br> en présence : lundi, mercredi, vendredi</li>
+              <small>prise de rdv par courriel</small>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+        <div id="fondop2">
+          <h6>Tour de classe</h6>
+          <ul class="icone-liste">
+            <li>
+              <i class="material-icons">person</i> Nom, attentes du cours</li>
+              <small>+ intérêt(s) culturel(s) </small>
+          </ul>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Introduction à la Gestion de projets éditoriaux</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Différences entre les termes</p> 
+          <ul>
+            <li>Management</li>
+            <small>planification, organisation, supervision</small>
+          </br><small>long terme, stratégie globale, décision</small>
+        <li>Coordination</li>  
+        <small>articulation et harmonisation des tâches</small>
+      </br><small>court/moyen terme, opérationnel, local, collaboration</small>
+   <li>Gestion</li>
+   <small>planification et réalisation</small>
+    </br><small>court/moyen terme, pilotage sur un projet, collaboration</small>
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Objectif : atteindre dans les délais, les coûts et en respectant la qualité visée, l'objectif du projet initialement fixé</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un projet </br><span style="font-variant: normal;"><i>une entreprise temporaire décidée dans le but de créer un produit, un service ou un résultat unique</i></span>
+              </br><small>Project Management Institute</small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Caractéristiques d'un projet</p> 
+          <ol>
+            <li>Temps</li>
+            <small>avec un début et une fin</small>
+             <li>Identité culturelle</li>  
+        <small>lien avec le milieu culturel</small>
+      </br><small>avancement des connaissances</small>
+   <li>Équilibre</li>
+   <small>entre coût, calendrier et qualité</small>
+      </ol>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Approches de la gestion de projets</p> 
+         <ul>
+           <li>Approche traditionnelle ou en cascade</li>
+         <small>planification stricte, documentation détaillée, projet linéaire</small>
+         </br><small>peu flexible, statique</small>
+         <li>Approche agile</li>
+         <small>itération, collaboration, amélioration continue</small>
+         </br><small>moins de structure, communication régulière nécessaire</small>
+         <li>Approche adaptative</li>
+         <small>dérivé de l'approche agile</small>
+         </br><small>projets évolutifs, innovation en continue</small>
+        </br><small>souplesse temporelle et/ou financière nécessaire</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de gestion
+          </br><small>selon des cultures du travail</small></p> 
+         <ul>
+           <li>Efficacité et rendement</li>
+           <small>productivité, optimisation, réduction des coûts</small>  
+        
+           <ul>
+         <li>OST (<i>organisation scientifique du travail</i>)</li>
+         <small>spécification des tâches, standardisation, rémunération au rendement</small>
+           </br> <small>culture du travail productive mais stressante</small>
+        <li>Lean Manufacturing</li>
+        <small>réduction du gaspillage par la suppression de tâches non-essentielles</small>
+          </br><small>exclusion des tâches par sur-simplification</small>
+     <li>Six Sigma</li>
+     <small>méthodologie avec un focus sur les données</small>
+        </br><small>DMAIC méthode</small> 
+      </br><small>complexité, rigidité, statistique</small>   
+    </ul>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de gestion
+          </br><small>selon des cultures du travail</small></p> 
+         <ul>
+           <li>Amélioration continue et satisfaction client</li>
+           <small>qualité, mesure d'adaptabilité</small>  
+        
+           <ul>
+         <li>TQM (<i>management par qualité totale</i>)</li>
+         <small>la satisfaction client détermine la qualité</small>
+           </br> <small>rétroaction, valeurs participatives, analyses</small>
+          </br><small>culture du travail de la formation et de la participation</small>
+        </ul>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de gestion
+          </br><small>selon des cultures du travail</small></p> 
+         <ul>
+           <li>Innovation et transformation</li>
+           <small>approche adaptative ou agile hybride</small>  
+        
+           <ul>
+         <li>Réingénierie des processus</li>
+         <small>amélioration radicale par table rase</small>
+           </br> <small>méthode coûteuse et risquée</small>
+           </ul>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Des tâches de gestion
+          </br><small>concrètement</small></p> 
+         <ul>
+       <li>Développer / Améliorer une offre</li>
+       <li>Mesurer les résultats</li>
+       <small>faisabilité en continue</small>
+       <li>Structurer un processus</li>
+       <small>liste des tâches, documentation, hiérarchisation</small>
+      <li>Modification et adaptation</li> 
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Particularité d'un projet éditorial
+          </br><small>par rapport à d'autres types de projets</small></p> 
+         <ul>
+           <li>Centré sur la création, production, diffusion de contenus</li>
+        <small>approches agiles</small>
+        <li>Suivi d'une ligne éditoriale</li>
+        <small>avec des contraintes spécifiques</small>
+         </br><small>qualité, calendrier de publication, métiers créatifs, droits</small>
+          <li>Diversité avec la culture numérique</li>
+        <small>remédiation, édition enrichie, site web, balado</small>
+        </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

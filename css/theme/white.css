@@ -99,7 +99,7 @@ background-repeat: no-repeat;
 
 .reveal ul ul {
   list-style-type: square; 
-  list-style-image: linear-gradient(to left bottom, rgb(255, 0, 200), rgb(0, 255, 179))}
+}
 
 .reveal ul ul ul {
   list-style-type: circle; }

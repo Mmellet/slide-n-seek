@@ -1,0 +1,1174 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_autoedition.jpg" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">13 Janvier : Qu’est-ce qu’un·e réviseur·euse ?</h5>
+        </div>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Histoire d'un métier</h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_aristee.jpg" data-background-size="1900px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Révision unanime
+              </br><small><i>Lettre d'Aristée</i>, III-II<sup>e</sup> av. J.-C.</small></p>
+
+            <p style="font-size: 27px;">
+              Ptolémée II rassemble 72 traducteurs pour produire en 72 jours</br> 72 traductions de l'Ancien testament
+              en grec.
+              </br>Ils produisent tous la même traduction par la révision du Saint-Esprit
+
+              </br><small>traduction connue sous le nom de <i>Septante</i></small></p>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_jerome.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Jérôme, patron de traducteurs mais mauvais réviseur
+              </br><small>Jérôme de Stridon ou Saint Jérôme, I<sup>e</sup> ap. J.-C.</small></p>
+            </p>
+
+            <p style="font-size: 27px;">Engagé pour produire une révision critique des version de la Bible,</br>
+              Il va produire une retraduction
+              </br><small>nouvelle traduction connue sous le nom de <i>Vulgate</i></small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_maison-sagesse.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Organisation du métier de révision
+              </br><small>IX<sup>e</sup> siècle</small></p>
+            </p>
+
+            <ul>
+              <li>Projet des Califes de Bagdad</li>
+              <small>rendre disponibles les textes grecs au monde arabe</small>
+              <li>Création d'un centre de traduction</li>
+              <small>au sein de la Maison de la Sagesse</small>
+              </br><small>formation et spécialisation par discipline</small>
+
+              </br><small>base des futures écoles de traductions en Europe</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_presse.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Tradition Gutenberg
+              </br><small>et mouvement de la Réforme<sup></sup></small></p>
+            </p>
+
+            <ul>
+              <li>Première Bible protestante - 1535 : autorévisée</li>
+              <small><i>Bible d'Olivétan</i>, Calvin</small>
+              <li>Organisation des ateliers d'imprimerie</li>
+              <small>présence des correcteurs</small>
+              </br><small>contrôle à la prépresse et après la première impression</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Stabilisation et institutionnalisation de la langue
+              </br><small>Renaissance<sup></sup></small></p>
+            </p>
+
+            <ul>
+              <li>Jusqu'au XVI<sup>e</sup>siècle : la langue n'est pas fixe</li>
+              <small>pas de dictionnaire unilingue à visée normative</small>
+              </br><small>pas de principe de « faute »</small>
+              <li>1635 - <i>Discours de la traduction</i>, Bachet de Méziriac</li>
+              <small>critique des pratiques traditionnelles</small>
+              </br><small>établissement de code de traduction et révision</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Périodes d'essor
+
+              </br><small><sup></sup></small></p>
+            </p>
+
+            <ul>
+              <li>XVII<sup>e</sup> - XVIII<sup>e</sup> : croissance des maisons d'édition</li>
+              <small>développement des collaborations auteur/traducteur</small>
+              <li>XIX<sup>e</sup> : industrialisation</li>
+              <small>essor des journaux</small>
+              </br><small>développement des normes typographiques</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Époque moderne et contemporaine</br><small><sup></sup></small></p>
+            </p>
+
+            <ul>
+              <li>XX<sup>e</sup> : généralisation de la révision</li>
+              <small>traducteur littéraire</small>
+              <li>Services de traduction organisés</li>
+              <small>ONU</small>
+              <li>Québec : adoption des lois linguistiques</li>
+              <small>révision unilingue française</small>
+              <li>Ère numérique : extension aux supports numériques</li>
+              <small>sites web, ebooks, contenus en ligne</small>
+            </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Caractéristiques d'un métier</h3>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Temporalité éditoriale </br><small><sup>
+                  révision sur manuscrit - produit semi-fini
+                </sup></small></p>
+            </p>
+
+            <ul>
+              <li>révision de forme après celle de fond</li>
+              <small>correction sur un texte stabilisé</small>
+              <li>révision de fond sur les premières versions du texte</li>
+              <small>arrêter une version</small>
+              <li>correction d'épreuvee comme ultime révision</li>
+              <small>arrêter une version pour BAT</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rappel de définition : amélioration d'un texte par des corrections</p>
+            <small>mais pas une réécriture ou une retraduction comme Jérôme</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Éthique/Déontologie de la révision
+              </br><small></small></p>
+
+            <p style="font-variant: small-caps;">Ce n'est pas votre texte
+              </br><small>il ne vous revient/appartient pas</small></p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Posture de révision
+              </br><small><sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>lecture et compréhension d'une pensée <i>autre</i></li>
+              <small>attention, écoute</small>
+
+              <li>Ø correction, modification et suggestion gratuite ou personnelle</li>
+              <small>respecter l'intention de l'écriture</small>
+              </br><small>ne pas ajouter de l'ambiguïté</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Clarté des retours
+              </br><small></small></p>
+
+            <ul>
+              <li>termes explicites</li>
+              <small>proposer, recommander, demander</small>
+              <li>attention à la sur-politesse</li>
+              <small>ralentit la relecture et gêne la compréhension</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice :
+              </br><small> <a href="">source</a></small></p>
+
+
+            <ul>
+              <li>choisir des niveaux de révision pour les erreurs du texte</li>
+              <small>correction : C</small>
+              </br>
+              <small>suggestion (neutre) : S</small>
+              </br>
+              <small>recommandation (suggestion forte) : R</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Posture de révision
+              </br><small><sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>Pas de jugement ou d'ajouts de notes personnelles</li>
+              <small>commentaires gratuits, piques, traits d'humour</small>
+              </br><small>attention aux formulations, à la ponctuation</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rude</th>
+                  <th>Diplomatique</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Mal-écrit</td>
+                  <td>Il vous faut surveiller votre style</td>
+                </tr>
+
+                <tr>
+                  <td>En français !! </td>
+                  <td><i>ciblez l'erreur</i></td>
+                </tr>
+                <tr>
+                  <td>On comprend rien / ??</td>
+                  <td>Que souhaitez-vous dire ?</td>
+                </tr>
+                <tr>
+                  <td>Vous devriez vous relire...</td>
+                  <td><i>ciblez le problème</i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Posture de révision
+              </br><small><sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>laissez le bénéfice du doute à l'auteur ou l'autrice</li>
+              <small>ne pas le prendre personnellement</small>
+              </br> <small>bon rapport révisé·e/réviseur·euse ; diplomatie et empathie</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_academie.webp" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Position entre la norme et l'usage
+              </br><small>débat sur la qualité de la langue<sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>1. Norme : fixité de la langue</li>
+              <small>règles, raison, logique</small>
+              </br><small>Grammairiens, Académie française</small>
+              </br><small>soucis patrimonial mais conservatisme</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_leroux.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« Garder, c’est surveiller, non pour prendre en flagrant délit, mais pour mettre à l’abri. C’est
+              protéger, non contre le changement, mais contre la disparition, l’écroulement. Le tout dans le silence
+              recueilli de la lecture. »
+              <small>(<i>Le gardien de la norme</i>, Leroux 2016)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Position entre la norme et l'usage
+              </br><small>débat sur la qualité de la langue<sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>2. Usage : contexte, mouvement, évolution</li>
+              <small>modes, cultures, oralités</small>
+              </br><small>mais flou définitionnel</small>
+            </ul>
+            <p>=> composition entre la norme et l'usage</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Typologie des réviseur·euses
+              </br><small></small></p>
+
+            <ul>
+              <li>1. réviseur·euse de traduction (modèle)</li>
+              <small>gestionnaire</small>
+              </br><small>formateur</small>
+              </br><small>contrôleur de qualité</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Typologie des réviseur·euses
+              </br><small></small></p>
+
+            <ul>
+              <li>2. réviseur·euse unilingue</li>
+              <small>correcteur·rice d'épreuve attitré·e : protocole de corrections typographiques</small>
+              </br><small>réviseur·euse éditorial·e : conseiller·ère littéraire ou éditeur·rice</small>
+              </br><small>réviseur·euse linguistique : expertise dans la langue + accompagnement</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mesure de la révision
+              </br><small><sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>réviseur·euse généraliste</li>
+              <small></small>
+              </br><small></small>
+              <li>réviseur·euse spécialisé·e</li>
+              <small>codes/normes particulières</small>
+              </br><small>révision littéraire</small>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Ce que n'est pas un·e réviseur·euse
+              </br><small><sup>
+
+                </sup></small></p>
+
+            <ul>
+              <li>un·e critique littéraire</li>
+              <small>appréciation/jugement sur un texte</small>
+              </br><small></small>
+              <li>un·e évaluateur·rice</li>
+              <small>évaluation scientifique ou post-publication</small>
+              </br><small></small>
+              <li>un·e censeur de la langue</li>
+              <small>évoluation de ses propres acquis avec la langue</small>
+              </br><small></small>
+              <li>(pas que) un·e correcteur·rice de la langue</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Résumé du profil de réviseur·euse
+            </p>
+
+            <ul>
+              <li>connaissance de la langue</li>
+              <small>des règles, exceptions, cas contextuels</small>
+              </br><small>des ressources, références, documentations</small>
+              <li>conscience des tensions et complexités du métier</li>
+              <small>langue complexe</small>
+              </br><small>écriture intime</small>
+              </br><small>révision comme intervention Ø intrusion</small>
+
+              <li>tenacité</li>
+              <small>vigilence et patience</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« Le métier de réviseur linguistique est technique, il requiert moins de créativité que d’habilité, il
+              exige le réflexe de douter, la patience de chercher, celle aussi grande de se relire, et, coiffant le
+              tout, l’amour de la langue. »
+              <small>(<i>Le gardien de la norme</i>, Leroux 2016)</small>
+            </p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Cadres et réalités de la révision</h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Paysage de la révision</p>
+            <ul>
+              <li>majorité salariés d'une entreprise privée ou secteur public</li>
+              <small>+ réviseur·euses indépendant·es ou pigistes</small>
+
+              <li>majorité des réviseuses</li>
+              <small>88% pour Réviseurs Canada</small>
+              </br><small>82% pour Pigistes Québec</small>
+
+              <li>révision unlingue française : moitié au Québec</li>
+              <small>+ Ontario et ouest du pays</small>
+            </ul>
+          </div>
+
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Salaire
+              </br><small>estimation</small>
+            </p>
+            <ul>
+              <li>entre 45 000$ et 70 000$/an</li>
+              <small>selon l'employeur, l'ancienneté et la spécialisation</small>
+              </br><small>tarif horaire entre 25$ et 60$</small>
+              <li>cumul des fonctions</li>
+              <small>souvent de la rédaction ou de l'enseignement</small>
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Temps et rentabilités
+              </br><small>estimation</small>
+            </p>
+            <ul>
+              <li>1 000/1 500 mots par heure</li>
+              <small>1 page = 250 mots</small>
+              <li>rendement qualitatif difficile à estimer</li>
+              <small>70% d'amélioration</small>
+              </br><small>30% = corrections injustifiées, omissions, ajouts d'erreurs</small>
+              <li>temps de révision variable</li>
+              <small>type de document, longueur, média</small>
+              </br><small>type de révision, public cible, échéance</small>
+              </br><small>période de révision, autres charges, fonds disponibles</small>
+
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Droits et protections
+              </br><small>varient selon le statut et le cadre légal</small>
+            </p>
+            <ul>
+              <li>Protection générale des employés </li>
+              <small>si salarié : LNT ou <i>Lois sur les normes du travail</i></small>
+              <ul>
+                <li> <small>salaire minimum (15,75$/heure)</small>
+                  </br><small>exceptions des étudiants et stagiaires</small>
+                  </br><small>congès, horaires de travail, licenciements, pratiques déloyales</small>
+                </li>
+              </ul>
+
+              <li>Protection pour les travailleurs autonomes (ou <i>freelance</i>)</li>
+              <small>Code civil du Québec - droit contractuel</small>
+              <ul>
+                <li> <small>contrats équitables, non-abusifs, sans désavantages excessifs</small>
+                  </br><small>recours pour litige</small>
+                    </li>
+              </ul>
+
+           
+          </div>
+
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Droits et protections
+                      </p>
+            <ul>
+             
+              <li>Syndicats et associations professionnelles</li>
+              <small>Canada</small>
+              <ul>
+                <li> <small>associations professionnelles comme <a href="https://editors.ca/">Réviseurs Canada / Editors Canada</a></small>
+                  
+                    </li>
+              </ul><small>Québec</small>
+              <ul>
+                <li> <small>regroupements comme <a href="https://ottiaq.org/">Ordre des traducteurs, terminologues et interprètes agréés du Québec </a></small>
+                    </li>
+              </ul>
+
+              <li>Protection en milieu de travail </li>
+            
+            <small><a href="https://aparte.juripop.org/">L'Aparté</a></small>
+            </br><small>ressource contre le harcèlement en milieu culturel</small> 
+          </ul>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Document cadre de la révision
+          </br><small>distinctions entre les termes - souvent interchangeables</small>
+      </p>
+          <ul>
+            <li>cahier des charges</li>
+            <small>consignes, attentes, objectifs</small>
+            <li>brief de révision</li>
+            <small>plus informel</small>
+          </br><small>public cible, ton, style</small>
+            <li>mandat de révision</li>
+            <small>mission de révision</small>
+          </ul>
+
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Le mandat de révision
+        </br><small>directives de la part du client - génériques</small>
+    </p>
+        <ul>
+          <li>rémunération</li>
+          <small></small>
+          <li>temps imparti</li>
+          <small></small>
+        
+          <li>support de travail</li>
+          <small>papier ou numérique</small>
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="1800px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Le mandat de révision
+      </br><small>directives de la part du client - paramètres spécifiques</small>
+  </p>
+      <ul>
+        <li>type de révision</li>
+        <small></small>
+        <li>contexte du texte</li>
+        <small>but, genre, média de publication, longueur</small>
+      
+        <li>objectifs</li>
+        <small>fluidité, correction, ligne éditoriale</small>
+        <li>public cible</li>
+        <small>impacte le ton, la langue, la démarche</small>
+        <li>normes éditoriales / protocole de rédaction</li>
+        <small>guide de style bibliographique, normes orthographiques</small>
+        <li>étendu du travail de révision</li>
+        <small>historique du texte</small>
+        <li>délais et modes de livraison</li>
+      </ul>
+
+      <p>exemple de mandat <a href="https://pige.quebec/projets/view/reviseure-linguistique-2/?utm_source=chatgpt.com">1</a>, <a href="https://pige.quebec/projets/view/reviseure-linguistique-pour-un-manuel-sur-linvestissement/">2</a>, <a href="https://pige.quebec/projets/view/reviseure-pour-un-manuscrit-scientifique-ecrit-en-anglais/">3</a>, <a href="https://pige.quebec/projets/view/reviseure-linguistique-pour-un-site-web-sur-le-travail-social/">4</a></p>
+
+    </div>
+  </section>
+
+  <section data-background-color="#fff" data-background-image="media/729_index.jpg" data-background-size="1800px"
+  data-transition="linear" data-transition-speed="fast">
+  <div id="fondop2">
+
+    <p style="font-variant: small-caps;">Conditions d'un métier qui évolue
+    </br><small>rôle/métier parfois remis en cause</small>
+</p>
+  <p>
+
+    « le réviseur-correcteur n’existe que pour les désavantages de son métier »
+
+  </br><small>(Robert, « Prête moi ta plume... et ton cerveau », 1985</small></p>
+
+    
+  </div>
+</section>
+
+<section data-background-color="#fff" data-background-image="media/729_correction.webp" data-background-size="1800px"
+data-transition="linear" data-transition-speed="fast">
+<div id="fondop2">
+
+  <p style="font-variant: small-caps;">Cas limite 1 : Sur/Sous-révision
+  </br><small>comparaison des extrêmes de la révision</small>
+</p>
+<p>   </br><small> <a href="">Corpus</a> </br>
+à partir de l'article <a href="https://actualitte.com/article/120650/metiers/gabrielle-simard-prend-la-direction-de-l-association-des-libraires-du-quebec">« Gabrielle Simard prend la direction de l’Association des Libraires du Québec »</a> de ActuaLitté</small></p>
+  
+</div>
+</section>
+
+
+<section data-background-color="#fff" data-background-image="media/729_postedition.png" data-background-size="1800px"
+data-transition="linear" data-transition-speed="fast">
+<div id="fondop2">
+
+  <p style="font-variant: small-caps;">Cas limite 2 : la Post édition
+  </br><small></small>
+</p>
+<ul>
+  <li>processus de révision/correction d'un texte traduit/produit automatiquement</li>
+  <small>Google translate, DeepL, Reverso, etc.</small>
+  <li>restreinte ou complète</li>
+  <small>de la correction grammaticale à la reformulation</small>
+</ul>
+
+</div>
+</section>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Ressources et recommandations</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Recommandations</p>
+
+            <ul>
+              <li>s'habituer à lire les signes</li>
+              <small>lecture comme déchiffrement</small>
+            </br><small><a href="">entraînement</a></small>
+              <li>se méfier des éléments relevant de la structure globale</li>
+              <small>même attention pour les niveaux du texte</small>
+              <li>justifier les corrections/suggestions</li>
+              <small>pour contrôler que l'amélioration ne relève par de l'appropriation</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Ressources</p>
+
+            <ul>
+              <li><a href="https://reviseurs.ca/wp-content/uploads/sites/5/2023/07/principes_edition2014.pdf">Principes directeurs en révision professionnelle</a></li>
+              <li><a href="https://reviseurs.ca/repertoire/">Répertoires de Réviseurs Canada</a></li>
+              <li><a href="https://www.pigistequebec.com/repertoire/">Pigiste Québec</a></li>
+              <li><a href="https://sqrp.org/">Société québécoise de la rédaction professionnelle</a></li>
+              <li><a href="https://pige.quebec/">Pige Québec</a></li>
+            
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1412 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  
+  <style>
+
+code {
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: rgba(65, 38, 56, 0.788);
+
+}
+
+.exposant {
+            font-size: 0.8em;  /* Réduit la taille du texte */
+            vertical-align: super;  /* Place le texte en haut */
+        }
+
+        .indice {
+          position: relative;
+            bottom: -0.9em;  /* Positionne le texte légèrement en bas */   }
+    
+            .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_autoedition.jpg" data-background-size="1600px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">20 Janvier : Outiller la révision</h5>
+        </div>
+
+      </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Rappel des valeurs de révision</h5>
+
+            <ul>
+              <li>lisibilité</li>
+              <small>votre écriture doit être déchiffrable</small>
+              <li>non-ambiguïté</li>
+              <small>on doit savoir ce qui est demandé comme type de modification</small>
+              <li>distinction</li>
+              <small>entre la première et la seconde écriture</small>
+            </br><small>+ interligne double</small>
+            </ul>
+          </div>
+        </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Révision au temps du papier</h3>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+niveaux d'intervention
+            </small></p>
+            </p>
+
+            <ul>
+            <li>amélioration</li>  
+            <small>entoure, encadre, souligne</small>
+            <li>suppression</li>
+            <small>biffe, ratture</small>
+            <li>suggestion/commentaire</li>
+            <small>interligne ou marge</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+nature des signes
+            </small></p>
+            </p>
+
+            <ul>
+                <li>signes de repérage</li>
+            <small>trait, note</small>
+            <li>signes d'exécution</li>
+            <small>suppression, changement</small>
+            <li>signe de mise en forme</li>
+            <small>style, font, etc.</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+suppressions
+            </small></p>
+            </p>
+
+            <ul>
+              <li>signe du <i>deleatur</i></li>
+            <li>lettre : suppression par dessus</li>  
+             <li>ponctuation : entoure et signe au-dessus</li>
+            <li>passage : trait long</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_suppression.png" data-background-size="1600px" background-color="#21211c">
+        
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+ajouts
+            </small></p>
+            </p>
+
+            <ul>
+            <li>au sein d'un mot : V renversé ou Lambda</li>  
+            <small><code>Ʌ</code> ou <code>λ</code></small> 
+            <li>signes de ponctuation, accents : directement dans le texte</li>
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_ajout1.png" data-background-size="1200px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_ajout2.png" data-background-size="800px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+changements
+            </small></p>
+            </p>
+
+            <ul>
+            <li>biffer des lettres, passages avec nouvelle version au-dessus / interligne</li>  
+             
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+déplacements
+            </small></p>
+            </p>
+
+            <ul>
+              <li>signe du <i>vertatur</i></li>
+            <li>flèche et groupe entouré</li>  
+            <small> <code>◌⃗</code></small>
+            <li>S couché renversé</li>
+             
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_deplacement.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+majuscules et minuscules
+            </small></p>
+            </p>
+
+            <ul>
+            <li>pour remplacer une majuscule par une minuscule : barre oblique</li>  
+           <small><code>/</code></small>
+            <li>pour remplacer une minuscule par une majuscule : trois petits traits en dessous de la lettre</li>
+             
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_majuscule.png" data-background-size="1200px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+exposants et indices
+            </small></p>
+            </p>
+
+            <ul>
+            <li><code>V</code> pour exposant</li>  
+            <small>XIX<small class="exposant">e</small> siècle</small>
+            <li><code>Ʌ</code> pour indice</li>
+            <small>H<small class="indice">2</small>O</small>
+             
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_exposant.png" data-background-size="1200px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+paragraphes
+            </small></p>
+            </p>
+
+            <ul>
+            <li>début de paragraphe : <code>§</code></li>  
+            <small>au pluriel : <code>§§</code></small>
+            </br><small>ou <code>⁋</code> (pied-de-mouche réfléchi)</small>
+            <li>pour regrouper deux paragraphes : flèche</li>
+            <small><code>↝</code> entre la fin du précédent et le début du suivant</small>
+             
+            </ul>
+          </div>
+        </section>
+        
+        <section data-background-image="media/729_alinea1.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_alinea2.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_alinea3.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_alinea4.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+    
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+espaces ou rapprochements
+            </small></p>
+            </p>
+
+            <ul>
+            <li><code>-</code> pour supprimer un espace</li>  
+            <li><code>#</code> pour ajout d'un espace insécable</li>
+             
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_espace.png" data-background-size="1200px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+changements de caractère
+            </small></p>
+            </p>
+
+            <ul>
+            <li>soulignement avec un trait continu pour l'<i>italique</i></li>  
+          <li>soulignement avec un trait ondulé pour le <b>gras</b></li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_italique.png" data-background-size="900px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Conventions des symboles de corrections
+            </br><small>
+corrections à annuler
+            </small></p>
+            </p>
+
+            <ul>
+            <li>soulignement d'un trait discontinu sous la correction</li>  
+        <small>+ indication « Bon » ou « Stet »</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Omission de passages
+            </br><small>
+si passage trop long
+            </small></p>
+            </p>
+
+            <ul>
+            <li>feuille distincte annexe</li>  
+        <small>avec indication de l'endroit où intégrer la modification </small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+             Rapport à l'espace de la page
+            </br><small>
+
+            </small></p>
+            </p>
+
+            <ul>
+         <li>utilisation de la marge de droite pour la correction/commentaire</li>
+        <small>texte avant mise en page</small>   
+        
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+             Sens des couleurs
+            </br><small>
+
+            </small></p>
+            </p>
+
+            <ul>
+          <li><span style="color: red;">rouge</span> pour la correction</li>
+       <li><b>noir</b>/<span style="color: navy;">bleu</span> pour le commentaire</li>
+     <li>ou différentes couleurs / étapes de correction</li>
+     
+       <small>commentaire entouré au crayon papier</small> 
+      <li>retours de l'auteur d'une autre couleur</li>
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+           Suggestion / Commentaires
+            </br><small>
+changements dispensables
+            </small></p>
+            </p>
+
+            <ul>
+     <li>distinction avec les corrections</li>
+     <small>couleur, type de mine</small>
+    <li>utilisation des crochets ou un trait ondulé</li>       
+  <small>+ modification en interligne/marge</small>
+            </br>  <small>pas de ratture</small>  
+  </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+        Abbréviations
+            </br><small>
+extrait
+            </small></p>
+            </p>
+
+            <ul>
+    <li>Acc. <small>(accord)</small> et Concord.<small>(concordance)</small></li>  
+    <li>Syn. <small>(synonyme)</small></li>
+    <li>rom. <small>(romain)</small></li>
+    <small>pour mettre en écriture romaine</small>
+    <li>R. <small>(relire)</small> et VS. <small>(versus)</small></li>
+    <li>Dét. <small>(détail)</small></li>
+    <l>Ex. et Cf.</l>
+    <li>S.V.P. et N.B.</li>
+    <li>pp. : pages ou participe passé</li>
+  </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_memento.svg" data-background-size="1400px" data-background-color="white">
+        
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+        Exercices
+            </br><small>
+            </small></p>
+            </p>
+
+            <ul>
+              <li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/Eloge-extrait.pdf">Texte 1</a></li>
+              <small>expliquez la révision à partir d'un manuscrit</small>
+  <li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/corpus3.pdf">Texte 2</a></li>
+  <small>faire la révision en utiliser la convention manuscrite</small>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Révision au temps du numérique</h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Numérisation
+          </br><small>
+
+          </small></p>  
+          
+          <ul>
+            <li>Scan et envois multiples</li>
+            <small>après réception, après révision, après retours</small>
+         <li>Perte de certains caractères de la révision manuscrite</li>
+        <small>symboliques et matériels</small>  
+        </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Révision avec traitement de texte
+          </br><small>
+Word, Libre Office, Google Doc, etc.
+          </small></p>  
+          
+          <ul>
+            <li>Suivi des modifications</li>
+            <small>enregistrement, affichage et gestion</small>
+            <li>Commentaires</li>
+            <small>réponse et gestion </small>
+          </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Demo
+          </br><small>classique 
+dans un traitement de texte
+          </small></p>  
+          
+          <ul>
+            <li>Outils/Édition > Suivi des modifications</li>
+            <small>Ctrl + Maj. + C</small>
+          </br><small>Pomme + Maj. + C</small>
+
+        <li>Retour à la convention des signes</li>
+        <small>suppression barrée, ajout souligné</small>
+        </br><small>couleurs selon les profils de révision</small>    
+    
+    <li>Outils/Édition > Commentaire</li>
+    <small>éviter de trop surcharger la page</small>
+      </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_revisionDOCX-back.png" data-background-size="800px">
+ 
+        </section>
+
+        <section data-background-image="media/729_revisionDOCX.png" data-background-size="1000px">
+ 
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel des raccourcis clavier
+          </br><small>
+pour Mac : Ctrl = Pomme ou ⌘
+          </small></p>  
+          
+          <ul>
+            <li>Ctrl + C = Copier</li>
+            <small><i>copy</i></small>
+            <li>Ctrl + V = Coller</li>
+            <small><i>varnish</i> ou <i>vernir</i></small>
+            <li>Ctrl + A = Sélectionner tout</li>
+            <small><i>all</i></small>
+            <li>Ctrl + X = Couper</li>
+            <small><i>eXterminate</i></small>
+            </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel des raccourcis clavier
+          </br><small>
+pour Mac : Ctrl = Pomme ou ⌘
+          </small></p>  
+          
+          <ul>
+            <li>Ctrl + B = Mise en gras</li>
+            <small><i>bold</i> ou <i>bacon</i></small>
+            <li>Ctrl + I = Mise en italique</li>
+            <small><i>italique</i></small>
+            <li>Ctrl + U = Souligner</li>
+            <small><i>underline</i></small>
+             </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel des raccourcis clavier
+          </br><small>
+pour Mac : Ctrl = Pomme ou ⌘
+          </small></p>  
+          
+          <ul>
+            <li>Ctrl + S = Sauvegarder</li>
+            <small><i>save</i></small>
+            <li>Ctrl + F = Rechercher</li>
+            <small><i>find</i></small>
+            <li>Ctrl + H = Rechercher + Remplacer</li>
+            <small><i>hunt</i></small>
+            <li>Ctrl + Z = Annuler</li>
+            <small><i>zut</i></small>
+            <li>Ctrl + Y = Revernir à l'état précédent</li>
+            <small><i>yesterday</i></small>
+          </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Exercice
+          </br><small>
+<b>sans toucher votre souris ou votre pad</b>
+          </br>ouvrir le <a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/exemple_seance3.docx">document exemple</a>
+          </small></p>  
+          
+          <ul>
+            <li>Activez le suivi des modfications</li>
+            <small>Ctrl + Maj. + C</small>
+          </br><small>vous pouvez aller vérifier dans la fenêtre Outils/Édition > suivi des modifications</small>
+            <li>Déplacez-vous dans le texte</li>
+            <small>ligne par ligne avec flèche du bas</small>
+        </br><small>ou d'un paragraphe à l'autre avec Ctrl + flèche du bas</small>
+      </br><small>ou du début à la fin du document avec Ctrl + Fn + flèche droite</small>
+    <li>Effectuez des corrections</li>  
+   <small>Ctrl + J : pour justifier un paragraphe</small>
+    </br> <small>utilisez le retour en arrière : Ctrl + Z</small>   
+    
+    </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Exercice
+          </br><small>
+<b>sans toucher votre souris ou votre pad</b>
+          </small></p>  
+          
+          <ul>
+            <li>Faîtes un rechercher sur les « ?»</li>
+            <small>Ctrl + F</small>
+          </br><small>tapez « :» sans insécable</small>
+            <li>Faîtes un recherche-remplacer sur les « ?»</li>
+            <small>Ctrl + H</small>
+        </br><small>dans la recherche : « ?»</small>
+      </br><small>Tab pour passer d'un champs à un autre</small>
+      </br><small>dans le remplacement : «<span style="background-color:gray"> </span>?»</small>
+    </br><small>au clavier, espace insécable : AltCar + Espace / Ctrl + Maj. + Espace</small>
+  </br><small>Échap pour quitter la fenêtre</small>
+      
+    </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Exercice
+          </br><small>
+<b>sans toucher votre souris ou votre pad</b>
+          </small></p>  
+          
+          <ul>
+            <li>Insérez un commentaire</li> 
+    <small>Ctrl + Alt + C</small>
+  </br><small>Échap pour sortir du commentaire</small>
+<li>Commentez un passage</li>
+<small>sélectionnez un passage : Ctrl + Alt + flèche</small>
+</br><small>Ctrl + Alt + C sur le paragraphe sélectionné</small>
+    
+    </ul>
+          
+          </div>
+        </section>
+
+        
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Exercice
+          </br><small>
+<b>sans toucher votre souris ou votre pad</b>
+          </br>rappel
+          </small></p>  
+          
+          <ul>
+            <li>Sauvegardez régulièremnt</li> 
+    <small>Ctrl + S</small>
+<li>Quittez</li>
+<small>Ctrl + Q</small>
+    
+    </ul>
+          
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/O_git_branch.png" data-background-size="1500px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Révision avec logiciel de versionnement Git
+          </br><small>
+pratiques alternatives
+          </small></p>  
+          
+          <ul>
+            <li>Protocole et logiciel de version</li>
+            <small>2005, Linus Torvalds</small>
+          
+          </ul>
+          
+          </div>
+        </section>
+
+        <section data-background="media/O_git_schema.png" data-background-size="1200px">
+          <div id="fondop2">
+  
+            <p style="font-variant: small-caps;">GIT - Fonctionnement</p>
+  
+  
+            <ul>
+              <li>1 Répertoire</li>
+              <small>rassemblement des documents</small>
+              <li>2 espaces de travail</li>
+              <small>en local : avec lignes de commande dans le terminal</small>
+            </br><small>en ligne/remote : avec interface visuelle</small>
+            </ul>
+              </div>
+        </section>
+  
+        <section data-background="media/O_git_version.png" data-background-size="1800px">
+          <div id="fondop2">
+  
+            <p style="font-variant: small-caps;">GIT - Gestion des versions</p>
+  
+  
+            <ul>
+              <li>Utilisation de branches</li>
+              <small>possibilité de comparer, merger, suivre</small>
+              <li>Gérer les versions entre local et remote</li>
+              <small>pull : pour récupérer les modifications de la version en ligne</small>
+            </br> <small>push : pour publier les modifications vers la version en ligne</small> 
+           
+              <li>Description de la modification </li>
+<small>chaque nouvelle version a ses propres métadonnées</small>
+              <small>commit : <i>label</i> de la version complété par l'utilisateur pour décrire la modification effectuée</small>
+          </br>
+        </br><small>utilisé par <a href="https://www.parcoursnumeriques-pum.ca/">Parcours numériques</a>, <a href="https://abrupt.cc/">Abrüpt</a></small>
+      </br><small>prise en main pour le TP3 - séance 8</small>      
+      </ul>	
+            </div>
+        </section>
+
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Autres outils 
+          </br><small>
+correction
+          </small></p>  
+          
+          <ul>
+      <li><a href="https://www.antidote.info/fr/">Antidote</a></li>
+   <small>payant</small>
+      <li><a href="https://usito.usherbrooke.ca/">Usito</a></li>    
+ <small>gratuit</small>
+      <li><a href="https://www.prolexis.com/">ProLexis</a></li> 
+      <small>payant</small>
+      <li><a href="https://www.scribens.fr/">Scribens</a></li>
+ <small>gratuit</small>
+ <li><a href="https://bonpatron.com/">BonPatron</a></li>
+ <small>gratuit</small>
+ <li><a href="https://languagetool.org/fr">LanguageTool</a></li>
+   <small>gratuit</small>
+   <li><a href="https://www.noslangues-ourlanguages.gc.ca/fr/cles-de-la-redaction/index-fra">Clés de rédaction</a></li>
+<small>gratuit, gouvernemental</small>
+  </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Comparaisons
+          </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/corpus3.pdf">source</a>
+
+          </small></p>  
+          
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Autres outils
+          </br><small>
+annotation
+          </small></p>  
+          
+          <ul>
+            <li>Acrobat-TextEdit</li>
+            <small>pour l'annotation de PDF</small>
+          <li><a href="https://web.hypothes.is/">Hypothesis</a></li>
+<small>pour l'annotation Web</small>
+          </ul>
+          
+          </div>
+        </section>
+
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel
+          </br><small>
+outils de révision
+          </small></p>  
+          
+          <ul>
+         <li>Liste non-exhaustive</li>
+         <small>autant d'outils que de pratiques</small>
+         <li>Aucun logiciels n'est infaillible</li>
+<small>postédition</small>
+<li>Usage en fonction du contexte</li>
+<li>Biais des outils</li>
+<small>aucun outil n'est neutre</small>
+          </ul>
+          
+          </div>
+        </section>
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Méthodologies et ressources</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Méthode générale
+          </br><small>
+à adapter au mandat et au texte
+          </small></p>  
+          
+          <ul>
+           <li>Prélude</li>
+           <small>connaissance du mandat</small>
+          </br><small>préparation d'une to-do list</small>
+          
+        <li>Première lecture</li>
+        <small>vision globale</small>
+        </br><small>estimation du temps et du travail</small>
+      </br><small>enrichissement de la to-do list</small> 
+     
+    <li>// pause //</li>
+    </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Méthode générale
+          </br><small>
+à adapter au mandat et au texte
+          </small></p>  
+          
+          <ul>
+           <li>Deuxième lecture</li>
+           <small>relecture minutieuse</small>
+          </br><small>référence à la to-do list</small>
+          
+        <li>Troisième et dernières lectures</li>
+        <small>vérification de la to-do list</small>
+        </br><small>relecture des commentaires laissés</small>
+     
+    </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Méthode paramédicale
+          </br><small>
+exemples       </br>pour un Texte concis et à la voix active  </small></p>  
+          
+          <ul>
+           <li>1. Analyse de la syntaxe</li>
+           <small>entourer les prépositions</small>
+          </br><small>encadrer les verbes</small>
+          <li>2. Analyse du message</li>
+          <small>déterminer où est l'action</small>
+         </br><small>faire de l'auteur l'acteur de l'action</small>
+     <li>3. Vérifier l'efficacité du message</li>
+     <small>éliminer les phrases d'introduction lentes</small>
+        </br><small>éliminer les phrases répétitives</small>
+    </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Méthode paramédicale
+          </br><small>
+exemple : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/corpus3.pdf">source</a>    </small></p>  
+          
+         
+<p>Il s'agit dans ce paragraphe de faire la démonstration de l'usage du bon style dans la rédaction d'un rapport.</p>
+   <p class="fragment"><small>Ce paragraphe fait la démonstration de l'usage du bon style dans la rédaction d'un rapport</small></p>       
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Méthode paramédicale
+          </br><small>
+exemple  : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4583389/mod_label/intro/corpus3.pdf">source</a>       </small></p>  
+          
+         
+<p>Il est de fait avéré que l'utilisation des médicaments a permis d'obtenir des résultats positifs dans le traitement des maladies de la plupart des patients. </p>
+          <p class="fragment"><small>L'utilisation des médicaments etc.</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Cas limite : Textes non-révisables</p>
+
+            <ul>
+              <li>Trop de correction => réécriture</li>
+            <li>Cas de rédaction/traduction automatique</li>  
+            <small>TA ou TAO</small>
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_non-revisable1.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Texte non-révisable</br><small>exemple</small></p>
+
+           
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_non-revisable2.png" data-background-size="1100px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Texte non-révisable</br><small>exemple</small></p>
+
+           
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Feuille de route
+            </br><small>ou feuille de cheminement
+      
+            </small></p>
+
+            <ul> 
+            <li>ouvrages consultés</li>
+            <li>motif de changement</li>
+            <li>développement depuis la copie de révision</li>
+          <small>même principe que l'appel de note</small>  
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Recommandations</p>
+
+            <ul>
+              <li>Multiplier / diversifier ses ressources</li>
+              <small>langue</small>
+              <li>Vérifier sa relecture</li>
+              <small>double-espaces, etc.</small>
+              <li>Distinguer des niveaux d'erreurs</li>
+              <small>« la paille ou la poutre »</small>
+            <li>Les coquilles fonctionnent en troupeaux</li>    
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps">Ressources</p>
+
+            <ul>
+             <li><a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/banque-de-depannage-linguistique">BDL</a></li>
+             <small>Banque de dépannage linguistique</small>
+             <li><a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/25092/la-redaction-et-la-communication/revision-linguistique-et-correction-depreuves/signes-utilises-en-revision-linguistique-et-en-correction-depreuves">Typologie des signes</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1618 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_dico.jpg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">3 Février : Point de langue 2</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Les Classes de mots</h3>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+
+            <table>
+              <tr>
+                <th>Type</th>
+                <th>Catégories grammaticales</th>
+
+              </tr>
+              <tr>
+                <td>Variable</td>
+                <td>nom, adjectif, déterminant, verbe, pronom</td>
+              </tr>
+              <tr>
+                <td>Invariable</td>
+                <td>adverbe, préposition, conjonction, interjonction, onomatopée</td>
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Nom
+              </br><small>
+              </small></p>
+
+            <p style="font-size: 24px;">Catégorie grammaticale regroupant les mots qui désignent soit une espèce
+              ou un représentant de l’espèce (noms communs), soit un individu particulier
+              (noms propres), et qui assurent, dans la proposition, des fonctions syntaxiques
+              spécifiques (sujet, complément d’objet, etc.).
+              </br><small>Larousse</small>
+            </p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Nom
+              </br><small>
+              </small></p>
+
+            <ul>
+              <li>
+                type commun ou propre
+              </li>
+              <small>
+                <i>chat, grammaire, café</i> + déterminant
+              </small>
+              </br><small><i>Québec, Martine, Jupiter</i> (maj) (+ déterminant)</small>
+              <li>
+                caractéristiques morphologiques
+              </li>
+              <small>
+                simple / complexe - <i>café / ras-le-bol</i>
+              </small>
+              </br><small>féminin / masculin</small>
+              </br><small>singulier / pluriel</small>
+              <li>caractéristiques sémantiques</li>
+              <small>animé / inanimé - <i>chat / table</i></small>
+              </br><small>humain / non-humain - <i>étudiante / chat</i></small>
+              </br><small>concret / abstrait - <i>pomme / liberté</i></small>
+              </br><small>comptable / non-comptable - <i>pomme / eau</i></small>
+              </br><small>individuel / collectif - <i>étudiante / foule</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Adjectif
+              </br><small>
+              </small></p>
+
+            <p style="font-size: 24px;">Mot que l’on peut adjoindre au substantif pour exprimer une qualité de l’être,
+              de l’objet ou de la notion désignée (adjectif qualificatif ou, simplement, adjectif),
+              ou pour introduire ce substantif dans le discours (adjectif déterminatif).
+              </br><small>Larousse</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Adjectif
+              </br><small>
+              </small></p>
+
+            <ul>
+              <li>
+                types
+              </li>
+              <small>qualifiant (+ adverbe intensité) - <i>(très) rapide</i></small>
+              </br><small>classifiant (ø intensité) - <i>chimique</i></small>
+              </br><small>ordinal ou de rang - <i>premier</i></small>
+              </br><small>interrogatif - <i>quelle</i></small>
+              </br><small>participe (passé, présent) - <i>fatigant, fatigué</i></small>
+              </br><small>couleur - <i>vert</i></small>
+              <li>caractéristiques morphologiques</li>
+              <small>simple / complexe - composé / dérivé</small>
+              </br><small>masculin / féminin</small>
+              </br><small>singulier / pluriel</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Adjectif
+              </br><small>différence épithète / attribut
+              </small></p>
+
+            <ul>
+              <li>attribut : adjectif séparé du nom par un verbe d'état</li>
+              <small>complément du verbe</small>
+              </br><small><i>le ciel est bleu</i></small>
+              <li>épithète : adjectif qui fait parti du groupe nominal</li>
+              <small>complément du nom</small>
+              </br><small><i>le ciel bleu</i></small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Déterminant
+              </br><small>
+              </small></p>
+
+            <p style="font-size: 24px;">Membre d’une classe de morphèmes grammaticaux qui se placent devant
+              le nom pour l’introduire dans le discours, tout en lui apportant diverses spéci-
+              fications. (Ce sont les articles, les adjectifs possessifs, démonstratifs, indéfinis
+              et numéraux.)
+              </br><small>Larousse</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Déterminant
+              </br><small>
+              </small></p>
+
+            <ul>
+              <li>référent = nom</li>
+              <small>genre et nombre</small>
+              <li>types</li>
+              <small>défini - <i>le, la, les, l'</i></small>
+              </br><small>contracté - <i>du, des, au, aux</i></small>
+              </br><small>indéfini - <i>une, un, de, tel</i></small>
+              </br><small>partitif - <i>du, de la</i></small>
+              </br><small>quantitatif - <i>aucun, quelques, tout</i></small>
+              </br><small>possessif - <i>mon, ton, notre</i></small>
+              </br><small>démonstratif/déictique - <i>ce, cette, ces</i></small>
+              </br><small>interrogatif/exclamatif - <i>quelle</i></small>
+              </br><small>numéral </small>
+              </br><small>relatif - <i>lequel, laquelle</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Pronom
+              </br><small>
+              </small></p>
+
+            <p style="font-size: 24px;">Mot qui réfère à un mot préalablement exprimé ou à la réalité extralinguistique
+              et dont les fonctions syntaxiques sont identiques à celles du nom.
+              </br><small>Larousse</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Pronom
+              </br><small>
+              </small></p>
+
+            <ul>
+              <li>caractéristiques sémantiques</li>
+              <small>pronom de reprise - <i>il, qui, la</i></small>
+              </br><small>pronom nominal - <i>je, tu</i></small>
+              <li>caractéristiques morphologiques</li>
+              <small>simple ou complexe - <i>je/le leur</i></small>
+              <li>types</li>
+              <small>personnel - <i>personne grammaticale</i></small>
+              <ul>
+                <small>formes conjointes - sujet : <i>je</i> / complément : <i>me, te, le, la</i></small>
+                </br><small>formes disjointes - <i>lui, moi, toi</i></small>
+              </ul>
+              <small>prosessif - <i>le mien, la tienne</i></small>
+              </br><small>démonstratif - <i>celle-ci, celui-là</i></small>
+              </br><small>relatif - <i>qui, que, quoi, dont</i></small>
+              </br><small>indéfini - <i>aucun, tous, rien, personne</i></small>
+              </br><small>interrogatif - <i>qui, quoi</i></small>
+              </br><small>numéral</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Verbe
+              </br><small>
+              </small></p>
+
+            <p style="font-size:24px">Catégorie grammaticale qui regroupe l’ensemble des formes composées d’une
+              base lexicale et d’un certain nombre d’affixes pertinents variant en nombre, en
+              personne, en temps, dont la fonction syntaxique est de structurer les termes de
+              l’énoncé, et dont le rôle sémantique est de décrire les actions, les états, les
+              modifications relatifs aux éléments auxquels réfèrent les noms sujets.
+              </br><small>Larousse</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Verbe
+              </br><small>
+              </small></p>
+
+            <ul>
+              <li>d'action / d'état</li>
+              <small>agir / être</small>
+              <li>types</li>
+              <small>transitif direct - <i>écrire, manger, lire
+                </i></small>
+              </br><small>transitif indirect - <i>aller (à), douter (de)</i></small>
+              </br><small>intransitif - <i>éternuer, dormir</i></small>
+              </br><small>impersonnel - <i>pleuvoir, falloir</i></small>
+              </br><small>pronominal - <i>se laver, se parler, se faire, se méfier</i></small>
+            </br><small></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Adverbe
+              </br><small>précision du sens d'un verbe, adjectif, autre adverbe
+              </small></p>
+            <ul>
+              <li>de manière</li>
+              <small>bien, mal, vite</small>
+              <li>de lieu</li>
+              <small>ici, là, partout</small>
+              <li>de temps</li>
+              <small>hier, demain, souvent</small>
+              <li>de quantité</li>
+              <small>très, peu, assez</small>
+              <li>de négation</li>
+              <small>ne... pas, ne... jamais</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Préposition
+              </br><small>introduit un complément dans une phrase
+              </small></p>
+            <p><i>à, dans, par, pour, en, avec, de, chez, sous, sur</i></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Conjonction
+              </br><small>relie des mots ou des propositions
+              </small></p>
+            <ul>
+              <li>conjonctions de coordination</li>
+              <small><i>Mais où est donc Ornicar ?</i></small>
+              <li>conjonctions de subordination</li>
+              <small><i>que, lorsque, parce que, si, bien que</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Interjonction
+              </br><small>pour exprimer une émotion
+              </small></p>
+            <p><i>Oh ! Ah ! Zut ! Bravo !</i></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Onomatopée
+              </br><small>retranscrit un bruit ou un son
+              </small></p>
+            <p><i>Cric crac, boum, miaou, plouf</i></p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Structuration(s) de la phrase</h4>
+            <p style="font-variant: small-caps;">phrase = unité syntaxique</p>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Composants
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Groupe Sujet (GS)</li>
+              <small>accomplit ou subit</small>
+              <li>Groupe Verbal (GV)</li>
+              <small>verbe (+ complément)</small>
+              <li>Complément du verbe</li>
+              <ul>
+                <small>COD (direct) - après le verbe</small>
+                </br><small>COI (indirect)</small>
+                </br><small>COS (second)</small>
+              </ul>
+              <li>Complément Circonstanciel (CC)</li>
+              <small>temps, lieu, manière, but, cause</small>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Différentes structures
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Phrase simple</li>
+              <small>1 verbe conjugué</small>
+              <li>Phrase complexe</li>
+              <ul>
+                <small>proposition indépendante : segment autonome</small>
+                </br><small>proposition principale qui commande</small>
+                </br><small>proposition subordonnée qui dépend de la principale</small>
+              </ul>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Temps et accords</h4>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accords
+              </br><small>relation entre classes de mots
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Verbe et sujet : nombre et personne</li>
+              <small>sujet collectif : accord selon le sens</small>
+              <li>Adjectif : nombre et genre</li>
+              <small><b>sauf</b> adjectif de couleur composé = invariable</small>
+              </br><small><b>et</b> adjectif dérivé de nom (<i>orange, marron</i></small>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <table>
+              <tr>
+                <th>Temps</th>
+                <th>Exemple</th>
+
+              </tr>
+              <tr>
+                <td>Présent</td>
+                <td>Je parle</td>
+              </tr>
+              <tr>
+                <td>Imparfait</td>
+                <td>Je parlais</td>
+              </tr>
+              <tr>
+                <td>Passé simple</td>
+                <td>Je parlai</td>
+              </tr>
+              <tr>
+                <td>Futur simple</td>
+                <td>Je parlerai</td>
+              </tr>
+              <tr>
+                <td>Passé composé</td>
+                <td>J'ai parlé</td>
+              </tr>
+              <tr>
+                <td>Plus-que-parfait</td>
+                <td>J'avais parlé</td>
+              </tr>
+              <tr>
+                <td>Passé antérieur</td>
+                <td>J'eus parlé</td>
+              </tr>
+              <tr>
+                <td>Futur antérieur</td>
+                <td>J'aurai parlé</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Groupes de verbe
+              </br><small>pour la conjugaison
+              </small></p>
+            </p>
+
+            <ul>
+              <li>1.er groupe (-er) : réguliers</li>
+              <small>chanter, aimer, parler</small>
+              <li>2.eme groupe (-ir + PP en -issant) : réguliers</li>
+              <small>finir, choisir, etc.</small>
+              <li>3.eme groupe (-ir, -oir, -re, etc.) : irréguliers</li>
+              <small>partir, voir, prendre</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes
+              </br><small>1. Indicatif
+                </br>faits réels ou certains
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Présent</li>
+              <small>action en cours, énonciation, habitude, vérité générale ou futur proche</small>
+              <li>Passé composé</li>
+              <small>action passée achevée en lien avec le présent</small>
+              </br><small>AUX au présent + PP</small>
+              <li>Imparfait</li>
+              <small>action passée inachevée, description, habitude passée, action en cours subitement
+                interrompu</small>
+              </br><small>Base présent + terminaison [-ais, -ais, -ait, -ions, -iez, -aient]</small>
+              <li>Plus-que-parfait</li>
+              <small>action antérieure à une autre action passée, hypothèse</small>
+              </br><small>AUX imparfait + PP</small>
+              <li>Passé simple</li>
+              <small>action ponctuelle et achevé</small>
+              </br><small>1er groupe : [-ai, -as, -a, -âmes, -âtes, -èrent]</small>
+              </br><small>2eme groupe : [-is, -is, -it, -îmes, -îtes, -irent]</small>
+              </br><small>3eme groupe : irréguliers</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes
+              </br><small>1. Indicatif
+                </br>faits réels ou certains
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Futur simple</li>
+              <small>action certaine future, ordre, conseil, hypothèse, supposition</small>
+              </br><small>INF + terminaison [-ai, -as, -a, -ons, -ez, -ont]</small>
+              <li>Futur antérieur</li>
+              <small>action antérieure à une action future, supposition dans le passé</small>
+              </br><small>AUX au futur simple + PP</small>
+
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes
+              </br><small>2. Subjonctif
+                </br>action incertaine, souhait, nécessaire
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Présent + terminaison [-e, -es, -e, -ions, -iez, -ent]</li>
+
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes
+              </br><small>3. Conditionnel
+                </br>action soumise à condition, hypothèse, politesse
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Futur simple + terminaison [imparfait]</li>
+
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord du participe passé
+              </br><small>selon l'auxiliaire
+                </br>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>+ Avoir</li>
+              <small>Accord si COD avant le verbe</small>
+              </br><small><i>Les fleurs que j’ai cueillies sont belles</i></small>
+
+              </br><small>si pas COD : invariable</small>
+              </br><small><i>J’ai cueilli des fleurs</i></small>
+
+              </br><small><b>sauf</b> si le pronom est COD d'un verbe infinitif</small>
+              </br><small><i>les marmottes que j'ai vu abattre étaient mignonnes</i></small>
+              </br><small><b>pas si</b> le pronom est acteur de l'action du verbe à l'infinitif</small>
+              </br><small><i>les marmottes que j'ai vues manger se cachent</i></small>
+
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord du participe passé
+              </br><small>selon l'auxiliaire
+                </br>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>+ Être</li>
+              <small>Accord avec le sujet</small>
+              </br><small>même si l'auxiliaire est sousentendu</small>
+              </br><small><i>la nuit est tombée; les musiciens invités </i></small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord du participe passé
+              </br><small>selon le verbe
+                </br>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>+ Verbe impersonnel</li>
+              <small>Toujours invariable</small>
+              <li>+ Verbe pronominal</li>
+               </br><small>Accord </small>
+              </br><small><i>elle s'est absentée</i></small>
+              </br><small><b>sauf</b> si le COD est placé après le verbe</small>
+              </br><small><i>elle s'est blessé la jambe</i></small>
+              </br><small><b>cas particulier</b> invariable si pronom réfléchi est COI et ø COD</small>
+              </br><small><i>elles se sont parlé</i></small>
+              </br><small><b>sauf</b> pour 6 verbes : </small>
+              </br><small>se complaire, se déplaire, se plaire, se rire : <i>ils se sont complu à faire ça</i></small>
+              </br><small>s'écrier, s'exclamer (toujours accord) : <i>elle se sont écriées</i></small>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord du participe passé
+              </br><small>cas particulier
+                </br>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>+ Verbe intransitif devenant transitif</li>
+              <small>Accord si le COD est placé devant</small>
+
+              </br><small><i>ses plus belles années, il les a vécues ici</i></small>
+              </br><small><b>sinon</b> le verbe intransitif est invariable</small>
+              </br><small><i>les deux années qu'il a vécu ici ont été ses plus belles</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord du participe passé
+              </br><small>nouvelle règle
+                </br>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>Invariable quand avec avoir</li>
+              <li>Invariable quand avec <i>se laisser</i></li>
+              <small><i>elle s'est laissé mourir</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercices 
+              </br><small>CCMD - orthographe rectifiée
+                </br>
+              </small></p>
+            </p>
+            <ul>
+              <li><a href="https://ameliofrancais.ccdmd.qc.ca/ressources/229/identification-du-participe-passe-avec-avoir?descripteurs=Accord+du+participe+pass%C3%A9&s=&f=8">Identification du participe passé avec « avoir »</a></li>
+            
+              <li><a href="https://ameliofrancais.ccdmd.qc.ca/ressources/233/accord-du-participe-passe-employe-avec-avoir-ou-etre?descripteurs=Accord+du+participe+pass%C3%A9&s=&f=8">Accord du PP avec « avoir / être »</a></li>
+              <li><a href="https://ameliofrancais.ccdmd.qc.ca/ressources/235/identification-des-verbes-pronominaux?descripteurs=Accord+du+participe+pass%C3%A9&s=&f=8"></a>Identification des verbes pronominaux</li>
+              <li><a href="https://ameliofrancais.ccdmd.qc.ca/ressources/237/accord-du-participe-passe-avec-etre-ou-accord-de-verbes-pronominaux?descripteurs=Exercices&s=&f=250"></a>Accord du PP avec « être » ou verbes pronomiaux</li>
+
+            </ul>
+
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Ponctuation</h4>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rythme et sens de la parole
+              </br><small>intention, pause, structuration par segment
+              </small></p>
+            </p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Structure de la phrase
+              </br><small>pour les règles de ponctuation
+              </small></p>
+            </p>
+
+            <ul>
+              <li>thème + foyer d'information</li>
+              <small>ce dont on parle + ce que l'on dit de ce dont on parle</small>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Virgule
+              </br><small>cas d'emplois
+              </small></p>
+            </p>
+
+            <ul>
+              <li>entre le sujet et le prédicat</li>
+              <small>Les élèves seront sanctionnés</small>
+            </br><small><i>Les élèves qui sont arrivés en retard et qui n'ont pas apporté leur matériel, seront sanctionnés</i></small>
+              <li>avant un verbe à sujets juxtaposés</li>
+              <small><i>Le vent, la pluie, le froid, empêchent toute sortie aujourd’hui.</i></small>
+              <li>entre de courtes phrases juxtaposées</li>
+              <small><i>le ciel est bleu, la vie est belle</i></small>
+              <li>à l'intérieur d'une énumération verticale</li>
+              <small>+ point final</small>
+          </br><small>listes enchâssées : + point virgule</small>
+              <li>après un complément indirect en début de phrase</li>
+              <small><i>Grâce à son travail acharné, il réussit brillamment son examen</i></small>
+              <li>avec une incidente/incise, interjonction</li>
+              <small><i>Ce projet, j’en suis convaincu, sera une réussite</i></small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Virgule
+              </br><small>cas particulier
+              </small></p>
+            </p>
+
+            <ul>
+              <li>avec <i>comme, ainsi que, autaut que, de même que, etc.</i></li>
+              <small></small>
+              <li>avec <i>et ce</i></li>
+              <li>avant <i>etc.</i> et après si la phase n'est pas finie</li>
+              <li>avant <i>mais</i></li>
+              <li>avant <i>car</i></li>
+              <li>après <i>or</i></li>
+          
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Virgule
+              </br><small>cas particulier
+              </small></p>
+            </p>
+
+            <ul>
+              <li>avant <i>voire</i> </li>
+              <small></small>
+              <li>avec <i>c'est-à-dire, autrement dit, à savoir, par exemple, entre autres</i></li>
+              <li>après les adverbes
+              </li>
+              <li>après <i>donc, puis, ensuite, sinon, autrement</i></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Virgule
+              </br><small><b>pas de virgule</b>
+              </small></p>
+            </p>
+
+            <ul>
+              <li>entre deux <i>ni</i></li>
+              <small></small>
+              <li>pas avec <i>non... mais</i>, <i>non pas... mais, non seulement... mais</i></li>
+              <small>QUAND il sépare un verbe et des compléments</small>
+           
+            </br><small><i>Je l’ai choisi non pas pour son prix mais pour sa qualité</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Point
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+              <li>à la fin d'une phrase</li>
+              <small>assertion ou interrogation</small>
+              <li>avant le complément du verbe ou entre groupes de même rôle</li>
+              <small><i>Il a acheté des légumes. Les tomates, les pommes de terre.</i></small>
+              <li>avant <i>et, mais, car</i></li>
+              <li>à la fin d'une dédicade, slogan, inscription, titre</li>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Point
+              </br><small>cas particulier
+              </small></p>
+            </p>
+
+            <ul>
+              <li>après les mots <i>Remarques, Note, Chapitre, Annexe, Appendice</i></li>
+              <small>terme + point + tiret long </small>
+              <li>pour certaines abbréviations
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Point-virgule
+              </br><small>cas d'emploi : séparer des propositions indépendantes
+              </small></p>
+            </p>
+
+            <ul>
+              <li>entre deux énoncés structurés identiques</li>
+            <li>entre des énoncés associés logiquement</li>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Points de suspension
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+              <li>à la fin d'une énumération comme points de suite ou d'un énoncé inachevé</li>
+            <li>à la place de <i>etc.</i></li>
+            <li>pour atténuer des mots</li>
+            <small>jurons ou insultes</small>
+            <li>entre crochets pour omission dans citation</li>
+          <li>pour un sentiment ou une émotion</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Deux-points
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+              <li>pour annoncer un exemple, une explication</li>
+              <small></small>
+              <li>avant des paroles rapportées au discours indirect</li>
+            <li>dans un dialogue</li>
+            <li>avant une énumération</li>
+            <li>pour indiquer un lien de cause à effet</li>
+          <li>entre heure / minute, minute / seconde</li> 
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Guillemets
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+              <li>pour les paroles rapportées d'un discours direct</li>
+              <small></small>
+              <li>début et fin d'un dialogue</li>
+              <small>peut être à partir de la seconde réplique</small>
+            <li>dans citation</li>
+            <small>sauf citation longue</small>
+            <li>guillemets enchâssés</li>
+      
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Guillemets
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+            <li>pour les mots cités / italique</li>
+            <small>surnom</small>
+          
+          <li>pour les mots étrangers, familiers</li> 
+          <li>pour les mots déformés, néologismes</li>
+          <li>pour l'ironie</li> 
+           <li>pour un titre</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Parenthèses
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+ <li>isoler une information non-nécessaire</li>
+ <li>dans adresse postale, diplôme ou grade</li>
+ <li>pour la traduction d'un mot</li>
+ <li>pour les formules d'usage</li>
+ <small><i>sic, nous soulignons, note du traducteur de la direction</i></small>
+<li>pour encadrer une ponctuation forte</li> 
+<li>parenthèses enchâssées</li>    
+<li>pour les didascalies</li>
+<li>fermante pour l'énumération</li>
+</ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Tiret
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+
+              <li>tiret long comme parenthèse</li>
+              <small>tiret fermant s'efface devant une poinctuation finale ou forte</small>
+<li>dans parenthèses</li>
+<li>pour séparer deux éléments</li>
+<small>pause</small>
+<li>dans dialogues</li>
+<li>dans une énumération</li>
+<li>après formule d'usage</li>
+<small><i>PS, remaque, annexe, chapitre, fig.</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Point d'interrogation
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+<li>fin de phrase interrogative</li>
+<li>pour un doute ou une ellipse</li>
+<li>doublé/triplé pour une émotion</li>
+<li>avec point d'exclamation pour émotion vive</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">le Point d'exclamation
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+<li>fin de phrase exclamative</li>
+<li>après interjonction</li>
+<li>doublé/triplé pour une émotion</li>
+<li>avec point d'interrogation pour émotion vive</li>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Crochets
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+<li>particularités dans manuscrits</li>
+<li>pour redonner un contexte</li>
+<li>pour les points de suspension</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">les Chevrons
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+<li>pour signaler un segment vide</li>
+            </ul>
+          </div>
+        </section>
+
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">la Barre oblique
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+<li>symbole de division</li>
+<li>et/ou</li>
+<li>opposer/rapprocher deux termes</li>
+<li>pour des retours à la ligne en poésie</li>
+<li>dans une url</li>
+            </ul>
+          </div>
+        </section>
+
+                
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">l'Astérisque
+              </br><small>cas d'emploi
+              </small></p>
+            </p>
+
+            <ul>
+
+<li>renvoi à un appel de note</li>
+<li>renvoi à une entrée dans l'index</li>
+<li>pour atténuer un mot</li>
+<small>comme les points de suspension</small>
+<li>devant un H aspiré</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Espaces
+              </br><small>types
+              </small></p>
+            </p>
+
+            <ul>
+
+<li>Espace sécable/justifiante</li>
+<small>après un mot, un signe</small>
+<li>Espace insécable /ou/ fine</li> 
+<small>après/avant une ponctuation forte</small>
+            </br><small>espace fine disponible dans les logiciels d'éditique</small>
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Espaces
+              </br><small>et ponctuation
+              </small></p>
+            </p>
+
+            <ul>
+<li>Virgule : rien avant, sécable après</li>
+<small>insécable après décimaux</small>
+<li>Point : rien avant, sécable après</li>
+<li>Point-virgule : espace fine/insécable avant, sécable après</li>
+<li>Points de suspension : rien avant, sécable après</li>
+<li>Deux-points : insécable avant, rien après</li><small>rien avant si dans heures/minutes</small>
+ </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Espaces
+              </br><small>et ponctuation
+              </small></p>
+            </p>
+
+            <ul>
+<li>Guillemets français : insécable intérieur, sécable extérieur</li>
+<li>Parenthèses : rien intérieur, sécable extérieur</li>
+<li>Tiret</li>
+<small>simple : sécable avant et aprèse</small>
+            </br><small>long : insécable intérieur et/ou extérieur</small>
+<li>Point interrogation/exclamation : insécable avant, sécable après</li>
+<li>Crochets : rien intérieur, sécable extérieur</li>
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice
+              </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4596633/mod_label/intro/Proust_5.docx">source</a>
+              </small></p>
+            </p>
+<p>recomposer la ponctuation d'un texte</p>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Conseils
+            </br><small>
+            </small></p>
+          </p>
+
+          <ul>
+            <li>Déconstruire la phrase</li>
+            <small>structure = sens</small>
+            <li>attention aux couples</li>
+            <small>guillemets, crochets, etc.</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps">Ressources</p>
+
+          <ul>
+          <li>
+            Grammaires : Bescherelle, Ramat, <i>Le bon usage</i>
+          </li>
+          <li><a href="https://ameliofrancais.ccdmd.qc.ca/">Centre collégial de développement de matériel didactique</a> - exercices</li>
+          </ul>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

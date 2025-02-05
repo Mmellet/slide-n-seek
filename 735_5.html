@@ -1,0 +1,1106 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_revue3.jpg" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">5 Février : Expertises et tâches</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Équipes
+            </small>
+          </p>
+          <ul>
+            <li>Groupe 1</li>
+            <small>Léa, Myriam, Ariane, Chloé, Philomène</small>
+            <li>Groupe 2</li>
+            <small>Margot C., Marjolaine, Gabrielle, Émilie, Joëlle</small>
+            <li>Groupe 3</li>
+            <small>Anabelle, Victoria, Allyfer, Tracy, Mérédithe</small>
+            <li>Groupe 4</li>
+            <small>Marie-Laure, Margot R., Sophie, Krystelle</small>
+            <li>Groupe 5</li>
+            <small>Coraline, Alexandra, Clara, Mathilde</small>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_revue3.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Les ressources humaines</h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_triangle.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« les h[umains] constituent une ressource nécessaire au succès de projet » 
+              </br><small>(Petit,
+                1999)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« [...] le choix d'adoption du terme "ressources humaines" repose sur la conviction
+              de plus en plus répandue que les ressources humaines constituent les ressources les plus
+              importantes d'une organisation, celles qui sont les plus susceptibles de lui procurer un
+              avantage concurrentiel et sur lesquelles il faut le plus compter pour obtenir un rendement
+              satisfaisant des investissements »
+            </br><small>(St-Onge et al. 2004)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_recrutement.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« les processus
+              d'organisation et de management de l'équipe de projet et a pour rôle d'assurer la
+              planification des ressources humaines, leur formation, leur développement et leur
+              direction »
+            </br><small>(PMI 2004)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_evolution-ressources.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><i>Together Everyone Achieves More</i>
+              </br><small>(TEAM)</small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_interaction-groupe.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Groupes et étapes
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Groupe de processus de démarrage
+            </li>
+<small>définir, autoriser, inaugurer</small>
+<li>Groupe de processus de planification</li>
+<small>définir, préciser, planifier</small>
+<li>Groupe de processus d'exécution</li>
+<small>intégration et suivi des ressources</small>
+<li>Groupe de processus de surveillance et maîtrise</li>
+<small>veiller à la progression, évaluer</small>
+<li>Groupe de processus de clôture</li>
+<small>formalise l'acceptation, conclusion</small>
+
+        </ul>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rôles de la gestion de projet
+              </br><small>production</small>
+            </p>
+            <ul>
+            <li>
+Direction
+            </li>
+<small>directeur|trice éditorial|e</small>
+          </br><small>chef / gestionnaire / coordonnatrice / manager de projet</small>
+        </br><small>pour méthode agile : PO (pour <i>product owner</i>) et Scrum Master ou facilitateur agile</small>
+          <li>
+Rédaction 
+          </li>
+<small>rédacteur|trice / contributrice / auteur|rice</small>
+        </br><small>secrétaire de rédaction</small>
+      </br><small>correcteur|trices, réviseuse, traducteur|trices</small>
+        
+      <li>
+Conception graphique et mise en page
+      </li>
+<small>directeur|trice artistique</small>
+    </br><small>maquettiste et graphiste</small>
+    
+            <li>
+Gestion des droits et diffusion
+            </li>
+<small>responsable des droits d'auteurs</small>
+          </br><small>resposanble de diffusion (<i>community manager</i>)</small>
+        </br><small>// responsable de communication digitale</small>
+      </br><small>responsable marketing</small>  
+        
+    </ul>
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/735_leader.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Méthode agile
+              </br><small>pour l'organisation de l'équipe</small>
+            </p>
+            <ul>
+            <li>
+Leader plutôt que Manager
+            </li>
+<small>écoute et dialogue</small>
+          </br><small>supervision par motivation plus que par autorité</small>
+        </br><small>intelligence collective</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouvelles expertises
+              </br><small>culture numérique</small>
+            </p>
+            <ul>
+            <li>
+Production et maintien technique
+            </li>
+<small>éditeur|trice numérique</small>
+          </br><small>développeur|euse web ou <i>webmaster</i></small>
+        </br><small>sys(tème) admin(istrateur)</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouvelles expertises
+              </br><small>culture du développement</small>
+            </p>
+            <ul>
+            <li>
+Développeur|euse
+            </li>
+<small>UX : expérience utilisateur</small>
+          </br><small>UI : interface utilisateur</small>
+        </br><small>+ Testeur QA</small>
+      </br></br><small>Front-end : partie visible du site</small>
+    </br><small>Back-end : serveur, base de données, API</small>
+  </br><small>Full Stack : Front+Back-end</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouvelles expertises
+              </br><small>compétences spécifiques</small>
+            </p>
+            <ul>
+            <li>
+Visibilité du contenu
+            </li>
+<small>data analyst/scientist</small>
+          </br><small>expert SEO (<i>search engine optimization</i>)</small>
+        </br><small>responsable de sécurité</small>
+      </br><small>+ responsable technique</small>
+              </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples 
+              </br><small>prestataires</small>
+            </p>
+            <ul>
+            <li>
+<a href="https://reviseurs.ca/">Réviseurs Canada</a>
+            </li>
+<small></small>
+
+
+<li>
+  <a href="https://www.lapiscine.co/">La Piscine</a> | <a hre="https://trajectoires.lapiscine.co/a-propos">Trajectoires numériques</a>
+</li>
+
+<small>accompagnement des entreprises québécoises</small>
+<li><a href="https://www.allumetteweb.ca/accueil">Allumette</a></li>
+<small>déveveloppement/design/conception numérique</small>
+<li><a href="https://prepostprint.org/">PrePostPrint</a></li>
+<small>outils collaboratifs pour l'édition</small>
+<li>
+  <a hre="https://www.osuny.org/">Osuny</a>
+
+</li>
+<small>système de gestion de contenus libres</small>
+<li><a href="https://futuretic.fr/nos-services/">FuturÉtic</a></li>
+<small>+ autres plateformes de recrutement : Linkedin, Github Jobs</small>
+        </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/735_revue3.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Gestion de la collaboration</h3>
+            <p style="font-variant: small-caps;"><small></small></p>
+          </div>
+        </section>
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mode de gestion des expertises
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Collaboration
+            </li>
+<small>dialogue, co-production, co-formation</small>
+
+<li>
+  Mandat
+</li>
+<small>contrat, performance, prestation</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Répartition des rôles et responsabilités
+              </br><small>méthode RACI</small>
+            </p>
+            <ul>
+            <li>
+Responsable (R)
+            </li>
+<small>qui exécute la tâche ?</small>
+<li>Approuve (A)</li>
+<small>qui valide le travail ?</small>
+<li>Consulte (C)</li>
+<small>qui donne son avis ? </small>
+<li>Inform<b>é</b> (I)</li>
+<small>qui doit être tenu au courant ?</small>
+
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Documentation
+              </br><small>encadrement, suivi</small>
+            </p>
+            <ul>
+            <li>
+Dossier du projet
+            </li>
+<small>carte d'identité du projet</small>
+<li>Description individuelle de la mission</li>
+<small>pour chaque intervenant</small>
+
+<li>Relevé de la production périodique</li>
+<small>point d'étape</small>
+
+<li>Rapport d'activité</li>
+<small>point général</small>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Suivi de la qualité
+              </br><small></small>
+            </p>
+           <p>« mesure et contrôle
+            de la qualité de l'organisation qui exécute le processus du travail à effectuer »
+           </br><small>(Thomson et al. 2007)</small>
+           </p>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Outils pour la gestion des ressources humaines
+              </br><small>communication</small>
+            </p>
+            <ul>
+            <li>
+Communication instantanée 
+            </li>
+            
+          <small><a href="https://teams.microsoft.com/">Teams</a></small>
+</br><small><a href="https://slack.com/">Slack</a></small>
+          </br><small>alternatives ouvertes : <a href="https://framateam.org/">Framateam-Mattermost</a></small>
+ 
+
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Dette technique
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Important et non vital
+            </li>
+<small>anticiper la passation</small>
+          </br><small>documentation continue</small>
+        </br><small>veiller à la prise en main</small>
+        </br><small>écoute des pratiques/profils/littératies des membres de l'équipe</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_musee-back.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples
+              </br><small><a href="https://julie-blanc.fr/blog/2020-11-05_chiragan/">Chaîne de publication collaborative et multisupport pour le Musée Saint-Raymond</a>
+              </br>Julie Blanc</small>
+            </p>
+          <p style="font-size: 24px;">
+            « Si la chaîne de publication est commune à tous les participants, nous ne travaillons pas tous dans les mêmes environnements. Antoine et moi travaillons les fichiers sources à partir d’éditeurs de textes (Visual studio code pour moi) et interagissons avec Git en ligne de commande. Ces logiciels sont trop éloignés des habitudes de l’équipe muséale qui travaille d’ordinaire principalement avec des logiciels à interface graphique tels que Microsoft Word. Afin de faciliter le travail d’écriture et d’édition de l’équipe muséale, Antoine a ajouté une interface graphique à la chaîne d’éditoriale, disponible depuis un site web. Forestry.io permet d’afficher les fichiers Markdown de manière graphique et d’interagir avec eux de manière visuelle : boutons pour définir un titre ou ajouter une image, champs de saisies séparées pour les quelques métadonnées [...] Ainsi, l’équipe muséale n’interagit avec la chaîne technique qu’à travers une interface graphique. »
+          </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_monstre.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples
+              </br><small><a href="https://www.lemonstresonore.com/">Monstre sonore</a> - Harel </small>
+            </p>
+            <ul>
+            <li>
+Choix d'outils sans contraintes monétaires
+            </li>
+<small>libres, portés par la communauté scientifique</small>
+
+<li>Feuille de suivi pour la passation</li>
+<small>codes d'accès, fonctionnement, contacts</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Documentation post-projet
+              </br><small>exemple de récits de projets</small>
+            </p>
+            <ul>
+            <li>
+<a href="https://www.erudit.org/fr/revues/sp/2021-sp07034/1089649ar/">Anthologie grecque</a>, équipe du projet
+            </li>
+<small></small>
+<li><a href="https://julie-blanc.fr/blog/2020-11-05_chiragan/">Chaîne de publication collaborative et multisupport pour le Musée Saint-Raymond</a>, Julie Blanc</li>
+<li><a href="https://these.quaternum.net/documents/antoine-fauchie-these-v0-1-1.pdf">Novendécaméron</a>, Fauchié (partie 3.5)</li>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Conseils
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Identifier, Assigner, Équilibrer
+            </li>
+<small></small>
+<li>Bonne sélection, formation, rémunération = Bon projet</li>
+<small></small>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Liste des expertises
+            </li>
+<small>de quelles compétences mon projet a-t-il besoin ?</small>
+        </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/735_revue3.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Gestion des tâches</h3>
+            <p style="font-variant: small-caps;"><small></small></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_vie-projet.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cycle de vie d'un projet
+              </br><small>Langevin 2007</small>
+            </p>
+            <ul>
+            <li>
+
+            </li>
+<small></small>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_eisenhower.svg" data-background-size="900px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Prioriser les tâches
+              </br><small></small>
+            </p>
+     
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_wbs.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Décomposition des tâches
+              </br><small><i>Work Breakdown Structure</i>
+            ou Structure de découpage de projet ou Organigramme des tâches du projet
+            </small>
+            </p>
+            <ul>
+            <li>
+Découpage du projet en phases, tâches, sous-tâches
+            </li>
+<small>cartographie de ces tâches</small>
+
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_gantt.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Planification des délais
+              </br><small>Diagramme de Gantt</small>
+            </p>
+            <ul>
+            <li>
+              Visualisation sur une chronologie
+            </li>
+
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_cpm.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Planifier des délais
+              </br><small>Méthode du chemin critique (CPM)</small>
+            </p>
+            <ul>
+            <li>
+Identifier les tâches critiques et influentes sur la durée du projet
+            </li>
+<small></small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_pert.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Planifier des délais
+              </br><small><i>Program Evaluation and Review Technique</i> (PERT)</small>
+            </p>
+            <ul>
+            <li>
+Enchaînement chronologique suivant des contraintes
+
+            </li>
+<small>1 tâche = 1 lot</small>
+          </br><small>avec date début/fin, liens, durée, ressources, charges</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_pert-schema.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Planifier des délais
+              </br><small><i>Program Evaluation and Review Technique</i> (PERT)</small>
+            </p>
+            <ul>
+            <li>
+Liens entre les tâches
+
+            </li>
+<small>immédiat, avance négative ou positive</small>
+          </br><small>Fin à début (<i>finish to start</i>)</small>
+        </br><small>Début à début (<i>start to start</i>)</small>
+      </br><small>Fin à fin (<i>finish to finish</i>)</small>
+    </br><small>Début à fin (<i>start to finish</i>)</small>
+        
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple
+              </br><small>PERT pour édition d'un livre</small>
+            </p>
+            <ul>
+            <li>
+Tâche A : rédaction du contenu
+            </li>
+<small>Fin à début avec Tâche B</small>
+<li>Tâche B : mise en page</li>
+<small>Fin à début avec Tâche C</small>
+<li>Tâche C : création de visuels et illustrations</li>
+<small>Fin à fin avec Tâche D</small>
+<li>Tâche D : révision du design et du contenu</li>
+<small>Fin à début avec Tâche E</small>
+<li>Tâche E : impression/mise en ligne</li>
+<small>Fin à fin avec lancement (Tâche F)</small>
+
+
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Scénario d'usage
+              </br><small><i>user story</i> ou récit d'utilisateur</small>
+            </p>
+            <ul>
+            <li>
+Description simple des fonctionnalités du point de vue utilisateur
+            </li>
+<small>[profil utilisateur type] + [besoin] + [utilisation]</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_epic-agile.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Epic agile
+              </br><small>méthode agile</small>
+            </p>
+            <ul>
+            <li>
+Arborescence d'usage
+            </li>
+<small></small>
+        </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice
+              </br><small>Concevoir un scénario d'usage</small>
+            </p>
+      
+            <p>[Machin] veut [besoin] pour [bénéfice]</p>
+          </br>
+          <p>pour ce faire, [fonctionnalité du projet]
+          </br><small>fonctionnement, usage, rendu</small>
+
+          </p>
+        
+          </div>
+        </section>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Travail intermédiaire</h4>
+            <p style="font-variant: small-caps;">dossier de projet</p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_fil.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problématique, ligne éditoriale, objectif
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+
+            </li>
+<small></small>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rédaction 
+              </br><small></small>
+            </p>
+            <ul>
+            <li>
+Liberté d'organisation
+            </li>
+            
+<small>multimédia accepté</small>
+<li>Rappel : double interligne</li>
+<small>dépôt sur Moodle : en PDF</small>
+        </ul>
+          </div>
+        </section>
+
+
+
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Temps de travail en équipe
+            </small>
+          </p>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine
+            </br></p>
+
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

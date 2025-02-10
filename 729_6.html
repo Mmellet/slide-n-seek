@@ -1,0 +1,1582 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_dico.jpg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">10 Février : Point de langue 3</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Retour sur le participe</h3>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Construction des participes
+              </br><small>Participe présent
+              </small></p>
+<ul>
+<li>radical indicatif présent (1<sup>ère</sup> personne pluriel)</li>
+<small>- [-ons] et + [-ant]</small>
+<ul>
+<small>Parler → nous parlons → parl- → parlant</small>
+</br><small>Finir → nous finissons → finiss- → finissant</small>
+</ul>
+<small>pour les verbes [-ier] : participe avec accent sur [i]</small>
+<ul>
+  <small>Employer → emplo[y]ant</small>
+</br><small>Payer → pa[y]ant</small>
+</ul>
+<small><b>Sauf</b></small>
+<ul>
+  <small>avoir : nous avons — ayant</small>
+</br><small>être : nous sommes — étant</small>
+</br><small>savoir : nous savons - sachant </small>
+
+</ul>
+</ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Participe présent
+              </br><small>emploi
+              </small></p>
+
+           <ul>
+             <li>toujours invariable</li>
+          <small>pour exprimer une action simultanée au verbe principal </small>
+           </br><small>dans un groupe verbal peut avoir la même valeur qu'ne subordonnée relative</small>
+         <ul>
+           <small><i>les individus connaissant la ville / qui connaissent la ville savent où trouver des bars secrets</i></small>
+         </ul>
+         <small>dans un groupe verbal peut avoir la même valeur qu'une subordonnée complément de phrase</small>
+         <ul>
+           <small><i>Ne trouvant pas de lait à l'épicerie / Parce qu'elle ne trouvait pas de lait à l'épicerie, elle a décidé de changer de quartier</i></small>
+         </ul> 
+        
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Participe présent et adjectif verbal
+              </br><small>adjectifs issus de verbe se terminant par [-ant]
+              </small></p>
+              <ul>
+<li>adjectif = variable, accord en genre et nombre</li>
+<small><i>Un chat charmant les vieilles en balade, déambulait dans les rues</i></small>
+            </br><small><i>Un chat charmant, déambulait dans les rues</i></small>    
+         <li><b>astuces</b></li>
+         <small>s'il y a une préposition => participe</small>
+          </br><small>remplacer par un adjectif, si la phrase fonctionne => adjectif verbal</small>
+        </br><small>encadrer par la négation, si la phrase fonctionne => participe</small>
+       <li><b>particularités</b></li>
+      <small>adjectifs se terminant par [-ent]</small>
+    <ul>
+      <small><i>adhérent, convergent, équivalent, précédent</i></small>
+    </ul> 
+    <small>adjectifs et participes identiques</small>
+    <ul><small>énergisant</small></ul>
+
+    </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Participe présent et adjectif verbal
+              </br><small>adjectifs issus de verbe se terminant par [-ant]
+              </small></p>
+              <ul>
+<li>pour les verbes en [-guer, -ger, -quer]</li>
+<small>convainquant (participe présent) et convaincant (adjectif verbal) ; extravaguant et extravagant ; fatiguant et fatigant</small>
+                  <li>différence aussi entre participe présent et nom issu du verbe</li>
+         <small>présidant et président ; adhérant et adhérent</small>
+          </br><small><b>sauf</b> pour « trafiquant »</small>
+       <li>Cas de « soi-disant »</li> 
+       <small>pronom <i>soi</i> + participe présent</small>   
+        </br><small>pour des humains</small>
+        <ul>
+          <small><i>un soi-disant Jules sur un prétendu fauteuil</i></small>
+        </ul>
+      </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Construction des participes
+            </br><small>Participe passé
+            </small></p>
+
+            <ul>
+              <li>radical du verbe selon son infinitif</li>
+           <small>1<sup>er</sup> groupe : [-é]</small>
+            </br><small>2<sup>ème</sup> groupe : [-i], [-t], [-s], [-u]</small>
+          </br><small>3<sup>ème</sup> groupe : terminaisons irrégulières</small>
+           <li><b>sauf</b></li>
+           <small>Être → été ; Avoir → eu ; Faire → fait</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_accord-pp.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accord(s) du participe passé
+            </br><small>
+            </small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Participe présent et adjectif participe
+              </br><small>ou participe passé sans auxiliaire ou employé seul
+              </small></p>
+              <ul>
+<li>adjectif participe qui peut être utilisé avec l'auxiliaire</li>
+<small><i>Le ministre est étonné de ne pas être réélu</i></small>    
+              </br><small>étonné = adjectif p. et réélu = participe passé</small>
+<li><b>astuces</b> en trois étapes</li>
+<small>1. encadrer par la négation</small>
+<ul>
+  <small>si cela fonctionne = étape 2</small>
+</br><small>sinon, ce n'est pas un participe passé </small>
+</ul> 
+<small>2. conjuguer le verbe à un temps simple </small>
+<ul>
+  <small>si cela fonctionne, c'est un participe passé</small>
+</ul>
+<small>3. confirmer en remplaçant par un autre verbe</small>
+<ul><small>de structure/sens analogue</small></ul>
+
+</ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Participe présent et adjectif participe
+              </br><small>exemples
+              </small></p>
+              <ul>
+<li><i>Le chat sera nourri ce soir </i></li>
+<small>1. <i>Le chat ne sera pas nourri ce soir</i></small>
+
+              </br><small>2. <i>Le chat nourrira ce soir</i></small>
+            </br><small>=> adjectif participe</small>
+            <li>
+              <i>Le ciel avait changé de lumière en une saison 
+              </i>
+            </li>
+            <small>1. <i>Le ciel n'avait pas changé de couleur en une saison</i></small>
+
+              </br><small>2. <i>Le ciel changera / changeait de couleur en une saison</i></small>
+            </br><small>3. <i>Le ciel avait rêvé de couleur en une saison</i></small>
+            
+            </br><small>=> participe passé</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+             </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Confusion dans le discours</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problèmes liés au sens
+              </br><small>Ambiguïtés et contre-sens
+              </small></p>
+            </p>
+
+            <ul>
+            <li>lorsqu'il y a un doute/contraire dans le sens</li>  
+            <small><i>J'ai vu l'homme avec le télescope</i></small>
+            </br><small>double négation : <i>Vous n'êtes pas sans ignorer</i> = positif</small>  
+          </br><small>faux-amis : <i>solution de continuité</i> = sans interruptin</small>
+          
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>1. Homographes
+              </small></p>
+            </p>
+<ul>
+  <li>graphie et prononciation identiques</li>
+ <small><i>je livre un livre</i></small>
+</br><small><i>le mineur mineur</i></small>
+</br><small><i>Tu joues avec ses joues</i></small>
+<li>graphie identique</li>
+<small><i>mes fils ont filé mes fils </i></small>
+
+</br><small><i>peut-on se fier à quelqu'un de fier ?</i></small>
+</br><small><i>Tu as un as dans ton jeu</i></small>
+</br><small>lacs (singulier) et lacs (pluriel)</small>
+
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>2. Homophones
+              </small></p>
+            </p>
+<ul>
+  <li>prononciation identique</li>
+ <small><i>à / a ; ces / ses ; c'est / s'est ; dû / du</i></small>
+</br><small>un acquit et un acquis</small>
+</br><small>filtre et philtre</small>
+</br><small>souffre et soufre</small>
+
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>2. Homophones - erreurs courantes
+              </small></p>
+            </p>
+<ul>
+  <li>prêt et près</li>
+ <small><i>il est prêt à sortir</i> = disposé à sortir</small>
+</br><small><i>il est près de sortir</i> = sur le point de sortir</small>
+<li>d'avantage et davantage</li>
+<small><i>il n'y a pas d'avantage à changer</i> = aucun intéret au changement</small>
+</br><small><i>il n'y a pas davantage à changer</i> =  pas de raison de changer en comparaison avec un état projeté</small>
+
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>2. Homophones - erreurs courantes
+              </small></p>
+            </p>
+<ul>
+<li>rêne, reine, renne</li>
+<small>lanière pour diriger les équidés</small>
+</br><small>fémini de roi</small>
+</br><small>animal</small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>2. Homophones - erreurs courantes
+              </small></p>
+            </p>
+<ul>
+<li>au terme et aux termes </li>
+<small><i>au terme de l'année</i> = toujours singulier</small>
+</br><small><i>aux termes de la loi, en termes d'économie</i> = toujours pluriel</small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>2. Homophones - erreurs courantes
+              </small></p>
+            </p>
+<ul>
+<li>satire et satyre</li>
+<small>genre littéraire / demi-dieu</small>
+</br><small>satyre au féminin = pièce de théâtre avec des satyres</small>
+<li>septique et sceptique</li>
+<small><i>le doute n'est pas dans la fosse</i></small>
+<li>repère et repaire</li>
+<small>repaire = pour les animaux ou malfrats</small>
+</br><small>repère = marque // repérer</small>
+<li>balade et ballade</li>
+<small><i>une balade en forêt n'est pas une balade des pendus</i></small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>3. Homonymes
+              </small></p>
+            </p>
+<ul>
+  <li>homographes ou homophones qui ont une étymologie différente</li>
+ <small>noyer (verbe) et noyer (arbre)</small>
+
+
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>4. Parasynonymes
+              </small></p>
+            </p>
+<ul>
+  <li>même sens mais avec un registre différent</li>
+ <small>avoir du mal / avoir de la misère</small>
+<li>proximité sémantique mais différence</li>
+<small>barbarisme / solécisme</small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>5. Paronymes
+              </small></p>
+            </p>
+<ul>
+  <li>presque homonymes sans l'être</li>
+ <small>acceptation et acception </small>
+</br><small>conjecture et conjoncture</small>
+<ul>
+  <small>conjecture : une hypothèse, une supposition</small>
+</br><small>conjoncture : situation d'ensemble qui résulte d'une réunion d'évènements</small>
+</br><small><i>on peut faire des conjectures sur les conjonctures</i></small>
+</ul>
+<small>irruption et éruption</small>
+<ul>
+  <small><i>un volcan ne fait irruption dans un pièce</i></small>
+</ul>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>5. Paronymes - autres cas
+              </small></p>
+            </p>
+<ul>
+  <li>ammoral et immoral</li>
+<small>sans morale / contraire à la morale</small>
+<li>hiverner (intr.) et hiberner (intr.)</li>
+<small>hiverner : passer l'hiver ou une autre saison</small>
+</br><small>hiberner : passer l'hiver en étant engourdi</small>
+<li>inclinaison et inclination</li>
+<small>inclinaison : état penché</small>
+</br><small>inclination : le fait de pencher</small>
+</br><small><i>inclinaison du toit / inclination d'une personne</i></small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>5. Paronymes - autres cas
+              </small></p>
+            </p>
+<ul>
+  <li>démystifier et démythifier</li>
+<small>expliquer - enlever le mystère</small>
+</br><small>enlever le merveilleux</small>
+<li>littéral et littéraire</li>
+<small>qui s'en tient au texte</small>
+</br><small>qui concerne la littérature</small>
+<li>évoquer et invoquer</li>
+<small>évoquer : se rappeler, faire allusion à = souvenir</small>
+</br><small>invoquer : prier, avoir recours à = outil</small>
+<li>éminent et imminent</li>
+<small>remarquable / qui va se produire</small>
+</ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faux-amis 
+              </br><small>6. Expressions figées
+              </small></p>
+            </p>
+<ul>
+  <li>expression avec une proximité/similarité de forme ou de sens</li>
+ <small>de concert et de conserve = ensemble</small>
+</br><small>de conserve = pour les verbes de déplacement</small>
+</ul>
+          
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problèmes liés au sens
+              </br><small>Mauvaises cooccurrence
+              </small></p>
+            </p>
+
+            <ul>
+            <li>proximité d'éléments linguistiques dans la phrase</li>  
+            <small><i>le silence assourdissant</i>, <i>bruit silencieux</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problèmes liés au sens
+              </br><small>Pléonasme
+              </small></p>
+            </p>
+
+            <ul>
+            <li>redoublement d'une idée avec deux termes</li>  
+            <small><i>au jour d'aujoud'hui, marche à pied, tourner en rond</i></small>
+            </br><small><i>je l'ai vu de mes propres yeux, je monte en haut</i></small>
+            </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Erreurs fréquentes</h4>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Adverbes
+              </br><small>combien de [m] ?
+              </small></p>
+            </p>
+
+            <ul>
+           <li>adverbe de manière en [-ment]</li>
+           <small>avec adjectif au féminin : léger - légère - légèrement</small>
+           <li>si l'adjectif d'origine est en [-ant] ou [-ent] : souvent un [-m] supplémentaire</li>
+          <small><i>constamment, patiemment, évidemment</i></small>
+            </br><small><b>sauf</b> : <i>lentement</i></small>  
+          <li><b>astuce</b> : prononciation</li>
+          <small><i>facilement, précisément</i></small>
+          <li><b>sauf</b> : <i>brièvement, traîtreusement</i></li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Adverbes
+              </br><small>et adjectifs
+              </small></p>
+            </p>
+
+            <ul>
+           <li>quelque (adverbe) / quelques (adjectif)</li>
+           <small><i>ce chat fait quelques kilos </i></small>
+            </br><small><i>les quelques timides et gros chats de la voisine</i></small> 
+          </br><small><i>la dame a quelque soixante-dix ans</i></small>
+        </br><small><i>quelque puissants qu'ils soient</i> = si</small>
+      </br><small><b>astuce</b> : remplacer par « environ » ou « si » pour savoir s'il est invariable</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Adverbes
+              </br><small>et adjectifs
+              </small></p>
+            </p>
+
+            <ul>
+           <li>possible (adjectif ou en locution adverbiale)</li>
+           <small><i>les moyens possibles </i></small>
+            </br><small><i>j'ai vu le plus de chats possible</i></small> 
+          </br>
+        </br><small><i>choisissons la meilleure des solutions possible</i> = absolu</small>
+      </br><small><i>choisissons la meilleure des solutions possibles</i> = parmi toutes toutes les solutions possibles</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Erreurs communes
+              </br><small>liste
+              </small></p>
+            </p>
+
+            <ul>
+         <li>parmi sans [s]</li>
+         <li>cauchemar sans [d]</li>
+         <small>mon cauchemar, c'est le caviar</small>
+         <li>conclure</li>
+         <small><i>je conclurai sans eux</i></small>
+        <li>pallier transitif</li>    
+        <li>pécuniaire et non pécunière</li>
+        <li>gril avec un [l]</li>
+        <li><i>erronné</i> est une erreur</li>
+        </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Erreurs communes
+              </br><small>liste
+              </small></p>
+            </p>
+
+            <ul>
+         <li>le Sphinx n'est pas grec</li>
+   <small>pas de [y]</small>
+         <li>prendre parti sans [e]</li>
+         <small><i>prendre à partie</i></small>
+        <li>gaufre a un seul [f]</li>  
+        <li>champ et champs</li> 
+        <small>étendu et expertise</small> 
+           </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Erreurs communes
+              </br><small>rappel des adjectifs numéraux
+              </small></p>
+            </p>
+
+            <ul>
+         <li>mille</li>
+   <small>invariable quand est un adjectif numéral cardinal</small>
+        <ul>
+          <small><i>trois mille dollars </i></small>
+        </ul>
+  
+<small>invariable quand substantivé</small>
+<ul>
+  <small><i>gagner des mille et des cents</i></small>
+</ul>
+<small>invariable quand adjectif numéral ordinal</small>
+<ul>
+  <small><i>l'an deux mille</i> = la deux millième année</small>
+</ul>
+<small>variable quand il désigne l'unité de distance </small>
+<ul>
+  <small><i>être à 10 milles marins </i></small>
+</ul>
+<li>vingts </li>
+<small>invariable quand adjectif numéral cardinal</small>
+<ul>
+  <small>quatre-vingts</small>
+</ul>
+<small>mais pas quand il est suivi : <i>quatre-ving-un</i></small>
+           </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Calques de l'anglais
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+         <li>véhiculer = transmettre</li>
+<li>mettre l'emphase sur = insister sur</li>
+<li>être sur un comité, siéger sur un conseil = faire partie, être membre, siéger à</li>
+<li>faire une différence = changer les choses</li>       
+<li>corporatif = d'entreprise</li>
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Subtilités
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+       <li>bénit et béni</li>
+       <small><i>pain bénit, eau bénite</i> = bénédiction rituelle sur les choses</small>
+            </br><small><i>terre bénie, foule bénie</i> = bénédiction hors du religieux ou portant sur l'humain</small> 
+<li>annale = qui ne dure qu'un an</li>
+<li>épigramme, épigraphe, épitaphe</li>
+<small>épigramme = petite pièce en vers</small>
+          </br><small>épigraphe = inscription sur un monument</small>
+        </br><small>épitaphe = inscription sur une tombe</small>  
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Invariables
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+<li>remords : substantif invariable, toujours avec un [s]</li>
+<small>exception en poésie classique</small>  
+<li>demi (adjectif) : invariable avec trait d'union avec un nom</li>   
+<small>+ locution adverbiale <i>à demi</i></small>
+            </br><small>MAIS <i>et demi </i>s'accorde pour désigner la moitié d'une unité</small>
+<ul>
+  <small><i>trois heures et demie de retard</i></small>
+</ul>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Traits d'union
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+<li>pas de trait d'union dans les composés de <i>pilote</i></li>
+<small><i>projet pilote</i></small>
+<li>mots composés avec un nom</li> 
+<small>si c'est un nom : trait d'union</small>
+<ul><small>non-fumeur, non-violence</small></ul>
+<small>si c'est un adjectif : espace sans trait d'union</small>
+<ul><small><i>non admissible, non conforme</i></small></ul>
+</ul>
+          </div>
+        </section>
+
+
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exceptions
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+<li>mots en [-ciable] : <i>instiable</i> avec un [t]</li>
+<li>souffler mais boursoufler</li>
+<li>siffler mais persifler</li>
+</ul>
+          </div>
+        </section>
+
+
+</section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Astuces et méthodes mnémotechniques</h4>
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Repérer la prononciation
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li>devant une syllabe muette : [a], [o] et [i] portent un chapeau</li>
+<small><i>fantôme, arôme, cône</i></small>
+</br><small><b>sauf</b> <i>zone, gnome</i></small>  
+<li>indiquer un sens</li>
+<small>coasser et croasser</small>
+</ul>
+</div>
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Connaître l'étymologie
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li>l'accent circonflexe remplace une lettre disparue (souvent un [s])</li>
+<small>hôpital : <i>hospital</i></small>
+<li>pour les lettres muettes</li>
+<small>pouls : <i>pulsus</i></small>
+<li>pour la graphie</li>
+<small><i>chrysanthème</i> : <i>khrusos</i> et <i>anthemon</i></small>
+</br><small>philharmonie</small>
+
+<li>pour connaître les familles de mots</li>
+<small>infarctus : <i>farcir</i></small>
+</br><small>insatiable : <i>satisfaction</i></small>
+<li>pour connaître leurs compositions et les différencier</li>
+<small>asymétrique : [a] privatif, donc 1 seul [s]</small>
+</br><small>adjurer et abjurer</small>
+</ul>
+</div>
+        </section>
+
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Différencier les vocabulaires
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li><i>noir de jais</i></li>
+<small>et non le <i>geai</i></small>
+</ul>
+</div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Formules
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li>« je n'aperçois qu'un p à apercevoir »</li>
+<li>« Dédé règle l'addition »</li>
+</ul>
+</div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas limite : Les expressions figées
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li>« bourrelé de remords »</li>
+<small>et non <i>bourré</i></small>
+<li>« aller à vau-l'eau »</li>
+<small>et non <i>à yolo</i></small>
+<li>« rebattre les oreilles »</li>
+<small>et non <i>rabattre</i></small>
+<li>« avoir voix au chapitre »</li>
+<small>et non <i>droit, voie</i></small>
+</ul>
+</div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas limite : Les débats de la langue
+              </br><small>
+              </small></p>
+            </p>
+<ul>
+<li><i>standard</i></li>
+<small>s'accorde au pluriel pour Ramat</small>
+</br><small>toujours invariable pour Colin, Le Nouveau Petit Robert</small>
+</br><small>généralement invariable pour Hanse et Blampain</small>
+
+<li><i>compte rendu</i></li>
+<small>ans trait d'union selon Le Nouveau Petit Robert</small>
+</br><small>trait d'union à éviter selon Hanse et Blampain</small>
+</br><small>avec ou sans pour le Le Petit Larousse</small>
+
+</ul>
+</div>
+        </section>
+    
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+            Exercice sur les points de langue</p>
+            <ul>
+              <li>Révision linguistique</li>
+              <small>pas de suggestion de reformulation</small>
+            </br><small>uniquement de la correction</small>
+           <li>sur papier ou <a href="https://moodle.usherbrooke.ca/pluginfile.php/4601796/mod_label/intro/exercice6.odt">sur ordinateur</a></li>
+            </ul>
+            
+            </ul>
+
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>TP1 - corrigé</h4>
+            <p><a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/361212149/TP1_corrige.pdf">version numérisée</a></p>
+                    </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Notation
+              
+              <small></small></p>
+ 
+            </p>
+  
+            <ul>
+              <li>note sur 53 erreurs</li>
+              <small>70 en tout</small>
+            </br><small>1,6 par erreur</small>
+              <li>Signe imprécis</li>
+              <small>1 par erreur</small>
+          </br><small>vague sous la correction</small>
+        </br><small>croix quand le signe est incorrect</small>
+          <li>Changement du sens</li>
+          <small>vague entourée : changement léger</small>
+      </br><small>croix entourée : contre-sens ou erreur</small>
+    </br><small>- 1 si + de 5 sur-corrections</small>        
+    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 1 = 11 erreurs</small></p>
+ 
+            </p>
+  
+            <ul style="font-size: 24px;">
+           <li>Titre : ...<b>.</b></li>
+           <li>dîtes : dites</li>
+           <li>SOLLES : SOLLERS</li>
+           <li><b>se</b> se connaît</li>
+           <li>un bouffonnerie : une bouffonerie</li>
+           <li>autrement dit + virgule</li>
+           <li>somme + s</li>
+           <li>G. P. P. : G. P.-P.</li>
+           <li>idéologies .. + . </li>
+<li>règner : régner</li>
+<li>G. P. P. - : G. P.-P. — </li>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 2 = 13 erreurs</small></p>
+ 
+            </p>
+  
+            <ul style="font-size: 24px;">
+           <li>bat<b>t</b>eleurs</li>
+        <li><b>moment</b> : moment</li>
+        <li>insais<b>s</b>issable</li>
+        <li><i>écart de paragraphe</i></li>
+        <li><i>Femmes</i>  <sup><i>1</i></sup> : <i>Femmes</i><sup>1</sup></li>
+        <li>d'une par : d'une part,</li>
+        <li>te qu'il : tel qu'il</li>
+        <li><i>tiret trop long</i></li>
+        <li>rithmyque : rythmique</li>
+        <li>d'autre<b>s</b> part</li>
+        <li>qui rie : rit</li>
+        <li><i>Femms</i> : <i>Femmes</i></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 3 = 12 erreurs</small></p>
+ 
+            </p>
+  
+            <ul style="font-size: 24px;">
+         <li>cléf : clef ou clé</li>
+         <li>P. S. : PH. S.</li>
+         <li><i>guillemet en fin de ligne</i></li>
+         <li>féminine<b>é</b> + <i>point final</i></li>
+         <li>que lorsque</li>
+         <li>Man<b>n</b>et</li>
+         <li><i>écart de la réponse de la journaliste</i></li>
+         <li>l'amour <i>sans point final</i></li>
+         <li>I<b>L</b> faut</li>
+         <li><b>p</b>là</li>
+         <li>nous toujours</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 4 = 11 erreurs</small></p>
+ 
+            </p>
+  
+            <ul style="font-size: 24px;">
+        <li>contre elle <i>que</i></li>
+        <li>amusé<b>e</b></li>
+        <li>joué<b>s</b></li>
+        <li>Sarah + virgule</li>
+        <li>rachel : Rachel</li>
+        <li>Lise<b>r</b></li>
+        <li>manipulé<b>e</b>s</li>
+        <li>Ph. S. : PH. S.</li>
+        <li>Évidement</li>
+        <li><i>retour à la ligne à la fin du paragraphe</i></li>
+        <li>verbe : Verbe</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 5 = 8 erreurs</small></p>
+ 
+            </p>
+            <ul style="font-size: 24px;">
+     <li>communicants <b>-</b> : —</li>
+     <li>milena : Milena</li>
+     <li>à <i>double espace</i> des fins</li>
+     <li>et <i>sans italique</i> dans la réponse de la journaliste</li>
+     <li>temple divin : Temple divin</li>
+     <li>du le frapper : dû</li>
+     <li>à ce moment là : à ce moment-là</li>
+     <li>ligature du e et o dans coeur</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Détails des fautes
+              
+            </br>  <small>page 6 = 14 erreurs</small></p>
+ 
+            </p>
+            <ul style="font-size: 24px;">
+    <li>quelquun</li>
+    <li>l manifestation</li>
+    <li>t-il provoqué : Il</li>
+    <li><i>alinéa dans la réponse de Ph. Sollers</i></li>
+    <li>croyance!</li>
+    <li>je trouve. »</li>
+    <li><i>tiret long en fin de ligne</i></li>
+    <li>le par débordement</li>
+    <li>language</li>
+    <li><u>Contre-Réforme</u></li>
+    <li>Là + virgule</li>
+    <li>Grancian</li>
+    <li><i>point final</i></li>
+            </ul>
+          </div>
+        </section>
+      
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">TP2 - 17 février</p>
+                  
+      
+            <p style="font-variant: small-caps;">Révision linguistique
+              
+              </br><small>via traitement de texte</small></p>
+ 
+            </p>
+  
+            <ul>
+           <li>suivie des modifications + commentaires</li>
+           <small>correctins linguistiques + propositions de reformulation et harmonisation</small>
+          <li>pas de vérifications des faits</li> 
+          <li>Document en <a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/361212149/TP2.odt?time=1739228632681">ODT</a> ou <a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/361212149/TP2.docx">DOCX</a></li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mandat
+              
+             </br> <small><a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/361212149/TP2.pdf">source</a></small></p>
+ 
+            </p>
+  
+            <ul>
+           <li></li>
+            </ul>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rappel 
+              
+            </br>  <small></small></p>
+ 
+            </p>
+  
+            <ul>
+              <li>méthode du rechercher/remplacer</li>
+              <small>attention aux exceptions</small>
+           <li>distinguer les niveaux de modifications</li>
+          <small>demande, suggestion, recommandation</small>
+        <li>commentaire clair et concis</li>
+        <li>ne pas surcharger la page</li> 
+        <small>il n'est pas nécessaire de tout commenter</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">+ Feuille de route 
+              
+              </br><small>libre de présentation - document séparé de la révision</small></p>
+ 
+            </p>
+  
+            <ul>
+              <li>indiquer les ressources consultées</li>
+              <small>lien si ressource en ligne</small>
+              <li>préciser des remarques indiquées en commentaire</li>
+ <li>indiquer des points à considérer dans la révision</li>
+      <small>harmonisation</small>  
+    </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

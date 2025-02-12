@@ -1,0 +1,882 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_tableau.jpg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">12 février : Phases et temporalités : le calendrier de production</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Équipes
+            </small>
+          </p>
+          <ul>
+            <li>Groupe 1</li>
+            <small>Léa, Myriam, Ariane, Chloé, Philomène</small>
+            <li>Groupe 2</li>
+            <small>Margot C., Marjolaine, Gabrielle, Émilie, Joëlle</small>
+            <li>Groupe 3</li>
+            <small>Anabelle, Victoria, Allyfer, Tracy, Mérédithe</small>
+            <li>Groupe 4</li>
+            <small>Marie-Laure, Margot R., Sophie, Krystelle</small>
+            <li>Groupe 5</li>
+            <small>Coraline, Alexandra, Clara, Mathilde</small>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_calendrier.webp" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Calendrier et établissement des temps du projet</h5>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Gestion du temps - Horizon temporel - Liste et priorité des tâches
+              </br><small></small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Déterminer la temporalité du projet
+              </br><small>date d'échéance à partir de la chaîne d'édition, de la durée des tâches, des marges</small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_lois-temps.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Différentes lois du temps
+              </br><small>conseils ou avertissements</small>
+            </p>
+            <ul>
+<li>Loi de Parkinson</li>
+<small>+ on a du temps pour une tâche ; + elle va prendre du temps</small>
+<li>Loi de Murphy</li>
+<small>toute chose prend plus de temps que prévu</small>
+<li>Loi d'Illich</li>
+<small>au-delà d'un seuil de travail, l'efficacité décroît</small>
+<li>Loi de Carson</li>
+<small>un travail continu prend moins de temps qu'un travail divisé</small>
+<li>Loi de Fraisse</li>
+<small>1 heure n'est pas égale à 1 heure</small>
+<li>Loi de Pareto</li>
+<small>20% des activités = 80% des résultats</small>
+
+        </ul>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approches
+              </br><small>rappel</small>
+            </p>
+            <ul>
+         <li>Traditionnelle ou en cascade</li>  
+<small>tâches identifiées, exigences fixes</small>
+            </br><small>gestion linéaire et prévisible</small>
+          </br><small>calendrier établi en amont, peu flexible</small>
+            <li>Agile</li>
+<small>adaptation, collaboration, division en sprint (1-4 semaines)</small>
+        </br><small>calendrier qui peut bouger et être ajusté</small>     
+
+<li>Hybride</li>
+         <small>articulation de la méthode traditionnelle et agile</small>
+      </br><small>calendrier global avec ajustements potentiels</small>
+        </ul>
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/735_calendrier.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un calendrier de production
+              </br><small>outil de planification</small>
+            </p>
+            <ul>
+           <li>structure de la chaîne d'édition</li>
+           <small>des phases</small>
+           <li>répartition des expertises</li>
+           <small>temporalité des tâches / contrats</small>
+<li>précis et flexible</li>
+<small>mais lourd à gérer</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_calendrier.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un calendrier de production
+              </br><small>composition</small>
+            </p>
+            <ul>
+          <li>tâches et sous-tâches</li>
+<small>clarté de la valeur et de l'importance des tâches</small>
+<li>durée de chaque tâche</li>
+<small>avec potentielle marges</small>
+<li>dépendances</li>
+<small>flèches, code couleur, formules</small>
+<li>ressources impliquées</li>
+<small>utilisation d'une légende</small>
+<li>dates de début et fin</li>
+<small>des tâches, phases, projet</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_chaine.jpg" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaînes d'édition
+              </br><small>différents types</small>
+            </p>
+            <ul>
+        <li>chaîne d'édition classique</li>
+        <small>format établi (livre) vers impression</small>
+        <li>chaîne d'édition hybride</li>
+        <small>exploration des formats, sortie papier et numérique</small>
+      <li>chaîne d'édition numérique</li> 
+      <small>formats en ligne ou ebook</small>
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_exemple-Quae.png" data-background-size="1500px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/735_phases.svg" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaînes d'édition
+              </br><small>phases</small>
+            </p>
+            <ul>
+        <li>0. Pré-production/initiation/préparation du projet</li>
+<small>accès/établissement des ressources</small>
+            </br><small>révision du budget</small>
+          </br><small>gestion de l'équipe</small>
+
+        <li>1. Conception du corpus</li>
+<small>rédaction</small>
+            </br><small>collecte des éléments graphiques et multimédiaux</small>
+          </br><small>suivi éditorial</small>
+
+      
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_phases.svg" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaînes d'édition
+              </br><small>phases</small>
+            </p>
+      <ul>
+        <li>2. Révision et relecture</li>
+        <small>révision linguistique et autres</small>
+                
+
+                <li>3. Mise en page et design</li>
+                <small>conception d'une maquette</small>
+                            </br><small>travail des éléments multimédiaux</small>
+                          </br><small>insertion du corpus dans la maquette</small>
+   
+
+                        <li>4. Relecture</li>
+                        <small>vérification de la maquette</small>
+                                    </br><small>corrections d'épreuves</small>
+                                  </br><small>préparation des documents pour envoi</small>
+                              
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_phases.svg" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaînes d'édition
+              </br><small>phases</small>
+            </p>
+      <ul>
+        <li>5. Impression</li>
+        <small>envoi des documents finaux à l'imprimeur</small>
+      </br>  <small>révision du tirage prototype</small>
+                
+
+                <li>6. Distribution et promotion</li>
+                <small>envoi aux librairies, centres de distribution, abonnés</small>
+                            </br><small>lancement, communication digitale et marketing</small>
+                                    
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exercice
+              </br><small>sur papier ou sur tableau blanc en ligne comme <a href="https://miro.com/fr/">Miro</a></small>
+            </p>
+     <p>schématiser votre chaîne d'édition
+     </br><small>structure par phases (couleur) et expertises</small>
+    </br>+ liste des tâches sur le côté 
+     </p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Estimations des durées
+              </br><small>phases</small>
+            </p>
+      <ul>
+      <li>0. pré-production : 1-3 semaines</li>   
+      <li>1. conception : 3-6 semaines</li>  
+      <li>2. révision : 1-2 semaines</li>
+      <li>3. mise en page et design : 2-3 semaines</li>
+<li>4. relecture : 1-2 semaines</li>
+<li>5. impression : 2-4 semaines</li>
+<li>6. distribution et promotion : 1-3 semaines pour la phase initiale</li>
+     </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Estimations des durées
+              </br><small>tâches - sur un corpus de 15 000 mots (60 pages)</small>
+            </p>
+      <ul>
+     <li>rédaction : 1-2 semaines</li>
+     <small>1 500 mots/jour</small>
+     <li>contrôle de qualité de la rédaction : 1-2 jours</li>
+    <li>modification par les rédacteurs : 5 jours</li> 
+    <li>contrôle des modifications des rédacteurs : 1-2 jours</li>
+  <li>révision linguistique : 2-3 jours</li> 
+  <small>environ 13 heures</small>
+  <li>contrôle de la qualité de la révision : 1-2 jours</li>
+  <li>acceptation des propositions par les rédacteurs : 2-3 jours</li>
+<li>correction d'épreuve : 1-2 jours</li>
+<small>8 pages (250 mots) / heure</small>
+
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Estimations des durées
+              </br><small>tâches - pour un site aux fonctionnalités classiques</small>
+            </p>
+      <ul>
+<li>Front end : 1-2 semaines</li>
+<li>Back end : 1-2 semaines</li>
+<li>intégration infographique : 1-2 semaines</li>
+</ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/O_excel.svg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Exel - initiation</h3>
+            <p style="font-variant: small-caps;"><small></small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Composition
+              </br><small></small>
+            </p>
+            <ul>
+              <li>feuilles de calcul</li>
+              <small>onglet bas</small>
+              <li>cellule</li>
+              <small>axe horizontal et axe vertical</small>
+            </br><small>décalage / fusion</small>
+              <li>colonnes et lignes</li>
+ <small>insérer / supprimer</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cellules et formules
+              </br><small></small>
+            </p>
+            <ul>
+              <li>base de la formule : « = »</li>
+              <small>afficher le contenu d'une cellule dans une autre : « =<i>clic sur la cellule visée</i> »</small>
+     <li>modification de la cellule</li>
+     <small>« =<i>clic sur la cellule</i> - <i>un nombre</i></small>
+            </br><small>« =<i>clic sur la cellule</i> - <i>clic sur une autre cellule</i> »</small>
+     <li>option de la tirette pour étendre la formule</li>        
+    <small>clic-maintien sur le bord droit de la cellule</small>
+  <li>autres calcul : addition (+) ; multiplication (*) ; division (/)</li>  
+<small>liste des fonctions dans onglet Formule / Insérer une fonction</small>  
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition des formats de cellule
+              </br><small></small>
+            </p>
+            <ul>
+              <li>format de valeur : clic droit - format de la cellule</li>
+            <small>dates, format monétaire, etc.</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bonus 
+              </br><small>formule de condition</small>
+            </p>
+            <ul>
+           <li>« =SI(<i>condition</i>; "valeur si vrai" ; "valeur si faux") »</li>
+           <small>imbrication possible</small>
+           <li>mise en forme conditionnelle des cellules</li>
+        <small>onglet Accueil / Mise en forme conditionnelle</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Style
+              </br><small></small>
+            </p>
+            <ul>
+        <li>mise en page : même options que les traitements de texte</li>
+      <small>pour ajuster les cellules : rechercher « ajuster » dans la barre de recherche</small>      
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Alternative à Excel
+              </br><small>tableur collaboratif</small>
+            </p>
+            <ul>
+       <li><a href="https://lite.framacalc.org/">FramaCalc</a></li>      
+      <small><a href="https://docs.framasoft.org/fr/ethercalc/">documentation</a></small></ul>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/735_gantt.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Excel - Diagramme de Gantt</h3>
+            <p style="font-variant: small-caps;"><small>en 3 étapes</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"> Tableau à télécharger
+              </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4604173/mod_label/intro/tableau.ods">ODS</a> ou <a href="https://moodle.usherbrooke.ca/pluginfile.php/4604173/mod_label/intro/tableau.csv">CSV</a></small>
+            </p>
+            <ul>
+              <li>ouvrir le document dans Excel</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"> Créer un graphique
+              </br><small></small>
+            </p>
+            <ul>
+              <li>1. à côté du tableau : onglet Insérer / Barre déroulante des graphiques</li>
+            <small>choisir Barres - empilée (2e option)</small>
+          <li>2. clic-droit sur le graphique : sélectionner les données</li> 
+        <small>première série : les colonnes Étapes et Dates de débuts (A2-B8)</small>
+            </br><small>deuxième série : colonne Durée <b>sans l'entête</b> (D3-D8)</small>
+       <li>3. sur le graphique</li>
+       <small>clic-droit sur les barres bleues : format : remplissage (choisir aucun remplissage)</small>
+      <small>clic droit sur le graphique : format : Vertical Axe (option abscisse en ordre inverse)</small>    
+      </br> 
+      </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/735_exam.jpg" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Examen de mi-session</h4>
+            <p style="font-variant: small-caps;">26 février</p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Composition
+              </br><small></small>
+            </p>
+            <ul>
+           <li>5 questions à développement</li>
+           <small>sur les notions et des principes du cours</small>
+            </br><small>1 question = 17 points (2 points de langue)</small>
+          </br>+ une question bonus (5 points)
+           <li>en classe, sur papier, 1h30-2h</li>
+           <small>pas de notes autorisées</small>
+          </ul>
+          </div>
+        </section>
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Temps de travail en équipe
+            </small>
+          </p>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine
+            </br></p>
+
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

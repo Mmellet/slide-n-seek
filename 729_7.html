@@ -1,0 +1,1127 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_annotation.jpg" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">17 Février : La bonne écriture : Approches du style et de l’expression</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Le style littéraire</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Le style d'écriture
+              </br><small>
+                ensemble des choix linguistiques, stylistiques, syntaxiques
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                Choix des mots
+              </li>
+              <small>
+                précision du vocabulaire
+              </small>
+              </br><small>
+                spécificité du lexique
+              </small>
+              </br><small>
+                connotations
+              </small>
+              </br><small>
+                concision ou expansion
+              </small>
+              <li>
+                Syntaxe
+              </li>
+              <small>
+                rythme, enchaînement
+              </small>
+              </br><small>
+                structure simple ou complexe
+              </small>
+              <li>
+                Registre de langue
+              </li>
+              <small>
+                objectifs et publics cibles
+              </small>
+              <li>
+                Figures de style
+              </li>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Quelques figures de style
+              </br><small>
+                comparaison et association
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                Comparaison
+              </li>
+              <small>
+                mise en relation de deux éléments avec un outil de comparaison
+              </small>
+              </br><small>
+                « cette personne est comme un rayon de soleil »
+              </small>
+              <li>
+                Métaphore
+              </li>
+              <small>
+                comparaison implicite entre deux éléments sans utiliser les termes de comparaison
+              </small>
+              </br><small>
+                « cette personne est un rayon de soleil »
+              </small>
+              <li>
+                Personnification
+              </li>
+              <small>
+                attribution de caractéristiques humaines à des êtres non-humains ou des objets inanimés
+              </small>
+              </br><small>
+                « le vent hurle dans la nuit »
+              </small>
+              <li>
+                Allégorie
+              </li>
+              <small>
+                représentation concrète d'une idée abstraite à travers des personnages, des objets ou des événements
+              </small>
+              </br><small>
+                <i>Les Fables de La Fontaine</i>
+              </small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Quelques figures de style
+              </br><small>
+                plus ou moins de l'expressivité
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                Hyperbole
+              </li>
+              <small>
+                exagérer une idée pour marquer la lecture
+              </small>
+              </br><small>
+                « mourir de soif »
+              </small>
+              <li>
+                Litote
+              </li>
+              <small>
+                dire moins pour signifier plus
+              </small>
+              </br><small>
+                « Il n'est pas mal ce cours en ligne »
+              </small>
+              <li>
+                Euphémisme
+              </li>
+              <small>
+                atténuation d'une idée pour rendre une situation moins brutale
+              </small>
+              </br><small>
+                « David Lynch nous a quitté »
+              </small>
+
+              <li>
+                Anaphore
+              </li>
+              <small>
+                répéter un mot ou un groupe de mots en début de phrases ou de vers pour souligner une idée
+              </small>
+              </br><small>
+                « Si vous n'aimez pas la mer, si vous n'aimez pas la montagne, etc. »
+              </small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Quelques figures de style
+              </br><small>
+                opposition
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                Antithèse
+              </li>
+              <small>
+                opposer deux éléments dans une même phrase
+              </small>
+              </br><small>
+                « À vaincre sans péril, on triomphe sans gloire »
+              </small>
+              <li>
+                Oxymore
+              </li>
+              <small>
+                réunion de deux mots contraires pour créer une nouvelle idée
+              </small>
+              </br><small>
+                « Les fleurs du mal »
+              </small>
+              <li>
+                Chiasme
+              </li>
+              <small>
+                croisement (X) d'éléments analogues pour souligner une opposition
+              </small>
+              </br><small>
+                « Il faut manger pour vivre et non vivre pour manger »
+              </small>
+              <li>
+                Paradoxe
+              </li>
+              <small>
+                une affirmation qui semble contraire à la logique mais qui porte une « vérité »
+              </small>
+              </br><small>
+                « Les gens qui ne rient jamais ne sont pas des gens sérieux » (Allais)
+              </small>
+
+            </ul>
+
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Quelques exemples de styles littéraires
+              </br><small>
+
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                Académique
+              </li>
+              <small>
+                langue détaillée, lexique adapté, description froide
+              </small>
+              <li>
+                Réaliste
+              </li>
+              <small>
+                précision du contexte social, introspection
+              </small>
+              <li>
+                Romantique
+              </li>
+              <small>
+                symbolique, sublimation, émotion, hyberbole
+              </small>
+              <li>
+                Moderne ou moderniste
+              </li>
+              <small>
+                monologue intérieur, individu au centre
+              </small>
+              <li>
+                Lyrique et existentiel
+              </li>
+              <small>
+                voix intérieure, indirect libre
+              </small>
+              <li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Quelques exemples de styles littéraires
+              </br><small>
+                « Elle se tenait dans la pièce, seule, un sentiment de vide l'envahissant. »
+              </small>
+            </p>
+
+            <ul>
+              <li>
+                « Elle se tenait là, dans cette pièce dénuée de toute lumière, un froid pénétrant l'âme. Le vide,
+                immense et silencieux, l'assaillait lentement. »
+              <li>
+                <small><i>à la Flaubert</i></small>
+              <li>« Elle se tenait là, dans cette pièce morne, l'esprit envahi par une tristesse qui semblait
+                disproportionnée, comme si chaque mur, chaque objet autour d'elle lui rappelait l'inanité de son
+                existence. Le vide, loin d'être un simple état d'âme, était une manifestation physique de sa propre
+                insignifiance. »</li>
+              <small><i>à la Balzac</i></small>
+             
+            </ul>
+
+          </div>
+
+        </section>
+
+          <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <p style="font-variant:small-caps;">
+                Quelques exemples de styles littéraires
+                </br><small>
+                  « Elle se tenait dans la pièce, seule, un sentiment de vide l'envahissant. »
+                </small>
+              </p>
+  
+              <ul>
+                    <li>« Elle se tenait là, dans cette pièce qu'on pourrait croire remplie de bruits, mais où il n'y avait
+                  rien d'autre que le cri sourd de l'abandon qui se lovait autour de son être. Le vide était une présence,
+                  plus grande que tout ce qu'elle aurait pu comprendre. »</li>
+                <small><i>à la Blais</i></small>
+                <li>« Elle était là, toute seule dans cette pièce, le vide qui lui bouffait la tête comme un putain de
+                  fardeau. C'était pas juste un vide, c'était un trou noir qui se foutait de tout, qui la bouffait sans
+                  qu'elle puisse rien y faire. »</li>
+                <small><i>à la Despentes</i></small>
+              </ul>
+  
+            </div>
+          </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Exercice - Le style Mavrikakis
+              </br><small>
+<a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/540399920/seance7-1.pdf">source</a>
+              </small>
+            </p>
+
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Retour sur le texte de Beaudoin de la semaine passée
+              </br><small>
+                <a href="https://moodle.usherbrooke.ca/pluginfile.php/4601796/mod_label/intro/exercice6_original.pdf?time=1739238017881">source</a>              </small>
+            </p>
+
+
+
+          </div>
+        </section>
+        </section>
+
+  <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+       
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+       <h3>Lisibilité(s)</h3>
+
+      </div>
+    </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              La lisibilité
+              </br><small>dépendamment de la mesure d'efficacité
+                  </small>
+            </p>
+
+           <ul>
+<li>distinction langue parlée et écrite</li>
+<small>cas des dialogues ou paroles rapportées</small>
+
+           </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Dérives syntaxiques
+              </br><small>exemple : Anacoluthe
+                  </small>
+            </p>
+
+           <ul>
+<li>rupture dans la construction syntaxique</li>
+<small>changement de sujet</small>
+           </br><small>incohérence des dépendances syntaxiques</small>
+          </br><small>« J'ai vu et en ai voulu au médecin de m'avoir annoncé une mauvaise nouvelle »</small>
+           </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Révision et lisibilité
+              </br><small>
+                  </small>
+            </p>
+
+          <ul>
+            <li>longueur de la phrase</li>
+            <small>phrase longue = + de 10 mots</small>
+            <li>changement de la structure classique</li>
+            <small>inversion sujet-verbe, incise, etc.</small>
+        <li>équilibre du paragraphe</li>
+        <small>respiration et préparation d'une tension narrative</small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Révision et lisibilité
+              </br><small>quelques méthodes (États-Unis, 1950)
+                  </small>
+            </p>
+<ul>
+  <li>Test de closure (W. L. Taylor)</li>
+  <small>suppression des mots à intervalles réguliers</small>
+</br><small>remplissage par le lectorat</small>
+<li>Formule Dale-Chall</li>
+<small>mesure du taux de mots usuels dans le texte</small>
+<li>Formule Gunning (ou indice de brouillard)</li>
+<small>moyenne des mots/phrases</small>
+</br><small>+ pourcentage des mots de plus de 3 syllabes</small>
+<li>Méthode Flesch</li>
+<small>indice de lisibilité (longueur moyenne des mots et phrases)</small>
+</br><small>+ indice de l'intérêt humain</small>
+</ul>
+        
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Révision et lisibilité
+              </br><small>interprétation francophone (Richaudeau)
+                  </small>
+            </p>
+<ul>
+  <li>notions</li>
+  <ul><small>mots (courts, usuels, concrets)</small>
+  </br><small>sous-phrase (simple ou complexe)</small>
+</br><small>redondance</small>
+
+</ul>
+<li>étapes</li>
+<ul><small>lecture active, récitation, contrôle, révision espacée</small></ul>
+<li>+ rapport à l'économie narrative</li>
+<small><i>kill your darlings</i></small>
+</ul>
+        
+
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La révision littéraire</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition
+              </br><small>Morin 2016
+              </small></p>
+            </p>
+
+            <p style="font-size: 24px;">« La révision littéraire consiste en une activité de révision (correction et
+              modification d’éléments textuels et paratextuels) qui tient compte des éléments
+              esthétiques caractéristiques du style de l’écrivain et de la cohérence du texte, et
+              qui est placée dans un contexte communicationnel précis. La révision littéraire qui se fait en regard de
+              l’horizon d’attente littéraire, social et linguistique du réviseur, de l’auteur, de l’éditeur et du public
+              cible engage la
+              conscience linguistique propre à chacun de ces agents. »
+              <small></small>
+            </p>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Déroger à la norme
+              </br><small>communication littéraire
+              </small></p>
+            </p>
+
+            <p>« une relation entre un auteur (destinateur) et un lecteur ou un auditeur (destinataire) par
+              le biais d’un texte lu ou entendu reposant sur un code spécifique, la langue, et dépendant de
+              divers médias (livre, spectacle) et intermédiaires (l’imprimeur, le libraire, l’acteur) »
+              </br><small>(Chassay, 2004)</small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Langue littéraire
+              </br><small>différente de la langue d'usage
+              </small></p>
+            </p>
+
+            <ul>
+              <li>
+Soucis de la langue ou conscience linguistique
+              </li>
+              <small>
+et
+              </small>
+              <li>
+Surconscience linguistique
+              </li>
+              <small>
+attention particulière à la langue et analyse du discours lors de la rédaction/révision
+              </small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">révision littéraire : accompagnement d'un langage dans son articulation au monde
+              </br><small>les usages avant la norme
+              </small></p>
+            </p>
+
+           
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">La révision comme accompagnement
+              </br><small>Isabelle Navarro, entretien
+              </small></p>
+            </p>
+
+            <ul>
+              <li>
+<i>Découvrir la personnalité de l'auteur à travers ses mots</i>
+              </li>
+              <small>
+découvrir un inconnu
+              </small>
+            </br><small>bienveillance et doute</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">L'accompagnement d'écriture sensible
+              </br><small>entretien de Kiev Renaud et Alex Viens
+              </br><i>Le soin dans la relation éditoriale :
+                Le cas des Pénitences</i> </small></p>
+            </p>
+
+           <p style="font-size: 24px;">« Mon pari a toujours été de traiter les récits d’expérience traumatique « comme les autres », de les considérer comme des textes et non des témoignages. Je crains cependant de paraître insensible en signalant par exemple que, même si la scène est bouleversante, la syntaxe gagnerait à être variée pour que toutes les phrases ne débutent pas par « je ». Il y a bien sûr une façon de dire les choses, je suis une adepte de la succulente « méthode du sandwich » : « Ouf, quel passage percutant. Cela dit, ce verbe transitif s’emploie avec un complément ». Selon toi, ces textes doivent-ils être traités différemment ? Il me semble qu’il faut adresser le problème si un texte ne fonctionne pas ; que c’est peut-être pire de ne pas le dire, de réserver à ces textes sensibles un traitement différent. »</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">L'accompagnement d'écriture sensible
+              </br><small>entretien de Kiev Renaud et Alex Viens
+              </br><i>Le soin dans la relation éditoriale :
+                Le cas des Pénitences</i> </small></p>
+            </p>
+
+           <p style="font-size: 24px;">« Je voulais que le texte soit inattaquable. Je me suis fait un devoir d’être impitoyable, avec bienveillance, pour qu’ensuite, un regard qui ne le serait pas ne trouve aucune prise : pas de passage trop appuyé, pas de facilité de style. Pas de longueurs ni de répétitions inutiles. Ce mandat était d’autant plus important étant donné le sujet traité et ta prise de risque pour ce projet, ton premier roman qui plus est. Même si tu es caché·e derrière ton personnage Jules, tout le monde t’a quand même reconnu·e. Il y avait une mise en danger. Mon devoir, c’est que quiconque ouvrirait le livre pour une curiosité malsaine serait plutôt impressionné·e par la force de tes images, la qualité de tes dialogues, le rythme angoissant de la structure narrative – bref, se laisserait embarquer. »</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">L'accompagnement d'écriture sensible
+              </br><small>entretien de Kiev Renaud et Alex Viens
+              </br><i>Le soin dans la relation éditoriale :
+                Le cas des Pénitences</i> </small></p>
+            </p>
+
+           <p style="font-size: 24px;">« Les commentaires que je fais visent à ouvrir le dialogue autour des points de résistance ou de passages flous, de nœuds syntaxiques à défaire. Si toutes mes propositions étaient retenues telles quelles, je trouverais ça risqué que les solutions ne soient pas « mises à la main » de l’écrivain·e, ne s’intègrent pas bien dans son écriture. Il faut respecter l’énergie du texte. On sent parfois qu’on a porté le texte le plus loin possible ; qu’il n’est pas parfait, mais que poursuivre serait un acharnement, car il y a derrière tout ce processus aussi – et surtout – une relation humaine, et un certain rapport d’autorité qu’il ne faut jamais oublier. C’est nous qui pouvons dire que le texte est prêt à passer aux prochaines étapes et, si la lenteur du processus éditorial est bénéfique dans la décantation qu’il permet, garder trop longtemps un texte dans les limbes peut engendrer de la souffrance. »</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">L'accompagnement d'écriture sensible
+              </br><small>entretien de Kiev Renaud et Alex Viens
+              </br><i>Le soin dans la relation éditoriale :
+                Le cas des Pénitences</i> </small></p>
+            </p>
+
+           <p style="font-size: 24px;">« Il y a aussi des textes rugueux, imparfaits, et c’est ce qui fait aussi leur charme ; on sent que des passages nous résistent. Il y a d’autres textes trop léchés, trop parfaits, si « bien écrits » qu’ils ne sont presque plus « vivants ». C’est vraiment une question d’équilibre et, surtout, cela dépend du projet ; il n’y a pas une « recette » à suivre pour la direction littéraire (à part peut-être de régler les questions de fond avant de s’attaquer à la langue), chaque manuscrit invitant à son propre protocole. Le défi me semble être de ne pas projeter sur le projet le texte qu’on aimerait lire, ou encore pire : qu’on aurait voulu écrire. Quand il y avait une phrase à reformuler, je tâchais de te faire des propositions déjà latentes dans le texte, et non pas de l’écrire « comme je l’aurais écrit ». Mon cauchemar serait d’insuffler mes propres tics de langage à un texte que j’édite. Je suis heureuse et soulagée de lire que tu as eu l’impression que je « dégageais » ton style, que tout était déjà là, mais je cherchais simplement comment le mettre en valeur. »</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">La cohérence du texte
+              </br><small>
+              </small></p>
+            </p>
+
+            <ul>
+            <li>fil rouge d'un projet littéraire</li>
+            <small>équilibre entre usage particulier et norme</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas limite : <i>Des fleurs pour Algernon</i>
+              </br><small>Keyes, 1959
+              </small></p>
+            </p>
+
+           <p>Exercice de révision inversée : <a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/886384948/seance7_2.docx">source</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas limite : <i>La disparition</i>
+              </br><small>Perec, 1969
+              </small></p>
+            </p>
+
+            <ul>
+              <li>lipogramme : absence de la lettre [-e]</li>
+            </ul>
+            </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps;">
+           Conseils
+            </br><small>
+                </small>
+          </p>
+
+        <ul>
+          <li>attention aux modifications équivalentes</li>
+        <li>attention aux préférences personnelles</li>   
+      <li>adaptation au style d'écriture de l'autre</li>  
+      </ul>
+
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

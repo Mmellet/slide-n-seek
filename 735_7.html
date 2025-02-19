@@ -1,0 +1,1177 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_tableau.jpg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">19 février : Suivi, relectures et évaluation</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Équipes
+            </small>
+          </p>
+          <ul>
+            <li>Groupe 1</li>
+            <small>Léa, Myriam, Ariane, Chloé, Philomène</small>
+            <li>Groupe 2</li>
+            <small>Margot C., Marjolaine, Gabrielle, Émilie, Joëlle</small>
+            <li>Groupe 3</li>
+            <small>Anabelle, Victoria, Allyfer, Tracy, Mérédithe</small>
+            <li>Groupe 4</li>
+            <small>Marie-Laure, Margot R., Sophie, Krystelle</small>
+            <li>Groupe 5</li>
+            <small>Coraline, Alexandra, Clara, Mathilde</small>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Gestion de la qualité</h5>
+       
+            <p style="font-variant: small-caps;">équilibre articulation du triangle de fer
+              </br><small></small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition de la qualité
+              </br><small>particulière à la nature du produit/service et au contexte </small>
+            </p>
+
+            <ul>
+              <li>approche transcendante</li>
+              <small>rapport à l'excellence</small>
+              <li>approche produit</li>
+              <small>conformité, rapport aux normes</small>
+              <li>approche utilisateur</li>
+              <small>satisfaction client</small>
+              <li>approche valeur</li>
+              <small>coût du produit, valeur monétaire</small>
+            </ul>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_gestion-qualite.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qualité et projet
+              </br><small></small>
+            </p>
+
+          <p>« activités de l'entreprise réalisatrice qui déterminent la politique interne, les objectifs et les responsabilités en matière de qualité, pour que le projet
+            réponde aux besoins pour lesquels il a été entrepris. »
+            <small>(PMI)</small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_interaction.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Interaction gestion de projet / gestion qualité
+              </br><small></small>Kpatcha 2009
+            </p>
+
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qualité et humain
+              </br><small></small>
+            </p>
+
+          <p>« Les motivations, la productivité et la qualité du travail sont liées à la nature des
+            relations sociales que les travailleurs ont entre eux et avec leur supérieur »
+             <small>(Schein
+              1971)</small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Orientation client
+              </br><small></small>
+            </p>
+
+            <ul>
+              <li>prise en compte du niveau de satisfaction</li>
+              <small></small>
+              <li>relation à la clientèle</li>
+              <small>fidélisation, disponibilité, sondage</small>
+            </ul>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Amélioration continue
+              </br><small>temporalité de vie du projet</small>
+            </p>
+
+            <p>« D'une manière ou d'une autre,
+              l'amélioration continue est finalement une philosophie de valeur dans le lien entre la
+              gestion de projet et la gestion de la qualité. »
+               <small>(Kpatcha 2009)</small>
+              </p>
+            
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Conformité
+              </br><small>lien à l'environnement macro : normes physiques comme juridiques</small>
+            </p>
+
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Droit d'auteur
+              </br><small>Québec et Canada</small>
+            </p>
+
+<ul>
+  <li>
+protection des œuvres originales
+  </li>
+  <small>
+    littéraires, artistiques, musicales, etc.
+  </small>
+  <li>
+    Loi sur le droit d'auteur (RSC 1985, c. C-42)
+  </li>
+  <small>
+    propriété : créateur = titulaire des droits d'auteur
+  </small>
+</br><small>durée : vie de l'auteur + 70 ans (ou 50 ans avant 2022)</small>
+  <li>
+législation applicative et automatique
+  </li>
+  <small>
+    recommandation : enregistement à l'Office de la propriété intellectuelle du Canada
+  </small>
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Droit d'utilisation
+              </br><small>Québec et Canada</small>
+            </p>
+
+<ul>
+  <li>
+Droits exclusifs
+  </li>
+  <small>
+    reproduction, distribution, modification/adaptation, communication
+  </small>
+  <li>
+    Licences d'utilisation
+  </li>
+  <small>
+    exclusive : droit d'utilisation exclusif à une entité
+  </small>
+</br><small>non-exclusif : droit d'utilisation à plusieurs entités</small>
+
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Licences numériques
+              </br><small></small>
+            </p>
+
+<ul>
+  <li>
+Licences spécifiques à des plateformes
+  </li>
+  <small>
+  Getty Images, Shutterstock
+  </small>
+  <li>
+    Licences standard
+  </li>
+  <small>
+<a href="https://creativecommons.org/">Creative Commons</a>  </small>
+
+</ul>
+            
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Obtention des droits
+              </br><small></small>
+            </p>
+
+<ul>
+<li>
+ vérifier la propriété des droits
+</li>
+<small>
+quelle loi en vigueur ? domaine public ?
+</small>
+</br><small>base de données d'organismes de gestion collective des droits (SACD, CDA)</small>
+<li>
+acquisition des droits d'utilisation
+</li>
+<small>
+licences auprès du créateur ou du représentant
+</small>
+</br><small>contrat de cession des droits</small>
+<li>contrôle des conditions</li>
+<small>usage commercial ou non</small>
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Respect des données personnelles et de la vie privée
+              </br><small>Conditions d'utilisation et Politique de confidentialité</small>
+            </p>
+
+<ul>
+<li>
+  Loi sur la protection des informations personnelles et les documents électroniques
+</li>
+<small>
+Loi PIPEDA, fédéral
+</small>
+<li>
+  Loi sur la protection des renseignements personnels dans le secteur privé
+</li>
+<small>
+Loi 25, provincial
+</small>
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Respect des données personnelles et de la vie privée
+              </br><small>Conditions d'utilisation et Politique de confidentialité</small>
+            </p>
+
+<ul>
+<li>
+  Consentement éclairé, explicite et spécifique
+ </li>
+ <small>quelles utilisations, finalités, méthodes de stockage</small>
+<li>
+  Transparence et accès
+</li>
+<small>politique de confidentialité</small>
+</br><small>accès des personnes à leurs données personnelles et modifications</small>
+<li>
+  Responsabilité en cas de brèches de données
+</li>
+<li>Limite en quantité et durée de stockage</li>
+<small>nécessaire</small>
+
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Liberté d'expression
+              </br><small>Québec et Canada</small>
+            </p>
+
+<ul>
+<li>
+  Charte canadienne des droits et libertés
+ </li>
+ <small>limites : diffamation, discours haineux, menace ou incitation à la violence</small>
+<li>
+  Charte des droits et libertés de la personne du Québec (L.R.Q., c. C-12)
+</li>
+
+
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accessibilités
+              </br><small>papier</small>
+            </p>
+
+<ul>
+<li style="font-variant: small-caps;">
+Pratiques et normes pour rendre accessibles les publications à tous et toutes
+</li>
+<small>indépendamment des apacités physiques, sensorielles ou cognitives</small>
+<li>typographie lisible, disposition claire, formats alternatifs</li>
+
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Accessibilités
+              </br><small>numériques</small>
+            </p>
+
+<ul>
+<li>
+  Normes d’accessibilité WCAG
+</li>
+<small> <i>Web Content Accessibility Guidelines</i> ou Directives pour l'accessibilité du contenu Web</small>
+<ul>
+  <small>perception</small>
+  <ul><small>textes alternatifs</small>
+  </br><small>sous-titrages</small>
+</br><small>contrastes et luminosités</small>
+</ul>
+<small>Utilisation</small>
+<ul>
+  <small>navigation par clavier</small>
+</br><small>boutons et indications</small>
+</br><small>module d'accompagnement</small>
+</br><small>signaux sonores</small>
+</ul>
+<small>Compréhension</small>
+<ul>
+  <small>langage clair</small>
+</br><small>structure définie</small>
+</br><small>aides et messages d'erreurs explicatifs</small>
+</ul>
+<small>Résistante/Robustesse</small>
+<ul><small>compatibilité techniques</small></ul>
+</ul>
+<li>Outil de test : Lighthouse (Google)</li>
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Faisabilité : vérifier l'équilibre au sein du triangle de fer</p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_faisabilite-techn.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principales faisabilités
+              </br><small>types</small>
+            </p>
+            <ul>
+          <li>
+            Faisabilité juridique et éthique
+          </li>
+          <small>droits d'auteur, licences d'utilisation, régulations, cadre juridique</small>
+          <li>
+            Faisabilité technique
+          </li> 
+        <small>cohérence, accessibilités des outils, alternatives, niveaux de compétences</small>
+        <li>
+          Faisabilité humaine
+        </li>
+        <small>ressources, disponibilité</small>
+        <li>
+          Faisabilité créativité
+        </li>
+        <small>qualité, originalité, tendance</small>
+        <li>
+          Faisabilité temporelle
+        </li>
+        <small>délais, marges</small>
+
+        <li>
+          Faisabilité financière
+        </li>
+        <small>budget, dépendance, retours sur l'investissement</small>
+        </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/735_index.png" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Gestion de performance</h4>
+            <p style="font-variant: small-caps;">suivi au long du projet</p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Méthodes de suivi
+              </br><small>TQM (<i>Total quality management</i>)</small>
+            </p>
+            <ul>
+           <li>Approche globale et systématique</li>
+           <small>orientation client</small>
+            </br><small>amélioration continue</small>
+          </br><small>participation partagée</small>
+        </br><small>approche processus</small>
+      </br><small>diagramme de Pareto, méthode des 5S, etc.</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Méthodes de suivi
+              </br><small>KPI (<i>Key Performance Indicators</i>)</small>
+            </p>
+            <ul>
+           <li>Niveau stratégique</li>
+           <small>santé de l'organisation</small>
+            </br><small>chiffre d'affaire</small>
+          </br><small>rentabilité, croissance</small>
+          <li>Niveau tactique</li>
+          <small>efficacité</small>
+        </br><small>satisfaction client</small>
+      </br><small>fidélité</small>
+      <li>Niveau opérationnel</li>
+      <small>assignation des tâches, articulation</small>
+    </br><small>taux de réponse</small>
+  </br><small>productivité, absentéisme</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Résolution des problèmes
+              </br><small></small>
+            </p>
+            <ul>
+         <li>Erreur technique</li>
+<small>erreur de jugement ou compétence ou manque de diligence</small>
+         <li>Non-conformités</li>
+         <small>non-conformité productrice ou non</small>
+          </ul>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/735_inconnues.png" data-background-size="1000px">
+          <div id="fondop2">
+            <h4>Gestion des risques</h4>
+            <p style="font-variant: small-caps;">inconnues non positives</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_temps-risques.png" data-background-size="1000px">
+         
+        </section>
+
+       
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Défaillance d'un fournisseur/agent extérieur</small>
+            </p>
+            <ul>
+           <li>Problèmes</li>        
+          <small>retard et répercussions dans le calendrier</small>
+            </br>
+          <small>inadéquation entre exigences du projet et livrable</small>
+          <li>Prévention</li>        
+          <small>connaissance du fournisseur</small>
+          </br><small>garanties extérieures : assurances, amendes</small>
+        </br><small>suivi régulier</small>
+<li>Pas de risque zéro</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Défaillance de l'équipe</small>
+            </p>
+            <ul>
+           <li>Problèmes</li>        
+          <small>accidents de travail</small>
+            </br>
+          <small>erreurs techniques</small>
+        </br>
+        <small>congés</small>
+      </br>
+      <small>mauvais climat de travail</small>
+          <li>Prévention</li>        
+          <small>connaissance de l'équipe</small>
+          </br><small>suivi régulier</small>
+        </br><small>équilibre entre détente et dépersonnalisation</small>
+
+          </ul>
+          </div>
+        </section>
+
+         <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Augmentation des dépenses</small>
+            </p>
+            <ul>
+           <li>Problèmes</li>        
+          <small>dérapage budgétaire</small>
+        </br>
+        <small>hausse des prix extérieurs</small>
+            </br>
+          <small>erreurs techniques</small>
+          <li>Prévention</li>        
+          <small>réserve de précaution (3-10%)</small>
+          </br><small>suivi routinier et réévaluation</small>
+        
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Diminution des subventions</small>
+            </p>
+            <ul>
+           <li>Problèmes</li>        
+          <small>défaillance d'un mécène ou sponsor</small>
+            </br><small>disparition d'une institution de soutien</small>
+          
+          <li>Prévention</li>        
+          <small>multiples plans « B »</small>
+          </br><small>veille sur les subventions ouvertes</small>
+          <small>utiliser les fonds disponibles/assurés</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Accident d'exploitation</small>
+            </p>
+            <ul>
+           <li>Problèmes</li>        
+          <small>défaillance de production</small>
+            </br><small>bogue, piratage, blocage de livraison</small>
+          
+          <li>Difficile à anticiper mais rare</li> 
+        <small>assurances</small>       
+               </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Ne pas atteindre son public</small>
+            </p>
+           <p>« le succès de fréquentation d’un projet constitue une inconnue qui ne peut être maîtrisée uniquement par la seule politique de communication ou une grille tarifaire attractive. L’estimation de la réussite d’un projet culturel ne constitue pas une science exacte, tant s’en faut. »
+           </br><small>(Mairesse, 2016)</small>
+           </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principaux risques
+              </br><small>Polémiques et opinion publique</small>
+            </p>
+            <ul>
+           <li>En externe et interne</li>        
+          <small>mouvement des médias</small>
+          <li>Composante polémique assumée</li>        
+          <small>campagne de presse en conséquence</small>
+          <li>Possibilité d'un « bon scandale »</li>        
+        
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_analyse-risques.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approches des risques
+              </br><small></small>
+            </p>
+            <ul>
+           <li>Prévention</li>        
+          <small>mode défensif</small>
+          <li>Réduction</li>        
+          <small>une fois le risque identifié</small>
+          <li>Transfert</li>   
+          <small>transfert de l'impact sur un tiers</small> 
+          <li>Provision</li>    
+          <small>fonds, expertises, temps en cas de risque</small>
+          <li>Acceptation</li>
+        <small>accepter les conséquence</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Analyse des modes de défaillance
+              </br><small>AMDEC pour Analyse des Modes de Défaillance, de leurs Effets et leur Criticité</small>
+            </p>
+            <ul>
+           <li>Approche rationnelle de l'appréhension des risques</li>        
+          <small>analyse de l'environnement + classement des risques</small>
+          <li>Rang de criticité : 3 facteurs</li>        
+          <small>Fréquence</small>
+            </br><small>Gravité des répercussions</small>
+          </br><small>Probabilité de ne pas détecter le risque</small>
+          <li>Échelle de valeurs (4-5 niveaux)</li>   
+          <small>d'un niveau faible à un niveau fort</small> 
+          <li>Tableau tridimensionnel ou à deux entrées</li>    
+
+          </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Recommandations
+            </small>
+          </p>
+
+          <ul>
+            <li>Bilans d'activités réguliers</li>
+            <li>Positionnement clair dans le triangle de fer</li>
+            <li>Connaître les priorités</li>
+            <small>des tâches (urgent, important) et des risques</small>
+        <li>Anticiper des marges</li>
+        <li>Imaginer des plans « B »</li>
+        <small>et C, D, etc.</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+        <section data-background-image="media/O_excel.svg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Exel - retour </h3>
+            <p style="font-variant: small-caps;"><small>et travail en équipe</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Distinguer des niveaux d'informations
+              </br><small>+ légende</small>
+            </p>
+            <ul>
+              <li>Couleur </li>
+              <small>cellules et bordures + effet de dégradé</small>
+              <li>Flèches</li>
+              <small>Insertion - Formes</small>
+              <li>Symboles</li>
+ <small>Insertion - Formes</small>
+ <li>Formules conditionnelles</li>
+ <small>+ de mise en page (avec option dégradé ou symboles)</small>
+<li>pour les dépendances : possibilité d'un tableau annexe</li>          
+</ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Conseils
+              </br><small></small>
+            </p>
+            <ul>
+            <li>Sauvegarder régulièrement</li>
+            <small>Ctrl + S </small>
+            <li>Utiliser la barre de recherche</li>
+            <li>Attention aux fusions</li>
+            <small>des cellules</small>
+            <li>Figer les volets</li>
+            <small>plutôt que scroller</small>
+            <li>Verrouillage des cellules</li>
+            <small>pas dans la version en ligne</small>
+            <li>Ne pas essayer de faire un « beau tableau »</li>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Travail en équipe
+              </br><small>commencer votre calendrier de production</small>
+            </p>
+            <ul>
+          <li>À partir des documents en amont</li>
+          <small>liste des tâches (+ sous-tâches) ; des expertises</small>
+            </br><small>durées et dépendances + marges</small>
+            </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+     
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine
+            </br></p>
+
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

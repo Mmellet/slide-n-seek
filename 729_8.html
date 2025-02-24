@@ -1,0 +1,1582 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_annotation.jpg" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">24 Février : Révision de fond : Cohérence, pertinence et fluidité</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>La révision de fond</h3>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« [l]a révision de fond suppose une lecture attentive et méthodique d’un texte en
+              vue de l’adapter aux destinataires, d’en clarifier le contenu et d’en réorganiser la structure »
+              
+            </br><small>
+                (Réviseurs Canada, 2014)
+            </small>
+            </p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Mode de la révision de fond
+              
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Lecture globale
+              </li>
+              <small>
+           niveau du passage, de la section, de l'ensemble
+              </small>
+              </br><small>
+         avant la révision linguistique/ou simultanée
+              </small>
+              </br><small>
+           + recherches, rédaction complémentaires, discussion
+              </small>
+              </br><small>
+             
+              </small>
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Principes de la révision de fond
+              
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Analyse de la structure du texte
+              </li>
+              <small>
+           vision du squelette
+              </small>
+              <li>Réorganisation de la structure interne</li>
+
+              <small>
+         en fonction de la nature du texte
+              </small>
+
+              <li>Suggestion de transformations</li>
+              <small>
+           modes de présentation des données
+              </small>
+            </br><small>
+             ajouts ou suppressions
+            </small>
+
+              <li>Vérification des transitions</li>
+<small>contrôler la progression</small>
+
+<li>Vérification de l'exactitude des faits</li>
+             <small>
+             culture générale
+              </small>
+            </br>
+            <small>dates, lieux, évènements</small>
+
+          </br><small>+ incohérences (nomenclatures)</small>
+            <li>Vérification des autorisations d'utilisation des contenus</li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« Souvent, on va me demander de regarder l’ensemble, de m’assurer que tout est
+              cohérent, qu’il n’y a pas des éléments qui détonnent, mais c’est plus ça. Au
+              point de vue du vocabulaire, s’il y a vraiment des termes qui détonnent de tout
+              le reste, qui peuvent être choquants ou présenter des préjugés ou des choses
+              comme ça, il se peut que j’intervienne, en plus de considérer tout l’aspect
+              linguistique. »
+              
+            </br><small>
+                (Marie Ève Laroche)
+            </small>
+            </p>
+
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Composants
+              
+            </br><small>
+                lisibilité
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Véracité des informations
+              </li>
+              <small>
+                « garant de la fiabilité des textes » (Legendre, 2007)
+              </small>
+
+              <li>Connexion entre sections</li>
+             
+
+              <li>Hiérarchie entre les niveaux d'information</li>
+              
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Révision scientifique ou par les pairs
+            </br><small>
+                différences
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Évaluation de la qualité scientifique
+              </li>
+              <small>
+           dont la véracité mais avec en + des codes de la démonstration scientifique
+              </small>
+              <li>Pouvoir d'influence sur la décision éditoriale de publication </li>
+              <small>
+         modifications (mineurs, majeures), refus
+              </small>
+              
+            
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« Moi, je vérifie aussi, pas tout parce qu’on n’a pas le temps, les erreurs factuelles. En fait, on corrige tout ce qu’on voit. Il y a les anglicismes, aussi.
+              C’est même déjà arrivé que je suggère à l’auteur de déplacer des paragraphes
+              entiers, ou même des chapitres qui s’intégraient moins bien. Mais ce sont des
+              suggestions, qui vont être acceptées ou non par l’auteur. »
+              
+            </br><small>
+                (Julie-Jeanne Roy)
+            </small>
+            </p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p>« Je corrige l’orthographe, la grammaire, tous les accords, la syntaxe, toute la
+              logique interne de la phrase, je corrige aussi la cohérence plus générale du
+              livre, je vérifie tous les faits, les dates, les noms propres, est-ce que tel modèle
+              de voiture existait vraiment cette année-là. [...] Je révise
+              tout, tout, tout. »
+              
+            </br><small>
+                (Alexie Morin)
+            </small>
+            </p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Cas-limite : Les littératures en marge du réel
+              
+            </br><small>
+              différents degrés de véracité
+            </small>
+            </p>
+    
+            <ul>
+              <li>
+              Littératures fantastiques
+              </li>
+              <small>
+           dystopie, utopie, science-fiction, ou fantasy historique
+              </small>
+              <li>Littératures d'influence publique</li>
+             <small>
+             propagande, complotisme, infox
+              </small>
+            <li>Hoax scientifique</li>
+            <small>comme l'affaire Sokal</small>
+            </ul>
+    
+          </div>
+        </section>
+
+        </section>
+
+  <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+       
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+       <h3>La structure du texte</h3>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            Corps du texte - textes scientifiques
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Introduction
+          </li>
+          <small>
+       sujet, objectif, problématique, structure
+          </small>
+          <li>Développement</li>
+          
+          <small>
+     arguments, preuves, données
+          </small>
+          <li>Conclusion</li>
+          <small>
+       résumé et ouverture
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            Corps du texte - textes de fiction
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Amorce/Exposition
+          </li>
+          <small>
+       cadre, voix narrative, personnage, tension
+          </small>
+          
+          <li>Développement</li><small>
+     montée en tension, péripéties, point culminant
+          </small>
+          
+          <li>Dénouement/Résolution</li>
+          <small>
+       conclusion ouverte/fermée
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            paratextuel
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Notes 
+          </li>
+          <small>
+       informations complémentaires
+          </small>
+          </br><small>
+     explicatives, bibliographiques, d'approfondissement
+          </small>
+          </br><small>
+       concision, clarté, neutralité
+          </small>
+          </br><small>
+         en fin de page/section, en marge
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            paratextuel
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Métadonnées
+          </li>
+          <small>
+       titre principal
+       <ul>
+         <small>guillemets : article, poème, chanson, chapitre, nom de collection</small>
+       </br><small>italique : livre, recueil, instance éditoriale, titres incomplets</small>
+      </br><small>exception : ouvrages sacrés (Coran), lois et codes</small>
+ </small>
+      </ul>
+          
+         <small>
+     nom de l'auteur (+ affiliation, biographie)
+          </small>
+          </br><small>
+       date et genre
+          </small>
+          </br><small>
+         résumé et mots-clefs
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            paratextuel
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Références
+          </li>
+          <small>
+       sources citées/consultées
+          </small>
+        <li>Annexes</li>
+        <small>
+     contenus supplémentaires
+          </small>
+          </br><small>
+       mise en page particulière
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure d'un texte
+          
+        </br><small>
+            cas particuliers
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Épigraphe
+          </li>
+          <small>
+       citation placée en début de chapitre/section/ouvrage
+          </small>
+          </br><small>
+     alignement à droite
+          </small>
+          <li>Citation longue</li>
+          <small>
+       citation de plus de 3 lignes/40 mots
+          </small>
+          </br><small>
+         distinct du bloc de texte : marge supplémentaire, etc.
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Structure du texte
+          
+        </br><small>
+            à éviter
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Appel de note dans les métadonnées
+          </li>
+          <small>
+       plutôt un paragraphe introductif ou un avant-propos
+          </small>
+          <li>
+            Contenus visuels en note
+          </li>
+          <small>
+     les annexes concernent le corps du texte
+          </small>
+          <li>Un bloc unique</li>
+          <small>
+       besoin de respiration
+          </small>
+         
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Exercice : Remettre en ordre l’intérieur des sections d’une chronique
+          
+        </br><small>
+            <a href="https://moodle.usherbrooke.ca/pluginfile.php/4620811/mod_label/intro/seance8-ex.odt">source</a>
+        </small>
+        </p>
+
+       
+
+      </div>
+    </section>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Les Références bibliographiques</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition d'une référence bibliographique
+            </br><small>
+                
+            </small>
+            </p>
+
+            <span style="color:turquoise">Merzeau</span> , <span style="color: blue;">L.</span> (<span
+              style="color: violet;">2013</span>). <span style="color: orange;">Éditorialisation collaborative d’un
+              événement.</span> <span style="color: red;"><i>Communication et organisation. Revue scientifique francophone
+                en Communication organisationnelle</i></span>, (<span style="color: rgb(255, 196, 0)">43</span>), <span
+              style="color: green;">105-22</span>.
+            </span>
+  
+<p>Deux niveaux : <i class="material-icons">speaker_notes</i> la citation et la bibliographie <i class="material-icons">list_alt</i> </p>
+          </div>
+        </section>
+
+        
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Style bibliographique
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>Ensemble de règles pour la mise en forme de données</li>
+          <li>Spécificités selon les pratiques de communautés / disciplines
+          </br><small>10 153 styles bibliographiques dont beaucoup de doublons</small>
+          </li>
+          <li><i class="material-icons">filter_list</i> <a href="https://www.zotero.org/styles">Répertoire des styles</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Styles bibliographiques en sciences humaines et littérature
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Modern Language Association
+          </li>
+          <small>
+       accent sur l'auteur et le titre
+          </small>
+          </br><small>
+     mode abrégé (Nom p.)
+          </small>
+          </br><small>
+       structure : Nom. Titre. Éditeur. Année de publication. (Lieu de publication.)
+          </small>
+          <li>
+            American Psychological Association
+            </li>
+            <small>
+         accent sur l'auteur et l'année de publication
+            </small>
+            </br><small>
+       mode abrégé (Nom, date)
+            </small>
+            </br><small>
+         structure : Nom. (Année). Titre. Lieu de publication. Éditeur.
+            </small>
+        
+            <li>
+              Chicago Manual of Style
+              </li>
+              <small>2 systèmes</small>
+              <ul>
+                <small>1. note + bibliographie</small>
+              </br><small>2. auteur-date + bibliographie</small>
+              </ul>
+             
+              <small>
+           structure : Auteur, Prénom. Titre. Lieu de publication : Éditeur, année.
+              </small>
+          
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Exemple
+        </br><small>
+            
+        </small>
+        </p>
+        <ul>
+          <li style="font-size: large;">
+            Woolf, V. (1985). <i>Une chambre à soi</i>. Paris : Éditions de la Pléiade.
+            <small>APA 6e</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, V. (1985). <i>Une chambre à soi</i>. Éditions de la Pléiade.
+             <small>APA 7e</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, Virginia. <i>Une chambre à soi</i>. Editions de la Pléiade, 1985.<small>Modern Language Association</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, Virginia. <i>Une chambre à soi</i>. Paris : Éditions de la Pléiade, 1985. <small>Chicago</small>
+            </br></li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Questions de révision
+          
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Véracité de la référence
+          </li>
+          <small>
+       est-ce que cette référence existe ?
+          </small>
+          </br><small>
+     est-ce que les informations (date, auteur, édition) sont correctes ?
+          </small>
+          </br><small>
+       est-ce que les informations sont complètes ?
+          </small>
+          </br><small>
+         est-ce que la référence comporte des erreurs de langue ?
+          </small>
+        <li>Structure de la référence</li>
+<small>est-ce que la référence suit bien le style bibliographique ?</small>
+        </br><small>est-ce que la référence comporte des erreurs de ponctuations, de majuscules ?</small>        
+<li>Niveaux de référence</li>
+<small>est-ce que la citation est bien structurée ?</small>    
+<small>est-ce que la bibliographie est bien en ordre alphabétique ?</small>
+</ul>
+
+      </div>
+    </section>
+
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/729_github-branch.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Atelier Git</h4>
+            <p style="font-variant: small-caps;">préparation pour le TP3</p>
+          </div>
+        </section>
+
+    <section data-background-image="media/O_github.png" data-background-size="1600px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">GitHub</p>
+  
+  
+            <ul>
+              <li>Outil de versionnement et d'édition collaborative</li>
+              <small>propriété de Microsoft</small>
+            </br>
+                </ul>	
+
+                <p><a href="https://github.com/signup">Création d'un compte</a></p>
+    
+              </div>
+    </section>
+
+    <section data-background-image="media/729_git-interface.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Interface du repo du manuscrit
+          
+        </br><small>
+            <a href="https://github.com/Mmellet/matiere-vitali-rosati">matiere-vitali-rosati</a>
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          les chapitres concernés pour la révision TP3 :
+          </li>
+          <small>
+      dans le dossier livre / textes
+          </small>
+          </br><small>
+      dossier chapitre1 : fichier chapitre1.md
+          </small>
+          </br><small>
+            dossier chapitre2 : fichier chapitre2.md
+          </small>
+          </br><small>
+            dossier chapitre3 : fichier chapitre3.md
+          </small>
+        
+        </ul>
+<p>les autres fichiers/dossiers ne sont pas concernés par la révision !</p>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_git-branch.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+     
+
+        <p style="font-variant: small-caps;">Étape : Se créer une branche à son nom</p>
+  <ul>
+  <li>à la <a href="https://github.com/Mmellet/matiere-vitali-rosati">racine du répertoire</a> : déroulez l'option <code>revision</code></li>
+
+  <li>renseignez le nom de votre branche : nom_prenom</li>
+  <small>pas d'accent, pas de signes étranges</small>
+  <li>cliquez sur <code>Create branch etc.</code></li>
+  </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_git-branch-verif.png"data-background-size="2000px">
+      <div id="fondop2">
+      <p style="font-variant: small-caps;">Vérification que vous êtes bien sur votre branche</p>
+  <p>à la place de <code>revision</code>,  le nom de votre branche devrait apparaître</p>
+      </div>
+      </section>
+
+    <section data-background-image="media/729_git-modele.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Ajouter votre feuille de route
+        </br><small>
+            <a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/modele-feuille-route.md">fichier à télécharger sur votre ordinateur</a>
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Sur votre branche : sélectionnez <code>Add file</code>
+          </li>
+          <small>
+       choix : <code>Upload file</code>
+          </small>
+          </br><small>
+     uploadez le fichier téléchargé : modele-feuille-route.md
+          </small>
+        
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_git-upload.png" data-background-size="1600px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Commitez vos changements
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          ajoutez une description à votre changement
+          </li>
+          <small>
+       du type « ajout du modèle de la feuille de route »
+          </small>
+          <li>Commitez <b>toujours</b> sur <b>votre</b> branche</li>
+          </br><small>
+     pas de création de nouvelle branche !
+          </small>
+         
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_git-edit.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Dans votre fichier modele-feuille-route.md
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+         <b>Toujours</b> vérifier que vous êtes sur <b>votre</b> branche
+          </li>
+          <small>
+       volet de gauche, en dessous de <code>Files</code>
+          </small>
+          
+          <li>Vous pouvez éditer en markdown</li>
+          <small>
+     Cliquez sur <code>Edit File</code> : icone du crayon à droite
+          </small>
+          </br><small>
+       tutoriel pour éditer en markdown : <a href="https://www.arthurperret.fr/tutomd/">Tuto et documentation</a>
+          </small>
+          </br><small>
+         c'est cette feuille de route qui compte pour le TP3
+          </small>
+        
+        </ul>
+        <p>c'est cette feuille de route qui compte pour le TP3
+        </p>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_git-edit1.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Pour la révision des chapitres 1, 2, 3
+          
+        </br><small>
+            éditez dans les fichiers chapitre1.md ; chapitre2.md ; chapitre3.md
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Faîtes les modifications directement dans le fichier
+          </li>
+          <small>
+       en markdown
+          </small>
+          </br><small>
+     attention à ne pas effacer du code : ne pas toucher au code
+          </small>
+          </br><small>
+       
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_git-comm.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Pour la révision des chapitres 1, 2, 3
+          
+        </br><small>
+            éditez dans les fichiers chapitre1.md ; chapitre2.md ; chapitre3.md
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Les commentaires, suggestions d'ajout ou de reformulation sont à éditer directement dans le fichier
+          </li>
+          <small>
+      pour faire un commentaire : 
+          </small>
+          </br><small>
+            &#60;!-- commentaire --&#62;
+          </small>
+          </br><small>
+       
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+        <p>les commentaires généraux doivent être édités dans la feuille de route 
+        </br><small>(en markdown)</small></p>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_git-commit.png" data-background-size="1400px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Pour la révision des chapitres 1, 2, 3
+          
+        </br><small>
+            éditez dans les fichiers chapitre1.md ; chapitre2.md ; chapitre3.md
+        </small>
+        </p>
+
+        <ul>
+          <li>
+         Une fois vos modifications finies : 
+          </li>
+          <small>
+     Commitez : <b>sur votre branche</b>
+          </small>
+          </br><small>
+     Inscrivez <b>toujours un message</b> pour dire ce que vous avez fait
+          </small>
+          </br><small>
+       
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+        <p>sur votre branche, vous pouvez faire autant de session de travail que vous le souhaitez</p>
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_git-graph.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Si vous voulez voir où en est votre branche
+        </br><small>
+            <a href="https://github.com/Mmellet/matiere-vitali-rosati/network">graph des branches</a>
+        </small>
+        </p>
+
+      
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Conseils 
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          1. Ne paniquez pas 
+          </li>
+          <small>
+       observez bien l'écran, relisez bien les instructions
+          </small>
+
+        </br><small>repensez aux chats</small>
+         
+         <li>2. Si vous avez un doute : écrivez-moi</li>
+          <small>
+     
+          </small>
+          </br><small>
+       
+          </small>
+          </br><small>
+         
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+</section>
+
+
+<section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+  <section data-background-image="media/hyper.webp" data-background-size="2000px">
+    <div id="fondop2">
+      <h4>TP3 - Révision de fond versionnée</h4>
+      <p style="font-variant: small-caps;">avec Git - pour le 10 mars</p>
+    </div>
+  </section>
+
+<section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps;">Mandat
+    
+  </br><small>
+      <a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/TP3.pdf">source</a>
+  </small>
+  </p>
+
+  <ul>
+    <li>
+    Essai philosophique du genre Manifeste
+    </li>
+    <small>
+ pour la collection « De code et de plomb » aux PURH
+    </small>
+
+    <li>Suite d'un discours</li>
+    <small>
+le texte et son contenu doit être accessible
+    </small>
+    <li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/Livre-version0.pdf">Version antérieure des chapitres</a></li>
+    <small>
+ pdf
+    </small>
+    </br><small>
+   
+    </small>
+  
+  </ul>
+
+</div>
+</section>
+
+<section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+  <div id="fondop2">
+    <p style="font-variant:small-caps;">Commentaires
+      
+    </br><small>
+        recommandations
+    </small>
+    </p>
+
+    <ul>
+      <li>
+      Feuille de route
+      </li>
+      <small>
+   distinguer les commentaires par section/paragraphe des commentaires sur l'ensemble (thématiques)
+      </small>
+      </br><small>
+ inscription du titre du texte + date de la révision (+ votre nom)
+      </small>
+      </br><small>
+   structure par section/liste
+      </small>
+      </br><small>
+     expliquer, informer, accompagner
+      </small>
+
+      <li>Adresse</li>
+      <small>
+ plutôt au « vous »
+      </small>
+      </br><small>
+   bienveillance dans les échanges
+      </small>
+      </br><small>
+     méthode du sandwich, développement par des questions
+      </small>
+      
+    </ul>
+
+  </div>
+</section>
+
+<section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+  <div id="fondop2">
+    <p style="font-variant:small-caps;"><b>Rappels</b>
+      
+    </br><small>
+        
+    </small>
+    </p>
+
+    <ul>
+      <li>
+      Ne modifiez que les fichiers .md 
+      </li>
+      <small>
+   chapitre1.md ; chapitre2.md ; chapitre3.md
+      </small>
+     
+     <li>Modifiez <b>toujours</b> en étant sur votre branche</li>
+      <small>
+ sinon usurpation d'identité
+      </small>
+      
+      <li>Commitez et Pushez <b>uniquement</b> sur votre branche</li>
+      <small>
+   sinon cela écrase la version de référence
+      </small>
+      
+      <li>Les commentaires dans le texte, la feuille de route doivent être édités en MARKDOWN</li>
+      <small>
+     édition de base : liste, niveaux de titre, italique, hyperlien, note si nécessaire
+      </small>
+    
+    </ul>
+
+  </div>
+</section>
+
+</section>
+
+
+
+
+      <section data-background-image="media/729_cat.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Bonne semaine de lecture !</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

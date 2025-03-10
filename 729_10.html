@@ -1,0 +1,1351 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_typographie.jpg" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">9 mars : Les signes de la page à l’écran</h5>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>TP2 - Correction</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+      
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Calcul 
+          
+        </br><small>
+                </small>
+        </p>
+      
+        <ul>
+          <li>Fautes : 64
+          </li>
+          <small>117 fautes, 96 minimum
+          </small>
+      
+          </br><small>
+            0,64/faute
+          </small>
+          <li>Fautes regroupées : 6,5
+          </li>
+          <small>
+            ligature œ, espace double, titre, accent sur majuscule
+          </small>
+      
+          </br><small>
+         
+          </small>
+          <li>Citation longue : 5
+          </li>
+          <small>
+          </small>
+      
+          </br><small>
+         
+          </small>
+          <li>Commentaires : 5
+          </li>
+          <small>
+          </small>
+      
+          </br><small>
+         
+          </small>
+          <li>Feuille de route : 5
+          </li>
+          <small>
+          </small>
+      
+          </br><small>
+         
+          </small>
+        
+        </ul>
+        <p>+ Bonus (0,5)</p>
+      
+      </div>
+      </section>
+      
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps;">Détail de la révision
+            
+          </br><small>
+             
+          </small>
+          </p>
+      
+          <ul>
+
+<li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/TP2_marqueurs.pdf">Version avec marqueurs</a></li>
+<small>vert plein pour fautes</small>
+          </br><small>vert pâle : faute regroupée</small>
+        </br><small>vert d'eau : citation longue</small>
+        </br><small>rose plein : commentaire</small>
+    
+    </br><small>souligné : italique</small>
+<li><a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/TP2_correction.docx">Version avec suivi des modifications</a></li>
+<small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4590695/mod_label/intro/Version-reviseur.docx">+ version du réviseur attitré</a></small>
+          </ul>
+         
+      
+        </div>
+      </section>
+      
+    
+      
+      </section>
+      
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_typographie.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Codes et conventions typographiques</h3>
+         
+            <p style="font-variant:small-caps;">
+              présentation / structure visuelle du signe et de son contour
+            </br><small>
+                
+            </small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Rappel : une écriture est toujours encodée à l'écran
+              
+            </br><small>
+                que ce soit en markdown ou dans Word
+            </small>
+            </p>
+
+           
+
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Glossaire élémentaire
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Bas-de-casse et capitale
+              </li>
+              <small>
+           lettres minuscules et majuscules 
+              </small>
+              
+              <li>
+              Belle page et fausse page
+              </li>
+              <small>
+           belle page, page impaire, de droite, recto
+              </small>
+              </br><small>
+         fausse page, page paire, de gauche, verso
+              </small>
+              
+              <li>
+              Bourdon
+              </li>
+              <small>
+           omission dans l'épreuve
+              </small>
+              
+            
+              <li>
+              Chasse ou Avance
+              </li>
+              <small>
+           largeur de la lettre, plus ou moins condensée
+              </small>
+              
+            
+              <li>
+              Colophon ou Achevé d'imprimer
+              </li>
+              <small>
+           note à la fin d'un document
+              </small>
+              </br><small>
+         avec les principales caractéristiques de l'ouvrage
+              </small>
+           
+              <li>
+              Doublon 
+              </li>
+              <small>
+           inverse du bourdon
+              </small>
+              </br><small>
+         répétition dans une épreuve
+              </small>
+          
+      
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Glossaire élémentaire
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+            
+          
+              <li>
+              Épigraphe
+              </li>
+              <small>
+           courte phrase cité en début de section pour donner l'esprit
+              </small>
+
+              <li>
+              Fonte
+              </li>
+              <small>
+           ou police de caractères
+              </small>
+              
+
+              <li>
+              Glyphe
+              </li>
+              <small>
+                représentation graphique d'un signe typographique
+              </small>
+             
+
+              <li>
+              Lettrine
+              </li>
+              <small>
+           lettre capitale, ornée ou non, en début de section
+              </small>
+              </br><small>
+         sur deux lignes ou plus que le corps de texte
+              </small>
+              </br><small>
+           lettres du mot en petites capitales 
+              </small>
+
+              <li>
+              Page liminaire 
+              </li>
+              <small>
+           pages qui précèdent le texte d'un ouvrage
+              </small>
+              </br><small>
+         première, deuxième couverture, page de faux titre
+              </small>
+              </br><small>
+           page de dédicace, avertissement, avant-propos, remerciements
+              </small>
+              </br><small>
+             préface, prologue, notice, table des matières, introduction
+              </small>
+            </br><small>
+         liste des abbréviations, etc.
+            </small>
+
+            <li>
+              Points de conduite
+            </li>
+            <small>
+         dans la table des matières : points entre les titres et les pages
+            </small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Nuances entre les termes
+              
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Annexe, Appendice
+              </li>
+              <small>annexe : complément joint 
+              à la fin de l'ouvrage 
+           
+              </small>
+              </br><small>
+         appendice : supplément joint à la fin de l'ouvrage
+              </small>
+             
+
+              <li>
+              Avant-propos, Préface, Postface
+              </li>
+              <small>
+           avant-propos : court texte en début d'ouvrage de l'auteur sur le contexte d'écriture
+              </small>
+              </br><small>
+         préface : texte de commentaire/présentation en début d'ouvrage rédigé par un autre auteur
+              </small>
+              </br><small>
+           postface : texte en fin d'ouvrage avec des commentaires et compléments d'informations
+              </small>
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition de la révision typographique
+            </br><small>
+               respect des règles typographiques standards
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Orthographe et grammaire typographique
+              </li>
+              <small>
+           vérification des accents, cédilles, apostrophes, etc.
+              </small>
+             
+              <li>
+              Espaces et ponctuation
+              </li>
+              
+            
+              <li>
+              Cohérence des polices et tailles de caractères
+              </li>
+              <small>
+           possiblement de multiples polices pour un seul texte
+              </small>
+             
+              <li>
+              Alignement des marges 
+              </li>
+            
+            
+               
+              <li>
+              Citation et guillemets
+              </li>
+            
+
+              <li>
+              Liste et numérotations
+              </li>
+              <small>
+           liste à puces ou numérotées
+              </small>
+             
+               
+              <li>
+              Clarté visuelle
+              </li>
+              
+
+              
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Signes typographiques 
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              {} Accolade
+              </li>
+              <small>
+           seule ou double
+              </small>
+              </br><small>
+         verticale ou horizontale 
+              </small>
+              
+              <li>
+              * Astérisque 
+              </li>
+              <small>
+           renvoi pour une note de bas de page
+              </small>
+       
+              <li>
+            & Perluète
+              </li>
+              <small>
+           « et » dans les noms d'entreprise
+              </small>
+             
+
+              <li>
+                ~ Tilde 
+              </li>
+              <small>
+           langues hispaniques
+              </small>
+              </br><small>
+         dictionnaires
+              </small>
+              </br><small>
+           transcriptions phonétiques
+              </small>
+            
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Temporalité de la révision typographique
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              avec/après révision linguistique
+              </li>
+              <small>
+           aspects dépendant du Guide de Style dans la Charte rédactionnelle
+              </small>
+            
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Préparation de copie
+            </br><small>
+                <i>étape d'application sur l'ensemble du texte des règles et conventions de l'instance de publication</i>
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Vérification des éléments nécessaires au texte
+              </li>
+              <small>
+           annexes, compléments, illustrations, etc.
+              </small>
+              
+              <li>
+              Hiérarchisation des niveaux de titres et sous-titres
+              </li>
+             
+            
+
+              <li>
+              Application/Vérification des règles typographiques
+              </li>
+
+              <li>
+              Application du style bibliographique
+              </li>
+              <li>
+              Traitement des styles
+              </li>
+              <small>textuels et non-textuels</small>
+              <li>Intégration des modifications demandées</li>
+          <li>Distinguer les éléments papier/numérique</li>
+          <small>publication hybride</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Uniformité
+            </br><small>
+                présentation typographique uniforme
+            </small>
+            </p>
+
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Particularité
+              
+            </br><small>
+                le cas de l'exposant
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              pour les mathématiques et sciences
+              </li>
+              <li>pour les siècles</li>
+            <li>pour les appels de note</li>
+         
+            </ul>
+<p>cas particulier : le <sup>o</sup> dans n<sup>o</sup> n'est pas un degré mais un [o] en exposant</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Cas de changements de police
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Changement du niveau de narration
+              </li>
+              <small>
+           graphie d'un autre narrateur
+              </small>
+          
+              <li>Retranscription d'un document externe au récit</li>
+<small>écriture cursive pour des manuscrits, etc.</small>
+              <li>Insertion d'un autre niveau d'information</li>
+            <small>du code : police sans serif ou empattement</small>
+            <small>une indication, une écriture issue du cadre du récit : police plus dense</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Cas limite : la non-reconnaissance des caractères
+            </br><small>
+              � ou 􏿮
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Caractère de remplacement
+              </li>
+              <small>
+           ASCII : jeu de caractère pour représenter les signes à l'écran
+              </small>
+              </br><small>
+                UTF-8 : format de codage de caractères qui permet de représenter
+              </small>
+             
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_physiologie.webp" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Cas limite : le jeu littéraire typographique
+            </br><small>
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Jeu d'imprimeur
+              </li>
+              <small>
+          <i>La Physiologie du Mariage</i>, Balzac
+              </small>
+             <li>Manifeste de surréaliste/futuriste</li>
+         <small><i>Parole in Liberta</i>, Marinetti</small>
+         <li>Restitution d'esthétiques numériques dans le papier</li>
+         <small><i>Vas</i>, Tomasula</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Ressources
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              <i>Le Ramat de la typographie</i>, Aurel, 2005
+              </li>
+             <li><i>Typographie : Guide pratique</i>, Gautier, 2002</li>
+             <li><i>Manuel de typographie et de mise en page</i>, Richauceau et Binisti, 2005</li>
+         
+            </ul>
+
+          </div>
+        </section>
+
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Les Références bibliographiques</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition d'une référence bibliographique
+            </br><small>
+                
+            </small>
+            </p>
+
+            <span style="color:turquoise">Merzeau</span> , <span style="color: blue;">L.</span> (<span
+              style="color: violet;">2013</span>). <span style="color: orange;">Éditorialisation collaborative d’un
+              événement.</span> <span style="color: red;"><i>Communication et organisation. Revue scientifique francophone
+                en Communication organisationnelle</i></span>, (<span style="color: rgb(255, 196, 0)">43</span>), <span
+              style="color: green;">105-22</span>.
+            </span>
+  
+<p>Deux niveaux : <i class="material-icons">speaker_notes</i> la citation et la bibliographie <i class="material-icons">list_alt</i> </p>
+          </div>
+        </section>
+
+        
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Style bibliographique
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>Ensemble de règles pour la mise en forme de données</li>
+          <li>Spécificités selon les pratiques de communautés / disciplines
+          </br><small>10 153 styles bibliographiques dont beaucoup de doublons</small>
+          </li>
+          <li><i class="material-icons">filter_list</i> <a href="https://www.zotero.org/styles">Répertoire des styles</a></li>
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Styles bibliographiques en sciences humaines et littérature
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Modern Language Association
+          </li>
+          <small>
+       accent sur l'auteur et le titre
+          </small>
+          </br><small>
+     mode abrégé (Nom p.)
+          </small>
+          </br><small>
+       structure : Nom. Titre. Éditeur. Année de publication. (Lieu de publication.)
+          </small>
+          <li>
+            American Psychological Association
+            </li>
+            <small>
+         accent sur l'auteur et l'année de publication
+            </small>
+            </br><small>
+       mode abrégé (Nom, date)
+            </small>
+            </br><small>
+         structure : Nom. (Année). Titre. Lieu de publication. Éditeur.
+            </small>
+        
+            <li>
+              Chicago Manual of Style
+              </li>
+              <small>2 systèmes</small>
+              <ul>
+                <small>1. note + bibliographie</small>
+              </br><small>2. auteur-date + bibliographie</small>
+              </ul>
+             
+              <small>
+           structure : Auteur, Prénom. Titre. Lieu de publication : Éditeur, année.
+              </small>
+          
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Exemple
+        </br><small>
+            
+        </small>
+        </p>
+        <ul>
+          <li style="font-size: large;">
+            Woolf, V. (1985). <i>Une chambre à soi</i>. Paris : Éditions de la Pléiade.
+            <small>APA 6e</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, V. (1985). <i>Une chambre à soi</i>. Éditions de la Pléiade.
+             <small>APA 7e</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, Virginia. <i>Une chambre à soi</i>. Éditions de la Pléiade, 1985.<small>Modern Language Association</small>
+            </br></li>
+          <li style="font-size: large;">
+            Woolf, Virginia. <i>Une chambre à soi</i>. Paris : Éditions de la Pléiade, 1985. <small>Chicago</small>
+            </br></li>
+          
+        </ul>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Questions de révision
+          
+        </br><small>
+            
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          Véracité de la référence
+          </li>
+          <small>
+       est-ce que cette référence existe ?
+          </small>
+          </br><small>
+     est-ce que les informations (date, auteur, édition) sont correctes ?
+          </small>
+          </br><small>
+       est-ce que les informations sont complètes ?
+          </small>
+          </br><small>
+         est-ce que la référence comporte des erreurs de langue ?
+          </small>
+        <li>Structure de la référence</li>
+<small>est-ce que la référence suit bien le style bibliographique ?</small>
+        </br><small>est-ce que la référence comporte des erreurs de ponctuations, de majuscules ?</small>        
+<li>Niveaux de référence</li>
+<small>est-ce que la citation est bien structurée ?</small>    
+<small>est-ce que la bibliographie est bien en ordre alphabétique ?</small>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Exemple - Texte du TP2
+        </br><small>
+            
+        </small>
+        </p>
+        <ul>
+          <li style="font-size: large;">
+            Quel style bibliographique ?  
+            </br></li>
+          <li style="font-size: large;">
+          Erreurs ?   
+            </br></li>
+         
+        </ul>
+      </div>
+    </section>
+
+
+      </section>
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La correction d'épreuve</h4>
+            <p style="font-variant: small-caps;">finalisation en vue du BAT</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition
+            </br><small>
+             aspects des précédentes révisions
+            </small>
+            </p>
+
+            <ul>
+              <li>
+             Texte
+              </li>
+              <small>qualité de la langue</small>
+            <li>Structuration</li>
+<small>titres, en-têtes, pieds de page</small>
+<li>Table des matières</li>
+<li>Veuves et orphelines</li>
+<small>dernière/première ligne d'un paragraphe isolée en début/fin d'une page ou colonne</small>
+<li>Pagination</li>
+<li>Coupure des mots</li>
+<li>Uniformité sur la présentation</li>
+<li>Espacement</li>
+<li>Fonctionnement, accessibilité, compatibilité</li>
+<small>support numérique non-imprimable</small>
+            </ul>
+<p style="font-variant: small-caps;">Vérification à différentes échelles</p>
+
+          </div>
+        </section>
+
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+          <section data-background-image="media/hyper.webp" data-background-size="2000px">
+            <div id="fondop2">
+              <h4>TP Final - Correction d'épreuve + feuille de route (30%)</h4>
+              <p style="font-variant: small-caps;">pour le 17 mars</p>
+            </div>
+          </section>
+        
+          <section data-background-image="media/729_index.jpg" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star</i>
+            <p style="font-variant: small-caps;">Plusieurs possibilités</br>
+              <small>correction d'épreuve</small></p>
+            <ul>
+              <small>mode manuscrit</small>
+              </br> <small>mode numérique (traitement de texte)</small>
+              </br><small>mode numérique versionné</small>
+              <li>+ Feuille de route justifiant et documentant la révision</li>
+            </ul>
+
+          </div>
+
+        </section>
+       
+        </section>
+        
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

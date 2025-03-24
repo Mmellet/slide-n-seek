@@ -1,0 +1,1330 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_lecture.png" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">24 mars : Une révision, un public</h5>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>TP3 - Correction</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+      
+     
+      
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps;">Détail de la révision
+            
+          </br><small>
+           <a href="https://github.com/Mmellet/matiere-vitali-rosati/tree/correction">branche correction</a> et <a href="https://github.com/Mmellet/matiere-vitali-rosati/compare/revision...correction">comparaison version</a>
+          </small>
+          </p>
+      
+         
+      
+        </div>
+      </section>
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <h3>Développement de notions/Précisions</h3>
+       
+          <p style="font-variant:small-caps;">
+  
+          </br><small>
+              
+          </small>
+
+      
+          </p>
+
+          <ul>
+            <li>
+            Chapitre 1
+            </li>
+            <small>
+         notions : hubris, logos, graphé, LLM, dualisme immatérialiste, Charybde, anastrophe
+            </small>
+          </br><small>
+         précision d'Hérodote
+          </small>
+        <li>Chapitre 2</li>
+        <small>
+       question du premier chapitre
+            </small>
+            </br><small>
+         ajout de schéma de l'expérience
+            </small>
+            </br><small>
+           ajout des professions des savants
+            </small>
+          </br><small>
+        notions : valeurs discrètes, continues, spin
+          </small>
+          <li>Chapitre 3</li>
+          <small>notions : hyperouranion</small>
+          </ul>
+        </div>
+      </section>
+
+      
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <h3>Langue</h3>
+       
+          <p style="font-variant:small-caps;">
+  
+          </br><small>
+              
+          </small>
+
+      
+          </p>
+
+          <ul>
+            <li>
+            Chapitre 1
+            </li>
+            <small>
+         adapté à/pour, Emmanuel, questionner
+            </small>
+          </br><small>
+         répétitions
+          </small>
+        <li>Chapitre 2</li>
+        <small>
+    virgule avant car, mettre en crise
+            </small>
+            </br><small>
+ imprécision : quelque chose
+            </small>
+        
+          <li>Chapitre 3</li>
+          <small>pas virgule avec ou (sauf cas d'incise), difficile de + infinitif et complément, poids</small>
+          </ul>
+        </div>
+      </section>
+      
+      </section>
+      
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_lecture.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Révisions et adaptations </h3>
+         
+            <p style="font-variant:small-caps;">
+    
+            </br><small>
+                
+            </small>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Niveaux d'accessibilité d'information
+              
+            <small>
+              différents profils de public
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              expert
+              </li>
+              <small>
+           public aux connaissances spécifiques
+              </small>
+              </br><small>
+         terminologie spécifiques, vocabulaire technique, concepts complexes
+              </small>
+              </br><small>
+           phrases longues à structures enchâssées
+              </small>
+
+<li>généraliste</li>
+<small>large public</small>
+              </br><small>
+            accompagnement de la lecture 
+              </small>
+
+              <li>
+              jeune public
+              </li>
+              <small>
+           simple, clair, direct, visuel 
+              </small>
+              <li>
+              international ou multiculturel
+              </li>
+              <small>
+           adaptation linguistique
+              </small>
+              </br><small>
+         traque des faux-amis
+              </small>
+            
+            </ul>  
+<p>avec adaptation de la tonalité : amicale, persuasive, neutre, etc.</p>
+          </div>
+        </section>
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Révision adaptée
+            </br><small>
+               
+            </small>
+            </p>
+
+
+            <ul>
+              <li>
+              Niveau/registre de langue
+              </li>
+              <li>Tonalité/ton de l'écrit</li>
+              <li>Référence et évocation des images</li>
+              <li>Nature des éléments multimédiaux</li>
+            
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Conscience du public visé
+            </br><small>
+                selon le genre, le type littéraire
+            </small>
+            </p>
+
+            <ul>
+            
+          
+              <li>
+           Valeurs attachées à une écriture
+              </li>
+              <li>Figures de style et codes de langue</li>
+             
+
+              <li>
+        Lien à une culture commune du genre
+              </li>
+          <li>Renouvellement / Captation de l'attention</li>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_dahl.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Exemple : Le cas Roald Dahl
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Littérature jeunesse
+              </li>
+              <small>
+           adaptations multiples au fil des rééditions
+              </small>
+              </br><small>
+         calque à une culture dominante
+              </small>
+              </br><small>
+           évolution du rapport à la culture jeunesse
+              </small>
+            
+            </ul>
+<p>exercice de lecture : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/seance12.pdf?time=1742854126448">PDF</a> ou <a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/seance12.docx">DOCX</a></p>
+          </div>
+        </section>
+
+
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Accessibilité et conception universelle</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Définition d'obstacle
+            </br><small>
+              Loi canadienne sur l’accessibilité (LCA)
+            </small>
+            </p>
+
+          <p>« Tout élément – notamment celui qui est de nature physique ou architecturale, qui est relatif à l’information, aux communications, aux comportements ou à la technologie ou qui est le résultat d’une politique ou d’une pratique – qui nuit à la participation pleine et égale dans la société des personnes ayant des déficiences notamment physiques, intellectuelles, cognitives, mentales ou sensorielles, des troubles d’apprentissage ou de la communication ou des limitations fonctionnelles. »</p>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Guide
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+           Choix architecturaux et design de l'accessibilité aux contenus
+              </li>
+              <li>Normes graphiques et lisibilité</li>
+              <small>
+     contraste, police, graisse, proportion
+              </small>
+
+              <li>+ Directives de présentation d'un document texte</li>
+             <small>
+         lutter contre la surcharge de mise en page
+              </small>
+              
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Directives de présentation de document texte pour l'accessibilité
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+             Police des caractères
+              </li>
+              <small>
+           sans empattements (Arial, Calibri, Verdana)
+              </small>
+              </br><small>
+         taille de caractères (12-18 pour Arial; 14-20 pour Calibri; 11-17 pour Verdana)
+              </small>
+              </br><small>
+           notes de bas de page à 10
+              </small>
+              </br><small>
+             gras plutôt qu'italique
+              </small>
+
+            </br><small>
+             soulignement + coloration des liens
+            </small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Directives de présentation de document texte pour l'accessibilité
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+            Couleurs
+              </li>
+              <small>
+           symboles et listes plutôt que couleurs
+              </small>
+              </br><small>
+         couleurs à haut constraste entre le texte et le fond
+              </small>
+              </br><small>
+         pas de combinaison type rouge/vert ou bleu/jaune
+              </small>
+           
+
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Directives de présentation de document texte pour l'accessibilité
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+            Aspect
+              </li>
+              <small>
+          marges par défaut (2,74 cm)
+              </small>
+              </br><small>
+       pas de surcharge
+              </small>
+              </br><small>
+         listes pour énumération de plus de 2 éléments
+              </small>
+              </br><small>
+   alignement à gauche
+              </small>
+
+            </br><small>
+            table des matières
+            </small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Directives de présentation de document texte pour l'accessibilité
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+            Contenu
+              </li>
+              <small>
+           première occurence d'un acronyme : développement
+              </small>
+              </br><small>
+       éviter les abréviations        </small>
+              </br><small>
+       titres courts (moins de 20 mots)
+              </small>
+              </br><small>
+          harmonisation des titres et styles 
+              </small>
+
+            </br><small>
+           hiérarchie des styles
+            </small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Directives de présentation de document texte pour l'accessibilité
+            </br><small>
+              Musée canadien pour les Droits de la personne (MCDP)
+            </small>
+            </p>
+
+            <ul>
+              <li>
+         Tableau
+              </li>
+              <small>
+           pas de lignes/colonnes supplémentaires
+              </small>
+              </br><small>
+        éviter la fusion des cellules
+              </small>
+              </br><small>
+      ajout de textes alternatifs
+              </small>
+            
+
+            <li>Images</li>
+
+            <small>
+           textes alternatifs et transcriptions
+            </small>
+            </br><small>
+       distinguer les images importantes de non-importantes
+            </small>
+            </br><small>
+         graphique : ne pas superposer des sens de lecture à des types d'informations
+            </small>
+          
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+         Adaptation audio/texte
+            </br><small>
+               
+            </small>
+            </p>
+
+            <ul>
+              <li>
+             Lecture parallèle
+              </li>
+              <small>
+          entre la transcription et l'écoute
+              </small>
+            </br>
+              <small>
+  importance de la ponctuation 
+              </small>
+            </br>
+              <small>
+                pratique de la lecture à voix haute
+              </small>
+            
+            </ul>
+
+          </div>
+        </section>   
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Ressources pour l'accessibilité web
+              
+            </br><small>
+                
+            </small>
+            </p>
+
+            <ul>
+             <li><a href="https://www.w3.org/WAI/standards-guidelines/">W3C Accessibility Standards Overview </a></li>
+            </ul>
+
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Le cartel</h4>
+            <p style="font-variant: small-caps;">retour</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Règle de rédaction
+              
+            </br><small>
+           informations générales
+            </small>
+            </p>
+
+
+            <ul>
+              <li>
+              Nom
+              </li>
+              <small>
+           si anonyme : Anonyme
+              </small>
+              </br><small>
+         si incertain : [Nom]
+              </small>
+              <li>
+              Titre
+              </li>
+              <small>
+           si pas de titre : <i>Sans titre</i>
+              </small>
+              <li>
+              date de réalisation
+              </li>
+              <small>
+           année ou intervalle
+              </small>
+              </br><small>
+  si incertaine : [1756 ?] ou v. 1756 ou vers 1756-1758
+              </small>
+             
+            
+            
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Règle de rédaction
+              
+            </br><small>
+           informations générales
+            </small>
+            </p>
+
+
+            <ul>
+              <li>
+       Critères techniques
+              </li>
+              <small>
+         1. Médium
+              </small>
+              </br><small>
+      2. Support
+              </small>
+
+            </br><small>
+         3. Technique
+            </small>
+              <li>
+           Dimensions
+              </li>
+              <small>
+                hauteur x largeur x profondeur, et unité de mesure 
+              </small>
+            
+            
+            
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Règle de rédaction
+              
+            </br><small>
+           informations facultatives
+            </small>
+            </p>
+
+
+            <ul>
+              <li>
+          Lieu de conservation, Ville
+              </li>
+          
+              <li>
+             Mode et date d'acquisition
+              </li>
+              <small>
+                don, prêt, achat
+              </small>
+              <li>
+           Numéro d'inventaire
+              </li>
+            
+            
+            
+            
+            </ul>
+
+<p>différentes accessibilités selon la nature des informations</p>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_cartel.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+  Accessibilités physiques
+            </br><small>
+              MCDP
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Cartel aux côtés de la création 
+              </li>
+<small>sans cacher ni être chaché</small>
+
+          <li>Déterminer l'expérience et la proximité avec la création </li>
+              
+
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              TP4
+            </br><small>
+          consignes de rédaction reçues par les étudiants
+            </small>
+            </p>
+
+            <ul>
+              <li>
+           Identification de l’étudiant et du projet
+              </li>
+<small>Prénom et nom (discipline)</small>
+
+            </br>
+              <small>
+                Titre du projet
+              </small>
+            </br><small>
+              Médiums, matériaux
+            </small>
+            <li>Texte de description </li>
+            <li>Courriel et site Internet (facultatif)</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Texte descriptif
+            </br><small>
+                100-150 mots
+            </small>
+            </p>
+<p>Le texte de présentation introduit le public au concept qui appuie le projet ainsi qu’à sa forme. Il peut faire référence à l’intention de départ, à des questionnements, des champs d’intérêt ou au thème exploité. N’oubliez pas que cette démarche, qui se retrouvera sur le mur de la galerie d’art près de votre projet et dans l’opuscule, est un outil de communication pour le public. Il doit être clair, concis et rédigé sans faute. L’intention s’écrit à la première personne. </p>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Texte descriptif
+            </br><small>
+         structure
+            </small>
+            </p>
+
+            <ul>
+              <li>
+        1. propos, questionnements, enjeux, démarche artistique
+              </li>
+              <li>2. lien entre le propos, la problématique et le langage plastique</li>
+              <li>3. lien avec le spectateur</li>
+            </ul>
+
+          </div>
+        </section>
+        
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Texte descriptif
+            </br><small>
+         exemple
+            </small>
+            </p>
+
+            <ul>
+              <li>
+                Geneviève Lapierre (sculpture-maquette)
+              </li>
+              <li><i>Construction/ Illusion</i></li>
+              <li>Éléments de la nature, retailles de bois de construction, polyuréthane, socle</li>
+        
+            <li style="font-size: 24px;">Passionnée de sociologie, j’empreins mon travail de ma préoccupation pour les perceptions humaines sur l’évolution de la vie en société. Ainsi, les questions sociopolitiques, écologiques et sociales sont au cœur de ma démarche. J’utilise la sculpture-maquette pour remettre en question nos propres constructions humaines, tant matérielles qu’idéologiques. Construction/illusion représente un univers narratif où se mélangent des formes organiques et architecturales, le réel et l’imaginaire, créant une impression fantastique et incongrue qui ouvre la porte à la remise en question de la validité de nos propres visions de ce qui est et de ce qui devrait être. C’est une invitation à remettre en perspective nos visions de la vie, que nous tenons pour acquises, et à revisiter notre rapport au monde pour faire émerger des prises de conscience, des perceptions plus globales et durables de notre évolution humaine. (137 mots)</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+           Critères
+            </br><small>
+  
+            </small>
+            </p>
+
+            <ul>
+              <li>
+       Clarté du discours et de la présentation 
+              </li>
+              <li>Lien entre le propos et les matériaux</li>
+              <li>Présentation de la démarche personnelle</li>
+              <li>Concision du texte et fluidité</li>
+              <li>Qualité de la langue</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+          Objectifs
+            </br><small>
+  
+            </small>
+            </p>
+
+            <ul>
+              <li>
+ Précision
+              </li>
+<small>termes, informations</small>
+              <li>Clarté</li>
+              <small>phrases, messages</small>
+              <li>Attractivité</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+         TP4
+            </br><small>
+  méthodologie de la révision 
+            </small>
+            </p>
+
+            <ul>
+              <li>
+Traitement de texte
+              </li>
+<small>suivi des modifications + commentaires pour suggestions</small>
+            </br><small>+ feuille de route (seulement pour le contrôle des ressources consultées)</small>
+          </br><small>dépôt Moodle</small>
+            </ul>
+            <p><b>pour le 7 avril</b></p>
+
+          </div>
+        </section>
+
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La correction d'épreuve</h4>
+            <p style="font-variant: small-caps;">entraînement</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Exercice d'entraînement
+            </br><small>
+           séance 12 et suivantes
+            </small>
+            </p>
+
+           <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/Lambert-entrainement.pdf">Texte pour correction d'épreuve</a>
+      
+           </p>
+
+           
+          </div>
+        </section>
+
+
+        </section>
+
+
+        
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

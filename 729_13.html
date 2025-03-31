@@ -1,0 +1,1008 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_misepage.png" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">31 mars : Image du texte et mise en page</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_misepage.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Révision paratextuelle</h3>
+         
+            <p style="font-variant:small-caps;">
+    élément autour du texte principal
+            </br><small>
+                
+            </small>
+            </p>
+            <ul>
+              <li>
+      couverture
+              </li>
+              <small>
+     titre, nom, iconographie, légende, design
+              </small>
+             
+<li>pages liminaires</li>
+<small>titre, nom, mention édition ou collection</small>
+              </br><small>
+         ISBN, achevé d'imprimer 
+              </small>
+            </br><small>notice biblographique, dédicace, remerciement</small>
+          </br><small>table des matières</small> 
+          <li>fin d'ouvrage</li><small>annexes, index, bibliographie</small>
+          
+        </ul>  
+<p>vérification de la qualité de la langue, cohérence et uniformisation</p>
+          </div>
+        </section>
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_misepage.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Fondamentaux de la mise en page</h3>
+         
+            <p style="font-variant:small-caps;">
+    
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Principes plastiques
+              
+            <small>
+        forme, lumière, couleur, matière
+            </small>
+            </p>
+
+            <ul>
+              <li>
+         1. Composition
+              </li>
+              <small>
+      sélection et organisation dans la surface des différents éléments
+              </small>
+              </br><small>
+         bloc composition, format, typographie, hiérarchie, espacement et alignement
+              </small>
+            
+<li>2. Symétrie</li>
+<small>unité et équilibre entre les éléments</small>
+              </br><small>
+            selon un repère fondateur ou référence
+              </small>
+            
+            </ul>  
+          </div>
+        </section>
+        <section data-background-image="media/729_grille.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+       Compositions symétriques et asymétriques
+            </br><small>
+               
+            </small>
+            </p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_page-grille.png" data-background-size="1800px" background-color="#21211c">
+       
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Principes plastiques
+              
+            <small>
+        forme, lumière, couleur, matière
+            </small>
+            </p>
+
+            <ul>
+              <li>
+       3. Rythme
+              </li>
+              <small>
+      division de l'espace de la composition
+              </small>
+              </br><small>
+        contraste, correspondance, écart graphique, mouvement 
+              </small>
+     
+            
+            </ul>  
+          </div>
+        </section>
+
+        <section data-background-image="media/729_folio.png" data-background-size="1100px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Formats
+            </br><small>
+               surface de la page 
+            </small>
+            </p>
+
+            <ul>
+            
+          
+              <li>
+    plusieurs acceptions
+              </li>
+              <small>format de feuille, d'ouvrage, format de fichier</small>
+              <li>Lexique du format de la page</li>
+             <small>in-plano : feuille à plat = 2 pages</small>
+            </br>
+            <small>in-folio : feuille pliée une fois = 4 pages</small>
+          </br>
+          <small>in-quarto : feuille pliée en quatre deux fois = 8 pages</small>
+        </br>
+        <small>in-octavo : feuille pliée en huit trois fois = 16 pages</small>
+      </br>
+      <small>in-douze, in-seize, in-dix-huit, in-vingt-quatre, etc.</small>
+            </ul>
+
+          </div>
+        </section>
+
+   
+
+        <section data-background-image="media/729_AA.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Formats ISO-DIN
+            </br><small>
+             <i>Organisation internationale de standardisation</i>
+            </small>
+            </p>
+     </div>
+        </section>
+
+        <section data-background-image="media/729_format-americain.svg" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Formats américains
+            </br><small>
+         États-Unis, Canada, Mexique
+            </small>
+            </p>
+
+            <ul>
+              <li>Statement</li>
+              <small>140 fois 216 mm</small>
+              <li>Executive</li>
+              <small>190 x 254 mm</small>
+              <li>Letter</li>
+              <small>216 x 280 mm</small>
+              <li>Legal</li>
+              <small>280 x 432 mm</small>
+              <li>Tabloïd</li>
+              <small>280 x 432 mm</small>
+              <li>Ledger</li>
+              <small>432 x 280 mm</small>
+            </ul>
+     </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">La Marge
+              
+            </br><small>
+            espace stratégique
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              intermédiaire avec le hors-champ
+              </li>
+          <li>espace pour les informations fonctionnelles</li>
+              <li>zone de repos du regard</li>
+              <li>espace pour la prise en main</li>
+          <small>pied de page ou marges latérales</small>
+            </br><small>à une ou deux mains</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_page-anatomie.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2" class="fragment">
+<p style="font-variant: small-caps;">Anatomie d'une double-page</p>
+<ul>
+  <li>1. petit fond</li>
+  <small>ou marge intérieure</small>
+  <li>2. grand fond</li>
+  <small>ou marge extérieure</small>
+  <li>3. blanc de tête</li>
+  <small>ou marge du haut de page</small>
+<li>4. blanc de pied</li>
+<small>ou marge de pied de page</small>
+</ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_page-anatomie.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2" class="fragment">
+<p style="font-variant: small-caps;">Anatomie d'une double-page</p>
+<ul>
+
+<li>5. colonne</li>
+<li>6. bloc ou module</li>
+<small>pour texte ou image</small>
+<li>7. lignes de base</li>
+<li>8. et 9. gouttière</li>
+<small>entre colonne et relief de la tranche</small>
+<li>10. gabarit ou rectangle d'empagement</li>
+<small>zone du contenu principal</small>
+</br><small>avec 11. hauteur et 12. justification</small>
+</ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Modèle idéal du texte
+              
+            </br><small>
+            marges tournantes - règles
+            </small>
+            </p>
+
+            <ul>
+              <li>
+             La marge la plus faible est le petit fond
+              </li>
+          <li>La marge la plus faible augmente selon la marge de texte et le grand fond</li>
+              <li>Du plus petit au plus grand : petit fond, marge de tête, grand fond, marge de pied</li>
+              <li>Le folio sur le blanc le plus important</li>
+       
+            </ul>
+
+          </div>
+        </section>
+ 
+        <section data-background-image="media/729_marges.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Marges et double-page
+            </br><small>
+     canon ou translation
+            </small>
+            </p>
+     </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">Typographie
+              
+            </br><small>
+     
+            </small>
+            </p>
+
+            <ul>
+              <li>
+             marque de fabrique 
+              </li>
+              <small>selon type, discipline, niveau de discours</small>
+          <li>effet de contraste</li>
+              <li>avec interlignage, alignement</li>
+              
+            </ul>
+
+          </div>
+        </section>
+
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/misepage.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La structure d'une document et sa composition</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Pages liminaires
+            </br><small>
+             avant le texte principal 
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Garde 
+              </li>
+              <small>
+          blanche ou couleur
+              </small>
+             
+            <li>Faux-titre</li>
+<small>titre de l'ouvrage seul</small>
+            </br><small>verso : liste ouvrages du même auteur</small>
+
+            <li>Titre</li>
+<small>nom auteur, titre, raison sociale de l'éditeur, ville, année édition</small>
+          </br><small>verso : copyright</small>
+            </ul>
+<p>pages non foliatées</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Pages liminaires
+            </br><small>
+             avant le texte principal 
+            </small>
+            </p>
+
+            <ul>
+              <li>
+          Table des matières
+              </li>
+              <small>
+         impaire
+              </small>
+             
+            <li>Optionnelles</li>
+<small>liste illustrations, abréviations, tableaux</small>
+           
+
+            <li>Préface, Avant-propos, Remerciements, Introduction</li>
+<small>belle page</small>
+          
+            </ul>
+<p>-->| Page de départ</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_folio-grille.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Folio et titre
+            </br><small>
+             composants discrets
+            </small>
+            </p>
+
+            <ul>
+              <li>
+         Positionnement par rapport au bloc de composition
+              </li>
+              <small>en marge</small>
+            </br><small>titre courant</small>
+              <li>Folio dans le blanc le plus important</li>
+              <small>
+     centré ou non, aligné ou non
+              </small>
+
+              
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+       Notes
+            </br><small>
+         
+            </small>
+            </p>
+
+            <ul>
+              <li>
+            Différentes options de l'appel de note 
+              </li>
+              <small>
+         astérique, signe, chiffre arabe, romain, lettre minuscule
+              </small>
+          <li>Corps inférieur au corps principal</li>
+          <small>police, interligne, graisse</small>
+          <li>Positionnement</li>
+          <small>marginales/latérales ou bas de page</small>
+          <li>Enrichissement</li>
+          <small>couleur et hyperlien</small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+       Annexes et fin d'ouvrage
+            </br><small>
+         </small>
+            </p>
+
+            <ul>
+              <li>
+            Numérotation et titrage de l'annexe
+              </li>
+              <small>
+          lettre majuscule (Annexe A, B, C, etc.)
+              </small>
+           <li>Index</li>
+           <small>thématique ou nominatif</small>
+            </br><small>nom de l'entrée, numéros de page</small>
+
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+        Différentes mises en page      </br><small>
+              templates sur Overleaf </small>
+            </p>
+            <ul>
+              <li>classiques</li>
+              <small>équilibre des marges : <a href="https://www.overleaf.com/latex/templates/preprint-book-manuscript-template/ghrbwppzhzjx.pdf">Name of the Book</a></small>
+            </br><small>optimisation des marge de tête et de pied : <a href="https://www.overleaf.com/latex/templates/thesis-template/xrqcvvbkfxnb.pdf">Document Title</a></small>
+            <li>préparées pour l'impression</li> 
+            <small>in-octavo : <a href="https://www.overleaf.com/latex/examples/mini-livre-exercices-de-rentree-en-seconde/gncxgskzswtc.pdf">Mini-livre d'exercice</a></small>
+          </br><small>traits de coupe : <a href="https://www.overleaf.com/latex/templates/book-template-for-world-scientific-9-dot-00-x-6-dot-00-inches/fcdqkrckjbhb.pdf">Rectangle</a> ou <a href="https://www.overleaf.com/latex/templates/mit-press-book-template-new-math/qqrfsgztfksp.pdf">Carré</a></small>
+            <li>hybrides</li>
+              <small>grandes marges : <a href="https://www.overleaf.com/latex/templates/template-for-springer-monographs/jkmjvjrkqrpb.pdf">Book title</a></small>
+            </br> <small>mélange de typographie : <a href="https://www.overleaf.com/latex/templates/simple-a5-book-template/gkryymktcyzs.pdf">A book title</a></small>
+          </br><small>colonne de notes marginales : <a href="https://www.overleaf.com/latex/templates/book-design-inspired-by-edward-tufte/gcfbtdjfqdjh.pdf">A Tufte-Style Book</a></small>
+            <li>émergeantes numérique</li>
+            <small>écran de téléphone : <a href="https://www.overleaf.com/latex/templates/little-book/wzbbdmdtvtkn.pdf">The Little Book of something</a></small>
+          <small>visionneuse sur ordinateur : <a href="https://www.overleaf.com/latex/templates/lathex-light/vyhsdfvrcnwt.pdf">A Mindblowing Title</a></small> 
+      
+      
+          <li>déséquilibrées</li> 
+      <small>problème d'espacement : <a href="https://www.overleaf.com/latex/templates/conlang-grammar-template/ysvrsjwftmfx.pdf">A Grammar of Foo</a></small> 
+    <small>coupure des mots : <a href="https://www.overleaf.com/latex/templates/carauma/pjksmbfyrnkr.pdf">Carauma</a></small>    
+    </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_house-leaves.jpg" data-background-size="1700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+       Cas limite : les débordements poétiques     </br><small>
+               </small>
+            </p>
+<p>mise en page où les marges sont volontairement changeantes
+</br><small><i>La maison des feuilles</i>, Danielewski ; <i>Vas</i>, Tomasula</small>
+</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_page-anatomie.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+      Rappel de la page   </br><small>
+               </small>
+            </p>
+
+          </div>
+        </section>
+
+
+      </section>
+
+
+      
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La correction d'épreuve</h4>
+            <p style="font-variant: small-caps;">entraînement</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Exercice d'entraînement
+            </br><small>
+           séance 12 et suivantes
+            </small>
+            </p>
+            
+
+           <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/Lambert-entrainement.pdf">Texte pour correction d'épreuve</a>
+           </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/Article-type.pdf">article type de la revue</a></small>
+           </p>
+
+           
+          </div>
+        </section>
+
+
+        </section>
+
+
+        
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

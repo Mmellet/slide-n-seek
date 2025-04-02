@@ -1,0 +1,1014 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+
+table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_fly.jpg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">2 avril : Gestion, imprévus, humain, adaptation</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_fly.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Gestion de l'équipe</h5>
+       
+            <p style="font-variant: small-caps;">équilibre des savoirs, savoir-faire, savoir-être
+              </br><small></small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Appel à proposition
+            </br><small>
+                choix déterminant de l'équipe
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Compétences nécessaires
+              </li>
+              <small>
+           langagières, techniques, sociales, artistiques, autres
+              </small>
+              <li>Description du contexte</li>
+            <small>le projet</small>
+            <li>Description détaillée du mandat</li>
+            <small>livrable, délai</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Leadership
+              </br><small>par une figure de Leader</small>
+            </p>
+
+            <ul>
+              <li>Direction</li>
+              <small>Fonction de gestion par laquelle le dirigeant amène son personnel, individuellement et en groupe, à réaliser efficacement les activités pour atteindre les buts.</small>
+               <li>Leadership</li>
+           <small>Capacité à inspirer la confiance chez les autres, à influencer le comportement des autres pour permettre à un groupe d’atteindre les buts visés</small>
+          <li>Qualités</li> 
+          <small>perspicacité créative, vision d'avenir</small>
+            </br><small>sensibilité, souplesse, patience</small>
+          </br><small>aptitude à amener les gens à se concentrer sur un objectif</small>
+          </ul>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Culture de leadership
+              </br><small>leadership partagé</small>
+            </p>
+
+            <ul>
+              <li>Co-influence des bonnes pratiques</li>
+              <small></small>
+              <li>Pouvoir informel par un concensus</li>
+              <small>autorité formelle : accordée par l'entreprise selon des principes d'organisation hiérarchique</small>
+              <li>Leadership n'implique pas autorité</li>
+            </ul>
+ 
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Test de la qualité du leader
+              </br><small><a href="https://www.jobboom.com/carriere/wp-content/uploads/2018/01/Questionnaire-%C3%8Ates-vous-un-bon-leader.pdf">source</a></small>
+            </p>
+
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fidélisation au projet 
+              </br><small>rapport d'investissement et attachement</small>
+            </p>
+<ul>
+  <li>Vis-à-vis d'un projet</li>
+  <small>et non d'une personne/figure/statut</small>
+  <li>Collaboration</li>
+  <small>les compétences sont plus fortes lorsque mises en dialogue</small>
+  <li>Gages de fidélisation</li>
+  <small>objectifs clairs</small>
+</br><small>communication engageante</small>
+</br><small>reconnaissance des efforts : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Retroaction_Constructive.pdf">Note pour la rétroaction</a></small>
+</br><small>possibilité de développements individuels</small>
+</ul>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Climat de travail 
+              </br><small>les modalités</small>
+            </p>
+
+            <ul>
+              <li>mode hybride privilégié</li>
+              <small>avec des temps de présence commun ou par tâches</small>
+            </br><small>avec un suivi des heures</small>
+            </br><small>avec des temps de déconnexion ciblé</small>
+            </ul>
+            
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Communication 
+              </br><small>mouvements</small>
+            </p>
+
+            <ul>
+              <li>Modèle orchestral</li>
+              <small>activité sociale</small>
+            </br><small>activité verbale et non-verbale</small>
+          </br> <small>synchrone ou non</small>
+          </br><small>activité intentionnelle ou non</small>
+          </br><small>socialement construite</small>
+          <li>directionnalité</li>
+          <small>hiérarchique : descendante</small>
+        </br>  <small>hiérarchique : ascendante</small>
+      </br> <small>horizontale</small>
+            </ul>
+            
+          </div>
+        </section>
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Communication 
+              </br><small>systèmes à adapter</small>
+            </p>
+
+            <ul>
+              <li>rapports d'activités</li>
+              <small></small>
+              <li>rencontre de groupe</li>
+              <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Aide-memoire-reunion-equipe.pdf">Aide mémoire pour les réunions</a></small>
+              <li>rencontre individuelle</li>
+              <li>autres médias</li>
+              <small>courriel, messageries instantanées, canaux</small>
+              <li>consultation</li>
+              <small>boîte à suggestion</small>
+            </br><small>sondages organisationnels</small>
+          </br><small>vote</small>
+      <li>culture de la « porte ouverte »</li>
+            </ul>
+
+               
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Une bonne gestion 
+              </br><small>habiletés du gestionnaire</small>
+            </p>
+
+            
+            <ul>
+              <li>
+              cohérence
+              </li>
+              <small>
+           entre les paroles et les actes
+              </small>
+             <li>remise en question</li>
+             <small>accepter les retours, l'évolution</small>
+            <li>adaptation</li>
+            <small>aux personnes, aux situations, aux moments</small>
+            <li>communication efficace et diplomatique</li>
+            <small>surtout pour la gestion de conflits</small>
+<li>générosité</li>
+            </ul>
+            <p>mélange de qualités personnelles, relationnelles, professionnelles</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Une bonne gestion 
+              </br><small>qualités de gestion</small>
+            </p>
+
+            <ul>
+              <li>Initiative</li>
+              <small>en restant à l'écoute d'alternatives</small>
+              <li>Capacité à déléguer</li>
+              <small>selon les profils sans favoritisme pour autant</small>
+              <li>Mesure</li>
+              <small>entre suivi et autonomie de l'équipe</small>
+            </br><small>entre valorisation mais retours également constructifs</small>
+          </br><small>entre rapports professionnels mais écoute humaine</small>
+            </ul>
+            <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Formulaire_Evaluation_Performance.pdf">auto-évaluation</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Suivi et équilibre des charges
+              </br><small>charges de travail comme charges mentales </small>
+            </p>
+
+<ul>
+  <li>
+une tâche = un effort physique, de concentration, mental
+  </li>
+  <small>
+    possibilité d'identifier pour chaque tâche
+  </small>
+
+</br><small>la charge finale</small>
+</br><small>travail, cognitive, pression/responsabilisation</small>
+</ul>
+            
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              L'individu dans l'équipe
+            </br><small>
+                impacts et retours
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              facteurs négatifs
+              </li>
+              <small>
+                salaires inadéquats, administration et politique de l’organisation inadéquats, supervision inefficace, mauvaises conditions de travail, relations interpersonnelles déficientes
+              </small>
+              <li>facteurs positifs</li>
+              <small>
+                accomplissement, reconnaissance, responsabilités, avancement, caractéristiques du travail satisfaisantes
+              </small>
+             
+            
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Développement des compétences
+            </br><small>
+                accompagnement du développement mutuel
+            </small>
+            </p>
+
+            <ul>
+             <li>mentorat</li>
+             <small>transfert et passation via l'expérience du mentor</small>
+             <li>parrainage</li>
+             <small>accompagnement dans l'action</small>
+            <li>formation</li>
+            <small>différentes méthodes : présentiel, ligne, lecture, simulation</small>
+            <li>co-développement</li>
+            <small>dynamique collaborative</small>
+            <li>rotation de poste</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+             Plan de développement
+            </br><small>
+               engagement mutuel - <a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Developpement_Competences_Equipe_Travail-Tableau_Sommaire.pdf">Tableau</a>
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              objectifs de développement
+              </li>
+              <small>
+               selon les objectifs du projet    </small>
+              <li>activités de développement</li>
+              <small>
+              types   </small>
+             <li>échéancier et indicateurs de mesure</li>
+
+            
+            </ul>
+<p>+ <a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Conformite_Processus_Accompagnement_Employe-Aide-Memoire.pdf">suivi de l'accompagnement</a></p>
+          </div>
+        </section>
+
+     
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/735_index.png" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Gestion des conflits</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identification du conflit
+              </br><small>sur le lieu de travail</small>
+            </p>
+            <ul>
+              <li>
+              conflits de valeurs
+              </li>
+              <small>
+           croyances, convictions, choix de vie
+              </small>
+          <li>conflits tangibles</li>
+              <small>
+         argent, temps, tâche
+              </small>
+            <li>conflits de limites</li>
+              <small>
+           empiètement des tâches et des fonctions
+              </small>
+              </br><small>
+             abus de pouvoir et de contrôle
+              </small>
+              <li>conflits perceptuels</li>
+              <small>mécompréhension</small>
+            </br>
+            
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identification du conflit
+              </br><small></small>
+            </p>
+            <ul>
+              <li>
+              conflits interpersonnels
+              </li>
+              <small>
+          caractères incompatibles
+              </small>
+         
+              </br><small>
+            a-prioris négatifs
+              </small></br>
+              <small>revanche, compétition</small>
+            </br><small>divers biais</small>
+            </br>
+            
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Désamorcer un conflit
+              </br><small></small>
+            </p>
+            <ul>
+           <li>Calme</li>
+           <small>on ne hausse pas la voix</small>
+            </br><small>on ne coupe pas la parole</small>
+          </br><small>temps de parole/écoute</small>
+          <li>Accompagnement</li>
+          <small>dialogue constructif</small>
+        </br><small>intermédiaire</small>
+
+          </ul>
+          <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Cinq_Principes_Cles_Desarmorcer_Conflit.pdf">Cinq principes - Désamorcer un conflit</a>
+          </br> et <a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Demarche_Concrete_Resolution_Conflit.pdf">Démarche de résolution</a>
+          </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Distinction du harcèlement et de l'exercice des droits de gestion
+              </br><small></small>
+            </p>
+        <p style="font-variant:small-caps">retours de performances (mêmes négatifs) / modes de restitutions
+        </br>
+     
+    </p>
+
+    <ul>
+      <li>Caractéristiques du droit de gestion</li>
+      <small>assignation de tâches</small>
+    </br><small>application de contraintes difficiles mais raisonnables</small>
+  </br><small>suivi de l'absentéisme</small>
+</br><small>évaluation de la performance</small>
+</br><small>gestion des conflits</small>
+</br><small>application en cas de problème</small>
+
+<li>Harcèlement</li>
+<small>cris, violence verbale, physique</small>
+</br><small>menaces, intimidations</small>
+</br><small>participation à des rumeurs malveillantes</small>
+</br><small>isolement</small>
+</br><small>abus d'autorité comme surveillance excessive</small>
+</br><small>discrédit, dévalorisation, déstabilisation dont test (hors entretien)</small>
+    </ul>
+
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifier des situations 
+              </br><small></small>
+            </p>
+    
+
+<table>
+  <tr>
+    <td>« Pfff. c'est vraiment pas au niveau, faut te resaisir ma grande sinon ça va pas le faire.  »</td>
+    <td>« j'ai remarqué que tu as du mal à respecter les délais pour certaines corrections. Peut-être pourrions-nous discuter de la meilleure façon de gérer ton temps et de prioriser les tâches pour éviter les retards. »</td>
+  </tr>
+</table>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifier des situations
+              </br><small></small>
+            </p>
+    
+
+<table>
+  <tr>
+    <td>« j'ai examiné la version révisée de l'article. C'est mieux que la dernière fois, mais il y a encore des améliorations à faire. Par exemple, [Nom d'un autre éditeur] a fait un travail beaucoup plus propre sur son dernier article. Tu devrais peut-être étudier son approche. Merci pour ton travail. »</td>
+    <td>« Tes corrections sont correctes, mais il manque quelque chose. Peut-être que tu n'as pas assez d'expérience pour ce type de contenu. Tu devrais peut-être te concentrer sur des tâches plus simples. De plus, il y a des erreurs de cohérence stylistique que nous devons corriger. Je suis sûr que ces ajustements rendront ton travail de révision plus solide. Merci pour ton travail. »</td>
+  </tr>
+</table>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifier des situations
+              </br><small></small>
+            </p>
+    
+
+<table>
+  <tr>
+    <td>« j'ai examiné tes corrections. Il y a des points qui ne sont pas à la hauteur de ce que j'attends. Certaines suggestions de réécriture sont maladroites et il y a des erreurs de cohérence stylistique. Tu devrais peut-être te concentrer davantage sur la qualité de ton travail. Nous avons une deadline serrée, alors assure-toi de faire mieux la prochaine fois. Merci pour ton effort. »</td>
+    <td>« j'ai examiné la version révisée de l'article. Il y a des améliorations, mais je pense que tu pourrais faire mieux. Parfois, j'ai l'impression que tu ne te donnes pas à fond. Tu devrais peut-être prendre plus de temps pour te concentrer sur les détails. Merci pour ton travail. »</td>
+  </tr>
+</table>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifier des situations
+              </br><small></small>
+            </p>
+    
+
+<table>
+  <tr>
+    <td>« j'ai examiné tes corrections. C'est... intéressant. Certaines suggestions de réécriture sont créatives, mais elles ne répondent pas vraiment aux besoins de l'article. Tu devrais peut-être te concentrer sur des corrections plus pratiques. Merci pour ton "effort". »</td>
+    <td>« Tu n'y es pas. Ce que je t'avais demandé était tout de même clairement expliqué. je t'invite à relire mes explications, je n'ai pas le temps pour ça. »</td>
+  </tr>
+</table>
+          </div>
+        </section>
+
+
+      </section>
+
+     
+        <section data-background-image="media/735_index.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Résumé des valeurs</h4>
+            <p style="font-variant: small-caps;">non-exhaustif</p>
+         
+            <ul>
+     <li>communication régulière et équitable</li>
+     <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Caracteristique_communication_efficace.pdf">Conseils pour une communication efficace</a>
+     </small>
+     <li>motivation</li>
+     <small>de soi et des autres</small>
+    </br>   <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Reconnaissance_au_travail_Fiche_Info.pdf">instaurer de la reconnaissance dans le projet</a></small>
+     <li>collaboration</li>
+     <small>gestion participative</small>
+     <li>impartialité</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Autres ressources</h4>
+         
+            <ul>
+    <li>Évaluation et suivi</li>
+    <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Formulaire_Evaluation_Performance.pdf?time=1743623071584">Formulaire d'évaluation de performance</a></small>
+            </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Rencontre_Disciplinaire_Employe.pdf">Formulaire rencontre disciplinaire</a></small>      
+ <li>Gestion des conflits</li>
+  <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Formulaire_Plainte_Harcelement_Milieu_Travail.pdf">Formulaire de dépôt de plaine</a></small>
+          </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Note_Faits_Observes.pdf">Formulaire de faits observés pour le gestionnaire</a></small>         
+<li>autres</li>
+<small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Batir_Plan_Communication.pdf">Établir un plan de communication</a></small>
+        </br>
+<small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4657358/mod_label/intro/Simulateur_Couts_Engendres_Roulement_Personnel.xlsx">Simulateur de coûts en cas de départ</a></small>
+<li><a href="https://www.legisquebec.gouv.qc.ca/fr/document/lc/N-1.1">Loi sur les normes du travail</a></li>    
+<li><a href="https://www.legisquebec.gouv.qc.ca/fr/document/lc/E-12.001">Loi sur l'équité salariale</a></li>        
+</ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Conseils</h4>
+            <p style="font-variant: small-caps;"></p>
+         
+            <ul>
+     <li>ne pas parler mal d'une personne devant une autre</li>
+     <li>ne pas parler au nom d'un groupe sans avoir un rapport consultatif complet</li>
+     <li>c'est un humain en face de vous</li>
+    <li>ne pas sousestimer</li>
+    <small>ni les experts ni les stagiaires</small>
+     <li>ne pas se surestimer</li>
+     <small>on peut être soi-même au centre de conflit</small>
+
+          </ul>
+          </div>
+        </section>
+
+  
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Divers scénarios
+            
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Travail en équipe
+            
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+     
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine
+            </br></p>
+
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1467 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD729 - Révision éditoriale - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+  <style>
+    code {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: rgba(65, 38, 56, 0.788);
+
+    }
+
+    .exposant {
+      font-size: 0.8em;
+      /* Réduit la taille du texte */
+      vertical-align: super;
+      /* Place le texte en haut */
+    }
+
+    .indice {
+      position: relative;
+      bottom: -0.9em;
+      /* Positionne le texte légèrement en bas */
+    }
+
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
+
+    tr:nth-child(odd) {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #ffffff;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD729 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/729_epicene.png" data-background-size="1800px"
+        background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD729 | Révision éditoriale</h2>
+          <h5 style="font-size: 30px;">7 avril : Nouvelles pratiques : féminisation, inclusion</h5>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/729_epicene.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Ouverture de la langue</h3>
+         
+            <p style="font-variant:small-caps;">
+    La fémininisation
+            </br><small>
+                féminisation linguistique + rédaction épicène
+            </small>
+            </p>
+         
+         
+          </div>
+        </section>
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              
+            </br><small>
+                
+            </small>
+            </p>
+
+          <p> « La féminisation des noms de professions et de titres vise à combler certaines lacunes de l’usage de la langue française dans ce domaine et à apporter une légitimation des fonctions sociales et des professions exercées par les femmes »
+          </br><small>(décret 1984)</small>
+          </p>
+
+          </div>
+        </section>
+
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Féminisation au Québec
+        </br><small>
+            mouvement dans la francophonie
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          1970-1980 : courants féministes
+          </li>
+          <small>
+       ouverture des professions
+          </small>
+          </br><small>
+     lumière sur les inégalités sociales
+          </small>
+          
+          <li>1979 : OQLF - avis proposant l'utilisation des formes au féminin</li>
+          <small>
+       solution de l'ajout [-e] muet
+          </small>
+          <li>1981 : OQLF - avis recommandant la féminisation linguistique</li>
+          <small>
+         base de la rédaction épicène
+          </small>
+        <li>1991 : OGLF - Guide de la féminisation</li>
+<li>2015 : Avis « Féminisation des appellations de personnes et rédaction épi-
+  cène »</li>
+  <small>révisé en 2018</small>
+
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Arguments contre
+        </br><small>
+            surtout par l'Académie française
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          masculin comme neute
+          </li>
+          <li>trouble dans la langue</li>
+          <small>marque privative</small>
+       <li>fonction non identifiable à la personne</li>
+       <small>différence entre métier et individu</small>
+         
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          
+        </br><small>
+            
+        </small>
+        </p>
+<p>
+« La francisation des anglicismes est, sans doute avec la féminisation
+des titres de fonction, l’un des domaines où la variation est la plus
+tangible entre les principaux États francophones dont une impor-
+tante partie des locuteurs ont le français comme langue maternelle,
+c’est-à-dire la Belgique, la France, le Québec et la Suisse. »
+</br><small>(Vincent, 2015)</small>
+</p>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Aspects de formation des appellations au féminin
+        </br><small>
+            plusieurs solutions 
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          1. formes déjà existantes et régularisées et nouvelles formes
+          </li>
+          <small>
+       utiliser les formes usuelles de préférence
+          </small>
+          </br><small>
+     auteure et autrice
+          </small>
+          
+          <li>2. ajout de « femme »</li>
+          <small>
+       peu conseillé si l'équivalent ne contient pas « homme »
+          </small>
+          
+          <li>3. polysémie de formes au féminin</li>
+          <small>
+        entre individu et outils 
+          </small>
+        
+<li>4. risque de péjoration attachée à la forme</li>
+<small>privilégier la forme épicène</small>
+        </ul>
+
+      </div>
+    </section>
+
+    
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formation avec l'ajout [-e]
+        </br><small>
+            muet mais qui peut engager des changements de prononciation
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          noms en [-al], [-il], [-ol],[-ul] et [-eul]
+          </li>
+          <small>
+       une générale, une consule, une filleule, une civile
+          </small>
+          
+          <li>noms en [-el] : redoublement du [-l]</li>
+          
+          <small>
+     une colonelle, une industrielle, une professionnelle
+          </small>
+          <li>noms en [-d] : changement de prononciation</li>
+          <small>
+       une marchande, une motarde
+          </small>
+          
+          <li>noms en [-t] : changement de prononciation</li>
+          <small>
+         une doctorante, une avocate, une conjointe
+          </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formation avec l'ajout [-e]
+        </br><small>
+            muet mais qui peut engager des changements de prononciation
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          noms en [-et] : ajout d'un accent grave
+          </li>
+          <small>
+       une préfète
+          </small>
+          
+          <li>noms en [-c] : formation en [-que]</li>
+          
+          <small>une laïque
+            </small>
+
+          </br><small>exception : une clerc</small>
+
+          <li>noms en [-é] : ajout [-e] muet purement graphique</li>
+          <small>
+une députée, une jurée, une chargée de projet
+          </small>
+          
+          <li>noms en [-er] ou [-ier] : ajout d'un accent grave</li>
+          <small>
+         une bouchère, une conseillère, une courtière
+          </small>
+
+          <li>noms en [-f] : changement pour [-ve]</li>
+          <small>
+         une sportive, une créative  </small>
+          </br><small>exception : cheffe en Belgique et en Suiss</small>
+        </ul>
+
+      </div>
+    </section>
+
+    
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formation avec l'ajout [-e]
+        </br><small>
+            muet mais qui peut engager des changements de prononciation
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          noms en [-n] ([-an], [-in] ou [-ain]) : sans redoublement
+          </li>
+          <small>
+       une assassine, une écrivaine
+          </small>
+          
+          <li>noms en [-en], [-ien] ou [-on] : avec redoublement</li>
+          
+          <small>
+            une doyenne, une patronne, une vigneronne
+            </small>
+
+          </br><small>exception : une clerc</small>
+
+          <li>noms en [-or]</li>
+          <small>
+une majore, une mentore
+          </small>
+          
+          <li>noms en [-s]</li>
+          <small>
+ une bourgeoise, une intruse
+          </small>
+
+          <li>noms en [-x] : changement pour [-se]</li>
+          <small>
+        une épouse, une religieuse  </small>
+        
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+         1. [-esse]
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          emploi vieilli pour désigner l'épouse d'un homme exerçant une fonction
+          </li>
+          <small>
+      une abbesse, une comtesse, une princesse, une mairesse
+          </small>
+          <li>évolution de l'emploi pour une femme en fonction</li>
+       
+          <li>abandon de certains noms désuets</li>
+          <small>
+       ministresse, notairesse, docteuresse, peinteresse
+          </small>
+        
+        <li>domaine juridique</li>
+        <small>bailleur, bailleresse / bailleuse</small>
+        </br>
+        <small>forme [-esse] (langage juridique) interchangée avec [-euse] (langage courant)</small>
+        </ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+         2. [-eur]
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          devient [-eure] ou [-euse] selon les cas</li>
+          <small>
+     gouverneure, ingénieure, proviseure
+          </small>
+        </br><small>à distinguer des fonctions qui dérivent de verbe</small>
+      </br><small>danser, danseur, danseuse</small> 
+          </ul>
+<p>si une forme au masculin [-eur] dérive d'un verbe, la forme au féminin sera [-euse]</p>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+         3. [-euse] dérivant d'un verbe
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          fonctions construites à partir des participes présent</li>
+          <small>
+    annoncer, annonçant, annonceur, annonceuse
+          </small>
+        </br><small>régir, régissant, régisseur, régisseuse</small>
+     
+        <li>fonctions dérivant de noms</li>
+        <small>bruit, bruiteur, bruiteuse</small> 
+      </br><small>camion, etc.</small>
+    </br><small>chronique, etc.</small>
+          </ul>
+          <p>avec une tonalité péjorative
+          </br><small>par confusion avec l'objet inanimé et caractéristiques sociales de l'emploi</small>
+          </p>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+         4. [-teur] vers [-teuse] ou [-trice]
+        </small>
+        </p>
+
+        <ul>
+          <li>
+            [-teuse] quand radical du verbe en [-t]
+          </li>
+            <small>
+    acheter, acheteur, acheteuse      </small>
+        </br><small>mettre, metteur en page, metteuse en page</small>
+     
+        <li>[-trice] quand développement de noms en [-tion], [-ture] ou [-torat]</li>
+             </ul>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+         5. [-trice] à partir de [-teur]
+        </small>
+        </p>
+
+        <ul>
+          <li>
+           sans dériver de verbe avec radical [-t]
+          </li>
+            <small>
+    amateur, amatrice ; directrice ; rectrice ; acupunctrice / acuponctrice
+               </small>
+      
+        <li>certaines formes en [-trice] coexistent avec des formes en [-teure]</li>
+      <small>auteure et autrice ; sculpteure et sculptrice</small>  
+      </ul>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+          Formations du féminin avec terminaisons
+        </br><small>
+        6. Formes en [-eure] pour l'OQLF
+        </small>
+        </p>
+
+        <ul>
+          <li>
+          1. formes retenues : formes du passé
+          </li>
+            <small>
+    censeure, docteure, gouverneure, ingénieure, professeure </small>
+        </br><small>oppresseure, pasteure, prédécesseure, procureure</small>
+      </br><small>etc.</small>
+
+        <li>2. formes acceptées qui coexistent avec formes en [-euse] ou en [-trice]</li>
+      <small>assureuse, assureure ; défenseuse, défenseure ; entrepreneure, entrepreneuse ; réviseuse, réviseure</small>    
+    </br><small>vainqueuse, vainqueure ; précurseuse, précurseure ; successeuse, successeure</small>  
+   
+  <li>3. formes non retenues : formes régularisées déjà établies</li>
+<small>acupuncteure --> acupunctrice/acuponctrice</small> 
+  </br><small>administrateure --> administratrice</small>
+
+</br><small>amateure --> amatrice</small>
+</br><small><a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/23336/la-redaction-et-la-communication/feminisation-et-redaction-epicene/feminisation-des-appellations-de-personnes/formation-dappellations-de-personnes-au-feminin/feminin-des-appellations-de-personnes-en-eur">liste complète</a></small>
+</ul>
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+        Les formes composées 
+        </br><small>
+        
+        </small>
+        </p>
+
+        <ul>
+          <li>
+           Composition nom + adjectif classifiant
+          </li>
+            <small>
+    producteur agricole, productrice agricole ; coutier immobilier, courtière immobilière
+            </small>
+          </br><small>thérapeute sportif, thérapeute sportive ; éducateur canin, éducatrice canine </small>
+        </br><small>ou avec la structure nom + complément avec préposition</small>
+      </br><small>ingénieur en foresterie ou ingénieur forestier</small>
+      </ul>
+      </div>
+    </section>
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+        Les formes composées 
+        </br><small>
+          avec trait d'union ; préposition ou nom/adjectif
+        </small>
+        </p>
+
+        <ul>
+          <li>
+           1. juxtaposition de deux noms : accord aux deux mots
+          </li>
+            <small>
+   boulanger-pâtissier, boulangère-pâtissière
+            </small>
+            <li>2. juxtaposition nom + complément du nom : accord du nom </li>
+          <small>infirmier-chef, infirmière-chef</small>    
+        <li>3. nom + groupe avec préposition : accord sur nom</li> 
+        <small>un préposé à l'entretien, une préposée à l'entretien</small>
+        </ul>
+      </div>
+    </section>
+
+    
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">
+        Cas particuliers
+        </br><small>
+              </small>
+        </p>
+
+        <ul>
+          <li>
+          Cumul de plusieurs modes de formation
+          </li>
+            <small>
+ infirmier en chef adjoint, infirmière en chef adjointe
+            </small>
+            <li>Coexistances</li>
+          <small>formes en [-esse] et épicènes</small>    
+          </br><small>contremaître ou contremaîtresse</small> 
+      </ul>
+      </div>
+    </section>
+
+
+    <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps;">Exercice de féminisation (I et II)
+          
+        </br><small>
+            <a href="https://moodle.usherbrooke.ca/pluginfile.php/4664238/mod_label/intro/seance14.docx">source DOCX</a>
+        </small>
+        </p>
+
+
+      </div>
+    </section>
+
+  
+
+        </section>
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px">
+
+        <section data-background-image="media/epicene.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La rédaction épicène</h4>
+            <p style="font-variant: small-caps;"></p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">L'épicène
+              
+            </br><small>
+                une seule forme
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Égale visibilité aux désignations féminines et masculines dans les textes
+              </li>
+              <small>
+           remplacement de l'emploi du masculin générique par des formulations neutres
+              </small>
+              <li>Types de noms</li>
+             <small>
+         noms qui se terminent par [-e] : capitaine, critique, diplomate, secrétaire
+              </small>
+              </br><small>
+           noms qui ne se terminent pas par [-e] mais dont la forme [-e] est déjà instituée : marin, médecin
+              </small>
+              </br><small>
+             même si ces formes en [-e] n'ont pas été retenues : témoine
+              </small>
+            
+            </br><small>appellations empruntées à d'autres langues : maestro, judoka, mannequin</small>
+          </br><small>avec exception acceptée : une gouroue</small>  
+          
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Le choix de l'épicène
+                </br><small>
+                  Doublets complets
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                    Mots entiers
+                  </li><small>
+             les professeurs et professeures
+                  </small>
+                  </br><small>
+               la ou le juge
+                  </small>
+                  <li>
+                 pour les formes complexes :</li>
+             
+                <small>trait d'union : répétition des deux composants
+                </small>
+              </br>
+              <small>nom + adjectif figé : répétition des deux</small>
+            </br>
+            <small>nom + complément : au choix de répéter ou non les deux</small>
+                <li>pronoms</li>
+              
+                 <small>ceux et celles</small>
+                </br>
+                <small>il et elle
+</small>
+
+                </ul>
+    
+              </div>
+            </section>     
+          
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Le choix de l'épicène
+                </br><small>
+                  Doublets complets
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                   Clarté de la répétition
+                  </li><small>
+                    Les six premiers participants et les six premières participantes se placeront à gauche
+                  </small>
+                  </br><small>
+                    Les six premiers participants et participantes se placeront à gauche
+                  </small>
+                  <li>
+                 Ordre libre sauf si accord grammatical </li>
+             
+                <small>le masculin <i>l'emporte</i>
+                </small>
+                
+              </br>
+              <small>règle de la proximité</small>
+            </br><small>les professeures et professeurs présents devront rédiger leurs rapports</small>
+          <li>Contexte avec coordination en « ou »</li>
+               
+        <small>accord au pluriel sauf si singulier générique</small>
+          </br><small>Les agentes ou les agents devront demeurer vigilants</small>
+        </br><small>La candidate ou le candidat entrera en fonction dès lundi</small>
+      </ul>
+    
+              </div>
+            </section>   
+            
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Le choix de l'épicène
+                </br><small>
+                  Doublets complets
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                  Pour les sigles
+                  </li><small>
+                    Fédération des agriculteurs de l'Ouest 
+                  </small>
+                  </br><small>
+                  FAAO    </small>
+                   </br><small>ou remaniement avec noms neutres</small>
+        </br><small>Société québécoise des chercheuses et des chercheurs indépendants : Société québécoise de la recherche indépendante</small>
+      </ul>
+    
+              </div>
+            </section> 
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Le choix de l'épicène
+                </br><small>
+                  Doublets abrégés
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                réduction d'un doublet complet avec un signe de ponctuation
+                  </li><small>
+                 majuscule, point médian, barre oblique, trait d'union, virgule, point, parenthère, etc.    </small>
+                  </br><small>
+                 signes conseillés par OQLF : parenthèses ou crochets  </small>
+                   </ul>
+    
+              </div>
+            </section> 
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Le choix de l'épicène
+                </br><small>
+                 autres solutions : emploi de formes non-marquées
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+             Noms collectifs      </li><small>
+               public, lectorat, personnel, rédaction, direction </small>
+              <li>Adjectifs épicènes</li>  
+              <small>spécialiste pour spécialisé</small>
+             </br><small>apte pour qualifié</small>
+              <li>Formes plurielles</li> 
+              <li>Adresse</li>
+              <small>les fumeurs ont plus de risque de... = Si vous fumez, vous risquez...</small>
+          <li>Formules impersonnelles</li>
+          <li>Usage de l'infinitif</li>
+            </ul>
+    
+              </div>
+            </section> 
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Exemples
+                </br><small>
+                 </small>
+                </p>
+    <ul>
+      <li>Masculin générique</li>
+      <small>le rédacteur doit faire son travail avec sérieux</small>
+    <li>Féminisation syntaxique/doublet complet</li>
+    <small>la rédactrice ou le rédacteur doit faire son travail avec sérieux</small>
+  <li>Formulation neutre</li>
+  <small>la rédaction doit faire son travail avec sérieux</small>
+  </ul>
+
+              </div>
+            </section> 
+
+
+            <section data-background-image="media/729_epicene-ex1.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">Pré-exercice
+              
+                </p>
+    
+    
+              </div>
+            </section>
+
+
+            <section data-background-image="media/729_epicene-ex2.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">Pré-exercice
+              
+                </p>
+    
+    
+              </div>
+            </section>
+
+            <section data-background-image="media/729_epicene-ex3.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">Pré-exercice
+              
+                </p>
+    
+    
+              </div>
+            </section>
+
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">Exercice de rédaction épicène (III et IV)
+                  
+                </br><small>
+                    <a href="https://moodle.usherbrooke.ca/pluginfile.php/4664238/mod_label/intro/seance14.docx">source DOCX</a>
+                </small>
+                </p>
+    
+    
+              </div>
+            </section>
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Exceptions
+                </br><small>
+                 </small>
+                </p>
+    <ul>
+      <li>Noms d'entreprises ou associations sans formes remaniées</li>
+         <li>autres appellations officielles figées</li>
+      </ul>
+
+              </div>
+
+            </section> 
+
+          </section>
+
+
+          <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+            <section data-background-image="media/hyper.webp" data-background-size="2000px">
+              <div id="fondop2">
+                <h4>Révision inclusive</h4>
+              </div>
+            </section>
+
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Vérification
+                </br><small>
+                    
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                  Une méthode de rédaction épicène
+                  </li>
+               
+                  <li>Choix et ordre des doublets</li>
+
+                  <li>Doublets abrégés : vérifier les signes de ponctuations</li>
+                
+                </ul>
+    
+              </div>
+            </section>
+
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">Exercice de rendu épicène (V)
+                  
+                </br><small>
+                    <a href="https://moodle.usherbrooke.ca/pluginfile.php/4664238/mod_label/intro/seance14.docx">source DOCX</a>
+                </small>
+                </p>
+    
+    
+              </div>
+            </section>
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Ce que l'on aimerait éviter...
+                </br><small>
+                  Pour ne pas alourdir le texte, le masculin est utilisé comme générique et désigne donc aussi bien les femmes que les hommes 
+                </small>
+                </p>
+    <p style="font-size: 24px;">
+  « Mais ceci n’est ni suffisant ni entièrement satisfaisant. La féminisation lexicale est un élément essentiel de la désexualisation de la
+      langue française, mais elle ne suffit pas à ce que l’on sorte de cet ambigu magma dans lequel nous a plongés la supériorité du genre
+      masculin dans la grammaire et le discours dominant.
+      Il s’agit maintenant de faire en sorte que les femmes, la moitié du ciel
+      ET de la terre, ne soient pas exclues des discours et des textes. C’est
+      ce que l’on appelle discours ou rédaction épicène. »
+    </br><small>(Desforges, 2008)</small>
+    </p>
+    
+              </div>
+            </section>
+
+
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                La politique linguistique aujourd'hui
+                </br><small>
+                    régulation et ouverture de la langue
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                 concurrence de l'anglais
+                  </li>
+               
+                  <li>contrôle des néologismes</li>
+
+                  <li>organisation d'une féminisation</li>
+                  <small>ouverture sur un 3ème pronom</small>
+                
+                </ul>
+    
+              </div>
+            </section>
+
+            <section data-background-image="media/729_bye-bye-binary.jpg" data-background-size="1600px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+              Cas extrême : Les nouvelles typographies
+                </br><small>
+                   faire bouger les contours de la lettre
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                 repenser une tradition typographique
+                  </li>
+                  <small>blanche, masculine, coloniale</small>
+               
+                  <li>proposer de nouvelles typographies</li>
+
+                     <small>collectif <a href="https://typotheque.genderfluid.space/fr">Bye Bye Binary</a></small>
+                </br><small><i>La Typographie post-binaire</i> de Circlude</small>
+                </ul>
+    
+              </div>
+            </section>
+
+            <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant:small-caps;">
+                  Ressources
+                </br><small>
+                    
+                </small>
+                </p>
+    
+                <ul>
+                  <li>
+                  OQLF
+                  </li>
+                  <small>
+               <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/21905/la-redaction-et-la-communication/feminisation-et-redaction-epicene/feminisation-des-appellations-de-personnes/liste-dappellations-de-personnes/liste-dappellations-de-personnes">Liste appellations des personnes</a>
+                  </small>
+                  </br><small>
+             <a href="
+             https://vitrinelinguistique.oqlf.gouv.qc.ca/sujets-dinteret/feminisation-et-redaction-epicene">boîte à outils sur la féminisation et rédaction épicène</a>
+                  </small>
+                  </br><small>
+               <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/25469/banque-de-depannage-linguistique/la-redaction-et-la-communication/feminisation-et-redaction-epicene/feminisation-des-appellations-de-personnes/formation-dappellations-de-personnes-au-feminin/emploi-des-formes-feminines-autrice-et-auteure ">notice sur auteure/autrice</a>
+                  </small>
+                  </br><small>
+                 <a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/23983/la-redaction-et-la-communication/feminisation-et-redaction-epicene/aide-memoire-sur-la-feminisation-lexicale-et-la-redaction-epicene">aide-mémoires</a>
+                  </small>
+                <li>Outil : <a href="
+                  https://www.noslangues-ourlanguages.gc.ca/fr/cles-de-la-redaction/ecriture-inclusive-inclusionnaire
+                  ">L'Inclusionnaire</a></li>
+                  <li><a href="https://www.usherbrooke.ca/langue/fileadmin/sites/langue/documents/guide_redacepicene.pdf">Guide de l'UdeS</a></li>
+                  <li>Ouvrages : </li>
+                  <small><i>Dictionnaire critique du sexisme linguistique</i></small>
+                </br><small><i>Grammaire non sexiste
+                  de la langue française</i></small>
+                </ul>
+    
+              </div>
+            </section>
+
+            </section>      
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>La correction d'épreuve</h4>
+            <p style="font-variant: small-caps;">entraînement</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/729_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Exercice d'entraînement
+            </br><small>
+           séance 12 et suivantes
+            </small>
+            </p>
+            
+
+           <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/Lambert-entrainement.pdf">Texte pour correction d'épreuve</a>
+           </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4647182/mod_label/intro/Article-type.pdf">article type de la revue</a></small>
+           </p>
+
+           
+          </div>
+        </section>
+
+
+        </section>
+
+
+        
+
+
+      <section data-background-image="media/729_index.jpg" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+
+
+      </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

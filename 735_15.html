@@ -1,0 +1,840 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD735 - Gestion de projets éditoriaux - H2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+
+table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD735 - Hiver 2025 - Margot Mellet</div>
+      <section data-background-image="media/735_green.jpeg" data-background-size="2200px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD735 | Gestion de projets éditoriaux</h2>
+          <h5 style="font-size: 30px;">16 avril : Clôture et ouverture du cours : impacts écologiques du projet</h5>
+          <small>du 8 janvier au 16 avril - Mercredi de 18h30 à 21h20</small>
+          </br><small>L1-4680</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px" background-color="#21211c">
+
+        <section data-background-image="media/735_green.jpeg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Écologie et Éditions</h5>
+       
+            <p style="font-variant: small-caps;">produire quelque chose a toujours un coût
+              </br><small></small>
+            </p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Le matériel de proximité 
+            </br><small>
+               culture numérique
+            </small>
+            </p>
+
+            <ul>
+              <li>
+              Usure et principe de consommation rapide
+              </li>
+              <small>
+     implémentation technique de l'obsolescence programmée
+              </small>
+              <li>Coût de fabrication et maintien</li>
+            <small>utilisation de métaux précieux, plastiques</small>
+            </br><small>déforestation, pollution logistique, exploitation humaine</small>
+          </br><small>recyclage à perte</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Grandes infrastructures numériques
+              </br><small></small>
+            </p>
+
+            <ul>
+              <li>Câbles</li>
+              <small>acheminement de l'information</small>
+            </br><small><a href="https://www.submarinecablemap.com/">Carte</a></small>
+               <li>Serveurs et Centre de données</li>
+           <small>traitement et distribution de l'information</small>
+            </br><small><a href="https://www.datacentermap.com/">Carte</a></small>
+          <li>Répartition inégale</li> 
+          <small>enjeux géopolitique</small>
+          
+          <li>Insfrastructures énergivores</li>
+          <small>apport et distribution électrique</small>
+          </br><small>climatisation et surchauffe</small>
+        </br><small>aération et filtration de l'air</small>
+      </br><small>sécurité</small>
+          </ul>
+            <p><small><a href="https://www.youtube.com/watch?v=-mah0d_ftlg&feature=youtu.be">exemple du parcours d'un courriel</a></small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Estimations
+              </br><small>entre papier et numérique</small>
+            </p>
+
+            <ul>
+              <li>Numérique = 4% de l'émission de GES du monde</li>
+              <small></small>
+              <li>Usines à pâtes et papiers : deuxième plus gros consommateurs d'énergie et émetteur de GES</li>
+              <small>production pâte et papier = 50% de l'empreinte environnementale</small>
+            </br><small>au Québec : 2 fois moins</small>
+             
+            </ul>
+ 
+            
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Coût du cycle de vie
+              </br><small>liseuse</small>
+            </p>
+<ul>
+  <li>Fabrication</li>
+  <small>30-80 kg de CO2 pour le dispositif</small>
+</br><small>0,2 kg de CO2 pour le fichier</small>
+  <li>Production / Diffusion</li>
+  <small>1 téléchargement = 0,5 kg de CO2</small>
+</br><small>1-2 kg pour l'impression et transport d'un livre papier</small>
+  <li>Amortissement du coût</li>
+  <small>1 liseuse = 50 livres</small>
+
+</ul>
+<p>comparatif : 1 livre de 360 pages avec couverture rigide = 1,2 kg sur son cycle + coût de fabrication</p>
+            
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Convergence transition écologique / numérique
+              </br><small></small>
+            </p>
+
+           <p>par la sobriété et le dimensionnement</p>
+            
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Quelques pistes pour une démarche éditoriale éco-responsable
+              </br><small>livre papier</small>
+            </p>
+
+            <ul>
+              <li>Soucis des matériaux</li>
+              <small>conditions d'extraction, provenance</small>
+          <li>Usage de fibres alternatives</li>
+          <small>en + des intrants chimiques</small>
+          <li>Relocalisation des services</li>
+       <small>prise en compte de la logistique</small>
+            </ul>
+            
+          </div>
+        </section>
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Quelques pistes pour une démarche éditoriale éco-responsable
+            </br><small>environnements numériques</small>
+            </p>
+
+            <ul>
+              <li>Matériaux reconditionnés et alternatives <i>low-tech</i></li>
+              <small>sites statiques plutôt que dynamiques</small>
+              <li>Hébergement de proximité</li>
+              <small>centres privés, locaux ou en colocation</small>
+            
+            </ul>
+
+               
+          </div>
+        </section>
+
+
+        <section data-background-image="media/735_cabane-bleue.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas d'étude : <a href="https://editionslacabanebleue.com/">La cabane bleue</a>
+              </br><small>maison d'édition éco-responsable</small>
+            </p>
+
+            
+            <ul>
+              <li>livres documentaires et albums illustrés pour enfants</li>
+              <small>discours écologique mis en pratique</small>
+              <li>Impression dans le pays de rattachement (France)</li>
+              <small>à 500 km du lieu de stockage</small>
+              <li>Papier recyclé PEFC</li>
+           
+              <small>« Programme for the Endorsement of Forest Certification »</small>
+            </br><small>+ encre à base végétale</small>
+              <li>Couverture sans pelliculage plastique</li>
+           <small></small>
+
+           <li>Impression 4 titres</li>
+           <small>diffuseurs francophones</small>
+           <li>Gestion éditoriale éthique</li>
+           <small>transparence et dialogue sur la rémunération</small>
+           <li>Même prix pour les livres</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Ressources 
+              </br><small></small>
+            </p>
+
+            <ul>
+              <li>Comité écologie du livre (ANEL)</li>
+              <small><a
+                  href="https://www.anel.qc.ca/wp-content/uploads/2022/01/001-CHARTE-ENVIRONNEMENTALE-SNE-NUMERIQUEEXT.pdf">Charte
+                  environnementale de l'édition de livres</a></small>
+              <li><a href="https://ex-situ.info/projets/impact/">Étude d'Ex situ</a></li>
+              <li>Producteurs de matériaux de récupération</li>
+              <small><a href="https://sustanasolutions.com/">Sustana</a> ou <a
+                  href="https://www.domtar.com/fr/papier/nos-produits/">Domtar</a></small>
+              <li>Certifications vertes LEED</li>
+              <small><i>Leadership in Energy and Environmental Design</i> pour les bâtiment durable</small>
+              <li>Collectif <a href="https://www.chatons.org/node/1">CHATONS</a></li>
+              <small><i>Collectif des Hébergeurs Alternatifs Transparent Ouverts et Neutres et Solidaires</i></small>
+              <li>Association <a href="https://ecologiedulivre.org/ressources-2/">pour l'écologie du livre</a></li>
+            <small>réseau interprofessionnel pour l'écologie du livre et de la lecture</small>        
+            </ul>
+                  </div>
+        </section>
+
+     
+      </section>
+
+      <section data-background-image="media/735_index.png" data-background-size="1800px">
+
+        <section data-background-image="media/735_index.png" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Équité, diversité, inclusion, décolonisation</h4>
+            <p style="font-variant: small-caps;">ÉDID, DÉI ou IDÉA</p>
+          </div>
+        </section>
+
+       
+        <section data-background-image="media/735_comm-intercult.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Compétence interculturelle
+              </br><small>ou pluralisme intégrateur (Bouchard, 2013)</small>
+            </p>
+            <ul>
+              <li>
+             Apprentissage mutuel
+              </li>
+              <small>
+     lutte contre stéréotype et sources de discrimination
+              </small>
+              <li>Communication interculturellle</li>
+              <small>prendre le temps des mots</small>
+          <li>Risques d'incompréhension</li>
+              <small>
+         qui n'est jamais absent 
+              </small>
+            <li>Question de l'apport dans l'espace culturel</li>
+              <small>
+           quelles sont les résistances ?
+              </small>
+              <li>Décortiquer les biais mutuels</li>
+              <small>
+            de multiples types
+              </small>
+          
+            </br>
+            
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeux et complexité
+              </br><small></small>
+            </p>
+            <ul>
+              <li>Risque d'instrumentalisation</li>
+              <small>argument sans investissement</small>
+              <li>
+           Enjeux de recrutement ou dotation
+              </li>
+              <small>
+        ouverture de l'embauche 
+              </small>
+         
+              </br><small>
+         souplesse des qualifications
+              </small></br>
+              <small>lexique neutre adapté</small>
+            </br>
+            <small>coût en formation et suivi</small>
+          <li>Ouverture internationale</li>
+            
+          </ul>
+          <p><a href="https://ccdi.ca/media/4365/inclusive-hiring-fr-final.pdf">ressource</a> et <a href="https://gender-decoder.katmatfield.com/">outil d'analyse de biais dans les offres d'emploi</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Prévention des risques
+              </br><small></small>
+            </p>
+            <ul>
+           <li>Établissement de chartes</li>
+           <small>pour définir et décrire les modalités de travail et collaboration</small>
+           
+          <li>Mise en place de GRE</li>
+          <small>groupe de ressources pour les employés</small>
+        </br><small>avec des objectifs particuliers à l'entreprise en termes d'équité</small>
+      </br><small><a href="https://ccdi.ca/media/4178/groupes-de-ressources-pour-les-employ%C3%A9-e-s-trousse-%C3%A0-outils-pour-la-cr%C3%A9ation-et-le-maintien-de-gre-efficaces.pdf">ressource</a></small>
+          </ul>
+                   </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Inclusion
+              </br><small>plusieurs approches</small>
+            </p>
+      
+
+    <ul>
+      <li>Équilibre entre unicité et partage</li>
+      <small>inclusion identitaire</small>
+    
+<li>Transversalité des actions</li>
+<small>inclusion systémique</small>
+
+<li>Équité et sentiment de justice</li>
+<small>inclusion éthique</small>
+
+<li>Coopération intégrative</li>
+<small>inclusion collective</small>
+
+<li>Neutralisation des stéréotypes</li>
+<small>inclusion relationnelle</small>
+</ul>
+
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Temporalités et réactions
+              </br><small></small>
+            </p>
+
+            <p>répercussions des évènements culturels sur le projet et son équipe
+            </br><small><a href="https://ccdi.ca/media/3615/trousse-r%C3%A9agir-aux-probl%C3%A8mes-sociaux-fr.pdf">guide</a> et <a href="https://ccdi.ca/media/3645/toolkit-business-case-fr.pdf">trousse à outils</a></small>
+
+            </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Au niveau de l'individu
+              </br><small>articulation personnel et professionnel</small>
+            </p>
+    
+<p>En tant que membre d'une équipe de projet, en tant que gestionnaire
+</br>se poser la question de la satisfaction et de l'équilibre
+</br><small><a href="https://www.boiteoutilsrh.gouv.qc.ca/fileadmin/fichiers_boiteOutilsRH/documents/PDF/Reflexion-Equilibre_Travail_Vie_Personnel.pdf">exemple de questions</a></small>
+</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/735_valeurs-quebec.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rappels des valeurs de la culture de travail québécoise
+              </br><small></small>
+            </p>
+    <p>égalité, coopération, respect, flexibilité, participation</p>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/735_index.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Ressources</h4>
+         
+            <ul>
+    <li>IRIPII - Institut de recherche sur l'immigration et sur les pratiques interculturelles et inclusives</li>
+    <small><a href="https://iripi.ca/fr/">site</a></small>
+            <li>Certificat en Diversité ethnoculturelle</li>
+            <small>Ministère de l'immigration, de la diversité et de l'inclusion (MIDI)</small>
+            <li>Centre canadien pour la diversité et l'inclusion</li>
+            <small><a href="https://ccdi.ca/media/2958/20210805-trousse-blm-du-ccdi-final.pdf">trousse à outils pour le soutien du mouvement Black Lives Matter</a></small>
+       <li>Ressources du gouvernement Québec</li>
+       <small><a href="https://www.boiteoutilsrh.gouv.qc.ca/fileadmin/fichiers_boiteOutilsRH/documents/PDF/Conditions_Travail_Avantages_Interessants.pdf ">prise en compte d'avantage</a></small>
+<li>Ressources du gouvernement du Canada</li>
+<small><a href="https://www.canada.ca/fr/femmes-egalite-genres/analyse-comparative-entre-sexes-plus/ressources/planification-evenements-inclusifs.html
+  ">Guide pour l'organisation d'évènements inclusifs</a></small>
+<li><a href="https://pharesst.irsst.qc.ca/cgi/viewcontent.cgi?article=1076&context=guides">Guide pour le soutien au retour au travail</a></li>
+<li>Programme de soutien financier en fancisation</li>   
+<small>Programme d'aide à l'intégration des immigrants et minorités visibles en emploi (PRIIME)</small>  
+</ul>
+          </div>
+        </section>
+
+      </section>
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Divers scénarios
+            
+              <p>Exemple : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4679776/mod_label/intro/Exemple_Bilan.xlsx">Bilan</a>, <a href="https://moodle.usherbrooke.ca/pluginfile.php/4679776/mod_label/intro/Exemple_maintien.ods">Développement d'une plateforme</a>, <a href="https://moodle.usherbrooke.ca/pluginfile.php/4679776/mod_label/intro/Exemple_detail.pdf">Détail des tâches</a></p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Travail en équipe
+            
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+     
+
+
+
+      <section data-background-image="media/735_index.png" data-background-size="2000px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">bonne continuation !
+            </br></p>
+
+        </div>
+
+
+      </section>
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

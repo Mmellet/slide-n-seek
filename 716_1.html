@@ -1,0 +1,819 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">28 août : Notions clefs et définitions</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+     
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Qu'est ce que l'édition ? <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_edition.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mettre au jour, faire paraître, offrir au public, sortir</p>
+       <small>1. action d'éditer (établir)
+       </br>2. Texte issu sur processus
+      </br>3. Ensemble des exemplaires d'un texte issus du processus
+       </small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rôle culturel</p>
+         <p>Organe de légitimation</p>
+        <small>décider de qui va être <i>lu</i> donc de qui va être <i>cru</i> dans une société</small>  </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+           <p>« L’édition représente donc un moment
+            essentiel dans la constitution de l’identité
+            littéraire d’un texte : elle décide de son
+            existence publique, et fixe la forme sous
+            laquelle il sera propagé, le format, le péritexte
+            et le prix. L’édition fait donc partie des
+            appareils de régulation et de contrôle des
+            textes et des discours. »</p>
+            <small>(Michon, « Édition » dans <i>Le Dictionnaire du littéraire</i> 2004)</small>
+          </div>
+          </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Modélisation du monde
+              </br><small>par la ligne éditoriale implémentée dans des textes</small></p>
+           
+
+          </div>
+        </section>
+
+
+
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Qu'est qu'un.e éditeur.rice ? <i class="material-icons">
+              south
+               </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Figure d'ambivalence</p>
+       <small>entre rôle culturel et chef d'entreprise</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+           
+          <p>
+            Celui qui <b>prend soin</b> de revoir et de faire imprimer <b>l'ouvrage d'autrui</b>
+          </p>
+          <small>(Dictionnaire de l'Académie, 1740)</small>
+          </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Double réalité de la fonction éditoriale
+              </br><small></small></p>
+           <ul>
+             <li><i>editor</i>, production du texte</li>
+           <li><i>publisher</i>, rentabilisation du texte</li>
+            </ul>
+<p>distinction des fonctions</p>
+<small>imprimeur, libraire, éditeur</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Distinction Fabrication/Diffusion
+              </br><small></small></p>
+           <ul>
+             <li>Trois sphères (Legendre, <i>Métiers de l'édition</i> 2007)</li>
+             <small>éditoriale, technique, commerciale</small>
+           <li>Trois fonctions éditoriales (Escarpit, <i>Sociologie de la littérature</i> 1958)</li>
+          <small>choisir, fabriquer, diffuser</small>  
+          </ul>
+<p>en amont et en aval de la publication</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Pluralité de l'éditeur/éditrice
+              </br><small></small></p>
+           <ul>
+             <li>Individu avec expertises</li>
+             <small>métier principal ou dérivé</small>
+             <li>Société qui assure la publication</li>
+             <small>éditeur autre qu'en littérature</small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+           <p>« Certains agissent comme éditeurs en étant propriétaires de leur maison d'édition, d'autres sont employés ou directeurs de collection. De plus, de fortes différences caractérisent les éditeurs selon les catégories de livres qu'ils publient, la nature de leurs marchés et, au second plan, selon la structure même de leurs maisons, [...] La multiplicité des fonctions et l'instabilité de la délimitation professionnelle font partie intégrante du statut de l'éditeur. »</p>
+           <small>(Glinoer, <i>Être éditeur</i> 2025)</small>
+
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Qu'est ce qu'un livre ? <i class="material-icons">
+              south
+               </i></h6>
+
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Objet multiple</p>
+            <small>média, support de communiation, dispositif qui contient/structure de l'information</small>
+           
+
+          </div>
+        </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/716_schema-Darnton.png" data-background-size="1600px"
+          data-transition="linear" data-transition-speed="fast">
+        </br></br></br>
+        </br>
+        </br>  <div id="fondop2">
+     
+            <p>Système-livre (Darnton, <i>Gens de lettres, gens du livre</i> 1992)</p>
+            <small></small>
+           
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_chaine-livre.png" data-background-size="600px"
+        data-transition="linear" data-transition-speed="fast">
+     
+      </section>
+        
+      <section data-background-image="media/716_index.png" data-background-size="1400px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Livre comme produit culturel</p>
+     <small>outil pour exercer un pouvoir</small>
+        </div>
+      </section>
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Autres notions <i class="material-icons">
+              south
+               </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Institution(s)</p>
+       <small>lieu représentatif des valeurs d'une société</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+           
+          <p>
+           « Ainsi, institution littéraire peut désigner l’ensemble des normes, codes et coutumes qui régissent la création et la lecture (par exemple : les genres) ; l’institution de la littérature désigne le processus historique par lequel la littérature est devenue une forme sociale reconnue et légitime. »
+          </p>
+          <small>(Robert, <i>L'institution du littéraire au Québec</i> 1989)</small>
+          </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">processus qui impose des valeurs, les normalise par des pratiques
+              </br><small>ensemble de lois, règles</small></p>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Culture
+              </br><small>plusieurs perspectives</small></p>
+           <ul>
+             <li>État de la terre</li>
+             <small>sens concret</small>
+           <li>Action</li>
+          <small>cultiver, acte de culture + dimension collective</small>  
+          <li>Métaphore de l'esprit</li>
+          <small>connaissances, apprentissages</small>
+          </ul>
+<p>Progrès représentatif d'une société</p>
+<small>dont les arts sont un reflet</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Industries culturelles
+              </br><small>1975</small></p>
+           <ul>
+             <li>Production culturelle de masse</li>
+             <small>reproduction industrielle + public important avec temps de loisir</small>
+           </br>
+             <small>SODEC (1995), PADIÉ</small>
+          </ul>
+
+          </div>
+        </section>
+</section>
+<section data-background-image="media/716_index.png" data-background-size="2000px">
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Cas d'étude <i class="material-icons">
+          south
+           </i></p>
+          
+    </ul>
+
+      </div>
+    </section>
+
+    <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Exemple : Anne Hébert refusée
+      </br>
+      <small>canular du journaliste Achmy Halley</small></p>
+     <ul>
+       <li>1998 : envoi d'un "manuscrit" « L'anneau des songes » d'un "Yves Tessier" à 7 maisons d'édition</li>
+   <small>texte tiré des <i>Chambres de bois</i> (Hébert, 1958)</small>
+    
+  </ul>
+</br>
+<small></br>référence : <i>Cherche éditeur désespérément</i></small>
+    </div>
+  </section>
+
+  <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+<p style="font-size: 30px;">« Je n'ai aucune excuse. Ça a dû se faire dans la précipitation. Je n'ai pas
+  reconnu que c'était du Anne Hébert. J'ai même entouré un mot dont
+  l'emploi me semblait impropre sur la première page! Je me suis sans
+  doute dit : cet auteur a des difficultés de français. Ça m'a bloqué et je
+  ne suis pas allé plus loin.
+</br>
+</br>
+  J'ai, par le passé, refusé des romans qui se sont très bien vendus chez
+  d'autres éditeurs. Mais moi, je n'avais pas aimé cela, et je ne le
+  regrette pas, parce que je veux publier des œuvres qui m'animent et
+  m'apportent quelque chose aujourd'hui et demain. C'est ma dernière
+  liberté! C'est pour cela qu'il y a de nombreux éditeurs et plusieurs
+  publics de lecteurs. Il aurait pu y avoir dans le lot un éditeur qui aurait
+  accepté de publier ce manuscrit d'Anne Hébert, et ça aurait prouvé
+  quoi : qu'il est lui-même génial? Je ne pense pas. Cela aurait prouvé
+  que sept éditeurs, de façon unanime, n'ont pas aimé cette écriture
+  aujourd'hui et qu'un autre, lui, a apprécié ce style. »</p> 
+  <small>Jacques Lanctôt (Lanctôt Éditeur)</small>
+</div>
+  </section>
+  <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+  data-transition="linear" data-transition-speed="fast">
+  <div id="fondop2">
+<p style="font-size: 30px;">« Ce qui est arrivé avec ce manuscrit s'explique par la situation de bien des
+  éditeurs au Québec. Annuellement, nous recevons par la poste plus de
+  450 manuscrits pour VLB seulement. Nous n'avons pas les moyens de
+  faire chaque fois une véritable lecture. Je sais que c'est souvent très
+  frustrant pour les auteurs dont nous refusons les manuscrits. [...]
+</br>
+</br>
+Ensuite, il peut arriver que je lise quelque chose en me disant que c'est
+bon, bien écrit, mais que je ne puisse pas, en fonction de nos choix
+éditoriaux et de notre programme d'édition, envisager une publication
+chez nous. Je le dis souvent aux auteurs : ce n'est pas parce que votre
+manuscrit est refusé qu'il est mauvais. Allez voir ailleurs peut-être qu'il
+correspond plus à une autre maison d'édition. Notre manière chez VLB
+de soutenir la relève du roman québécois se fait avant tout par notre
+implication dans le prix Robert-Cliche. Un premier roman arrivé par la
+poste, en dehors de cette filière, a peu de chance d'être pris en
+considération. »</p> 
+<small>Pierre Graveline (VLB Éditeur)</small>
+</div>
+</section>
+
+<section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+  data-transition="linear" data-transition-speed="fast">
+  <div id="fondop2">
+<p style="font-size: 30px;">« Si le manuscrit d'Anne Hébert a été refusé au Québec de
+  manière unanime, c'est peut-être qu'il ne correspond pas à
+  notre sensibilité d'aujourd'hui. Et puis chaque maison a sa
+  subjectivité. Peut-être qu'en lisant les premières pages du
+  manuscrit, je me suis rendu compte que cela ne correspondait
+  pas à ma sensibilité.  [...]
+</br>
+</br>
+De plus il y a toujours la possibilité de laisser échapper un bon
+manuscrit parmi les centaines que nous recevons chaque année.
+On ne peut pas tout lire. Si j'ai refusé ce texte, c'est peut-être
+que je n'aurai pas été le meilleur éditeur pour le défendre
+même s'il existe dans ce roman un vrai univers littéraire et des
+qualités de style. Il n'a pas dû y avoir une adhésion suffisante
+pour que j'éprouve le besoin de le faire lire à un de mes
+collaborateurs. Voilà ce qui explique la lettre de refus que j'ai
+envoyée. »</p> 
+<small>Pierre Filion (Leméac)</small>
+</div>
+</section>
+</section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+           <p>Résumé</p>
+   <ul>
+     <li>l'édition est plurielle...</li>
+     <small>ensemble de pratiques, d'acteurs, d'institutions</small>
+     <li>...et vivante</li>
+     <small>continue d'évoluer avec les pratiques et instances</small>
+     <li>...et contextuelle</li>
+     <small>liée à un contemporain de la société</small>
+   
+     <li>des processus éditoriaux dépendent une culture</li>
+<small>histoire de l'édition = histoire des conceptions littéraires de l'édition</small> 
+  </ul>
+
+          </div>
+        </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Atelier partage</p>
+       <small>dernier livre québécois lu/aimé</small>
+
+      </div>
+    </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+       <p>à lire pour la semaine prochaine : <a href="https://moodle.usherbrooke.ca/pluginfile.php/4814431/mod_label/intro/Guerin_1853.pdf?time=1756234538820">Chauveau, <i>Charles Guérin</i>, « Avis de l'éditeur » (iii à vii)</a></p>
+<p>En réfléchissant aux questions suivantes : 
+  <ul>
+  <li>1. Comment le contexte éditorial de 1853 (difficultés, changements récents) est-il décrit ?</li>
+  <li> 2. Comment le travail de l’éditeur est-il décrit ?</li>
+    <li>3. De quel autre agent de la chaîne du livre parle Cherrier ? Comment se positionne-t-il par rapport à lui ?</li>
+      <li>4. Comment programme-t-il la lecture de Charles Guérin?</li>
+</ul>
+</p>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,938 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">28 août : Plan de cours</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <h5>Bienvenu et présentation
+          </br><small>Margot Mellet</small>
+          </h5>
+     
+          <p>Professeure adjointe au DALL
+          </br>Responsable des programmes de deuxième cycle en édition</p>
+          <small>enseignement et encadrement, recherche et rayonnement, participation à la collectivité</small>
+        </br><small>chercheure au <a href="https://www.usherbrooke.ca/grelq/">GRÉLQ</a> et au <a href="https://www.crihn.org/">CRIHN</a></small>
+          <p>Directrice de la revue <a href="sens-public.org/"><i>Sens public</i></a>
+          </br>Directrice de la collection <a href="https://www.purh-ed.fr/collection/?collection_id=705">« De code et de plomb »</a> (PURH)
+        </br>Co-rédactrice de la revue <a href="https://imaginationsjournal.ca/index.php/imaginations"><i>Imaginations</i></a></p>
+     
+     
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+        <div id="fondop2">
+          <h6>Tour de classe</h6>
+          <ul class="icone-liste">
+            <li>
+              <i class="material-icons">person</i> Nom, formation</li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Changements de local</p>
+          <table>
+            <caption>
+              </br>
+              <i>Toujours vérifier le panneau d'affichage du hall</i>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Séance Local</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col" class="column-9">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th scope="col">13</th>
+                <th scope="col">14</th>
+                <th scope="col">15</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5670</th>
+                <td class="cadetblue"></td>
+                <td colspan="5"></td>
+                <td colspan="1" class="cadetblue"></td>
+                <td colspan="1"></td>
+                <td class="column-9"></td>
+                <td colspan="7"></td>
+              </tr>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5665</th>
+                <td></td>
+                <td colspan="5" class="yellow"></td>
+                <td colspan="1"></td>
+                <td colspan="1" class="yellow"></td>
+                <td class="column-9"></td>
+                <td colspan="7" class="yellow"></td>
+                
+              </tr>
+           
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <style>
+        .fond-section {
+          background-image: url('media/chute.png');
+          background-size: 1600px;
+        }
+
+        .gradient-column {
+          background: repeating-linear-gradient(to left top, white, rgba(165, 158, 158, 0.596) 15px);
+        }
+
+        .cadetblue {
+          background-color: cadetblue;
+        }
+
+        .yellow {
+          background-color: rgb(214, 159, 18);
+        }
+
+        .hotpink {
+          background-color: hotpink;
+
+        }
+
+        .column-9 {
+          background: rgba(128, 128, 128, 0.425);
+        }
+      </style>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Présentation du cours <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Objectifs</p>
+            <ul>
+              <li>1. Acquérir les connaissances et les outils méthodologiques essentiels relatifs au domaine de l’édition</li>
+          
+              <li>2. Maîtriser les principaux fondements théoriques de la discipline de l’histoire de l’édition</li>
+              <li>3. Développer une réflexion critique sur les enjeux du monde contemporain de l’édition au Québec, à la lumière de son évolution historique</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contenus</p>
+         <p>Panorama des approches théoriques et méthodologiques en histoire de l’édition. Principales étapes de l’évolution des secteurs du monde du livre au Québec : auteur·rices, maisons d’édition, imprimeries, diffusion-distribution, librairies, lectorat. Analyse de la dualité de l’édition et du livre et de ses dimensions tant idéologiques et littéraires que commerciales et économiques.</p>
+        <small>si vous êtes perdu.e.s dans le sens des slides : ECHAP</small>  </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Approche pédagogique et méthodologie
+              </br><small>cours entièrement en présence</small></p>
+            <ul>
+              <li>Éléments du cours sur Moodle</li>
+             
+              <li>Exposés margistraux, études de cas</li>
+              <li>Discussion/Atelier en classe</li>
+              <li>Lectures de texte</li>
+              <li>Venue d'intervenant.e.s</li>
+              <small>séances 5, 6 et 14</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">+ Bienveillance
+              </br><small>dans tous les échanges</small></p>
+          
+
+          </div>
+        </section>
+
+
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Modalités d'évaluation <i class="material-icons">
+              south
+               </i></h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <img src="media/716_evaluation.png" height="670"/>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star_half</i>
+            <p style="font-variant: small-caps;"> Plan de travail de session (25%)</br>
+              <small>maison d'édition, livre, méthodologie</small></p>
+            <ul>
+              <li>Présentation des consignes et grilles d'évaluation en séance 2</li>
+            <small>2-3 pages + bibliographie sommaire</small>
+              <li>Travail de la bibliographie : atelier en séance 3</li>
+              <small>sur Zotero - à installer avant la séance</small>
+            
+                  <li>+ Séance d'échange et de partage à la séance 7</li>
+           
+            </ul>
+<p>remise le 25 septembre</p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">3p</i>
+            <p style="font-variant: small-caps;">Exposé oral (25%)</br>
+              <small>plan de travail et état d'avancement</small></p>
+            <ul>
+              <li>Présentation des consignes et grilles d'évaluation en séance 6</li>
+            <small>10 minutes de passages</small>
+            
+           
+            </ul>
+<p>Présentations les 6, 13 et 20 novembre (séance 11, 12 et 13)</p>
+<small>annonce de l'ordre de passage après la séance 7</small>
+          </br>
+<small>envoi des questions des répondant.e.s 1 semaine avant le passage</small>
+          </div>
+
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">3p</i>
+            <p style="font-variant: small-caps;">Rétroaction en posture de répondant.e (10%)</br>
+              <small>questions et discussion</small></p>
+            <ul>
+              <li>Présentation des consignes et grilles d'évaluation en séance 6</li>
+            <small>+ consignes pour une bonne rétroaction</small>
+            
+                  <li></li>
+                  <small></small>
+           
+            </ul>
+<p>Discussions les 6, 13 et 20 novembre (séance 11, 12 et 13)</p>
+<small>annonce des répondant.e.s après la séance 7</small>
+          </br><small>envoi des questions par les répondant.e.s par courriel à la séance 8</small>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">star</i>
+            <p style="font-variant: small-caps;"> Travaux final (40%)</br>
+              <small>Présentation critique d'une maison d'édition + livre et inscription dans le paysage éditorial québécois</small></p>
+            <ul>
+              <li>Présentation des consignes et grilles d'évaluation en séance 5</li>
+              <small>10-12 pages + bibliographie enrichie</small>
+            </ul>
+<p>remise le 4 décembre</p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Présentation des travaux rendus</h6>
+            <ul>
+              <li>Normes de présentation + modèles présentés en détail à la séance 2</li>
+              <small>Police sans serif, 12, interligne double, justifié</small>
+            </br><small>le respect des normes fait partie des consignes de rendu</small>
+                 <li>Pénalité de retard</li>
+               <small>jusqu'à 10% par jour de retard (incluant fins de semaine)</small>
+               <li>Qualité de la langue</li>
+               <small>jusqu'à 20% de pénalité</small>
+               <li>Nomenclature des rendus</li>
+              <small>Nom_PlanS ; Nom_TravailF</small>
+              </br><small>pas de diacritiques, d'accents ou d'espaces</small>
+            </ul>
+            <p>Si questions sur les consignes : Ne pas attendre la veille du rendu</p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/UDES_notation.png" data-background-size="1600px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p>Les résultats seront sous forme de points (25, 25, 10, 40), les notes finales seront en lettres.</p>
+        </div>
+
+      </section>
+
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Intégrité intellectuelle</h4>
+
+            <p>Tout cas de plagiat ou toute autre manœuvre visant à tromper mènera au dépôt d’une plainte auprès de la personne responsable des dossiers disciplinaires de la Faculté, en vertu de la procédure prévue au Règlement des études. Toute personne reconnue avoir commis un délit se verra imposer une sanction disciplinaire.</p>
+         
+            <p><a
+                href="https://www.usherbrooke.ca/flsh/etudes/documents-officiels-guides-et-formulaires/plagiat-et-integrite-intellectuelle"
+                target="_blank">Documentation</a> </p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Plagiat</h4>
+
+              <ul>
+              <li>≠ Paraphrase</li>
+              <small>mais pas incompatibles</small>
+              <li>Citation</li>
+              <small>respect du droit d'auteur, légitimation, partage de connaissance</small>
+              </br><small>pas de citation : fait de notoriété publique</small>
+              <li>+ Autoplagiat</li>
+            </ul>
+            
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Calendrier des séances <i class="material-icons">
+              south
+               </i></h3>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png"
+          data-background-size="1500px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 2 - L'édition au Québec des origines à 1920 </b></br>
+              <i>Présentation des consignes du Plan de travail de session</i>  </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 3 - Émergence de l'éditeur moderne [1920-1939]</b></br>
+              <i>Atelier sur l'outil de gestion bibliographique Zotero</i> </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+
+
+          <div id="fondop2">
+            <p><b>Séance 4 - Le temps des éditeurs [1939-1949]</b></br>
+            </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 5 - Les éditeurs d'après-guerre [1950-1959]</b></br>
+              Venue de Marie-Pier Luneau, directrice du GRÉLQ
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 6 - Le système-livre moderne [1960-1975]</b></br>
+              Venue de Josée Vincent, directrice du DALL
+            </br><i>Présentation des consignes pour l'Exposé oral</i>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 7 - Présentation des plans de travail et échanges</b></br>
+             <i>Annonce de l'ordre de passage des exposés et des répondants (après la séance)</i></p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 8 - Les années post-1975</b></br>
+              <i>Envoi des questions par les répondant.e.s</i> </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1500px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Semaine de lecture</b></br></p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 10 - Marchés et mondialisation [2000-2020]</b></br>
+            + <b>Éditions et diversités culturelles</b> 
+            </br><i>Envoi des questions aux exposant.e.s de la séance suivante</i> </p>
+          </div>
+
+          <div id="fondop2">
+
+            <p><b>Séance 11 - Exposés oraux </b>
+            
+            </br><i>Envoi des questions aux exposant.e.s de la séance suivante</i> </p>
+          </div>
+
+          <div id="fondop2">
+
+            <p><b>Séance 12 - Exposés oraux (suite) </b>
+            
+            </br><i>Envoi des questions aux exposant.e.s de la séance suivante</i> </p>
+          </div>
+
+          <div id="fondop2">
+
+            <p><b>Séance 13 - Exposés oraux (suite)</b>
+            
+            </br><b>Éditions et diversités culturelles (suite)</b></p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 14 - Éditions et communautés</b></br>
+              Venue de Simon de Jocas, président des éditions les <i>400 coups</i></p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 15 - Perspectives de l'édition contemporaine et de l'édition numérique </b></br>
+           <i>Remise du travail de session</i></p>
+          </div>
+
+        </section>
+
+      </section>
+
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Ressources <i class="material-icons">
+              south
+               </i></h6>
+
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Ressources basiques</p>
+            <ul>
+              <li><i class="material-icons">school</i> <a href="https://moodle.usherbrooke.ca/course/view.php?id=38896"
+                  target="_blank">Moodle</a></li>
+             
+              <li><a href="https://www.usherbrooke.ca/biblio/">Service des bibliothèques et archives UdeS</a>
+              
+              </li>
+              <li><a href="https://www.usherbrooke.ca/grelq/">Groupe de recherches et d'études sur le livre au Québec</a></li>
+           <li><a href="https://ressources-socius.info/index.php">Socius : ressources sur le littéraire et le social</a></li>
+           <li><a href="https://archiveseditoriales.net/">Archives éditoriales</a></li>
+           <li><a href="https://numerique.banq.qc.ca/">BAnQ numérique</a></li>
+          
+          </ul>
+
+          </div>
+        </section>
+        <section data-background-color="#fff" data-background-image="media/O_zotero.svg" data-background-size="800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Zotero</p>
+            <ul>
+              <li><i class="material-icons">library_books</i> Logiciel de gestion de références gratuit, libre et open
+                source</li>
+              <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register"
+                  target="_blank">Compte en ligne</a> /
+                <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local)</li>
+              <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/"
+                  target="_blank">Documentation</a></li>
+            </ul>
+            <p>Installation (en ligne et local) pour la séance 3</p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+            <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
+
+            <ul>
+              <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+
+              <li>Campus de Longueuil, L-12723</br>
+                450 463-1835, poste 61872
+                </br> en présence : lundi, mardi, jeudi
+              </br> possibilité de rencontre par Teams
+            </br>
+              <small>prise de rdv par courriel</small></li>
+            </ul>
+
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

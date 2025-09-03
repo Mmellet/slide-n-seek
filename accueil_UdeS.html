@@ -1,0 +1,775 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Rencontre - accueil</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">- Margot Mellet</div>
+      <section data-background-image="media/chute.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>Rencontre d'accueil</h2>
+          <h5 style="font-size: 30px;">DESS et microprogramme de 2<sup>e</sup> cycle en édition</h5>
+          <small>Campus de Longueuil - 3 septembre </small>
+        </br><small><a href="https://moodle.usherbrooke.ca/course/view.php?id=6552">Moodle Programme 2e cycle</a></small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Deux programmes de 2<sup>e</sup> cycle en édition
+          </br><small>étude du livre et des métiers de l'édition</small></p>
+         
+<ul>
+  <li>Diplôme d'études supérieures spécialisées</li>
+  <small>30 crédits, 4 cours obligatoires </small>
+  <li>Microprogramme</li>
+  <small>15 crédits, structure souple</small>
+</ul>
+
+<p>Cours offerts le soir au Campus de Longueuil</p>
+<small>en présence sauf exception</small>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Objectifs
+          </br><small>DESS en édition</small></p>
+         
+<ul style="font-size: 28px;">
+  <li>développer les connaissances, outils et compétences nécessaires à l'édition</li>
+  <small>allant de l’édition du manuscrit, à la production du livre et à sa commercialisation</small>
+
+  <li>comprendre la complexité du monde du livre et, plus spécifiquement, du métier d’éditeur ou d'éditrice</li>
+  <small>dont une composante éthique</small>
+<li>s'initier à différentes stratégies permettant d’interagir efficacement avec les partenaires de la chaîne du livre</li>
+<small>auteurs, éditeurs, diffuseurs, distributeurs, libraires, bibliothécaires, médias et lecteurs</small>
+<li>développer une réflexion sociocritique sur la complexité de l’objet livre</li>
+<small>livre comme objet culturel et produit commercial</small>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Objectifs
+          </br><small>Microprogramme</small></p>
+         
+<ul style="font-size: 28px;">
+  <li>accéder à une formation spécialisée touchant l’ensemble des activités stratégiques d’une maison d’édition</li>
+  <small>incluant comptabilité et gestion des droits</small>
+
+  <li>développer le savoir, les outils et les habiletés nécessaires en vue d’éclairer ses décisions et ses actions en tant qu’éditrice ou éditeur</li>
+
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Structure du DESS
+          </br><small>Activités obligatoires - 12 crédits</small></p>
+         
+<ul>
+  <small>Automne</small>
+  <li>- L'édition au Québec, d'hier à aujourd'hui</li>
+  <li>- Édition du manuscrit</li>
+<small>Hiver</small>
+  <li>- Production du livre</li>
+  <li>- Gestion de projets éditoriaux</li>
+
+</ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Structure du DESS
+          </br><small>Activités pédagogiques à option</small></p>
+         
+<ul>
+
+  <li>BLOC - Commercialisation</li>
+ <small></small>
+  <ul>
+    <li>Pratiques avancées en relations publiques</li>
+
+    <li>Marchés internationaux du livre</li>
+<li>Diffusion/distribution du livre</li>
+<li>Édition numérique</li>
+<li>Commercialisation/Marketing du livre</li>
+  </ul>
+
+  <li>BLOC - Droit et Administration</li>
+ 
+  <ul>
+    <li>Droit de l'édition</li>
+    <small>Faculté de droit</small>
+    <li>
+  Fondements de la
+comptabilité </li>
+<small>Faculté d'administration</small>
+ 
+</ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Structure du DESS
+          </br><small>Activités pédagogiques à option</small></p>
+         
+<ul>
+
+  <li>BLOC - Spécialisation</li>
+  <ul>
+    <li>L'édition savante francophone</li>
+   
+    <li>Initiation à l'éditique et à la mise en page</li>
+  <li>Édition de périodique</li>
+  <li>Révision éditoriale</li>
+  <li>Édition littéraire</li>
+  </ul>
+ 
+</ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Structure du DESS
+          </br><small>Activités sous forme tutorale - 6 crédits</small></p>
+         
+<ul>
+
+  <li>BLOC - Projet de synthèse/Activité d'insertion</li>
+
+  <ul>
+    <li>ELD 780 - Formation en entreprise</li>
+    <small>175h</small>
+    <li>ELD 790 - Rapport de recherche</li>
+    <small>50 pages</small>
+  </ul>
+ 
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">ELD 780 - Formation en entreprise
+          </br><small>Stage non rémunéré - <a href="https://moodle.usherbrooke.ca/pluginfile.php/4870674/mod_folder/content/0/Plan_ELD_780.pdf?forcedownload=1">Plan</a></small> </p>
+         
+<ul>
+
+  <li>Conditions</li>
+
+  <ul>
+    <li>Avoir obtenu 9 crédits</li>
+    <small>équivalent de 3 cours</small>
+    <li>Stage de 175 heures dans une instance d'édition</li>
+    <small>sur 5 semaines à temps plein (35h)</small>
+  </br><small>lien avec les objectifs de l'activité</small>
+  </ul>
+
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">ELD 780 - Formation en entreprise
+         </p>
+         
+
+ <li>Fonctionnement</li>
+ <small>avant le stage</small>
+ <ul>
+  <li>1. trouver un lieu de stage</li>
+ <small><a href="https://moodle.usherbrooke.ca/pluginfile.php/4870674/mod_folder/content/0/Liste-lieux-possibles.pdf?forcedownload=1">Liste des lieux possibles</a> et <a href="https://moodle.usherbrooke.ca/pluginfile.php/4870674/mod_folder/content/0/Entreprises-partenaires.pdf?forcedownload=1">Entreprises partenaires</a></small>
+<li>2. rédaction d'une Proposition de projet (modèle en annexe)</li> 
+<small>à faire signer par le superviseur et la responsable de l'activité <b>minimum</b> 3 semaines avant le stage</small>
+<li>3. signature et envoi à la responsable du <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3393363">formulaire d'inscription</a></li>
+
+</ul>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">ELD 780 - Formation en entreprise
+          </p>
+         
+
+ <li>Fonctionnement</li>
+ <small>pendant le stage</small>
+ <ul>
+<li>4. rédaction quotidienne pendant le stage du Carnet de formation (modèle en annexe)</li>
+<li>5. au milieu du stage : rencontre de la responsable d'activité</li>
+<small>le stagiaire peut contacter la responsable à tout moment dans le stage</small>
+<li>6. à la fin du stage, rendu à la responsable du rapport de formation (20 pages) et du Carnet de formation
+</br> + envoi par le superviseur à la responsable de la Grille d'évaluation du superviseur (annexe)
+</li>
+</ul>
+</ul>
+
+        </div>
+      </section>
+
+
+      
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">ELD 790 - Rapport de recherche
+          </br><small> <a href="https://moodle.usherbrooke.ca/pluginfile.php/4870706/mod_folder/content/0/Plan_ELD_790-1.pdf?forcedownload=1">Plan</a></small> </p>
+         
+<ul>
+
+  <li>Conditions</li>
+
+  <ul>
+    <li>Avoir obtenu 9 crédits</li>
+    <small>équivalent de 3 cours</small>
+    <li>Rapport de recherche de 50 pages</li>
+
+<li>Fonctionnement</li>
+<ul>
+  <li>1. Définition et validation de la problématique de recherche</li>
+  <small>rencontre avec la responsable d'activité</small>
+</br><small>dépôt d'un sujet <b>au plus tard</b> 4 semaines après après le début de l'activité</small>
+<li>2. signature et envoi à la responsable du <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3393363">formulaire d'inscription</a></li>
+<li>3. Envoi du rapport <b>au plus tard</b> à la date de fin des activités pédagogiques du trimestre</li>
+</ul>
+
+  </ul>
+
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Offre de cours - Automne 2025
+          </p>
+         
+<ul>
+  <li>ELD 714 - Diffusion et distribution du livre</li>
+  <small>Sandrine Donkers - Lundi </small>
+  <li>DRT 652 - Droit de l'édition</li>
+  <small>Véronyque Roy - Mardi</small>
+  <li>ELD 725 - Édition du manuscrit</li>
+  <small>Marie Lamarre - Mercredi</small>
+  <li>ELD 716 - L'édition au Québec, d'hier à aujourd'hui</li>
+  <small>Margot Mellet - Jeudi </small>
+
+</ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Dates importantes
+          </br><small>session automne 2025</small></p>
+         
+<ul>
+
+  <li>Dates de la session</li>
+  <small>du 25 août au 23 décembre 2025</small>
+  <li>Date limite de retrait d'activités pédagogiques</li>
+  <small>sans facturation : 15 septembre</small>
+</br><small>avec facturation : 15 novembre</small>
+<li>Congés universitaires</li>
+<small>Fête du Travail du 1<sup>er</sup> septembre</small>
+</br><small>Journée nationale de la vérité et de la réconciliation du 30 septembre</small>
+</br><small>Action de grâces du 13 octobre</small>
+</br><small>Semaine de lecture du 20 au 24 octobre</small>
+</ul>
+
+        </div>
+      </section>
+
+        <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">À ne pas oublier à la rentrée
+            </br> <small><a href="https://www.usherbrooke.ca/sciences/nous-joindre/service-informatique-facultaire/liens-utiles">liens utiles</a></small></p>
+           
+  <ul>
+    <li>Activer votre CIP et consulter votre dossier étudiant</li>
+  
+    <li>Activer votre adresse @USherbrooke.ca</li>
+
+    <li>Lire vos courriels via « monCourriel »</li>
+  
+    <li><b>Toujours</b> vérifier les locaux des cours</li>
+  <small><a href="https://www.usherbrooke.ca/horaire-activites-longueuil/"></a> ou sur le panneau du hall</small>
+  </ul>
+  
+          </div>
+        </section>
+
+
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+        <h6><i class="material-icons">help</i> Contact</h6>
+<p>Pour changement, ajout, ou retrait de cours </p>
+        <ul>
+          <li>Julie Bouchard 
+          </br><small>Commis aux affaires académiques aux études supérieures
+            </small>
+          </br><a href="mailto:etudes.sup.dall@groupes.usherbrooke.ca" target="_blank">etudes.sup.dall@groupes.usherbrooke.ca</a></li>
+
+          <li>ou directement sur Genote</br>
+        
+        </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/chute.png" data-background-size="2000px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+      <h6><i class="material-icons">help</i> Contact</h6>
+<p>pour toutes autres questions</p>
+      <ul>
+        <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+
+        <li>Campus de Longueuil, L1-12723</br>
+          <small>en présence (lundi, mardi, jeudi) ou via Teams</small>
+        </br> <small>rendez-vous par courriel</small>
+      </br>
+          450 463-1835, poste 61872
+      </ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Questions et réponses
+      </br><small></small></p>
+     
+<ul>
+
+<li></li>
+
+</ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/chute.png" data-background-size="2000px"
+  data-transition="linear" data-transition-speed="fast">
+  <div id="fondop2">
+    <h6><i class="material-icons">star</i> Bienvenu et bonne rentrée</h6>
+
+
+  </div>
+</section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,821 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">4 septembre : L’édition au Québec des origines à 1920</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+     
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_colonial.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. La Période coloniale [-1764]<i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_ellis.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2" style="margin-top:400px">
+         <p style="font-size: 21px;">ELLIS, Henry. <i>Voyage de la baye de Hudson, fait en 1746 & 1747, pour la découverte du passage de Nord-ouest :
+          contenant une description exacte des côtes & l'histoire naturelle du pays, avec une relation historique de toutes
+          les expéditions faites jusqu'ici pour la découverte d'un passage plus court aux Indes Orientales, & des preuves
+          évidentes de la réalité de ce passage.</i> A Paris : Chez Ballard fils, imprimeur libraire, MDCCXLIX [1749], 2 vol.</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un marché de province</p>
+       <small>
+       </br>avec une production pour la France
+      </br>rapports, contrats
+       </small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le livre comme produit d'importation</p>
+       <small>au sein de bibliothèques privées et institutionnelles
+       </br>communautés religieuses comme Les Sulpiciens
+      </br>
+       </small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_memoire.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2" style="margin-top:400px">
+         <p style="font-size: 21px;">LAHONTAN, Louis Armand de Lom d'Arce, baron de, <i>Mémoires de l'Amérique Septentrionale, ou la suite des
+          voyages de Mr le baron de Lahontan</i>, A La Haye : Chez les Frères L’Honoré, Marchands Libraires, MDCCIII [1703].</p>
+        <small><a href="https://luxediteur.com/catalogue/memoires-de-lamerique-septentrionale/">réédition par Lux 2013</a></small>  
+        
+        </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un système-livre comme une extension française</p>
+       <small>avec une production pour la France
+      </br>rapports, contrats
+       </small>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716_1764.jpg" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Le Système-livre avant l'arrivée de l'éditeur [1764-1920] <i class="material-icons">
+              south
+               </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_gazette.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+          <h5>Au temps de l'imprimeur [1764-1869]</h5> 
+          
+          <ul>
+
+            <li>apparition de l'imprimerie avec le Régime anglais</li>
+        <small>Brown & Gilmore : <i><a href="https://collections.banq.qc.ca/ark:/52327/4265866">La Gazette de Québec</a></i>, 21 juin 1764</small>
+          </br><small>« Notre dessein est donc, de publier en Anglois et en Francois, sous le titre de La Gazette de Québec, un recueil d’affaires étrangères, et de transactions politiques, à fin qu’on puisse se former un idée des différens intérets, et des connexions réciproques, des puissances de l’Europe. »</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_DHGQ.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            
+          <p style="font-size: 24px;">
+            « Moins de 15 jours après l’arrivée de son associé,
+Brown publie le premier numéro de la Quebec Gazette /
+La Gazette de Québec. Journal bilingue, il se présente
+sous la forme d’un petit in-folio de quatre pages orné
+d’une cartouche de titre qui distingue la une. La section
+rédactionnelle domine l’espace du journal et relègue
+généralement à la fin les annonces qui sont publiées
+sans ordre apparent. Les annonces gouvernementales,
+qui donnent à la Quebec Gazette / La Gazette de
+Québec son statut semi-officiel, sont entremêlées
+d’annonces de commerçants et d’autres particuliers. Les
+nouvelles proviennent essentiellement de la presse
+britannique qui arrive au rythme de la conjoncture des
+transports et des situations politiques. Les nouvelles
+des autres territoires britanniques d’Amérique du Nord
+sont rapidement censurées en raison du mouvement
+révolutionnaire qui s’y dessine, tandis que les nouvelles
+locales restent le lot du bouche-à-oreille ou des
+échanges épistolaires entre particuliers. Soucieux
+d’offrir également du divertissement à leurs lecteurs,
+Brown et Gilmore publient des extraits et critiques de
+livres, ainsi que divers textes envoyés par des
+particuliers, de la poésie, des chansons et des
+énigmes »
+          </p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_gazette-extrait.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2" style="margin-top:400px">
+         <p style="font-size: 22px;">« comme le Moyen le plus efficace à faire réussir une entière Connaissance de la Langue Angloise et Françoise parmi ces deux Nations, qui à présent se sont jointes heureusement dans cette partie du Monde </br>[...] de converser ensemble, de se communiquer leurs sentiments comme des Frères [...] </br>[o]u comme un Moyen de les mener à la Connaissance de ce qui se passe chez les Nations différentes et les plus éloignées du Monde. »</p>
+        <small>encore actif : <a href="https://www.qctonline.com/">Quebec Chronicle-Telegraph</a></small>  
+        </div>
+        </section>
+
+        <section data-background-image="media/716_catechisme.png" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            
+        </br><small> Brown & Gilmore, <i><a href="https://collections.banq.qc.ca/ark:/52327/2031061">Catéchisme du diocèse de Sens</a></i>, 1765</small>
+        
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_gazette-litteraire.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            
+        </br><small>Fleury Mesplet : <i>La Gazette littéraire de Montréal</i>, 3 juin 1778</small>
+        
+          </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Caractéristiques de la période
+              </br><small></small></p>
+           <ul>
+
+            <li>Format du journal prédomine</li>
+            <small>commande selon les besoins de la communauté</small>
+            <li>Catalogues hétérogènes</li>
+          <li>Livre marginal</li>
+          <small>littérature encore plus</small>
+          <li>Fonctionnement à compte d'auteur</li>
+        <li>Diffusion limitée</li>          
+        </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Marqueurs culturels à noter
+              </br><small></small></p>
+           <ul>
+             <li>Début de la librairie</li>
+             <small>Augustin Germain en 1815</small>
+             <li>1832 : 1er Droit d'auteur au Canada</li>
+<li>1842 : Développement d'un système scolaire</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_librairie.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+          <h5>Le règne des libraires-éditeurs [1870-1919]</h5> 
+          
+          <ul>
+<li>Industrialisation</li>
+<small>Montréal métropole commerciale, développement de la presse commerciale</small>
+<li>Développements technologiques</li>  
+<li>Accélération de la scolarisation</li> 
+   <li>Omniprésence du religieux</li>
+
+</ul>
+
+          <p>pour le bonheur des libraires-grossistes (Beauchemin 1842; Cadieux & Derome 1878; Granger 1885; Garneau 1899)</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_almanach.png" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+          <h5>État de l'époque</h5> 
+          
+          <ul>
+<li>Omniprésence du livre importé</li>
+<small>95% de la librairie</small>
+<li>Développement d'un réseau de promotion</li>
+<small>avec des catalogue, almanach et revues</small>
+<li>Développement d'un réseau de diffusion</li>
+<small>succursale, poste</small>
+</ul>
+
+            </div>
+        </section>
+
+
+        <section data-background-image="media/716_.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+          <h5>Organisation d'un lieu du livre</h5> 
+          
+          <ul>
+<li>Clientèle</li>
+<small>clergé et école</small>
+<li>Rentabilité</li>
+<small>et conformité d'une production</small>
+<li>Fonctionnement en collections</li>
+<small>commande ou classique recyclé</small>
+<li>Intermédiaire et passeur de culture</li>
+
+</ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_michon1.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+          <h5></h5> 
+          <p>« Pour [le libraire], l’édition est une activité
+            complémentaire destinée à répondre à la
+            demande des institutions scolaires, des
+            communautés religieuses et des particuliers. »</p>
+          </br><small>MICHON, Jacques (dir.). <i>Histoire de l’édition littéraire au Québec au XXe siècle</i>,
+            vol. 1 : La Naissance de l’éditeur 1900-1939, Montréal, Fides, 1999, p. 104.</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_michon1.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+          <h5>L'auteur éditeur</h5> 
+          <p>« Quant à moi, j’ai seize volumes de prêts pour
+            l’impression (dont trois en vers) mais nous
+            n’avons pas d’éditeurs ici, nous n’avons que
+            des imprimeurs. C’est-à-dire que l’auteur doit
+            débourser, et puis voir à la vente lui-même. »</p>
+          </br><small>Louis Fréchette, Lettre, 1903. Cité dans MICHON, Jacques</small>
+          </div>
+        </section>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+         <p>Résumé</p>
+         <small>avant 1850</small>
+ <ul>
+
+  <li>Début de l'impression québécoise : journaux et livres utilitaires</li>
+  <small>manuels, livres religieux ou d'administration </small>
+  <li>Système-livre embryonnaire</li>
+  <small>le livre est un objet d'importation</small>
+ </br><small>l'édition est une affaire d'éllite</small>
+  </ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+         <p>Résumé</p>
+         <small>après 1850</small>
+ <ul>
+
+  <li>Tensions entre intellectuels et auteurs québécois</li>
+  <small>survivance du fait français et reconnaissance d'une identité</small>
+  <li>Monopole d'un marché par les libraires</li>
+  <small>sur la production française</small>
+  <li>Désintérêt des entreprises françaises</li>
+<small>frais de port élevés</small>
+<li>Tension entre éditeurs et librairies</li>
+  </ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Discussion du texte<i class="material-icons">
+              south
+               </i></h6>
+
+
+          </div>
+        </section>
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+  
+         
+         <p><a href="https://moodle.usherbrooke.ca/pluginfile.php/4814431/mod_label/intro/Guerin_1853.pdf?time=1756234538820">Chauveau, <i>Charles Guérin</i>, « Avis de l'éditeur » (iii à vii)</a></p>
+  <p>En réfléchissant aux questions suivantes : 
+    <ul>
+    <li>1. Comment le contexte éditorial de 1853 (difficultés, changements récents) est-il décrit ?</li>
+    <li> 2. Comment le travail de l’éditeur est-il décrit ?</li>
+      <li>3. De quel autre agent de la chaîne du livre parle Cherrier ? Comment se positionne-t-il par rapport à lui ?</li>
+        <li>4. Comment programme-t-il la lecture de Charles Guérin?</li>
+  </ul>
+  </p>
+        </div>
+      </section>
+  
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Atelier partage <i class="material-icons">
+          south
+           </i></p>
+       <small>répartition par groupe (4-5 personnes)</small>
+<ul>
+
+  <li><a href="https://collections.banq.qc.ca/ark:/52327/4871468">L'Union 1860</a></li>
+  <li><a href="https://collections.banq.qc.ca/ark:/52327/4593355">Le Pays 1852</a></li>
+<li><a href="https://collections.banq.qc.ca/ark:/52327/2985279">The Sherbrooke examiner 1894</a></li>
+<li><a href="https://numerique.banq.qc.ca/patrimoine/details/52327/5286582">Journal de 1890</a></li>
+<li><a href="https://collections.banq.qc.ca/ark:/52327/2022499">Roman 1877</a></li>
+<li><a href="https://collections.banq.qc.ca/ark:/52327/1935041">Calendrier de 1800</a></li>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Questions de lecture</p>
+       <small></small>
+<ul>
+<li>Contenu représenté dans le document ?</li>
+<li>Type de document et contexte de publication ?</li>
+<li>Caractéristiques éditoriales ?</li>
+<li>Articulation avec l'histoire de l'édition québécoise ?</li>
+ </ul>
+
+ <p>ressource : <a href="https://danstaclasse.banq.qc.ca/ldtq">La ligne du temps du Québec</a></p>
+
+      </div>
+    </section>
+  </section>
+
+
+    <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;"><a href="https://moodle.usherbrooke.ca/pluginfile.php/4857113/mod_label/intro/Grille-716.pdf">Plan de session</a></p>
+   <small>présentation + <a href="https://moodle.usherbrooke.ca/pluginfile.php/4857113/mod_label/intro/Modele_rendu.docx">modèle de rendu</a></small>
+    </div>
+  </section>
+
+
+    <section data-background-color="#fff" data-background-image="media/O_zotero.svg" data-background-size="800px"
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Pour la semaine prochaine : installation Zotero</p>
+      <ul>
+        <li><i class="material-icons">library_books</i> Logiciel de gestion de références gratuit, libre et open
+          source</li>
+        <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register"
+            target="_blank">Compte en ligne</a> /
+          <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local) + 
+        <a href="https://www.zotero.org/download/">Connecteur</a> (pour le navigateur)</li>
+        <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/"
+            target="_blank">Documentation</a></li>
+      </ul>
+      <p>Installation (en ligne et local + connecteur) pour la séance 3</p>
+    </div>
+  </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+     
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

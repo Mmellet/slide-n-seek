@@ -1,0 +1,1076 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">11 septembre : Émergence de l’éditeur moderne
+            </br>[1920 à 1939]</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p>Contexte du monde du livre</p>
+          <small>autour de 1920</small>
+          <ul>
+            <li>Loi sur le droit d'auteur 1921</li>
+            <small>entrée en vigueur en 1924</small>
+            </br><small>sur le modèle britannique</small>
+            <li>Loi Choquette 1925</li>
+            <small>achat par la commission scolaire de la moitié de livres de prix canadiens</small>
+            </br><small>sur les acquisitions des livres de récompense</small>
+            <li>Prix David 1923</li>
+            <small>par le secrétaire de Québec (province), Athanase David</small>
+            <li>Développement d'un public lettré</li>
+            <small>scolarisation et critique littéraire</small>
+          </ul>
+
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 1. Le champ éditorial<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bourdieu-champ.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Notion de Champ
+              </br><small>Bourdieu, « Pour une science des oeuvres »</small>
+            </h5>
+
+
+            <ul>
+              <li>Le monde est divisé en Champ</li>
+              <li>un Champ = un espace social</li>
+<small>avec des sous-espaces culturels</small>
+<li>un Champ = un espace politique</li>
+              <small>où s'articulent des agents, des trajectoires, des enjeux</small>
+
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bourdieu.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-size: 24px;">« […] le microcosme social dans lequel se produisent les œuvres culturelles,
+              champ littéraire, champ artistique, champ scientifique, etc., est un espace de relations objectives entre
+              des positions – celle de l’artiste consacré et celle de l’artiste maudit par exemple – et on ne peut
+              comprendre ce qui s’y passe que si l’on situe chaque agent ou chaque institution dans ses relations
+              objectives avec tous les autres. C’est dans l’horizon particulier de ces rapports de force spécifiques, et
+              des luttes visant à les conserver ou à les transformer, que s’engendrent les stratégies des producteurs,
+              la forme d’art qu’ils défendent, les alliances qu’ils nouent, les écoles qu’ils fondent, et cela au
+              travers des intérêts spécifiques qui s’y déterminent. »
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bourdieu-champ2.jpeg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un champ...
+              </br><small>Bourdieu, « Pour une science des oeuvres »</small>
+            </p>
+
+
+            <ul>
+             <li>se compose d'enjeux</li>
+             <small>symboliques ou énomiques</small>
+             <li>regroupe des positions</li>
+            <small>constructions sociales</small>
+            <li>réunit des agents et trajectoires</li>
+            <small>en fonction des enjeux</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Un champ éditorial
+            </br></p>
+
+
+            <ul>
+<li>n'est pas un circuit/système-livre (Darnton)</li>
+<small>perspective différente - en fonction de l'objet-livre</small>
+
+                 </ul>
+
+                 <p>+ sur le champ : Bourdieu, <i>Les Règles de l'art</i>, « Le champ littéraire »</p>
+          </div>
+        </section>
+        
+
+
+        <section data-background-image="media/716_desrochers.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le champ éditorial au Québec de 1920
+              </br><small>1. Religieux : production adaptée à une mission apostolique</small></p>
+            <ul>
+
+              <li>Poésie d'Alfred DesRochers</li>
+              <small>« À l'ombre d'Orford », Prix David de 1932</small>
+              
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_revue-dominicaine.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le champ éditorial au Québec de 1920
+              </br><small>1. Religieux : production adaptée à une mission apostolique</small></p>
+            <ul>
+
+              <li>Critique de la <i>Revue dominicaine</i> (1915-1961)</li>
+            <small>Père Marcolin-Antonio Lamarche</small>  
+            </br><small>questions théologiques et philosophiques avec diffusion d'idées dominicaines</small>
+          </br><small>ouvre à l'ensemble des questions sociopolitiques</small>  
+        </br><small>public lettré</small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_FEC.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le champ éditorial au Québec de 1920
+              </br><small>1. Religieux : production adaptée à une mission apostolique</small></p>
+            <ul>
+
+              <li>Littérature jeunesse avec les Frères des Écoles Chrétiennes (1837-)</li>
+            <small>innovation dans les matériaux pédagogiques</small>  
+          </br><small>publication de manuels : 935 manuels de 1837 à 1945</small>
+          </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_beauchemin.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le champ éditorial au Québec de 1920
+              </br><small>2. Économie et politique</small></p>
+            <ul>
+<li>Libraires-grossistes : Beauchemin, Granger, Garneau</li>
+     <small>collection « Bibliothèque canadienne » par la Librairie Beauchemin</small>        
+            </br><small>vers le déclin</small> 
+
+  <li>Journaux-imprimeurs</li>
+  <small>Le Devoir, L'Action catholique, le Bien public</small>
+    </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_groulx.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le champ éditorial au Québec de 1920
+              </br><small>2. Économie et politique : regroupements idéologiques</small></p>
+            <ul>
+<li>Ligue des Droits du Français (1918) et Bibliothèque de l'Action française</li>
+<small>ouvrages de fiction, jeunesse et brochures avec caractère patriotique</small>
+            </br><small>Lionel Groulx, éditeur de l'Almanach de la langue française (1916-1937), revue Action française (1917-1927)</small>
+          </br><small>-1936 : 280 titres, 30 collections</small>
+          
+          </ul>
+            <p>devient la Ligue d'Action française (1926), Librairie d’Action canadienne-française (1928) et Éditions Albert Lévesque (1930)</p>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_oiseau-bleu.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Débuts de l'édition jeunesse
+              </br><small>trois revues</small></p>
+            <ul>
+              <li>Bibliothèque de l'Action française (1918-1926)</li>
+            <li>Société Saint-Jean Baptiste</li>
+            <li>L'Oiseau bleu</li>
+            </ul>
+  
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_roman-canadien.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Éditeurs indépendants
+              </br><small>Édition grand public et pour la jeunesse</small></p>
+            <ul>
+      <li>Édition Édouard Garand (1923-1949)</li>
+<small>« Le roman canadien » : historiques, aventures avec des auteurs locaux (Jean Féron, Adèle Lacerte)</small>
+            </br><small>magazine illustré, 26 x 18 cm, en colonnes, 60 p., 0,25$</small>          
+          </br><small>série populaire à succès avec message nationaliste</small>
+        </br><small>93 romans en 10 ans, 3 000 tirages puis 10 000 en 1926</small>
+          </ul>
+  
+          </div>
+        </section>
+
+        <section data-background-image="media/716_lib-gene-canadienne.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Éditeurs indépendants
+              </br><small>Édition grand public et pour la jeunesse</small></p>
+            <ul>
+      <li>Librairie générale canadienne d'Eugène Achard</li>
+<li>
+Éditions du Mercure/Mercury Press de Louis Carrier
+</li>   
+<small>bilingue et biculturel</small> 
+</br><small>éditions soignées de luxe</small>
+</br><small>traductions, 40 titres</small>
+
+</ul>
+  
+          </div>
+        </section>
+
+        <section data-background-image="media/716_totem.jpg" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Éditeurs indépendants
+              </br><small>Édition grand public et pour la jeunesse</small></p>
+            <ul>
+      <li>Éditions du Totem d'Albert Pelletier (1933-1938)</li>
+
+<small>12 titres dont 2 romans à succès</small> 
+</br><small><i>Un homme et son péché</i> de 1933 par Claude-Henri Grignon</small>
+</br><small><i>Les demi-civilisés</i> de 1934 de Jean-Charles Harvey</small>
+</br><small>publier les rejetés, provoquer les débats</small>
+</ul>
+  
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Conclusion
+              </br><small>Le champ littéraire 1920</small></p>
+            <ul>
+    <li>Littérature différenciée</li>
+    <li>Spécialisation des agents</li>
+    <li>Précarité encore présente, marchés en construction</li>
+    <li>Diversification et multiplication des instances</li>
+</ul>
+  
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_levesque.png" data-background-size="1500px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Figure et trajectoire de l'éditeur<i class="material-icons">
+                south
+              </i></h5>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_panckoucke.jpg" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modèles de l'éditeur européen</p>
+            <small>
+
+            </small>
+            <ul>
+              <li>Charles-Joseph Panckoucke (1736-1798)</li>
+              <small>éditeur de l'Encyclopédie de Diderot et d'Alembert</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_charpentier.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modèles de l'éditeur européen</p>
+            <small>
+
+            </small>
+            <ul>
+              <li>Gervais Charpentier (1805-1871)</li>
+<small>inventeur du format « poche »</small>
+            </ul>
+
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_achard.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Modèle de l'éditeur indépendant
+              </br><small></small></p>
+            <ul>
+   <li>Homme d'affaire</li>
+   <small>diffuseur</small>
+   <li>Médiateur d'une communauté littéraire</li>
+   <small>passeur d'idées</small>
+   <li>Hyperlecteur</li>
+          <small>critique littéraire</small>
+   <li>Producteur et créateur</li>
+   <small>d'un marché, d'une concurrence, de collections</small>
+            </ul>
+  
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Notion de Trajectoire
+              </br><small>champ de Bourdieu</small></p>
+            <ul>
+   <li>parcours d'un agent dans un champ</li>
+              <small>conditionné par son <i>habitus</i></small>
+   
+            </ul>
+  
+          </div>
+        </section>
+
+        <section data-background-image="media/716_.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-size: 24px;">
+              « À la différence des biographies ordinaires, la trajectoire décrit la série des positions successivement occupées par le même écrivain dans les états successifs du champ littéraire, étant entendu que c’est seulement dans la structure d’un champ, c’est-à-dire, une fois encore, relationnellement, que se définit le sens de ces positions successives, publication dans telle ou telle revue ou chez tel ou tel éditeur, participation à tel groupe, etc. »
+            </p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_belisle.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              <li>Origines acadiennes</li>
+              <small>1902 Saint-Éloi, Témiscouata</small>
+            </br><small>milieu rural et ouvrier modeste</small>
+    <li>Formation</li>
+    <small>1913-1918 : Juvénat des Frères Maristes de Lévis</small>
+          </br><small>formation axée sur les métiers et le commerce</small>
+        <small>commis-comptable à la Banque canadienne nationale de Saint-Pacôme</small> 
+        </br><smal>+ cours par correspondance de pratique bancaire et commerciale (Shaw School, Kingston)</smal>
+        </ul>
+  
+          </div>
+        </section>
+
+        <section data-background-image="media/716_belisle.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              <li>Carrière en édition (1927)</li>
+            <small><i>Le Soleil</i> : correcteur, réviseur, rédacteur, traducteur, éditorialiste de pages financières</small>
+            </br><small><i>Les Affaires</i> avec Raoult Renault, direction en 1933-1960</small>
+          </br><small>1936 : Achat de l'imprimerie de La Semaine</small>
+         
+          </ul>
+  
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p>Résumé</p>
+          <small></small>
+          <ul>
+<li>Publication de livres canadiens : acte de patriotisme culturel</li>
+<li>Éditeur : prise de position culturelle</li>
+<li>Marché encore en émergence mais avec de fortes collaborations</li>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+        data-transition="linear" data-transition-speed="fast">
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <h6>Atelier Zotero<i class="material-icons">
+                south
+              </i></h6>
+
+
+          </div>
+        </section>
+
+    
+        <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+        <p>« Tout commence et tout se termine par une bibliographie. »</p>
+        </div>
+      </section>
+
+       
+
+        <section data-background-image="media/716_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition d'une référence bibliographique
+            </br><small>
+                
+            </small>
+            </p>
+
+            <span style="color:turquoise">Bourdieu</span>, <span style="color: blue;">P.</span> (<span
+              style="color: violet;">1992</span>). <span style="color: orange;"><i>Les règles de l'art : genèse et structure du champ littéraire</i></span>. <span style="color: red;">Paris</span>,  <span
+              style="color: green;">Éditions du Seuil</span>.
+            </span>
+  
+<p>Deux niveaux : <i class="material-icons">speaker_notes</i> la citation et la bibliographie <i class="material-icons">list_alt</i> </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/O_zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Zotero</h6>
+          <ul>
+            <li>2005 - <i>Zotero digital research platform</i>, Dan Cohen et Sean Takats (2006)</li>
+            <li>Logiciel de gestion de références gratuit, libre et open source qui s'inscrit dans la philosophie du Web 2.0</li>
+            <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register" target="_blank">Compte en ligne</a> /
+              <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local) + <i class="material-icons">travel_explore</i> <a href="https://www.zotero.org/download/connectors" target="blank">Connecteur Navigateur</a></li>
+             
+          
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <h6>Fonctionnalités</h6>
+          <ul>
+            <li>Collecter <b>*</b></br><small>des références bibliographiques en ligne et les conserver</li>
+            </small> <li>
+              Organiser <b>*</b></br><small>ses références en collections et sous-collections, et en attribuant des tags et des
+              marqueurs</small> </li>
+            <li>
+              Citer <b>*</b></br><small>ses références facilement et les exporter/intégrer dynamiquement dans des documents</li>
+            </small><li>
+              Synchroniser <b>*</b></br><small>ses références avec un compte en ligne</small> </li>
+            <li>
+              Collaborer </br><small>échanger ses références ou notes avec d’autres utilisateurs</small> </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2200px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <h6>Synchronisation</h6>
+        <small>entre compte local et en ligne</small>
+        <ul>
+          <li>1. sur le Zotero Local, sélectionner (haut gauche) l'option de synchronisation </li>
+          <li>2. entrer vos informations</li>
+               </ul>
+<p><a href="https://docs.zotero-fr.org/sync/#">Documentation et pas à pas</a></p>
+      </div>
+    </section>
+      <section  data-background-image="" data-background-size="1200px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Exercice de prise en main</h6>
+        <p>Luneau, Marie-Pier, et Jean-Philippe Warren. (2022). <i>L’amour comme un roman: le
+          roman sentimental au Québec, d’hier à aujourd’hui</i>. Socius. Les Presses de
+          l’Université de Montréal.</p>  
+        <p>créer une collection : ELD716-PlanSession (en ligne ou en local)</p>
+
+        </div>
+      </section>
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6><i class="material-icons">front_hand</i> Utilisation manuelle</h6>
+          <ul>
+            <li>1. ouvrir le logiciel (Zotero Standalone) ou la version en ligne
+            </li>
+            <li>2. créer une nouvelle référence +</li>
+            <li>3. ajouter les informations dans chacun des champs correspondants </br><small>(auteurs, date, titre, édition)
+           </small> </li>
+          </ul>
+
+        </div>
+      </section>
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6><i class="material-icons">link</i> Utilisation agile</h6>
+          <ul>
+            <li>1. ouvrir le logiciel (Zotero Standalone)
+            </li>
+            <li>2. rechercher la référence sur le web</li>
+            <li>3. enregistrer la référence via l’extension du navigateur
+            </li>
+            <li>4. vérifier et compléter les informations</li>
+        
+          </ul>
+
+          <p>dépend de la structuration de la référence sur les pages sources</p>
+
+        </div>
+      </section>
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6><i class="material-icons">bolt</i> Utilisation magique</h6>
+          <ul>
+            <li>1. ouvrir le logiciel (Zotero Standalone) ou version en ligne </li>
+            <li>2. cliquer sur « Ajouter un élément par son identifiant » dans la barre d’outils Zotero</br><small>icone de baguette magique</small></li>
+            <li>3. copier-coller un numéro d’identification </br><small>ISBN - 978-2-7606-4528-8</small></li>
+                 </ul>
+
+        </div>
+      </section>
+
+      
+   
+
+      <section 
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Créer une bibliographie (export) - En local </h6>
+
+<ul>
+<li>1. Clic droit sur votre collection</li>
+<li>2. Sélectionner l'option « Créer une bibliographie »</li>
+<li>3. Choisir le style (APA 7e) et la langue (Français)</li>
+<li>4. Choisir l'option Bibliographie et « Copier sur le clavier »</li>
+<li>5. Cliquer sur « Ok »</li>
+<li>6. Dans un fichier docx, coller (CTRL+V)</li>
+</ul>
+
+
+        </div>
+      </section>
+
+      <section 
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Pour utiliser le style APA 7e de l'UdeM</p>
+
+<ul>
+<li>Dans Zotero en local</li>
+<small>onglet Édition > Paramètres > Citer</small>
+</br><small>Obtenir d'autres style : recherche Université de Montréal - APA</small>
+</ul>
+
+
+      </div>
+    </section>
+
+    <section 
+    data-transition="linear" data-transition-speed="fast">
+    <div id="fondop2">
+
+      <p style="font-variant: small-caps;">Conseil pour la production de votre bibliographie</p>
+
+<ul>
+<li>Toujours relire les référence</li>
+<small>vérifier les caractères</small>
+</br><small>et les champs d'informations</small>
+<li>pour le plan de session : justifier votre référence avec une phrase</li>
+<small>expliquer en quoi cette référence vous a été utile dans votre travail</small>
+</br><small>5 références demandées dans la bibliographie</small>
+</ul>
+
+
+    </div>
+  </section>
+
+
+
+      </section>
+
+<!--
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Atelier partage <i class="material-icons">
+                south
+              </i> sur les trajectoires d'éditeurs
+            </p>
+            <small>répartition par groupe (3 personnes)</small>
+            <ul>
+
+                  </ul>
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Questions de lecture</p>
+            <small></small>
+            <ul>
+              <li>Contenu représenté dans le document ?</li>
+              <li>Type de document et contexte de publication ?</li>
+              <li>Caractéristiques éditoriales ?</li>
+              <li>Articulation avec l'histoire de l'édition québécoise ?</li>
+            </ul>
+
+            <p>ressource : <a href="https://danstaclasse.banq.qc.ca/ldtq">La ligne du temps du Québec</a></p>
+
+          </div>
+        </section>
+      </section>
+
+
+   
+-->
+
+     
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

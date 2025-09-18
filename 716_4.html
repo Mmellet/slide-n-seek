@@ -1,0 +1,1246 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">18 septembre : Le temps des éditeurs
+            </br>[1939-1949]</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p>Récapitulatif de la période précédente</p>
+          <small></small>
+          <ul>
+<li>Émergence de l'éditeur avec la question nationale</li>
+<li>Commerce du livre dominé par les librairies de gros</li>     
+<small>importation d'Europe</small>
+</ul>
+
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 1. Conséquences du conflit sur l'édition<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contexte
+              </br></p>
+
+
+            <ul>
+              <li>10 septembre 1939 : Déclaration de guerre à l'Allemagne par le Canada</li>
+              <small>Licence de reproduction les livres édités en territoires ennemis et protégés par le droit
+                d'auteur</small>
+
+              <li>1940 : France occupée sous régime de Vichy</li>
+              <small>Licence exceptionnelle de reproduction des livres français indisponibles</small>
+
+            </ul>
+            <p>« porter haut les traditions de culture et de civilisation française »
+              </br> (W. L. Mackenzie King)</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fonctionnement des reproductions
+              </br>conditions</p>
+
+
+            <ul>
+              <li>réimpression en contrepartie d'un versement d'une redevance</li>
+              <small>10% recettes</small>
+              <li>droits à verser au Secrétariat d'État du Canada </li>
+              <small>2 fois par an</small>
+              <li>enregistement des ouvrages au Bureau des brevets et des droits d'auteur</li>
+              <li>identification des documents avec une mention spéciale</li>
+              <small>« Imprimé et publié en conformité d’une licence décernée par le commissaire des brevets sous le
+                régime de l’Arrêté exceptionnel sur les brevets, les dessins de fabrique, le droit d’auteur et les
+                marques de commerce (1939) »</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Impacts sur l'édition
+              </br></p>
+
+
+            <ul>
+              <li>ouverture d'un secteur lucratif</li>
+              <small>affranchissement d'une concurrence européenne</small>
+              </br><small>développement d'un marché propre</small>
+<li>floraison des maisons d'édition québécoises</li>
+<small>près de 400 entreprises</small>
+<li>espace pour un nouveau souffle de la littérature canadienne française</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_lemelin.jpg" data-background-size="1000px"
+          background-color="#21211c">
+          <div id="fondop2">
+
+            <p style="font-size: 24px;">« Le phénomène de la guerre a
+              certainement eu un grand effet
+              sur nos intellects, faisant naître
+              une curiosité que la crise
+              économique semblait garder
+              stagnante.[…] Et tout à coup, la
+              grande catastrophe. Une ruée
+              générale vers les livres en est
+              résultée, parce que là surtout on
+              croyait voir résider la clé de
+              l’énigme au séisme qui secouait
+              l’univers. Le livre français, dont
+              on avait plutôt négligé la
+              diffusion chez nous, jusqu’en
+              1940, prit un essor fantastique. »
+            </br><small>(Lemelin, « L'évolution du public en matière d'art » 1945)</small>
+            </p>
+          </div>
+        </section>
+
+        
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Tremplin pour une production littéraire
+              </br></p>
+
+
+            <ul>
+<li>Nouvelles maisons d'édition de littérature générale</li>
+<li>Société des éditeurs canadiens du livre français (1943)</li>
+<li>Production par réédition et publication inédites</li>
+<small>manuels scolaires, classiques français, auteurs exilés</small>
+            </br><small>nouveaux talents comme Lemelin et Hébert</small>   
+
+
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_ecole.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Développement des pratiques éditoriales
+              </br></p>
+
+
+            <ul>
+<li>Association et collaboration avec des artistes</li>
+<small>esthétique de la couverture</small>
+            </br><small>École des arts graphiques de Montréal, 1942</small>
+<li>Création et direction de collections spécialisées</li>
+
+
+                   </ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Développement de nouveaux modèles du livre
+              </br>à partir de la culture des États-Unis (Richard Saint-Germain)</p>
+
+
+            <ul>
+              <li>Industrialisation et urbanisation de la société québécoise</li>
+<small>réalité ouvrière, langue citadine
+</br><i>Au pied de la pente douce</i> de Lemelin
+</br><i>Bonheur d'occasion</i> de Roy
+</small>
+            </br><small>imaginaire de la ville nord-américaine</small>
+                   </ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_pulp.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Développement de nouveaux modèles du livre
+              </br>côté États-Unis - exemple</p>
+
+
+            <ul>
+              <li>Pulp magazine (1915)</li>  
+              <small>mauvaise qualité, <i>woodpulp</i></small>  
+            </br><small>fiction présentée comme de la narration de faits réels</small>         
+        
+        </ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_ixe13.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Développement de nouveaux modèles du livre
+              </br>côté Canada - exemple</p>
+
+
+            <ul>
+                   <li>Littérature de fascicules (1941)</li> 
+          <small>Éditions du Bavard et Éditions Police-Journal (1944)</small>     
+          </br><small>Agent IXE-13, L'As des espions canadiens (Pierre Saurel/Daigneault)</small>
+
+        </ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1000px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Évolution de l'arrêté
+              </br><small></small></p>
+            <ul>
+<li>13 novembre 1943 : Abrogation de l'arrêté</li>
+<small>arrêté en conseil n° 8526</small>
+             <li>Nouveau règlement : « Revised Regulations Respecting Trading with the Enemy, 1943 »</li>
+        <small>négociation directe avec les ayants droits des oeuvres produites en territoire ennemi</small>
+            </br><small>sans passer par le Bureau des brevets</small>
+      </ul>
+<p>arrêt des licences à partir du 1er mai 1945</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Apogée de la production 1944-1945
+              </br></p>
+
+
+            <ul>
+        <li>Montréal - 3 000 titres</li>
+        <small>dizaines de millions d'exemplaires</small>
+      <li>Transition entre guerre et paix</li>    
+      <small>diffusion sur les territoires libérés</small>
+            </br><small>rétablissement de relations d'affaires : coéditions</small>
+      </ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Édition de l'actualité dans l'édition
+              </br></p>
+
+
+            <ul>
+<li>Machine à propagande</li>
+<small>État fédéral</small>
+<li>Témoignage d'intellectuels réfugiés</li>
+<small>Georges Bernados, Jacques Maritain</small>
+<li>Rôle important des presses</li>
+<small><i>Notre temps</i>, <i>Le Droit</i>, <i>Le Devoir</i>, <i>Le Bien public</i></small>
+            </br>
+            <small>Montréal : <i>Gants du ciel</i>, <i>La Nouvelle Relève</i>, <i>Amérique française</i>, <i>Le Monde libre</i></small>         
+</ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_charbonneau.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Tension dans le dialogue avec la France
+              </br>cas d'étude « La France et nous »</p>
+
+
+            <ul>
+<li>1946 - Accusation du C.N.E de profit dans la réimpression d'auteurs collabo ou pétainistes (Mauras, Barrès)</li>
+<small>par des écrivains comme Duhamel, Aragon, Mauriac, Garneau</small>
+
+<li>1947 - Réponse de Charbonneau,  « La France et nous. Journal d'une querelle » (Éditions de l'Arbre) </li>
+<small><ul>
+  <li>peu d'auteurs de droite publiés</li>
+  <li>tribune pour des écrivains en exil</li>
+  <li>autonomie de l’édition et de la littérature canadienne-française</li>
+</ul>  </small>       
+
+</ul>
+
+                 </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="1000px"
+        background-color="#21211c">
+        <div id="fondop2">
+
+          <p style="font-size: 24px;">« Non seulement les contours du champ [littéraire] sont déterminés par sa dynamique interne, mais ils le sont aussi par une dynamique externe : le champ s'oppose à
+            d'autres champs, littéraires ou non. C'est ainsi que les champs littéraires distincts
+            que constituent les littératures nationales peuvent s'affronter. L'histoire littéraire
+            du Québec offre un cas exemplaire de ce type d'affrontement : la querelle de la
+            France et nous. La polémique eut lieu peu après la guerre, entre des intellectuels français (Aragon, Jean Cassou, André Billy, etc.) et québécois (Robert
+            Charbonneau et Berthelot Brunet surtout), sur des questions idéologiques, littéraires et économiques. Exemple parfait de l'affrontement des littératures nationales concurrentes (de champs concurrents), cette querelle est, on le verra, l'un
+            des événements majeurs du processus d'autonomisation de la littérature québécoise : d'où la pertinence de s'y attarder. »
+          </br><small>(Robert Dion, 1988)</small>
+          </p>
+        </div>
+      </section>
+      <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Querelle littéraire
+            </br>cas d'étude « La France et nous »</p>
+
+
+          <ul>
+<li>1946 février - <i>Lettres françaises</i></li>
+<small>accusation anonyme</small>
+
+<li>1946 avril - Réponse de Charbonneau, « Pourquoi ces querelles », <i>La Nouvelle Relève</i> </li>
+<small>« Ceux qui ont admiré avant la guerre un Maurras, un Bainville, un Massis, etc., ne l'ont pas fait parce qu'ils rêvaient d'une restauration
+  monarchique dans un pays qui n'est pas le nôtre, mais parce qu'il se
+  trouvait que ces écrivains étaient d'éminents représentants de la pensée
+  française. Qu'on le nie aujourd'hui ne change rien. Le fait que Mauras
+  [sic] et les autres ont collaboré ne change rien à ces œuvres publiées
+  avant 1940. »  </small>       
+
+</ul>
+
+               </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.jpg" data-background-size="1000px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Valeurs culturelles
+        </br></p>
+
+        <p >« [la différence d'ordre de valeurs] explique le malentendu entre Français et Québécois au sujet des écrivains collaborateurs: ils n'interprètent pas les faits à partir de la même base de
+          classement. »
+        </br><small>(Robert Dion, 1988)</small>
+        </p>
+      </div>
+    </section>
+
+    <section data-background-image="media/716_index.jpg" data-background-size="1000px"
+    background-color="#21211c">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Scission entre le Canada et la France
+      </br>querelle idéologique</p>
+
+
+      <p >« Notre rôle terminé, on nous a reproché ce que nous
+        avions fait, on n'a pas dit un mot dans les journaux français des livres
+        que nous avions publiés, on nous reproche aujourd'hui dans les
+        Lettres françaises de publier un livre qui déplaît à des fanatiques. »
+      </br><small>(Charbonneau)</small>
+      </p>
+
+      <p>noeud de la querelle : l'édition de la littérature est-elle apolitique ?</p>
+    </div>
+  </section>
+
+  <section data-background-image="media/716_index.jpg" data-background-size="1000px"
+  background-color="#21211c">
+  <div id="fondop2">
+    <p style="font-variant: small-caps;">L'Arbre et la Branche
+    </br>image littéraire </p>
+
+    <p style="font-size: 24px;">« Le monde canadien est une branche de l'arbre français, une
+      branche robuste et qui semble maintenant séparée du tronc original par une
+      épaisse muraille: une branche quand même et qui fait honneur à l'arbre, à la
+      vitalité de l'arbre.  »
+    </br><small>(Duhamel, 1946 <i>Figaro</i>)</small>
+    </p>
+
+    <p style="font-size: 24px;">« [Le Canada] se souvient d'abord d'avoir été une branche de l'arbre
+      français, mais aussi d'en avoir été coupé, puis, laissé sur le sol, d'y
+      avoir pris tout seul racine, d'avoir vécu sans nous, pensé sans nous,
+      grandi sans nous [...]. Si nous sommes l'arbre, jamais arbre ne s'est
+      moins soucié de sa branche. Qu'il s'en soucie aujourd'hui, rien de
+      mieux, mais ce qu'il retrouve, après l'avoir si longtemps négligé, ce
+      n'est plus une branche, c'est un arbre: un arbre de même espèce que lui,
+      mais un autre arbre, qui est un arbre comme lui.  »
+    </br><small>(Gilson, <i>Le Monde</i>)</small>
+    </p>
+  </div>
+</section>
+
+<section data-background-image="media/716_index.jpg" data-background-size="1000px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant: small-caps;">Fin d'une apogée
+  </br>1945-46</p>
+
+  <ul>
+    <li>1945 - Fin de la guerre</li>
+    <li>Mécontentement du syndicat français de la librairie</li>
+ <small>face aux privilèges des éditeurs canadiens</small>
+ <li>Reprise du marché par les éditeurs français</li>
+ <small>faillite de beaucoup de maisons entre 1946 et 1949</small>
+<li>5 facteurs de crise selon Valiquette</li> 
+<small>1. retour rapide des livres français sur les marchés internationaux</small>
+  </br><small>2. dévaluation du franc</small>
+</br><small>3. augmentation des coûts d'impression</small>
+</br><small>4. difficulté d'accès au dollar américain</small>
+</br><small>5. baisse des achats de livres au Canada</small>
+</ul>
+</div>
+</section>
+
+<section data-background-image="media/716_index.jpg" data-background-size="1000px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant: small-caps;">Résumé
+  </br></p>
+
+  <ul>
+ <li>Moment charnière</li>
+ <small>passage d'un modèle à un autre</small>
+  </br><small>établissement d'un marché</small>
+  <li>Idéologie de la littérature et prise de position des éditeurs canadiens</li>
+ 
+</ul>
+</div>
+</section>
+
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 2. Le champ éditorial durant la guerre<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_valiquette.png" data-background-size="700px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Éditions Bernard Valiquette
+              </br><small>(1938-1947?)</small></p>
+            <ul>
+              <li>poursuite de l'esprit des Éditions Albert Lévesque</li>
+           <small>histoire et littérature canadienne-française (3/4 du catalogue)</small>
+            </br><small><i>Histoire de la province de Québec</i>, Rumilly (1940-1945)</small>
+           <li>Réédition de classiques</li>
+           <small>Malraux, Mauriac, Hugo, Saint-Exupéry</small>
+          <li>Méthodes de vente innovantes</li> 
+          <small>vente par téléphone</small>
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_arbre.png" data-background-size="800px"
+        background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Éditions de l'Arbre
+            </br><small>(1940-1948)</small></p>
+          <ul>
+          <li>Fondée par Robert Charbonneau et Claude Hurtubise</li> 
+  <li>Tiers de la production avec des auteurs québécois</li>
+        <small>Hébert, Lemelin, Thériault, Nantel, Desmarchais</small>
+      <li>Réédition</li>  
+     <small>Duhamel</small> 
+     <li>Public restreint et grand public cultivé</li>
+    <li>Collections</li> 
+<small>Viatte « Les Classiques de
+            l’Arbre », 1944-1945</small>
+        </br><small>« les Albums de Claude », 1944-1945</small>
+      </br><small>Maritain « Problèmes actuels » : humanisme chrétien</small>
+    </br><small>Laugier « France forever » : vulgarisation scientifique, gauche laïque</small>
+  </br><small>Maurice Gagnon « Art vivant » : modernité artistique</small>
+       </ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/716_arbre2.png" data-background-size="1200px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Éditions de l'Arbre
+          </br><small>(1940-1948)</small></p>
+        <ul>
+
+          <li>Organe de promotion : <i>La Nouvelle Relève</i></li>
+        <li>Production - 200 titres de 1941 à 1948</li> 
+        <li>Distribution internationale et transatlantique</li>
+        <small>USA, Algérie, France</small>
+        <li>Dimension politique de l'exportation</li>
+      <li>Reconnaissance - Prix David</li> 
+      <small>1943 : <i>Ils posséderont la terre</i>, Charbonneau</small>
+        </br><small>1943 : <i>Les Songes en équilibre</i>, Hébert</small>
+      </br><small>1943 : <i>Strophes et catastrophes</i>, Hertel</small>
+    </br><small>1946 : <i>Au pied de la pente douce</i>, Lemelin</small>
+    </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_varietes.png" data-background-size="1400px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Éditions Variétés
+          </br><small>(1941-1949)</small></p>
+        <ul>
+
+          <li>Fondé par André Dussault et Paul Péladeau</li>
+<small>premier éditeur des années 1940 en terme de volume (879 titres)</small>
+        </br><small>« entreprise de photocopies » Hurtubise</small>   
+<li>Réimpression de classiques</li>
+<small>Balzac, Baudelaire, Bossuet, Corneille, Descartes, Flaubert et Mme de Sévigné</small>
+      </br><small>réédition d'auteurs européens interdits en France pendans l'Occupation (Gide, Mauriac)</small>
+    </br><small>exploitation d'oeuvres du domaine public (jeunesse - Dumas)</small>
+<li>Littérature pour la jeunesse = 40% production</li>
+<small>en série et collection</small>
+  </br><small>rééditions européennes et traductions américaines</small>
+<li>Transformation en Librairie en 1949</li>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_varietes2.png" data-background-size="900px"
+      background-color="#21211c">
+    
+    </section>
+
+    <section data-background-image="media/716_fides.png" data-background-size="500px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Éditions Fides
+          </br><small>(1941-...)</small></p>
+        <ul>
+
+<li>créée en 1937 par Père Paul-Aimé Martin</li>
+<li>Ouvrages religieux</li>
+<small>60% de la publication de 1941 à 1949</small>
+<li>1944 - « Collection du Nénuphar »</li>
+<small>rendre accessibles des chefs-d'œuvre canadiens du XXe siècle</small>
+<li>Littérature pour la jeunesse</li>
+
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_index.png" data-background-size="1700px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Autres acteurs de la période
+          </br><small></small></p>
+        <ul>
+<li>Société des Éditions Pascal (1941 - 1947)</li>
+<small>1945 - <i>Bonheur d'occasion</i> de Roy</small>
+<li>Éditions Lucien Parizeau (1943 - 1946)</li>
+<li>Imprimerie-éditeur Thérien Frères</li>
+<small>Éditions Lumen (1945-1948) et Éditions Chantecler (1948)</small>
+<li>Granger Frères</li>
+<small>acquisition des fonds Albert Lévesque</small>
+<li>Éditions du Lévrier (dominicains)</li>
+<li>Apostolat de la presse / Éditions Paulines (1948)</li>
+</ul>
+
+      </div>
+    </section>
+
+
+    <section data-background-image="media/716_index.png" data-background-size="1700px"
+    background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Littérature populaire et clubs du livre
+          </br><small>essor</small></p>
+        <ul>
+<li>Spécialisation de certaines instances</li>
+<small>Éditions du Bavard, Police-Journal, Lespérance Frères</small>
+<li>Création de clubs du livre</li>
+<small>vente de livre par correspondance et sur abonnement</small>
+        </br><small>modèle du <i>Book of the month club</i> (1926)</small>
+      </br><small>Institut littéraire du Québec par Paul Michaud (<i>Les Plouffe</i>)</small>      
+    </br><small>Le Cercle du livre de France en 1947 par Pierre Tisseyre</small>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_index.png" data-background-size="1700px"
+    background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Censure
+          </br><small>avec double dynamique</small></p>
+        <ul>
+
+          <li>1. censure de guerre</li>
+          <small>Gouvernement fédéral</small>
+          <li>2. censure cléricale et morale</li>
+          <small>apogée</small>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_index.png" data-background-size="1700px"
+    background-color="#21211c">
+    <div id="fondop2">
+      <p style="font-variant:small-caps ;">Censure
+        </br><small>avec double dynamique</small></p>
+      <ul>
+
+        <li>1. censure de guerre</li>
+        <small>contrôle de l'information</small>
+      </br><small>Règlement 1940 : article 16 - interdiction de la publication d'informations à caractère militaire ; article 39A - censure politique</small>
+    </br><small>1939 - censure de <i>Mémoires d'un soldat inconnu</i> d'Aldophe Brassard</small>
+  </br><small>trentaine d'ouvrages refusés sur 1 500 demandes de permis de réimpression</small>
+</br><small>surveillance des presses</small>
+  </ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/716_index.png" data-background-size="1700px"
+  background-color="#21211c">
+  <div id="fondop2">
+    <p style="font-variant:small-caps ;">Censure
+      </br><small>avec double dynamique</small></p>
+    <ul>
+
+      <li>2. censure religieuse et morale</li>
+    <small>censure de Gide aux Éditions Variétés</small> 
+    </br><small>1944 - <i>Orage sur mon corps</i> d'André Béland</small>  
+  </br><small>1949 - <i>Ville rouge</i> de Jean-Jules Richard</small>  
+</br><small>critique des clubs du livre</small>
+</br><small>contrôle de la lecture : revue <i>Lectures (1946) pour les côtes morales des livres disponibles</i></small>
+</br><small> liste des "1600 ouvrages récents qualifiés quant à leur valeur morale" publiée par Fides en 1947</small>
+  </ul>
+<p>jusqu'à la loi de 1950 concernant les publications et la morale publique
+</p>
+  </div>
+</section>
+
+<section data-background-image="media/716_champ.png" data-background-size="1300px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps ;">Production du livre
+    </br><small>estimation - 1940-1946</small></p>
+  <ul>
+
+    <li>21 millions de livres imprimés au Québec</li>
+    <li>1941 : 4 maisons d'édition fondées</li>
+    <small>Fides, L'Arbre, Variété et Pony</small>
+<li>1943-1945 : 8 nouvelles maisons </li>
+<small>Parizeau, Pascal, Serge, Marquis, Lumen, Mangin, B.D. Simpson et Pilon</small>
+  </br><small>nouvelles revues : La Nouvelle Relève, Regards, Amérique française</small>
+<li>1945 : 120 ouvrages littéraires, 60 histoire, 25 actualité, 74 philosophie et sociologie, 30 médecine, 200 littérature pour la jeunesse, 160 manuels + 700 rééditions françaises</li>
+
+</ul>
+</div>
+</section>
+
+
+<section data-background-image="media/716_index.png" data-background-size="1700px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps ;">Automatisation du champ littéraire au Québec
+    </br><small>conditions de Charbonneau, « La France et nous »</small></p>
+  <ul>
+<li>millieu intellectuel favorable</li>
+<li>espaces et conditions matérielles disponibles</li>
+<li>techniques littéraires originales</li>
+</ul>
+</div>
+</section>
+
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps ;">Résumé
+    </br><small>période 1939-1945</small></p>
+  <ul>
+
+    <li>Deux changements majeurs</li>
+    <small>disparition de la concurrence étrangère + changement géopolitique</small>
+<li>Floraison des maisons d'édition</li>
+<small>rééditions à bas prix</small>
+<li>Tremplin pour les auteurs</li>
+<li>Composition d'un milieu intellectuel</li>
+<li>Nouveau modèle de l'éditeur</li>
+<small>Hurtubise, Dussault</small>
+<li>Consolidation d'un lectorat d'oeuvres québécoises</li>
+</ul>
+</div>
+</section>
+
+
+<section data-background-image="media/716_index.png" data-background-size="1600px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps ;">Résumé
+    </br><small>période 1946-949</small></p>
+  <ul>
+<li>1946 - fin des réimpressions</li>
+<li>Entente 1948 - Exportations canadiennes inférieures au 1/3 importations françaises</li>
+<li>1948-1950 : fermetures et faillites </li>    
+<li>1949 : création d'une Commission royale d'enquête fédérale (la Commission Massey)</li>
+</ul>
+</div>
+</section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_levesque.png" data-background-size="1500px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Trajectoire d'un éditeur (suite)<i class="material-icons">
+                south
+              </i></h5>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_belisle.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              <li>Origines acadiennes</li>
+     <li>Formation</li>
+              <li>Carrière en édition (1927)</li>
+             <small>Renouvellement de l'hebdomadaire La Semaine</small>
+            </br><small>publication à compte d'auteur</small>
+         
+          </br><small>1936 - Éditions Les Affaires : « La pratique des affaires »</small>
+         
+          </br><small>réédition de classiques pour la jeunesse 
+            en collaboration avec la Librairie Beauchemin</small>
+         
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_belisle.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              
+              <li>Passation et reconnaissance</li>
+              <small>1938 - membre du Comité paritaire des Arts graphiques</small>
+            </br><small>1940 : membre de la Société du Parler français au Canada</small>
+          </br>   <small>1940-49 : Enseignement du français des affaires et des techniques des marchés mobiliers, École supérieure de commerce de l’Université Laval</small>
+      
+          </ul>
+<p>Montée dans la hiérarchie sociale, lien avec le culturel</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_belisle.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              
+              <li>Édition, traduction, lexicographe</li>
+          
+          <small>1946 : série « Art, métiers et techniques »</small>
+           
+        </br>   <small> 1947 : « Bibliothèque de l’homme d’affaires »</small>
+        </br>   <small>1948 : parution de <i>Les Plouffes</i> de Lemelin à compte d'éditeur </small>
+      </br><small>à partir de 1945 : Dictionnaire général de la langue française</small>
+          </ul>
+        </div>
+        </section>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Atelier partage <i class="material-icons">
+                south
+              </i> objets livres de la période 
+            </p>
+            <small>5 groupes</small>
+            <ul>
+<li>1. Roman Canadien</li>
+<li>2. Imprimerie du Messager</li>
+<li>3. Librairie Granger Frères</li>
+<li>4. Librairie générale canadienne</li>
+<li>5. Éditions Albert Lévesque</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Questions de lecture</p>
+       <small></small>
+<ul>
+<li>Type de document et contexte de publication ?</li>
+<li>Caractéristiques éditoriales ?</li>
+<li>Articulation avec l'histoire de l'édition québécoise et le champ éditorial ?</li>
+ </ul>
+
+      </div>
+    </section>
+      </section>
+
+
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Point sur le cours</p>
+
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+<p><b>rendu du Plan de session</b></p>
+<p>Venue en visio de Marie-Pier Luneau</p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

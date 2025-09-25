@@ -1,0 +1,757 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">25 septembre : Les éditeurs d’après-guerre 
+            </br>[1950-1959]</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p>Petit contexte historique</p>
+          <small></small>
+          <ul>
+          <li>Segmentation de l'édition selon les lignes linguistiques</li>
+          <small>déclin de l'édition anglophone dans des villes comme Montréal</small>
+<li>Implantation d'entreprises françaises au Québec</li>
+<small>Flammarion en 1950, Hachette en 1958</small>
+<li>Soutien culturel du gouvernement - politique culturelle</li>     
+<small>Commission Massey - 1950 sur le rôle de première importance de l'édition pour l'avancement de la littérature au Canada</small>
+          </br><small>Conseil des arts du Canada en 1957</small>
+        </br><small>premières subventions destinées à l'édition 1958-59</small>
+</ul>
+
+        </div>
+      </section>
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 1. Le champ éditorial dans les années 50<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_champ50.png" data-background-size="1200px"
+        background-color="#21211c">
+      
+      </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Développement et stratégies éditoriales
+              </br><small></small></p>
+            <ul>
+     <li>Littérature à grande diffusion
+     </li>
+     <small>formules éditoriales à moindre risque</small>
+
+    <li>Collections de classiques</li>  
+    <li>Littérature en fascicules et collections populaires</li>
+    <li>Lancement de clubs du livre</li>
+    </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_poesie50.png" data-background-size="900px"
+        background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Édition de la poésie
+            </br><small></small></p>
+
+
+        </div>
+      </section>
+
+      <section data-background-image="media/716_erta.png" data-background-size="1200px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Les Éditions Erta
+          </br><small>1949-1960, 1970</small></p>
+        <ul>
+ <li>fondées par Roland Giguère</li>
+ <small>typographe à l’École des arts graphiques</small>
+<li>Poésie, surréalisme, expérimentation</li>
+<small>à la gloire de la main</small>
+        </br><small>« édition expérimentale avec des moyens de fortune »</small>
+</ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_collection-erta.png" data-background-size="1200px"
+    background-color="#21211c">
+    <div id="fondop2">
+      <p style="font-variant:small-caps ;">Les Éditions Erta
+        </br><small>collection de la tête armée</small></p>
+
+
+    </div>
+  </section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/716_levesque.png" data-background-size="1500px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Trajectoire d'un éditeur (suite)<i class="material-icons">
+                south
+              </i></h5>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_belisle.png" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              <li>Origines acadiennes</li>
+     <li>Formation</li>
+              <li>Carrière en édition (1927)</li>
+              <li>Passation et reconnaissance</li>
+         
+          </ul>
+
+          </div>
+        </section>
+
+ 
+
+        <section data-background-image="media/716_belisle-dictionnaire.png" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Exemple de trajectoire
+              </br><small>Louis-Alexandre Bélisle</small></p>
+            <ul>
+              
+              <li>1945-1957 : Dictionnaire général de la langue française</li>
+              <small></small>
+                   </ul>
+        </div>
+        </section>
+
+
+        <section data-background-image="media/716_belisle-dictionnaire.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le Dictionnaire général de la langue française
+              </br><small>1957</small></p>
+            <ul>
+             <li>1932 : travail de Bélisle</li>
+              <small>reprise du Littré (version abrégée)</small>
+            </br><small>ajout de 17 000 nouveaux sens</small>
+          </br><small>canadianismes/québécismes</small>
+        </br><small>4 500 issus du Glossaire du parler français au Canada (1930, SPFC)</small>
+        <li>1945-1954 : Campagne de souscription</li>
+        <small>800 souscripteurs</small>
+            </ul>
+        </div>
+        </section>
+        <section data-background-image="media/716_massicotte.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le Dictionnaire général de la langue française
+              </br><small>1957</small></p>
+            <ul>
+            <li>54 582 notices de divers fonds</li>
+            <li>illustrations</li>
+            <small>scènes typiques de la vie canadienne par Edmond Massicotte</small>
+            <li>planches de couleurs (x 4)</li>
+            <small>Ministère fédéral des Ressources</small>
+            <li>1955-57 : 15 mois de composition</li>
+            <small>7 ouvriers</small>
+            </ul>
+        </div>
+        </section>
+
+        <section data-background-image="media/716_.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Le Dictionnaire général de la langue française
+              </br><small>1957</small></p>
+            <ul>
+       <li>Évènement dans l'histoire de la lexicologie québécoise</li>
+       <small>premier dictionnaire à faire état du français canadien</small>
+       <li>Poursuite des travaux de lexicographie</li>
+       <small>rééditions (ajout, retrait)</small>
+            </br><small>Le Dictionnaire technique général anglais-français (1965)</small>
+          </br><small>Le Petit Dictionnaire canadien de la langue française (1969)</small>
+            </ul>
+        </div>
+        </section>
+
+        <section data-background-image="media/716_.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Articulation entre une trajectoire et un objet éditorial
+              </br><small>Louis-Alexandre Bélisle et le Dictionnaire</small></p>
+            <ul>
+              <li>connaissances intellectuelles</li>
+              <li>connaissances du milieu</li>
+              <li>vision d'avenir</li>
+                <small></small>
+                   </ul>
+        </div>
+        </section>
+
+        <section data-background-image="media/716_belisle-imprimerie.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Fin de Bélisle
+              </br><small>mort en 1985</small></p>
+            <ul>
+              <li>Vieillissement et plafonnement</li>
+    <li>Poursuite du Dictionnaire</li>
+                   </ul>
+        </div>
+        </section>
+
+      </section>
+
+
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Présentation du Travail final <i class="material-icons">
+            south
+          </i></p>
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1200px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Perspective critique
+            </br><small></small></p>
+          <ul>
+<li>objectivité - impartialité</li>
+<small>neutralité</small>
+<li>rigueur intellectuelle</li>
+<small>documentation, organisation, honnêteté</small>
+<li>faire des liens</li>
+<small>désir de comprendre les relations</small>
+                 </ul>
+      </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1200px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Lien avec l'édition au Québec, d'hier à aujourd'Hui
+            </br><small>ou problématique plus restreinte à un aspect en particulier</small></p>
+         
+      </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1200px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Savoir situé
+            </br><small>articuler un discours à partir de votre situation</small></p>
+         
+      </div>
+      </section>
+
+
+
+      <section data-background-image="media/716_herbes-r.jpg" data-background-size="600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Exemple  
+            </br><small><i>Les Herbes rouges</i></small></p>
+          <ul>
+<li>Revue 1968 - Marcel Hébert et Maryse Grandbois / Maison 1978 - Marcel et François Hébert</li>
+
+                 </ul>
+      </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1200px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Structure
+            </br><small>proposition</small></p>
+          <ul>
+
+<li>Introduction</li>
+<li>Développement</li>
+<small>contexte de publication</small>
+          </br><small>lien entre maison et livre</small>
+        </br><small>particularités éditoriales, peritextes</small>
+      <li>Synthèse et ouverture</li>     
+      <li>Bibliographie</li>     
+      </ul>
+      </div>
+      </section>
+
+
+
+    </section>
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Atelier partage <i class="material-icons">
+                south
+              </i> trajectoires du milieu de l'édition
+            </p>
+            <small>5 groupes</small>
+            <ul>
+              <li>Eugene Achard</li>
+              <li>Raoul Renault</li>
+              <li>Roger Lemelin</li>
+              <li>J.P. Garneau</li>
+              <li>Henri Tranquille</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Questions de lecture</p>
+       <small></small>
+<ul>
+<li>articulation avec le développement d'un milieu, inscription dans un champ, lien avec un objet particulier</li>
+ </ul>
+
+      </div>
+    </section>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+<p><b></b></p>
+<p>Venue de Josée Vincent</p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

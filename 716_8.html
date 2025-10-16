@@ -1,0 +1,1024 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">16 octobre : Les années post-1975
+            </br></h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 1. Consolidation des acquis<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_camille.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Viabilité de la chaîne du livre québécois
+              </br></p>
+
+
+            <ul>
+            <li>1976 : Élection du Parti Québécois</li>
+          <small>culture en priorité</small>  
+          <li>1977 : Camille Laurin, « père de la Loi 101 » nommé ministre d'État au Développement culturel</p></li>
+       <small>visage et voix du Parti Québécois</small>
+
+    
+    </ul>
+                </div>
+        </section>
+
+
+        <section data-background-image="media/716_vaugeois.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Composition d'une <i>politique</i> du livre
+              </br></p>
+
+
+            <ul>
+                 <li>1978 : Denis Vaugeois nommé ministre des Affaires culturelles </li>
+       <small>ancien président des Éditions du Boréal</small>
+            </br>   <small>ajdoint parlementaire au ministre des Affaires intergouvernementales</small>  
+     <li>fin 1978 : création de la SODIC (SODEC) par Denis Vaugeois</li>
+<small>Société de développement des industries culturelles</small>
+    
+    </ul>
+                </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Politique du livre
+              </br>notion</p>
+
+
+            <ul>
+         <li>Définition : organisation d'un ensemble d'actions concertées et coordonnées</li>     
+         <small>via des interventions d'état</small>
+         
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Niveaux de l'intervention d'État
+              </br></p>
+
+
+            <ul>
+            <li>Fédéral</li> 
+            <small>pour l'État fédéral</small>
+            </br><small>préserver une tradition britannique</small>
+
+            <li>Provincial</li>
+            <small>pour le Gouvernement provincial</small>
+          </br><small>défendre la culture, l'économie québécoises</small>
+ 
+          <li>Municipal</li>
+          <small>pour les villes</small>  
+        </br><small>avec les intérêts des citoyens</small>
+
+            </ul>
+            <p>avant 1960, dimension aléatoire des interventions</p>
+            <small>rôle des associations professionnelles</small>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_sectionfr.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Associations professionnelles
+              </br>apparition progressive puis restructuration</p>
+
+
+            <ul>
+        
+              <li>Au sortir de la première guerre mondiale</li>
+              <small>débuts des interventions provinciales (Prix David)</small>
+            </br><small>Société des écrivains canadiens, première association d'auteurs (Barbeau et Bruchési)</small>
+ </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Associations professionnelles
+              </br>apparition progressive puis restructuration</p>
+
+
+            <ul>
+        
+            <li>Période de la deuxième guerre mondiale</li>
+            <small>débuts des interventions fédérales, continuité du provincial</small>
+          </br><small>développement d'associations : SÉCLF (1943), Société des libraires grossistes (1952)</small>
+        <li>1975 : restructuration des associations professionnelles</li>  
+        <small>fin du CSL</small>
+        </br><small>tentative du GELFAN en 1978 (Groupe d'éditeurs littéraires francophones d'Amérique du Nord)</small>
+        </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Loi sur le développement des entreprises québécoises dans le domaine du livre
+              </br>Loi 51 (1981)</p>
+
+
+            <ul>
+        <li>Loi cadre et protectionniste</li>
+        <small>réglemente les pratiques commerciales</small>
+            </br><small>appliquée aux entreprises détenues à 100% par des citoyens canadiens domiciliés au Québec</small>
+        
+        
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Loi sur le développement des entreprises québécoises dans le domaine du livre
+              </br>Concrètement</p>
+
+
+            <ul>
+        <li>Obligation d'agrément pour bénéficier des aides de l'État</li>
+        <small>normes d'agrément définies par un Comité consultatif du livre</small>
+            </br><small>normes sur la propriété, localisation, pratiques commerciale, production</small>
+        
+        <li>Obligation d'un approvisionnement auprées des librairies agrées pour les institutions gouvernementales</li>
+        <small>première étape concrète</small>
+          </br><small>Plan quinquennal de développement des bibliothèques publiques (Vaugeois)</small>
+          <li>Acquisition au prix du marché</li>
+          <small>sauf pour les ouvrages scolaires de niveau collégial et universitaires </small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Loi sur le développement des entreprises québécoises dans le domaine du livre
+              </br>Conséquences</p>
+
+
+            <ul>
+      
+        <li>Réserver les subventions aux seules entreprises éditoriales détenues par des intérêts québécois</li>
+        <small></small>
+          </br><small></small>
+
+
+          <li>Fixer les pourcentages de profits pour chaque intervenant</li>
+          <small></small>
+            </br><small></small>
+
+
+          <li>Maintenir un réseau de librairies à la grandeur de la province</li>
+          <small>empêche la vente directe</small>
+          </br><small>création du concept de librairie agréée</small>
+
+          <li>Assurer la présence de livres édités au Québec dans les librairies</li>
+          <small></small>
+            </br><small></small>
+<li>+ Création du concept d'éditeur agréé</li>
+
+            </ul>
+<p>protection des intérêts québécois</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Inquiétudes des indépendants
+              </br>Librairies et maisons d'édition</p>
+
+
+            <ul>
+<li>Multiplication des centres des chaînes de librairies</li>
+<small>Librairie Garneau : 5 succursales (1972) à 16 (1976)</small>
+<li>Prise d'importance</li>
+<small>Rachat d'Archambault par Québécor</small>
+<li>Arrivée des magasins entrepôt où les livres sont bradés</li>
+<small>Costco et Walmart</small>
+        </ul>
+        <p>redéfinition de l'identité des acteurs indépendants</p>
+<small>Prix des libraires du Québec est créé en 1993</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fin du Conseil supérieur du livre
+              </br>1980</p>
+
+
+            <ul>
+        <li>Conflits entre éditeurs et libraires</li>
+        <small>autour de la Loi 51</small>
+        <li>Fin de la période de fédération des associations professionnelles du livre</li>
+        <small>etour à un modèle décentralisé composé d'associations spécialisées</small>
+
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_diagramme.png" data-background-size="650px" background-color="#21211c">
+      
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fin du Conseil supérieur du livre
+              </br>1980</p>
+
+
+            <ul>
+       <li>Loi 51 : pivot de la politique du livre</li>
+       <li>Nouvel organe consultatif : Conseil consultatif de la lecture et du livre (1981)</li>
+       <small>reprise du mandat du CSL</small>
+            </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Soutien aux entreprises éditoriales
+              </br></p>
+
+
+            <ul>
+        <li>1980 - Programme d’aide au développement de l’édition canadienne (PADIÉ)</li>
+        <small>soutien des entreprises</small>
+        <li>Régime universel d'aide à l'édition par le Ministère des Affaires culturelles (MAC)</li>
+        <small>aide globale aux éditeurs agréés</small>
+            </br><small>subventions sont calculées en fonction du chiffre d'affaires des entreprise</small>
+        <li>Autres aides spécifiques</li>
+        <small>pour la promotion ou l'exportation</small>
+        <li>1998 - Crédit d'impôt remboursable pour l'édition du livre</li>
+        <small>allègement fiscal pour compenser les coûts de production</small>
+            </ul>
+<p>Logique de marché progressive</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">SODEC
+              </br>anciennement SODIC, SODICC, SOGIC</p>
+
+
+            <ul>
+        <li>1992 - dans le cadre de la Politique culturelle du Québec</li>
+      <small>faire participer le livre au développement économique du Québec</small>      
+      <li>Financements</li>
+      <small>prềts, aide à l'exportation SODEXPORT, participation au CIR</small>
+      <li>Investissements</li>
+      <small>1996 : fusion des librairies Renaud-Bray, Champigny et Garneau (1,5 M)</small>
+      </ul>
+
+          </div>
+        </section>
+
+
+
+
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 2. Le champ éditorial <i class="material-icons">
+                south
+              </i></h4>
+            
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Changement de génération
+            </br><small></small></p>
+          <ul>
+           <li>Des figures d'éditeurs typiques des années 1960 cèdent leurs places ...</li>
+<small>Jacques Hébert (Le Jour, dès 1974)</small>
+          </br><small>Denis Vaugeois (Boréal Express, 1976)</small>
+        </br><small>Pierre Tisseyre (CLF, vers 1986)</small>
+      </br><small>Yves Dubé (Leméac, en 1986)</small>
+            <li>... pour des éditeurs de la fin des années 1970</li>
+            <small>Victor-Lévy Beaulieu (VLB)</small>
+          </br><small>Alain Stanké (Stanké éditions)</small>
+        </br><small>Guy Saint-Jean (L'Aurore)</small>
+          </br> <small>Michel Beaulieu (Éditions du Jour)</small>
+        </br> <small>Pierre Filion (Leméac)</small>
+
+        </ul>
+             
+          </div>
+        </section>
+
+        <section data-background-image="media/716_vlb.jpg" data-background-size="1200px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Éditions de L'Aurore
+              </br><small>(1973-1981)</small></p>
+            <ul>
+             <li>fondées par Guy Saint-Jean</li>
+             <small>prêt de Gérard Benjamin, <i>Benjamin News</i></small>
+              <li>VLB rejoint les éditions</li>
+              <small>départ des Éditions du Jour</small>
+              <li>Littératures d'avant-garde et indépendantistes</li>
+
+          </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_aurore.png" data-background-size="1200px"
+        background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Éditions de L'Aurore
+            </br><small>collections</small></p>
+          <ul>
+           <li>15 collections et 80 titres en 18 mois</li>
+           <small>« Lectures en vélocipède » des frères Hébert, « Entre le parvis et le boxon » (théâtre), « Exploration.
+            Études médiévales » (études)</small>
+            <li>Corpus d'auteurs québécois</li>
+            <small>Monologues : Clémence Desrochers, Marc Favreau;</small>
+          </br><small>Théâtre : Jean-Claude Germain, Michel Garneau;</small>
+        </br> <small>Poésie : André Roy, Claude Beausoleil, Nicole Brossard,
+              Philippe Hæck, Lucien Francœur, Roger des Roches;</small>
+            </br><small>Essai : <a href="https://moodle.usherbrooke.ca/draftfile.php/4300453/user/draft/77069124/Le%20parti%20rhinoc%C3%A9ros%20programm%C3%A9%2C%201974.pdf">programme du parti Rhinocéros</a></small>
+
+        </ul>
+<p>édition littéraire à grand tirage (3 000-5 000 ex)</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/716_aurore2.png" data-background-size="1200px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant:small-caps ;">Éditions de L'Aurore
+          </br><small>la fin</small></p>
+        <ul>
+          <li>1975 - crise financière</li>
+          <small>refus d'un prêt garanti par la Société de développement industriel du Québec</small>
+      <li>retrait du partenaire Benjamin News</li>
+      <li>démission de VLB</li>
+      <small>remplacé par Jean Basile</small>
+      <li>changement de direction littéraire</li>
+      <small>publication de contre-culture</small>
+<li>1978 - reprise de la direction par Guy Saint-Jean</li>
+      </ul>
+<p>création à la suite de Guy Saint Jean Éditeur (paralittérature et livres pratiques)</p>
+      </div>
+    </section>
+
+       
+        <section data-background-image="media/716_index.png" data-background-size="700px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Nouvelle logique marchande
+              </br><small></small></p>
+            <ul>
+              <li>diminution des prises de risques financiers</li>
+           <li>augmentation des tailles des entreprises</li>
+           <li>projets éditoriaux commercialement viables </li>
+          </ul>
+<p>Logique d'industrie culturelle</p>
+<small>crainte que le commerce remplace la littérature</small>
+          </div>
+        </section>
+
+        
+        <section data-background-image="media/716_index.png" data-background-size="700px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Marqueurs de la période
+              </br><small></small></p>
+            <ul>
+           <li>développement de l'édition littéraire</li>
+           <small>maintien avec les subventions</small>
+           <li>développement de la poésie dans les collections généralistes</li>
+           <small>maintien avec les subventions</small>
+              </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_region.png" data-background-size="1200px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Marqueurs de la période
+              </br><small>Collaboration avec la région</small></p>
+            <ul>
+               <li>développement des entreprises en région</li>
+           <small>Éditions Tryptique (1976 par Pierre DesRuisseaux, Raymond Martin et Guy Melançon) à Sherbrooke </small>
+          </br><small>L'Instant même (1985 par Gilles Pellerin et al.) ou celles du Loup de gouttière (1989) à Québec</small>
+        </br> <small>Les Écrits des Forges (suite du Bien public de Clément Marchand en 1971, Gatien Lapointe) à Trois-Rivières</small>
+               </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_feministe.png" data-background-size="1200px"
+        background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">
+Marqueurs de la période
+            </br><small>Féminisme</small></p>
+          <ul>
+          
+
+         <li>premières maisons d'édition féministes</li>
+         <small>1975 - La Pleine Lune : littérature et psychanalyse, modèle hiérarchique</small>
+        </br> <small>1976 - Éditions du remue-ménage : essais socio-économiques et littérature critique, modèle collectif</small>
+      <li>Foire du livre féministe à Montréal en 1988</li>  
+      <li>revue engagée <i>Trois</i></li>
+      
+      </ul>
+
+        </div>
+      </section>
+
+
+        <section data-background-image="media/716_deluy.jpg" data-background-size="800px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Livres pour la jeunesse
+              </br><small></small></p>
+            <ul>
+           <li>Communication Jeunesse - 1971</li>
+           <small>Paule Daveluy, Suzanne Cloutier-Rocher, 
+            Suzanne Martel, l’illustratrice Simone Hudon et la
+            bibliothécaire Louise Lemieux</small>
+            <li>revue <i>Lurelu</i> - 1978</li>
+            <small>Communication Jeunesse</small>
+            <li>1980 : clubs de lecture</li>
+            <small>« Livromanie » (1984) et « Livromagie » (1989)</small>
+            <li>Nouveaux acteurs</li>
+            <small>Éditions de La Courte Échelle </small>
+           </br><small>1975 - Programme de perfectionnement des maîtres de français au primaire (PPMF)</small>
+          <li>1980-19900 - Création de maisons d'édition spécialisées</li>
+          <small>Ovale, Michel Quintin, le Raton laveur, Chouette et Coïncidence Jeunesse</small>
+          </ul>
+
+          </div>
+        </section>
+
+
+
+
+        <section data-background-image="media/716_stanke.jpg" data-background-size="1200px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Éditions internationales Alain Stanké
+              </br><small></small></p>
+            <ul>
+           <li>1975 par Alain Stanké</li>
+           <small>remplaçant de Jacques Hébert aux Éditions de l'Homme en 1961 </small>
+           <li>Modèle d'alternance entre publication d'ouvrages commerciaux et édition littéraire</li>
+        <small>deux premiers titres : étude sur le peintre Jean-Paul Lemieux par Guy Robert, et la traduction de <i>Jaws</i> de Peter Benchley</small>
+        <li>Livres d'actualité en priorité avec un fort potentiel médiatique</li>
+        <small>les Mémoires de Richard Nixon en 1978 (<a href="https://www.dailymotion.com/video/xjlu1n">entretien</a></small>
+      <li>Littérature prudente</li>   
+      <small>publication d'écrivains connus (Marie-Claire Blais, Gabrielle Roy, Yves Thériault)</small>
+            </br><small>collection 10/10 (modèle de 10/18)</small> 
+    </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_stanke2.jpg" data-background-size="700px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+Éditions internationales Alain Stanké
+              </br><small></small></p>
+            <ul>
+           <li>Axe sur l'international</li>
+           <small>ouverture de la succursale à Paris en 1977 (fermeture 1983)</small>
+           <li>Ouvrage : Encyclopédie du Canada (1987)</li>
+           <small>25 000 ex écoulés en quelques semaines</small>
+           <li>vente en 1997 à Québécor Média</li>
+              </ul>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_champ75.png" data-background-size="1200px"
+          background-color="#21211c">
+         
+        </section>
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px"
+background-color="#21211c">
+<div id="fondop2">
+  <p style="font-variant:small-caps ;">Résumé
+    </p>
+  <ul>
+    <li>Émergence d'une politique du livre</li>
+    <small>affirmation de l'identité québécoise</small>
+  </br><small>soutien aux créateurs</small>
+</br><small>participation des citoyens à la vie culturelle</small>
+
+    <li>Montée des éditeures distributeurs</li>
+    <small>comme Éditions internationales Stanké</small>
+</ul>
+</div>
+</section>
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px" background-color="#21211c">
+
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Atelier partage <i class="material-icons">
+                south
+              </i> trajectoires du milieu de l'édition
+            </p>
+            <small>6 groupes (3 personnes)</small>
+            <ul>
+              <li>Roger Duhamel</li>
+              <li>Marcel Hébert</li>
+              <li>Roger Lemelin</li>
+              <li>Marie Taillon</li>
+              <small>lien avec L'Instant même</small>
+              <li>Réal Ouellet</li>
+              <li>Jean Guy Pilon</li>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">Perspectives de lecture</p>
+       <small></small>
+<ul>
+  <li>parcours éditorial/littéraire/culturel de l'individu</li>
+  <small>présence dans le champ éditorial québécois</small>
+  <li>articulation avec l'ouvrage</li>
+  <small>comment le contexte de publication et la trajectoire de l'individu se rejoignent ?</small>
+ </ul>
+
+      </div>
+    </section>
+      </section>
+
+
+
+
+
+ <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Bonne semaine de lecture</p>
+          <small>et à dans deux semaines</small>
+<p><b></b></p>
+<p></p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1518 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD716 - L'édition au Québec - A2025</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD716 - Automne 2025 - Margot Mellet</div>
+      <section data-background-image="media/716_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD716 | L'édition au Québec</h2>
+          <h5 style="font-size: 30px;">30 octobre : Marchés et mondialisation
+            </br>+ Éditions et diversités (partie 1)</h5>
+          <small>du 28 août au 4 décembre - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Avis Grève STM</p>
+         
+          <p><b>Prochaines séances en ligne</b></p>
+          <small>sauf indications contraires : voir nouvelles sur Moodle</small>
+          <ul>
+            <li><a href="https://bbb.futuretic.fr/rooms/ul7-jdo-i8j-fjl/join">Lien de viso</a></li>
+            <li>assurez-vous d'être dans un environnement propice</li>
+          </ul>
+          <p></p>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 1. Mondialisation et parcours du livre<i class="material-icons">
+                south
+              </i></h4>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.jpg" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qu'est ce que la mondialisation ?</br></p>
+
+
+            <ul>
+              <li>Libéralisation des échanges économiques</li>
+<small><ul>Économie
+  <li>montée de la concurrence : délocalisation des lieux de travail et l’internationalisation de la propriété des entreprises</li>
+  <li>mondialisation du capital (trusts)</li>
+  <li>mise en place d’un vaste système financier ultranational</li>
+</ul></small>
+   <li>Politique</li>  
+   <small>création d’organismes nationaux (ONU, ALÉNA) pour réguler les États</small>    
+<li>Culturel</li>
+<small>hégémonie d’une idéologie occidentale</small>
+</br><small>spécialisation des productions nationales</small>
+  </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.jpg" data-background-size="1200px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Hégémonie culturelle
+              </br></p>
+
+
+         <p>« C’est parce que l’Occident a diffusé et imposé ses institutions et ses modèles dans le monde entier, notamment ceux de l’État et du monde du travail, que l’unité politique peut se réaliser sur le plan international et qu’un vaste marché industriel et financier a pu se mettre en place. »
+         </br><small>(Rocher)</small>
+         </p>
+         <p>- réponse avec la notion d'exception culturelle -</p>
+         <small>considérer différemment les biens et services culturels pour les soustraire aux logiques économiques (interventions d'État)</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br></p>
+
+<p>quels effets de la mondialisation dans le domaine du livre ?</p>
+           <small>économique, politique, culturel</small>
+
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br>Phénomènes globaux</p>
+
+
+            <ul>
+<li>1. Concentration</li>
+<small>fusion / acquistion des entreprises</small>
+            </br><small>« des stratégies industrielles conquérantes » (J. Yves Mollier)</small>     
+          </br><small>« Période des synergies » (Thompson)</small>
+        
+          
+        </ul>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br>Phénomènes globaux</p>
+
+
+            <ul>
+<li>1. Concentration - effets </li>
+<small>perte de contrôle de la sélection</small>     
+            </br><small>importance des enjeux commerciaux et juridiques</small>    
+          </br><small>fin des entrperises familiales</small>  
+        </br><small>éditeurs/agents issus du monde de la gestion</small>  
+      </br><small>importance de la traduction </small>   
+    </br><small>nouveaux phénomènes littéraires (banalisation, vedettariat)</small>   
+  </br><small>polarisation du champ</small>   
+
+        </ul>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br>Phénomènes globaux</p>
+
+
+            <ul>
+<li>2. Intégration horizontale </li>
+<small>regroupement d'entreprises avec une production similaire</small>
+             
+          
+        </ul>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br>Phénomènes globaux</p>
+
+
+            <ul>
+<li>3. Intégration verticale</li>
+<small>regroupement des opérations au sein d'une même entreprise</small>
+             
+          
+        </ul>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mondialisation et Livre
+              </br>Phénomènes globaux</p>
+
+
+            <ul>
+<li>4. Financiarisation</li>
+<small>la circulation du capital engendre du capital nouveau</small>
+            </br><small>à la différence du capital alloué à des investissements productifs</small>
+          
+        </ul>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/716_libreEx.jpg" data-background-size="800px"
+          background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas : Libre Expression
+              </br></p>
+
+
+            <ul>
+              <li>1976 : création par Alain Stanké et Éric Ghedin</li>
+<li>entreprise de publication à compte d'auteur</li>
+<li>succès (inattendu) : <i>La Lampe dans la fenêtre</i>, 1976 de Pauline Cadieux</li>
+<small>réédité sour le titre <i>Cordélia ou la Lampe dans la fenêtre</i></small>  
+<li>1977 : vente de la maison par Stanké à Ghedin Bastien</li> 
+<small>deux créneaux encore peu exploités : best-seller américain et beau-livre</small>    
+</ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_libreEx.png" data-background-size="700px"
+        background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Cas : Libre Expression 
+            </br>best-seller</p>
+
+
+          <ul>
+            <li>1980, <i>Shogun : le roman des samouraïs</i> de J. Clavell</li>
+            <small>aussi : <i>Album de famille</i> de D. Steel</small>
+<li>Réimpression par Libre Expression pour le marché canadien</li>
+<li>Fonctionnement éditorial</li>
+<small>achat des droits canadiens des traductions françaises (Presses de la Cité)</small>
+          </br><small>réimpression et maîtrise du marché</small>     
+          <li>Essor et publication parallèle de titres québécois</li>
+          <small>François Barcelo, saga historique</small>
+</ul>
+
+        </div>
+      </section>
+
+      <section data-background-image="media/716_libreEx1.png" data-background-size="700px"
+        background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Cas : Libre Expression 
+          </br>difficultés</p>
+
+
+        <ul>
+         <li>1986 - revente des parts de l’agence de distribution québécoise des Presses de la Cité à Québécor</li>
+<li>1991 - perte du contrat d'exclusivité avec les Presses de la Cité</li>
+<small>et avec Hachette en 1997</small>
+        </ul>
+
+      </div>
+    </section>
+
+      <section data-background-image="media/716_libreEx2.jpg" data-background-size="800px"
+      background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Cas : Libre Expression
+          </br>beau-livre</p>
+
+
+        <ul>
+          <li>Association avec Éditions Art Global</li>
+          <small>publication d'albums de photographies</small>
+        </br><small>1981 <i>Québec</i> de Mia et Klaus</small>
+
+           </ul>
+
+      </div>
+    </section>
+
+    <section data-background-image="media/716_libreEx.webp" data-background-size="600px"
+    background-color="#21211c">
+    <div id="fondop2">
+      <p style="font-variant: small-caps;">Cas : Libre Expression
+        </br>virage grande diffusion</p>
+
+
+      <ul>
+        <li>Présence en librairie et grande surface</li>
+        <li>Orientation vers un marché de masse</li>
+        <small>politique éditoriale de vedettariat</small>
+        <li>1994 - départ de Ghedin</li>
+        <small>1995 - cession des parts de Bastien à Québécor (50%)</small>
+        <li>2000 - Acquisition de l'entreprise par Québécor</li>
+
+         </ul>
+
+    </div>
+  </section>
+
+  <section data-background-image="media/716_index.jpg" data-background-size="1200px"
+  background-color="#21211c">
+  <div id="fondop2">
+    <p style="font-variant: small-caps;">Cas : Sogides
+    </br>origines</p>
+
+
+  <ul>
+    <li>Trajectoire d'Edgard Lespérance (1909-1964)</li>
+    <small>imprimeur des 1935, achète le <i>Courtouse Daily Report</i> en 1936</small>
+  </br><small>fonde l'Imprimerie judiciaire enr. (Police-Journal)</small>
+</br><small>1958 - fonde avec J. Hébert, les Éditions de l'Homme (<i>Coffin était innocent</i>, livre à 1$)</small>
+</br><small>1959 - fondation Agence de distribution populaire (ADP)</small>
+</br><small>1962 - achat de la Librairie Ducharme avec son fils Pierre</small>
+
+    </ul>
+
+  </div>
+</section>
+
+       
+    <section data-background-image="media/716_lesperanceP.webp" data-background-size="1200px"
+    background-color="#21211c">
+    <div id="fondop2">
+    
+      <p style="font-variant: small-caps;">Cas : Sogides
+      </br>fondation</p>
+  
+  
+    <ul>
+      <li>Trajectoire de Pierre Lespérance (1938-2023)</li>
+      <small>1964 - reprise de la direction à la mort de son père</small>
+    </br><small>1967 - regroupe les Éditions de l'Homme et ADP</small>
+  </br><small>philosophie de l'intégration verticale</small>
+
+  
+      </ul>
+  
+    </div>
+  </section>
+
+  <section data-background-image="media/716_" data-background-size="1200px"
+  background-color="#21211c">
+  <div id="fondop2">
+  
+    <p style="font-variant: small-caps;">Cas : Sogides
+    </br>poursuite et empire</p>
+
+
+  <ul>
+    <li>années 1970 - ouverture d'un bureau à Paris par les Éditions de l'Homme</li>
+   <li>1973 - ADP devient le distributeur des Éditions Marabout (éditeur belge)</li>
+<small>entente avec Robert Laffont, Time-Life, Readers digest</small>
+<li>Rachat d'entreprises éditoriales - Groupe Ville Marie Littérature</li>
+<small>1979 Quinze, 1980 VLB éditeur, 1988 La Presse, 1990 L'Hexagone</small>
+<li>2005 - Rachat par Québécor Média</li>
+    </ul>
+
+  </div>
+</section>
+
+
+      </section>
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 2.1 Éditions et diversités (partie 1) <i class="material-icons">
+                south
+              </i></h4>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Définition Diversité culturelle
+              </br><small>Convention de 2025 de l’Unesco pour la protection et la promotion de la diversité des expressions culturelles</small></p>
+           <p>« une diversification des contenus artistiques et culturels offerts et/ou à l’expression d’identités et de représentativité de groupes de personnes qui les produisent et consomment. »</p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_idle.webp" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Diversité culturelle et mondialisation
+              </br><small></small></p>
+            <ul>
+            <li>Thématique en discussion dès les années 1960</li>
+            <li>Amplification dans les années 1980</li>
+            <small>best-sellers, traductions</small>
+            <li>Accélération dans les années 2000</li>
+            <small>culture numérique, standardisation, culture mainstream</small>
+            <li>Mouvements sociaux contemporains</li>
+            <small><i>Idle no more, Black lives matter</i></small>
+            </br><small><i>MeeToo</i>, droits LGBTQIA+</small>
+            </ul>
+         <P>diversité comme une richesse</P>
+          </div>
+        </section>
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">La diversité ne s'appréhende pas comme un fait </br>mais comme un programme</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Diversité culturelle
+              </br><small>complexité</small></p>
+            <ul>
+              <li>Lieu de rencontres entre cultures séparées</li>
+              <small>soit somme d'identités distinctes</small>
+            </br><small>soit comme un combat global (ÉDID)</small>
+            </ul>
+<p>difficulté du dialogue interculturel</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>diversité pour le milieu du livre</small></p>
+            <ul>
+            <li><i>variété des lieux de publication et des entreprises éditoriales représentées dans le marché mondial du livre</i></li>
+         
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_benhamou.jpg" data-background-size="800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>sur les marchés nationaux</small></p>
+            <ul>
+             <li>Travaux de F. Benhamou</li>  
+          <small>montée du nombre de titres publiés</small>
+            </br><small>concentration des ventes sur moins de titres</small>
+          </br><small>caractère normé</small>
+        </br><small>croissance du pratique et du jeunesse</small>
+      </br><small>recul de l’anglais</small>
+          </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_sapiro.jpg" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>articulation globalisation et traduction</small></p>
+            <ul>
+            <li>Travaux de Gisèle Sapiro</li>
+            <small>responsabilisation des agents littéraires</small>
+            </br><small>diversification des langues de traductions</small>
+           </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_lefort.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>indépendance éditoriale</small></p>
+            <ul>
+            <li>Travaux de Julien Lefort-Favreau</li>
+            <small>La liberté de publier. Politiques de l'édition équitable et bibliodiversité au Canada (CRSH, 2023-2028)</small>
+          </ul>
+
+          <p>« Si la bibliodiversité désigne la participation active à la vie de la culture, si elle renvoie à la fois à la vitalité des cultures minorées et à la manière dont leur existence éditoriale met au défi les hégémonies culturelles et économiques, il convient de faire du Canada notre lieu d'observation en raison de son caractère plurilingue et de son modèle économique hybride, à la fois soumis aux lois du marché et fortement subventionné. »</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_economie.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>distinction</small></p>
+            <ul>
+            <li>diversité offerte ou disponible</li>
+            <small>niveau de la production</small>
+            </br><small>auteur.e.s et éditeur.rice.s </small>
+            <li>diversité consommée</li>
+            <small>niveau des ventes de livres, prêts en bibliothèque</small>
+          </br><small>usages, pratiques de lectures</small>
+          </ul>
+          <p>2000 - bibliodiversité : diversité <b>des</b> publications</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>évolution</small></p>
+            <ul>
+              <li>étude des caractéristiques de la production éditoriale</li>
+           <li>+ étude des contextes de publication</li>
+           <li>+ étude des discours</li>
+          </ul>
+          <p>2010 - bibliodiversité : diversité <b>dans</b> les publications</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>et politiques culturelles</small></p>
+            <ul>
+          <li>Édition comme production de vision<b>s</b> du monde</li>
+          <small><i>appareil idéologique </i>(Fossaert), <i>appareils de régulation des discours en circulation</i> (Michon)</small>
+          </ul>
+<p>enjeux au travers de l'ensemble du système-livre</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bibliodiversite.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>indicateurs</small></p>
+            <ul>
+              <li>revue <i>Bibliodiversité</i>, Alliance des éditeurs indépendants</li>
+              <li>Indicateurs issus de la biodiversité (Benhamou et Peltier)</li>
+              <small>Variété</small>
+            </br><small>Équilibre ou Balance</small>
+          </br><small>Disparité</small>
+         </ul>
+<p>si les trois propriétés sont conjointement vérifiées 
+</br>(quantitatif et qualitatif)</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>indicateurs</small></p>
+           <p>« La diversité culturelle représente la possibilité pour les consommateurs d’accéder à une offre large (du point de vue quantitatif) de biens diversifiés (en terme de genres et de provenance linguistique), correspondant à des ensembles de taille relativement proche et aussi distincts que possible. »
+           </br><small>(Benhamou et Peltier)</small>
+           </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>unités d'analyse de base : titre, langue, genre ou autres</small></p>
+            <ul>
+              <li>Variété : nombre d'éléments par catégorie</li>
+              <small>nombre de titre publiés (offre) / vendus (consommation)</small>
+            </br><small>nombre de langue de traduction (offre)</small>
+          </br><small>tirage moyen (offre)</small>
+          <li>Équilibre : répartition de la quantité par catégorie</li>
+          <small>distribution des exemplaires</small>
+          <li>Disparité : degré de différence entre les catégorie</li>
+          <small>nombre d'auteur.rice.s différent.e.s</small>
+
+         </ul>
+
+          </div>
+        </section>
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>Étude et constat</small></p>
+            <ul>
+            <li>Étude produite par la SODEC et Pascal Genêt (2022)</li>
+            <small>sur la représentation de la diversité de genre (homme/femme)
+              et de la diversité ethnoculturelle 
+              dans le secteur de l’édition au Québec </small>
+            </br><small>105 entreprises partenaires</small>
+
+         </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>Étude et constat</small></p>
+            <ul>
+            <li>1. Présence importante des femmes</li>
+           <small>employées (74%), direction (54%), rarement propriétaires</small>
+<li>2. Rare présence des personnes issues des minorités ethnoculturelles dans les CA</li>
+    <small>structures éditoriales « vocationnelles »</small>   
+    <li>3. Diversité offerte dans les titres</li> 
+    <small>51,7% autrices</small>
+            </br><small>5% auteur.rices issues des minorités ethnoculturelles </small>
+          </br><small>1,1% auteur.rice.s issues des Premières Nations et Inuits </small>
+          <li>+ effet de concentration</li>
+          <small>75% des femmes publiées par 36 éditeurs</small>
+        </br><small>100% minorités ethnoculturelles par 29 éditeurs</small>
+      </br><small>100% titres des Premières Nations et Inuits par 12 éditeurs</small>
+      <li>4. Relative parité hommes/femmes dans l'illustration</li>
+      
+</ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Bibliodiversité
+              </br><small>perspectives</small></p>
+       
+      <ul>
+        <li>Édition solidaire / équitable</li>
+        <small>Alliance internationale des éditeurs indépendants</small>
+        </br><small>Partenariats éditoriaux, coéditions</small>
+        </br><small>Collection « Enjeux planète » 12 éditeurs francophones, coûts répartis</small>
+      </ul>
+
+
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/716_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/716" data-background-size="1600px">
+          <div id="fondop2">
+            <h4> 2.2 L'édition autochtone au Québec <i class="material-icons">
+                south
+              </i></h4>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_autoch.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Contexte
+              
+              </br><small>121 000 personnes (Gouvernement du Canada)</small></p>
+            <ul>
+           
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_pensionnat.png" data-background-size="900px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Contexte 
+              
+              </br><small>Histoire</small></p>
+            <ul>
+           <li>Mouvements, tensions, violences entre assimilaton et appropriation</li>
+           <small>des territoires, des richesses, des individus par les Blancs</small>
+           <li>Méfaits qui ont laissé des
+            marques profondes dont on retrouve encore aujourd'hui des marques</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_kiuna.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Contexte
+              
+              </br><small> Situation appelée à changer</small></p>
+            <ul>
+           <li> Paix des Braves en 2002</li>
+           <small>entente politique et économique entre le gouvernement québécois (Bernard Landry) et la nation crie (Ted Moses)</small>
+          <li>Commission de vérité et réconciliation de 2007 à 2015</li>  
+          <li>Idle no more (2012)</li>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>enjeux</small></p>
+            <ul>
+           <li>Essor des littératures autochtones</li>
+           <small>difficultés particulières</small>
+           <li>Distance avec le modèle culturel de l'édition</li>
+           <small>normes et des conceptions occidentales </small>
+           <li>Principales différences</li>
+           <small>1. Différence de modes</small>
+            </br><small>2. Différence des canaux de communication</small>
+          </br><small>3. Différences des conceptions du livre et de l’édition</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>1. Système de communication ancré dans l'oralité</small></p>
+            <ul>
+         <li>Communication orale</li>
+         <small>récits fondateurs, arbres généalogiques</small>
+            </br><small>conditions d'énonciation particulières</small>
+          
+            </ul>
+            <p>l'imprimé ne vient pas remplacer la transmission orale</p>
+            <small>implique que le passage à l'imprimé <i>dénature</i> toujours un peu</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_wampum.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>1. Système de communication ancré dans l'oralité - hors-livre</small></p>
+            <ul>
+         <li>Wampum ou « fil blanc » ou « perles » en langue algonquienne</li>
+         <small>Ceinture confectionnée au moyen de perles violettes et blanches taillées dans la nacre des coquilles de palourdes.</small>
+        <li>Bâton à message ou « tshissinuashitakana » en innu</li>  
+        <small>Deux morceaux de bois d’épinette blanche, plus ou moins courts, l’un à l’oblique de l’autre, dans des positions qui peuvent varier.</small>
+      <li>Mât totémique, gravure rupestre ou sur écorce de bouleaux, etc.</li> 
+      
+      </ul>
+      <p>systèmes qui répondent aux contextes autochtones, en émergent
+      </br>les littératures autochtones se développent encore en fonction de ce mode </p>
+      <small>théâtre (Yves Sioui Durand), conte et poésie, inclusion de marque d'oralité</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>2. Les langues et les systèmes d'écritures minorés</small></p>
+            <ul>
+         <li>Avant l'arrivée des Européens</li>
+         <small>300 langues distinctes regroupées en 50 familles linguistiques </small>
+         <li>Aujourd'hui</li>
+         <small>Canada : 70 langues en 12 familles</small>
+            </br><small>Québec : 11 langues pour 3 familles linguistiques</small>
+          </br><small> Eskimo-aléoute (langue inuktitut)</small>
+          </br><small>Iroquoienne (langues mohawk, huron-wendat)</small>
+          </br><small>Algonquienne (le cri, l'atikamekw, l'innu-montagnais, le naskapi, l'algonquin, l'abénakis, le wolastoqey, le micmac)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_graphie.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>2. Les langues et les systèmes d'écritures minorés - Transposition à l'écrit</small></p>
+            <ul>
+                  <li>Transposition par des missionnaires et administrateurs avec des graphies variées</li>  
+                <li>Développement de systèmes d'écriture syllabiques (XIXe siècle)</li>
+                <small>Action du révérend James Evans avec les Cris : invention de la la première forme d'écriture syllabique autochtone vers 1839-1840 </small>
+                <li>Police de caractères modernes : Pigiarniq et Euphemia</li>
+                <small>Nunavut,  William Ross Mills (Tiro Tipeworks)</small>
+                </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>2. Les langues et les systèmes d'écritures minorés - Complexité de la traduction</small></p>
+            <ul>
+              <li>Mouvement d'assimilation dans la traduction en langue allochtone</li>
+              <small>comme possible appropriation</small>
+              <li>Édition bilingue ou multilingue</li>
+              <small>avec difficultés de la hiérarchie intra-textuelle, coûts de production, légitimités</small>
+                    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>2. Les langues et les systèmes d'écritures minorés - Sensibilisation</small></p>
+            <ul>
+            <li>Hétérogénéité linguistique</li>
+            <small>prise en compte des dialectes, des particularités de la langue</small>
+            <li>Copyright</li>
+            <small>la langue appartient au peuple</small>
+            <li>Conscience de sa position occupée</li>
+            <small>déconstruction</small>
+            <li>Conscience aussi de l’inefficacité de nos modèles</li>
+            <small>la traduction ne règle pas tout </small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small> 3. Différentes conceptions du livre et de l'édition</small></p>
+            <ul>
+          <li>Autorité du texte</li>
+          <small>statut d'un.e auteur.rice autochtone </small>
+          <li>Littérarité des textes </li>
+          <small>« leurs propositions littéraires sont souvent à contre-courant, ou tout simplement différentes, de ce qu’on trouve dans la littérature québécoise » (Jeannotte, 2016)</small>
+        <li>Valeur accordée aux modes de publication</li>
+        <small>modes de publication marginaux</small>  
+        <li>Lecture et réception</li> 
+        <small>« La frontière entre l’ethnologique et le littéraire pose problème dans la réception et la "classification" des textes d’auteurs autochtones » (Jeannotte, 2016)</small>
+        </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>défis</small></p>
+            <ul>
+           <li>Métiers : manques d'instance éditoriales spécialisées</li>
+           <li>Technique : peu de matériel (fontes), peu de professionnels</li>
+            <li>Économie : faible rentabilité</li>
+              <li> Symbolique : peu de reconnaissance symbolique</li>
+            </ul>
+            <p>respecter le droit des autochtones de reste maîtres
+            </br>repenser la fonction éditoriale en terme d'engagement social 
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_autochtone-edition1.png" data-background-size="1200px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/716_autochtone-edition2.png" data-background-size="1200px" background-color="#21211c">
+         
+        </section>
+        <section data-background-image="media/716_autochtone-edition3.png" data-background-size="1200px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>perspectives nécessaires</small></p>
+            <ul>
+           <li>Révision des processus et protocoles éditoriaux </li>
+           <li></li>
+            </ul>
+              </p>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/716_index.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>Avant 1970 : peu de publications littéraires autochtones en français au Québec </li>
+         <small>quelques auteurs Abénakis et Wendats (Pierre-Paul Masta, Joseph Laurent, Prosper Vincent)</small>
+            </br><small>publication en anglais/abénakis d'ouvrages utilitaires</small> 
+          </br><small>culture orale, faible institutionnalisation, refus, etc.</small>
+        </ul>
+              </p>
+          </div>
+        </section>
+        <section data-background-image="media/716_assiniwi.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>De 1970 à 1995 : percée de la littérature autochtone</li>
+         <small>publication 16 auteur.rices chez les éditeurs non-autochtones du côté francophone Québécois</small>
+            </br><small>collections construites autour d'un auteur phare (Bernard Assiniwi)</small> 
+          </br><small><i>Anish-Nah-Bé. Contes adultes du pays algonkin</i> (1971), <i>À l’indienne</i> (1972), <i>Survie en forêt</i> (1972), <i>Lexique des noms indiens en Amérique</i> (1973) chez Leméac</small>
+      
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_assiniwi.webp" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>De 1970 à 1995 : percée de la littérature autochtone</li>
+       <small>première collection de littérature autochtone « Ni-T’Chawama / Mon ami mon frère » (Assiniwi)</small> 
+            </br><small><i>La vie traditionnelle du coureur de bois aux XIXe et XXe siècles</i> (1973) par Normand Lafleur, <i>Les contes du portage</i> (1973) de Robert Lalonde, <i>Dialogues avec un sauvage</i> (1974) du Baron de Lahontan</small>
+      </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_kapesh.jpg" data-background-size="900px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>De 1970 à 1995 : percée de la littérature autochtone</li>
+     <small><i>Eukuan nin matshi-manitu Innushkueu / Je suis une maudite sauvagesse</i> (1976) d’An Antane Kapesh</small>
+            </br><small>« l’essai de Kapesh constitue un jalon de la littérature autochtone du Québec en ce qu’il représente la prise de conscience du milieu littéraire de l’existence de voix discordantes et dérangeantes en provenance des autochtones » (Jeannotte)</small>
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_institut.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>De 1970 à 1995 : percée de la littérature autochtone</li>
+     <small>
+       à HMH : Collection pour la jeunesse « Contes et légendes amérindiennes » (1981) et <i>Les Papinachois</i> par Michel Noël et illustrée par Joanne Ouellet
+     </small>
+    </br><small>Institut Tshakapesh </small>
+     
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_pien.webp" data-background-size="400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>De 1996 : année charnière pour la reconnaissance</li>
+     <small>
+     nouvelles maisons allochtones : Vent d'Ouest, Stanké, La Pleine Lune</small>
+    </br><small>marques de reconnaissance : <i>Pien</i> de Michel Noël (Prix du Gouverneur général en littérature pour la jeunesse)</small>
+  </br><small><i>La saga des Béothuks</i> d'Assiniwi (Prix France-Québec)</small>
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_sioui-assiniwi.png" data-background-size="900px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>Après 1996 : </li>
+    <small>Fondation des Éditions de Loup de gouttière (Québec, à côté de Wendake)</small>
+            </br><small><i>Le pas de l’Indien : pensées wendates</i> de Jean Sioui (1997)</small>
+          </br><small>Collection « Les loups rouges » (Francine Vernac et Jean Sioui), livres écrits par plusieurs auteurs et illustrés par différents artistes autochtones</small>
+       
+          </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bacon.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>2008 à ce jour : légitimation progressive et succès </li>
+<small>collectif <i>Aimititau! Parlons-nous!</i> (Laure Morali, Éditions Mémoire d'encrier)</small>
+            </br><small>2009 : <i>Bâtons à message / Tshissinuatshitakana</i> de Joséphine Bacon</small>
+          </br><small>2015 : « Nuits amérindiennes » </small> 
+        </br><small>2019 : réédition de <i>Je suis une maudite sauvagesse</i> de An Antane Kapesh</small>
+        
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_kumkum.png" data-background-size="700px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Édition autochtone au Québec
+              
+              </br><small>Histoire</small></p>
+            <ul>
+         <li>2008 à ce jour : légitimation progressive et succès </li>
+<small>2019 : <i>Kukum</i> de Michel Jean</small>    
+            </br><small>Lauréat du prix littéraire Nature Nomade 2021, Lauréat du prix VLEEL 2020, Lauréat du prix littéraire France-Québec 2020, Finaliste du prix Jacques Lacarrière</small>    
+        </ul>
+              </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_wendake.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small></small></p>
+            <ul>
+           
+            <li>Début 2000 : cercle d'écriture de Wendake</li>
+            <small>avec Sylvie Nicolas (Loup de Gouttière), Louis-Karl Picard Sioui et Jean Sioui</small>
+          <li>2008 : Événement Carrefour international des littératures autochtones de la Francophonie (CILAF)</li>
+
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_sioui.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small></small></p>
+            <ul>
+           
+                 <li>2009 : création de la <a href="https://hannenorak.com/">Librairie Hannenorak</a> par Daniel Sioui</li>
+     <li>2010 : création des Éditions Hannenorak par Jean et Daniel Sioui</li>
+     <small>première maison autochtone au Québec</small>
+            </br><small>dirigée par Daniel et Cassandre Sioui</small>
+                </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_hannenorak.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small></small></p>
+            
+           <p><a href="https://editions.hannenorak.com/a-propos/">« Faire rayonner la culture et les écrits des Premières Nations »</a></p>
+             
+          </div>
+        </section>
+
+        <section data-background-image="media/716_hannenorak-publication.png" data-background-size="1200px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/716_hannenorak-publication2.png" data-background-size="1200px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/716_hannenorak-etude.png" data-background-size="1200px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/716_hannenorak-publication3.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small>langues autochtones</small></p>
+            
+          <ul>
+<li>9 langues autochtones + langues allochtones</li>
+<small>innu, wendat, inuktitut, abénakis,
+  anicinapemowin, cri, mohawk, wolastoqey et mi’gmaq</small>
+<li>Acte éditorial de protection et diffusion des formes écrites de ces langues</li>
+<small>investissement éditorial</small>
+          </ul>    
+          </div>
+        </section>
+
+        <section data-background-image="media/716_hannenorak-publication4.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small>traductions</small></p>
+            
+          <ul>
+<li>Traduction dès 2014, augmentation en 2019</li>
+<small>constitution d'un corpus des littératures autochtones</small>
+          </br><small>mise en valeur des contenus autochtones au-delà des frontières</small>
+        </br><small>soutien des subventions particulières </small>
+          </ul>    
+          </div>
+        </section>
+
+        <section data-background-image="media/716_hannenorak.png" data-background-size="1200px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">
+              Éditions Hannenorak
+              </br><small>animation de la vie littéraire</small></p>
+            <ul>
+           <li>Création du Salon du livre des Premières Nations, en 2011</li>
+           <li>Déménagement de la librairie en 2019</li>
+            </ul>
+     
+          </div>
+        </section>
+
+
+      </section>
+
+
+
+
+
+      <section data-background-image="media/716_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant:small-caps ;">Ordre passage en exposé
+          </p>
+          <ul>
+            <li>1. Alexe L.</li>
+            <small>répondante Margot R. </small>
+            <li>2. Margot R.</li>
+            <small>répondante Marion P.</small>
+            <li>3. Marie-Laure C.</li>
+            <small>répondante Christine P. </small>
+            <li>4. Rosalie D.</li>
+            <small>répondante Victoria A.P.</small>
+            <li>5. Mylène C.</li>
+            <small>répondante Méliane W.</small>
+            <li>6. Méliane W.</li>
+            <small>répondante Marie-Laure C</small>
+            <li>7. Thomas B.</li>
+            <small>répondante Alexe L.</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">À la semaine prochaine</p>
+          <small>vérifiez bien les modalités d'enseignement et les nouvelles pour chaque cours !</small>
+          <p><b></b></p>
+          <p></p>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,886 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">8 janvier : Plan de cours</h5>
+          <small>du 8 janvier au 16 avril - Jeudi de 18h30 à 21h20</small>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <h5>Bienvenu et présentation
+          </br><small>Margot Mellet</small>
+          </h5>
+     
+          <p>Professeure adjointe au DALL
+          </br>Responsable des programmes de deuxième cycle en édition</p>
+          <small>enseignement et encadrement, recherche et rayonnement, participation à la collectivité</small>
+        </br><small>chercheure au <a href="https://www.usherbrooke.ca/grelq/">GRÉLQ</a> et au <a href="https://www.crihn.org/">CRIHN</a></small>
+          <p>Directrice de la revue <a href="sens-public.org/"><i>Sens public</i></a>
+          </br>Directrice de la collection <a href="https://www.purh-ed.fr/collection/?collection_id=705">« De code et de plomb »</a> (PURH)
+        </br>Co-rédactrice de la revue <a href="https://imaginationsjournal.ca/index.php/imaginations"><i>Imaginations</i></a></p>
+    <small>co-chercheure <a href="https://revue30.org/">Projet partenariat Revue3.0</a></small>
+     
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px">
+        <div id="fondop2">
+          <h6>Tour de classe</h6>
+          <ul class="icone-liste">
+            <li>
+              <i class="material-icons">person</i> Nom, formation</li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Changements de local</p>
+          <table>
+            <caption>
+              </br>
+              <i>Toujours vérifier le panneau d'affichage du hall</i>
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Séance Local</th>
+                <th scope="col">1</th>
+                <th scope="col">2</th>
+                <th scope="col">3</th>
+                <th scope="col">4</th>
+                <th scope="col">5</th>
+                <th scope="col">6</th>
+                <th scope="col">7</th>
+                <th scope="col">8</th>
+                <th scope="col" class="column-9">9</th>
+                <th scope="col">10</th>
+                <th scope="col">11</th>
+                <th scope="col">12</th>
+                <th scope="col">13</th>
+                <th scope="col">14</th>
+                <th scope="col">15</th>
+              </tr>
+            </thead>
+            <tbody>  <tr>
+                <th scope="row" style="font-size: 25px;">L1-4660</th>
+                <td colspan="8" class="yellow"></td>
+                <td class="column-9"></td>
+                <td colspan="4" class="yellow"></td>
+                <td colspan="2"></td>
+                
+              </tr>
+              <tr>
+                <th scope="row" style="font-size: 25px;">L1-5665</th>
+               
+                <td colspan="8"></td>
+           
+                <td class="column-9"></td>
+                <td colspan="4"></td>
+                <td colspan="2" class="cadetblue"></td>
+              </tr>
+            
+           
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <style>
+        .fond-section {
+          background-image: url('media/chute.png');
+          background-size: 1600px;
+        }
+
+        .gradient-column {
+          background: repeating-linear-gradient(to left top, white, rgba(165, 158, 158, 0.596) 15px);
+        }
+
+        .cadetblue {
+          background-color: cadetblue;
+        }
+
+        .yellow {
+          background-color: rgb(214, 159, 18);
+        }
+
+        .hotpink {
+          background-color: hotpink;
+
+        }
+
+        .column-9 {
+          background: rgba(128, 128, 128, 0.425);
+        }
+      </style>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Présentation du cours <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cibles de formation</p>
+            <ul>
+              <li>1. Acquérir une formation théorique et pratique des processus de production, structuration, légitimation et diffusion de la connaissance</li>
+            <small></br></small>
+              
+              <li>2. Cerner les particularités et perspectives de l'édition savante francophone </li>
+              <small>notamment en sciences humaines et sociales</small>
+            <small></br></small>
+              <li>3. Développer un regard critique sur l'évolution du rôle éditorial</li>
+              <small></br></small>
+              <li>4. Maîtriser les principes et fonctionnalités de base des outils d'édition numériques destinés à l'édition savante</li>
+              <small></br></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contenu</p>
+        <p>Panorama des différentes approches de l'édition savante (SHS). Discussion des enjeux de l'édition savante francophone moderne. Analyse des problématiques de légitimation du savoir.</p>
+        
+            <small>si vous êtes perdu.e.s dans le sens des slides : ECHAP</small>  </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">Approche pédagogique et méthodologie
+              </br><small>cours entièrement en présentiel</small></p>
+            <ul>
+              <li>Éléments du cours sur Moodle</li>
+             
+              <li>Exposés magistraux, études de cas</li>
+              <li>Ateliers et exercices pratiques encadrés</li>
+              <li>Discussions en classe</li>
+              <li>Lectures de textes</li>
+              <li>Venue d'intervenant.e.s</li>
+              <small>séances 7 et 12 (sujet à changements)</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps ;">+ Bienveillance
+              </br><small>dans tous les échanges et les retours</small></p>
+          
+
+          </div>
+        </section>
+
+
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px">
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+            <h4>Modalités d'évaluation <i class="material-icons">
+              south
+               </i></h4>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <img src="media/717_calendrier.png" height="670"/>
+        </div>
+
+      </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">article</i>
+            <p style="font-variant: small-caps;">Établissement d'un article savant (50%)</br>
+              <small>suivi des différentes étapes de l'établissement d'un texte savant</small></p>
+            <ul>
+              <li>Première étape : 5 février (30%)</li>
+            <small>structuration du corps du texte et rédaction du paratexte (15%)</small>
+            </br><small>structuration bibliographique (15%)</small>
+              <li>Deuxième étape : 19 février (20%)</li>
+              <small>recherche d'évaluation (10%)</small>
+            </br><small>édition des mots-clefs et données structurées (10%)</small>
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">wikipedia</i>
+            <p style="font-variant: small-caps;">Valorisation savante sur Wikipédia (40%)</br>
+              <small>travail en équipe - remise le 17 avril</small></p>
+            <ul>
+              <li>Contribution à Wikipédia - individuel (10%)</li>
+              <li>Création d'une page Wikipédia pour une structure éditoriale savante - équipe (30%)</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <i class="material-icons">groups</i>
+            <p style="font-variant: small-caps;">Ateliers et participation (10%)</br>
+              <small>continu</small></p>
+            <ul>
+              <li>Présence et contribution aux ateliers et exercices pratiques</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px"
+          data-background-color="#f1eded">
+          <div id="fondop2">
+            <h6>Modalités de rendu</h6>
+            <ul>
+    
+                 <li>Pénalité de retard</li>
+               <small>jusqu'à 10% par jour de retard (incluant fins de semaine)</small>
+               <li>Qualité de la langue</li>
+               <small>jusqu'à 20% de pénalité lorsqu'indiqué dans la Grille d'évaluation</small>
+               <li>Nomenclature des rendus</li>
+              <small>Nom_Travail</small>
+              </br><small>pas de diacritiques, d'accents ou d'espaces</small>
+            </ul>
+            <p>Si questions sur les consignes : Ne pas attendre la veille du rendu</p>
+            <p>Plus d'informations sur les modalités de rendu seront données en classe</p>
+          </div>
+
+        </section>
+
+        <section data-background-image="media/UDES_notation.png" data-background-size="1600px"
+        data-background-color="#f1eded">
+        <div id="fondop2">
+          <p>Les résultats seront sous forme de points (50, 40, 10), les notes finales seront en lettres.</p>
+        </div>
+
+      </section>
+
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Intégrité intellectuelle</h4>
+
+            <p>Tout cas de plagiat ou toute autre manœuvre visant à tromper mènera au dépôt d’une plainte auprès de la personne responsable des dossiers disciplinaires de la Faculté, en vertu de la procédure prévue au Règlement des études. Toute personne reconnue avoir commis un délit se verra imposer une sanction disciplinaire.</p>
+         
+            <p><a
+                href="https://www.usherbrooke.ca/flsh/etudes/documents-officiels-guides-et-formulaires/plagiat-et-integrite-intellectuelle"
+                target="_blank">Documentation</a> </p>
+<p>respecter le travail d'un.e auteur.e = respecter le travail éditorial en amont</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/hyper.webp" data-background-size="1400px">
+          <div id="fondop2">
+            <h4>Intelligence artificielle</h4>
+
+         <p>
+           le recours à des outils relevant de l'intelligence artificielle dans le cas des travaux du cours n'est pas permis </p>
+            <small><b>il s'agit d'acquérir des compétences, pas des moyens de les éviter</b></small>
+          </div>
+        </section>
+
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h3>Calendrier des séances <i class="material-icons">
+              south
+               </i></h3>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png"
+          data-background-size="1500px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 1 - 8 janvier</b></br>
+              <i>Présentation du plan de session, des Grilles d'évaluation </br>Définition de l'édition savante</i>  </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 2 - 15 janvier</b></br>
+              <i>Histoire de l'édition savante francophone et Portrait des acteurs de l'édition savante francophone</i>
+            </br><small>Atelier de lecture des textes savants et de veille scientifique (discussion en comités de lecture)</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1700px"
+          data-transition="linear" data-transition-speed="fast">
+
+
+          <div id="fondop2">
+            <p><b>Séance 3 - 22 janvier</b></br>
+              <i>Les structures des textes savants 1 (L'édition du corps de texte et du paratexte)</i>
+            </br><small>Atelier de préparation de l'article savant (traitement et éditeur de textes)</small>
+            </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 4 - 29 janvier</b></br>
+              <i>Les structures des textes savants 2 (La bibliographie)</i>
+            </br><small>Atelier de structuration et recherche bibliographique (avec Zotero)</small>
+          </div>
+       
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+            <div id="fondop2">
+              <p><b>Séance 5 - 5 février</b></br>
+               <i>Les modèles de légitimation des textes savants (L'évaluation par les pairs)</i>
+              </br><small>Mise en situation de gestion d'évaluation (recherche d'évaluateurs et retours)</small></p>
+            <small><b>Remise de la première étape d'établissement du texte savant (30%)</b></small>
+            </div>
+  
+            <p><b>Séance 6 - 19 février</b></br>
+              <i>Les métadonnées et données structurées (Les mots-clefs)</i>
+            </br><small>Atelier d'édition des métadonnées et d'autorités scientifiques (avec Wikidata)</small>
+            </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1500px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 7 - 26 février</b></br>
+            <i>Communautés savantes et enjeux de vulgarisation : Conférence de la directrice de l'Acfas – Sophie Montreuil</i>
+            </br><small>[sujet à changements]</small>
+          </br><small>Atelier de contribution aux encyclopédies en ligne (avec Wikipédia)</small>
+        </br><small><b>Remise de la deuxième étape d'établissement du texte savant (20%)</b></small>
+    
+            </p>
+          </div>
+     <div id="fondop2">
+
+            <p><b>Séance 8 - 5 mars</b></br>
+            <i>Séance de partage sur l'établissement des textes savants (présentation et discussion en comités)</i>
+            </br><small>Atelier de Contrôle-qualité partagé</small>
+            </br><small>Composition des groupes pour Wiki – discussion sur des sujets</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Semaine de relâche - 12 mars</b></br>
+            </p>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1500px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+          <div id="fondop2">
+
+            <p><b>Séance 9 - 19 mars</b></br>
+            <i>Les chaînes de production de l'édition savante francophone (La finalisation et l'export du texte savant)</i>
+            </br><small>Atelier de publication depuis une source unique (outils d'export)</small>
+            </p>
+          </div>
+
+          <div id="fondop2">
+
+            <p><b>Séance 10 - 26 mars</b></br>
+            <i>Valorisation et découvrabilité de l'édition savante francophone</i>
+            </br><small>Atelier de modélisation d'un gabarit pour la page Wikipédia (par groupe et partage à la classe)</small>
+            </p>
+          </div>
+
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png"
+          data-background-size="1700px" data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+            <p><b>Séance 11 - 2 avril</b></br>
+              <i>Les mode d'accès et licences : Conférence du titulaire de la Chaire sur la science ouverte - Vincent Larivière</i>
+            </br><small></small>
+            </br><small>Analyse et discussion autour des solutions d'accès et licences</small>
+            </p>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 12 - 9 avril</b></br>
+           <i>Les enjeux des revues savantes francophones</i>
+           </br><small>Atelier d'idéation d'une revue et d'une première collection (par groupe et partage à la classe)</small>
+          </div>
+        </section>
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1500px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+
+          <div id="fondop2">
+            <p><b>Séance 13 - 16 avril</b></br>
+           <i>Les autres formats savants : policy paper, brief et livre blanc</i>
+           </br><small>Atelier d'exploration et de composition des formats brefs (par groupe et partage à la classe)</small>
+          </div>
+          <div id="fondop2">
+            <p><b>Séance 14 - 23 avril</b></br>
+           <i>Conclusion du cours et ouverture</i>
+           </br><small>Atelier de publication de la page Wikipédia (par groupe et présentation à la classe)</small>
+           </br><small><b>Remise de la valorisation savante sur Wikipédia (40%)</b></small>
+          </div>
+
+        </section>
+
+      </section>
+
+
+        <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="2000px"
+          data-transition="linear" data-transition-speed="fast">
+          <div id="fondop2">
+            <h6><i class="material-icons">help</i> Contact & Disponibilités</h6>
+
+            <ul>
+              <li><a href="mailto:margot.mellet@usherbrooke.ca" target="_blank">margot.mellet@usherbrooke.ca</a></li>
+
+              <li>Campus de Longueuil, L-12723</br>
+                450 463-1835, poste 61872
+                </br> en présence : lundi, mardi, jeudi
+              </br> possibilité de rencontre par Teams
+            </br>
+              <small>prise de rdv par courriel</small></li>
+            </ul>
+
+          </div>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

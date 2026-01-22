@@ -1,0 +1,868 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 3 : Les structures des textes savants 1 (L'édition du corps de texte et du paratexte)</h5>
+          <small>Partie cours</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <p style="font-variant: small-caps;">Petite actualité de l'édition savante et autres
+            
+          </p>
+          <ul>
+            <li>Auteurs entrés dans le domaine public en 2026</li>
+          <small>Claudel, Léger, Tanguy ou d'autres </small>
+          <li>Nouveau cadre d'admissibilité pour les revues savantes - Érudit</li>
+         <small><a href="https://apropos.erudit.org/criteres-appel-candidatures/">candidature</a></small>
+          <li>Censure de Platon dans une université au Texas</li>
+            <small><a href="https://actualitte.com/article/128864/international/au-texas-des-passages-de-platon-censures-dans-un-cours-universitaire">ActuaLitté</a></small>
+            <li>Semaine de la célébration du Domaine Public chez <a href="https://linkin.bio/internetarchive/?utm_medium=social&utm_content=link_in_bio&utm_source=ig">Internet Archive</a></li>
+          </ul>
+          <p>ressources pour suivre les dernières parutions : <a href="https://www.fabula.org/actualites/parutions/">Fabula</a></p>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <p style="font-variant: small-caps;">Édition savante = compréhension de ce qu'est un texte 
+            
+          </p>
+          <small>niveaux d'information, constitutions et outils</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. L'Organisation du texte savant <i class="material-icons">
+           south
+            </i></h5>
+            
+       
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_imred.png" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Corps du discours
+              </br><small>modèle du IMReD</small></p>
+            <ul>
+              <li><b>1. Introduction</b></li>
+              <small>problématique, question de recherche, objectif de l'article, hypothèse, composants essentiels (corpus, inscription théorique, disciplinaire), plan du discours</small>
+              <li><b>2. Méthodologie</b></li>
+              <small>état de l'art / état des théories ou de la discipline en la matière ou la revue de littérature + présentation du corpus d'étude</small>
+              <li><b>3. Résultats</b></li>
+              <small>remarques, données</small>
+              <li><b>4. Discussion</b></li>
+              <small>interprétation, mise en lien des connaissances et des observations</small>
+              <li><b>5. Conclusion</b></li>
+              <small>résumé + ouverture du sujet</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples
+              </br><small></small></p>
+            <ul>
+              <li><a href="https://www.erudit.org/fr/revues/memoires/2025-v16-n1-memoires010380/1121385ar/">Érudit : article dans <i>Mémoires du livre</i></a></li>
+              <li><a href="https://shs.cairn.info/la-relation-educative--9782130523352?lang=fr">Cairn : monographie PUF</a></li>
+              <li><a href="https://books.openedition.org/purh/22757?format=toc">OpenEdition : ouvrage collectif PURH</a></li>
+            </ul>
+            <p><b>Structuration de l'information</b></p>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Éléments de composition interne
+              </br><small></small></p>
+            <ul>
+              <li>Titres de sections et sous-section</li>
+              <li>Notes de bas de page</li>
+              <small>autre régime d'information : complément d'information / références / sources</small>
+            </br><small>modes : infrapaginales|bas de page, de fin de section ou d'ouvrage, ou dans les marges extérieures</small>
+          </br><small>appel de note : astérisque, chiffre arabe ou romain, lettre ou autre signe comme obèle † ou double obèle ‡</small>           
+        </br><small>distinction avec le corps du texte avec un filet</small>
+       
+              <li>Références</li>
+              <small>dans la ligne ou dans la note</small>
+              <li>Contenus multimédia</li>
+              <small>avec légendes /ou/ renvois à des contenus en annexes</small>
+              <li>Encarts</li>
+              <small>manuel ou documents pédagogiques</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Paratexte
+              </br><small></small></p>
+            <ul>
+              <li>Informations générales</li>
+              <small>titre principal, nom de l'auteur (+ affiliation, biographie), date, etc.</small>
+              <li>Discours liminaires ou finaux</li>
+              <small>préface, avant-propos, introduction, postface, etc.</small>
+              <li>Exergues</li>
+              <small>épigraphe, dédicace</small>
+              <li><b>Résumé</b></li>
+              <small>synthèse (200 mots) avec les éléments principaux</small>
+      <li>Sections d'organisation des informations</li>
+      <small>table des matières, index, annexes, bibliographie, etc.</small>
+   
+            </ul>
+                    </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples de normes de présentation
+              </br><small></small></p>
+            <ul>
+              <li><a href="https://pum.umontreal.ca/media/autresfichiers/protocolederedaction.pdf">Études fr (PUM)</a></li>
+              <li><a href="https://www.editions-eres.com/uploads/documents/conditionsPublication/201906112815eas_normes-editoriales-a-consignes-auteurs_07.11.18_diffusion.pdf">Espace et société</a></li>
+              <li><a href="https://journals.openedition.org/perspective/1419">Perspectives</a></li>
+              <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571529">PUM</a></li>
+            </ul>
+             </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Constitution du texte savant <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Écriture numérique – Définition
+              </br><small></small></p>
+            <ul>
+              <li><i class="material-icons">exposure_zero</i> niveau de manipulation des unités formelles (0, 1)</li>
+              <small>écriture selon la machine</small>
+              <li><i class="material-icons">code</i> niveau de formatage et de code</li>
+              <small>écriture pour la machine</small>
+              <li><i class="material-icons">edit</i> niveau de l'interaction</li>
+              <small>écriture sur la machine</small>  </ul>
+           
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Encodage des caractères
+              </br><small>ASCII</small></p>
+            <ul>
+     
+              <ul>
+                <li>1960 - <i>American Standard Code for Information Interchange</i></li>
+                <small>code américain normalisé pour l'échange d'information</small>
+                <li>norme informatique pour l'encodage des caractères</li>
+                <small>lettres, chiffres, symboles (128 signes)</small>
+                <li>Standard informatique ouvert et libre</li>
+                <small>à l'origine des codes qui ont suivi comme le standard mondial Unicode (150 000 signes)</small>
+              </ul>
+             </div>
+        </section>
+
+       
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Document numérique
+              </br><small>plusieurs approches selon les niveaux</small></p>
+              <h6>Un document numérique</h6>
+
+              <ul>
+                <li><i class="material-icons">content_cut</i> Vue séquentielle</li>
+                <small>manipulation du texte (copier/coller, remplacer...)</small>
+                <li><i class="material-icons">list</i> Vue arborescente</li>
+                <small>structuration du texte (numéroter, indexer...)</small>
+                <li><i class="material-icons">analytics</i> Vue métadonnées</li>
+                <small>qualification du texte (métadonnées)</small>
+                <li><i class="material-icons">format_size</i> Vue stylisée (facultative)</li>
+                <small>présenter l'image du texte (style)</small>
+  
+              </ul>
+               <p><b>Distinction entre le Style et la Sémantique</b></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+     
+          
+              <table>
+                <caption>
+                  </br>Différence entre éditeur et traitement de texte
+                </caption>
+                <colgroup>
+                  <col />
+                  <col span="1" class="batman" />
+                  <col span="1" class="flash" />
+                </colgroup>
+                <tr>
+                  <td style="text-align: center;"><i class="material-icons">edit</i></td>
+  
+                  <th scope="col">Traitement</th>
+                  <th scope="col">Éditeur</th>
+                </tr>
+                <tr>
+                  <th style="vertical-align: middle;">Orientation</th>
+                  <td>Style et mise en page
+                  </br><i>What You See Is What You Get</i>
+                  </br><small> Microsoft Word, Google Docs, Pages</small>
+                  </td>
+                  <td>Balisage et sémantisation
+                  </br><i>What You See Is What You Mean</i>
+                  </br> <small>Stylo, Zettler, Atom</small>
+                  </td>
+  
+                </tr>
+              </table>
+            
+            <p>=> deux approches différentes du texte</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Balisage du texte – lourds
+              </br><small>balise ouvrante et fermante = pour délimiter l'information</small></p>
+            <ul>
+              <li><b>HTML </b></li>
+              <small>pour les contenus web</small>
+              <li><b>XML</b></li>
+              <small>structuration sémantique avec des variantes (TEI-XML, XHTML, DOCXML)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Balisage du texte – léger
+            </br><small>Markdown</small></p>
+  
+            <ul>
+              <li>John Gruber et Aaron Swartz, 2004</li>
+             
+              <small> « I'm sick of bringing my writing down to the level of the computer. »
+          </small>
+          <li>Syntaxe réduite</li>
+          <small>plus simple que le HTML</small>
+        </br><small>non-ambiguë</small>
+
+          </ul>
+          <p>Édition sémantique : niveaux de granularité du sens du texte</p>
+          <p>Tutoriel <a href="https://www.arthurperret.fr/tutomd/" target="blank">en ligne</a> par Arthur
+						Perret</p>
+
+          </div>
+        </section>
+  
+  
+  
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Exemples de langage de balisage</h5>
+            <table style="width:100%">
+              <tr>
+                <th>Markdown</th>
+                <th>HTML</th>
+                <th>Rendu</th>
+              </tr>
+              <tr>
+                <td><code>*italique*</code></td>
+                <td><code>&lt;i&gt;italique&lt;/i&gt;</code></td>
+                <td><i>italique</i></td>
+              </tr>
+              <tr>
+                <td><code>## Titre de niveau 2</code></td>
+                <td><code>&lt;h2&gt;Titre de niveau 2&lt;/h2&gt;</code></td>
+                <td>
+                  <h2>Titre de niveau 2</h2>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </section>
+  
+  
+  
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Partie Atelier <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Texte d'entraînement de <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571685">Tony Gheerart</a>
+              </br><small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571691">Toc du texte</a></small></p>
+         <ul>
+          <li>1. avec Traitement de texte</li>
+          <li>2. avec Éditeur de texte</li>
+
+         </ul>
+         <p><b>Respect des différents matériaux d'édition</b> : pas de diffusion, utilisation en dehors du cours</b></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/hyper.webp" data-background-size="2000px">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel des raccourcis clavier
+          </br><small>
+pour Mac : Ctrl = Command ou ⌘
+          </small></p>  
+          
+          <ul style="font-size: 24px;">
+            <li>Ctrl/Command + C = Copier</li>
+            <small><i>copy</i></small>
+            <li>Ctrl/Command + V = Coller</li>
+            <small><i>varnish</i> ou <i>vernir</i></small>
+            <li>Ctrl/Command + A = Sélectionner tout</li>
+            <small><i>all</i></small>
+            <li>Ctrl/Command + X = Couper</li>
+            <small><i>eXterminate</i></small>
+           
+     
+            <li>Ctrl/Command + S = Sauvegarder</li>
+            <small><i>save</i></small>
+            <li>Ctrl/Command + F = Rechercher</li>
+            <small><i>find</i></small>
+            <li>Ctrl/Command + Z = Annuler</li>
+            <small><i>zut</i></small>
+            <li>Ctrl + Y/Command + Shift + Z = Revenir à l'état précédent</li>
+            <small><i>yesterday</i></small>
+          </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">1. avec Traitement de texte
+              </br><small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571699">Normes éditoriales</a></small></p>
+         <ul>
+<li>Édition des styles</li>         
+
+         </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">2. avec Éditeur de texte (sur Stylo)
+              </br><small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571702">Indications éditoriales</a></small></p>
+         <ul>
+         
+<li>Balisage sémantique</li>
+         </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-image="media/735_stylo.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><a href="https://stylo.huma-num.fr/">Stylo</a>
+            </br>éditeur de texte pour SHS</p>
+
+<ul>
+  <li>Projet et outil de la <a href="https://ecrituresnumeriques.ca/fr/">CRC
+    sur les écritures numériques</a>, 2017</li>
+<small>Développement : Arthur Juchereau, Timothée Guicherd, David Larlet, Sarah
+  Rubio</small>
+<li>Hébergement par la TGDIR <a href="https://www.huma-num.fr/">HumaNum</a>
+</li>
+<small>Très GranDe Infrastructure de Recherche</small>
+
+
+</ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1300px">
+          <div id="fondop2">
+            <h5>Pour l'édition avec Stylo
+            </h5>
+            <ul>
+              <li>1. <i class="material-icons">add</i> Créer un nouvel article</li>
+              <small>nommé « Nom_Article »</small>
+           <li>2. Ouvrir l'édition de l'article</li>
+           <small>copier-coller le texte à partir du docx</small>
+           <li>3. Baliser le texte</li>
+           <small>selon les indications éditoriales</small>
+                </ul>
+          </div>
+        </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Établissement d'un article savant - Première étape
+              </br><small><a href="https://moodle.usherbrooke.ca/pluginfile.php/5059562/mod_resource/content/3/Grille-717.pdf">Structuration du corps du texte et du paratexte</a> /15</small></p>
+         <ul>
+          <li>1. avec Traitement de texte</li>
+          <small>utilisation des styles selon les normes éditoriales ; résumé</small>
+      
+          <li>2. avec Éditeur de texte</li>
+<small>balisage sémantique selon les indications éditoriales ; résumé</small>
+
+         </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Établissement d'un article savant - Choix d'article
+             
+              <ul>
+<li>1. Les fonds Eugène Gallois au département des Estampes et de la photographie de la BnF</li>
+<small>images</small>
+<li>2. Virtuel Mucem. Remédiation des sites web de la collection Recherches
+  ethnologiques (2005-2008)</li>
+  <small>images</small>
+  <li>3. Perspective pragmatiste en
+    éthique des changements
+    climatiques</li>
+    <small>sans images</small>
+         </ul>
+         <p>répartition entre les étudiants (4 par article) - travail individuel</p>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+   
+        <p><a href="https://stylo.huma-num.fr/register">Se créer un compte Zotero</a></p>
+        <li><i class="material-icons">library_books</i> Logiciel de gestion de références gratuit, libre et open
+          source</li>
+        <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register"
+            target="_blank">Compte en ligne</a> /
+          <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local)</li>
+        <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/"
+            target="_blank">Documentation</a></li>
+            <li>+ <a href="https://www.zotero.org/download/connectors/">Connecteur Navigateur</a></li>
+      </div>
+    </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

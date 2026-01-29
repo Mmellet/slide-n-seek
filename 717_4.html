@@ -1,0 +1,1081 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 4 : Les structures des textes savants 2 (La bibliographie)</h5>
+          <small>Partie cours</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <p style="font-variant: small-caps;">Petite actualité de l'édition savante et autres
+          </p>
+          <ul>
+            <li>[...]</li>
+          </ul>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. La bibliographie - Constitution <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop">
+            <p style="font-variant: small-caps;">« Tout commence et tout se termine par une bibliographie. »
+              
+            </p>
+            <small>liste structurée de références, discipline d'étude des publications
+            </br>liste d'ouvrages publiés par un auteur ou une auteure
+            </small>
+          </div>
+  
+        </section>
+  
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Petit histoire de la bibliographie
+              </br><small></small></p>
+            <ul>
+                <li>Renaissance</li>
+              <small>répertoires, index, catalogue, inventaire</small>
+              <li>XVIIe siècle</li>
+              <small>« bibliographie » par Naudé (bibliothécaire)</small>
+              <small>fonction de bibliographe</small>
+              <li>1762 - entrée dans le dictionnaire de l'Académie française</li>
+              <li>XIXe siècle</li>
+              <small>travail de catalogage</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_rbu.webp" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Répertoire Bibliographie universel
+              </br><small>Paul Otlet et Henri La Fontaine, 1895</small></p>
+            <ul>
+                  <li>Projet de recensement mondial des publications</li>
+              <small>18 millions de fiches classées</small>
+                <li>Classification Décimale Universelle (CDU)</li>
+              <small>perfectionnement de la classification décimale de Dewey (CDD)</small>
+            </br>     <small><a href="https://udcc.org/countries.htm">utilisation dans le monde</a></small>
+              <li>Office International de Bibliographie - Mundaneum</li>
+              <small>patrimoine de l'Unesco</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_sbc.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Période moderne
+              </br><small>Outil indispensable à la recherche</small></p>
+            <ul>
+              
+              <li>Comptes rendus critiques</li>
+            
+              <li>Société bibliographique du Canada/Bibliographical Society of Canada </li>
+              <small>Cahiers/Papers en 1962</small>
+              <li>Travaux sur la bibliographie</li>
+              <small>Marie Tremaine, <i>A Bibliography of Canadian Imprints, 1751-1800</i> (1952)</small>
+              <li>Entre-deux-guerres : objet de rivalité</li>
+              <li>Fin XXe siècle : culture numérique</li>
+            </ul>
+          </div>
+        </section>
+
+      
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Importance scientifique
+              </br><small></small></p>
+            <ul>
+              <li><b>Documenter le discours savant</b></li>
+              <small>scientificité, passation, valorisation des travaux d'une communauté</small>
+              <li><b>Éthique savante</b></li>
+              <small>reconnaissance des travaux des autres</small>
+                  <li><b> Jalonner les progrès d'une discipline</b></li>
+            </ul>
+            <p>élément essentiel de l'édition savante</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Plusieurs types formels
+              </br><small>critères</small></p>
+            <ul>
+              <li>Temporalité</li>
+              <small>rétrospective : publications passées</small>
+            </br>  <small>courante : sources nouvelles - mise à jour</small>
+              <li>Détail</li>
+              <small>signalétique : informations essentielles pour identifier la source</small>
+            </br>  <small>sommaire : + description courte des ouvrages</small>
+          </br>  <small>analytique : + description plus longue (neutre et objective) </small>
+                </br><small>critique : + description longue avec un avis</small>
+          </br>  <small>matériel : + caractéristiques éditoriales (bibliologie)</small>
+              <li>Lien aux sources</li>
+              <small>primaire : sources primaires</small>
+            </br>  <small>secondaire : sur une sous-thématique</small>
+            </br>  <small>tertiaire : bibliographie de bibliographies</small>
+            <li>Organisation</li>
+           <small>systématique : toutes les sources liées par une caractéristique éditoriale</small>
+            </br>  <small>thématique : regroupement selon un sujet</small>
+<li>Ambition</li>
+<small>exhaustive : signaler tout ce qui existe sur un sujet</small>
+            </br>  <small>sélective : une partie des sources selon des critères</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples
+              </br><small></small></p>
+            <ul>
+              <li>Bibliographie commentée par REFAD</li>
+              <small>Réseau d'enseignement francophone à distance au Canada</small>
+              <small><a href="https://archives.refad.ca/nouveau/recherche_perseverance_FAD/pdf/Perseverance_Bibliographie_Mars_2008.pdf">Lien vers la bibliographie</a></small>
+              <small class="fragment">primaire ; exhaustive ; partiellement analytique ; thématique ; rétrospective</small>
+              <li><a href="https://www.scopus.com/pages/home?display=basic&zone=header&origin=sbrowse#basic">Scopus</a> (base de données, ELSEVIER)</li>
+              <small>transdisciplinaire - journaux scientifiques</small>
+              <small class="fragment"> sélective ; systématique/thématique ; principalement courante ; signalétique et sommaire (résumé) ; primaire et secondaire</small>
+
+              <li>Publication par pays des nouveaux ouvrages</li>
+              <small>selon le dépôt légal</small>
+            </br>     <small class="fragment">systématique ; exhaustive ; primaire ; courante ; sommaire</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Norme ISO 690
+              </br><small>norme internationale (4<sup>e</sup> édition)</small></p>
+            <ul>
+       
+              <li>Ordre des informations :</li>
+              <small>1. Nom et Titre avec indication du support si nécessaire / + date</small>
+             </br>     <small>2. Édition, lieu, éditeur, titre collection, numéro, volume</small>
+             </br>     <small>3. Numéro normalisé : ISBN, ISSN, DOI</small>
+             </br>     <small>4. Autres info dont la localisation</small>
+              <li>Informations nécessaires selon les types de publications</li>
+              <small>pour un livre : nom, titre, support si pas imprimé, édition si pas première, date si mode Nom-Date, date de citation pour ressource en ligne, etc.</small>
+              <li>Variations selon les domaines</li>
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_isbn.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Numéro normalisé
+              </br><small></small></p>
+            <ul>
+              <li>ISBN - International Standard Book Number (ISSN pour articles)</li>
+               <small>composition : numéro du pays = 978 - groupe linguistique - numéro d'éditeur - numéro de publication - clef de contrôle</small>
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_uri.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifiants numériques
+              </br><small></small></p>
+            <ul>
+              <li>URI (Uniform Resource Identifier)</li>
+              <small>URL et URN </small>
+                <li>DOI (Digital Object Identifier) par Association of American Publishers</li>
+              <small>alternative à l'URI</small>
+            </br>  <small>demande auprès de Crossref pour les publications académiques</small>
+           </br>  <small>avec des frais d'abonnements : 1 $/DOI article ; 2-3$/DOI livre</small>
+          
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Alternatives
+              </br><small></small></p>
+            <ul>
+                      <li>ARK - Archival Resource Key (California Digital Library)</li>
+              <small>moins centralisé mais gratuit - plus souple que DOI</small>
+            </br>  <small>utilisé par la BNF (Gallica) et plusieurs autres</small>
+            </br>  <small>exemple : <a href="https://gallica.bnf.fr/ark:/12148/bpt6k1523583v/f227.item">gallica.bnf.fr/ark:/...</a></small>
+              <li>ASIN - Amazon Standard Identification Number</li>
+              <small>utilisé et produit par Amazon</small>
+              <li>LCCN ou <i>Library of Congress Control Number</i></li>
+              <small>par la Bibliothèque du Congrès pour catalogage</small>
+         
+    
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Quel type ?
+              </br><small></small></p>
+
+              <ul>
+                <li>2-07-040984-4</li>
+                <small class="fragment">ISBN-10</small>
+                <li>ark:/13030/tf5x49p8qf</li>
+                <small class="fragment">ARK</small>
+                <li>978-2-07-040984-1</li>
+                <small class="fragment">ISBN-13</small>
+                <li>10.1038/nature12394</li>
+                <small class="fragment">DOI</small>
+                <li>urn:isbn:9780143038092</li>
+                <small class="fragment">URI-URN</small>
+                
+                <li>B000002U9A</li>
+                <small class="fragment">ASIN</small>
+              </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. La bibliographie - Citabilité et gestion <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Une bibliographie n'est pas du texte brut
+              </br><small>mais un ensemble de données</small></p>
+            
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_index.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant:small-caps;">
+              Composition d'une référence bibliographique
+            </br><small>
+                
+            </small>
+            </p>
+
+            <span style="color:turquoise">Maclès</span>, <span style="color: blue;">Louise-Noëlle</span>  <span style="color: orange;"><i>La Bibliographie</i></span>.
+             <span
+            style="color: green;"> Que sais-je ? </span><span style="color: red;">Presses universitaires de France</span>,  <span style="color: violet;">1989</span>.
+            </span>
+  
+          </div>
+        </section>
+        
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Termes et abréviations pour références et indications dans les notes
+              </br><small></small></p>
+            <ul>
+              <li>Indication spatiale</li>
+              <small>cf. pour <i>confer</i></small>
+           </br>    <small>in pour <i>in</i></small>
+           </br>    <small>infra pour <i>infra</i></small>
+           </br>    <small>supra pour <i>supra</i></small>
+           </br>    <small>op. cit. pour <i>op. cit.</i></small>
+           </br>    <small>sq. pour <i>sequiturque</i></small>
+           </br>    <small>ibid. pour <i>ibidem</i></small>
+           </br>    <small>loc. cit. pour <i>loco citato</i></small>
+           <li>Donnée inconnue</li>
+           <small>s.n. pour <i>sine nomine</i></small>
+           </br>    <small>s.l. pour <i>sine loco</i></small>
+           </br>    <small>s.d. pour <i>sine data</i></small>
+           </br>    <small>s.l.n.d. pour <i>sine loco nihil dato</i></small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples de normes de présentation
+              </br><small>normes éditoriales / conseils aux auteurs</small></p>
+            <ul>
+              <li><a href="https://pum.umontreal.ca/media/autresfichiers/protocolederedaction.pdf">Études fr (PUM)</a></li>
+              <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571529">PUM</a></li>
+              <li><a href="https://www.editions-eres.com/uploads/documents/conditionsPublication/201906112815eas_normes-editoriales-a-consignes-auteurs_07.11.18_diffusion.pdf">Espace et société</a></li>
+              <li><a href="https://journals.openedition.org/perspective/1419">Perspectives</a></li>
+            </ul>
+            <p>Styles bibliographiques utilisés par la communauté savante</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Formats bibliographiques pour le balisage
+              </br><small>entre autres formats existants</small></p>
+            <ul>
+              <li><b>RIS</b></li>
+              <small>conçu par Research Information Systems - extension .ris</small>
+              <li><b>BibTeX</b></li>
+              <small>logiciel et gestion / format de ref bibliographique</small>
+              <small>d'abord conçu pour structurer les ref pour LaTeX (langage par Leslie Lamport)</small>
+              <small>TeX (Donald Knuth) système pour l'édition de documents techniques - mathématiques</small>
+              <small>celui que l'on va utiliser pour Stylo</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_ris.png" data-background-size="800px" background-color="#21211c">
+         
+        </section>
+        <section data-background-image="media/717_bib.png" data-background-size="1400px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bases de données bibliographiques
+              </br><small></small></p>
+            <ul>
+              <li><a href="https://www.erudit.org/">Érudit</a></li>
+              <li><a href="https://www.cairn.info/">Cairn.info</a></li>
+              <li><a href="https://gallica.bnf.fr/">Gallica</a></li>
+              <li><a href="https://www.banq.qc.ca/">BanQ</a></li>
+              <li><a href="https://isidore.science/">Isidore</a> par HumaNum</li>
+              <li>Mais bien d'autres aussi : <a href="https://libguides.biblio.usherbrooke.ca/az.php">libguides.biblio.usherbrooke.ca/az.php</a></li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Atelier : structuration et recherche bibliographique <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Édition de la bibliographie
+              </br><small>édition savante</small></p>
+            <ul>
+            <li>Vérification des références bibliographiques</li>
+            <li>Mise en forme des références bibliographiques selon les normes éditoriales</li>
+            </ul>
+          </div>
+        </section>
+
+
+
+        <section data-background-color="#fff" data-background-image="media/O_zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Zotero</h6>
+          <ul>
+            <li>2005 - <i>Zotero digital research platform</i>, Dan Cohen et Sean Takats (2006)</li>
+            <li>Logiciel de gestion de références gratuit, libre et open source qui s'inscrit dans la philosophie du Web 2.0</li>
+            <li><i class="material-icons">devices</i> <a href="https://www.zotero.org/user/register" target="_blank">Compte en ligne</a> /
+              <a href="https://www.zotero.org/download/" target="_blank">Standalone</a> (local) + <i class="material-icons">travel_explore</i> <a href="https://www.zotero.org/download/connectors" target="blank">Connecteur Navigateur</a></li>
+              <li><i class="material-icons">help</i> <a href="https://www.zotero.org/support/" target="_blank">Documentation</a></li>
+          
+          </ul>
+
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <h6>Fonctionnalités</h6>
+          <ul>
+            <li>Collecter <b>*</b></br><small>des références bibliographiques en ligne et les conserver</li>
+            </small> <li>
+              Organiser <b>*</b></br><small>ses références en collections et sous-collections, et en attribuant des tags et des
+              marqueurs</small> </li>
+            <li>
+              Citer <b>*</b></br><small>ses références facilement et les exporter/intégrer dynamiquement dans des documents</li>
+            </small><li>
+              Synchroniser <b>*</b></br><small>ses références avec un compte en ligne</small> </li>
+            <li>
+              Collaborer </br><small>échanger ses références ou notes avec d’autres utilisateurs</small> </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/716_index.png" data-background-size="2200px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <h6>Synchronisation</h6>
+        <small>entre compte local et en ligne</small>
+        <ul>
+          <li>1. sur le Zotero Local, sélectionner (haut gauche) l'option de synchronisation </li>
+          <li>2. entrer vos informations</li>
+               </ul>
+<p><a href="https://docs.zotero-fr.org/sync/#">Documentation et pas à pas</a></p>
+      </div>
+    </section>
+      <section  data-background-image="" data-background-size="1200px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Exercice de prise en main</h6>
+        <p>Crawford Matthew. 2010. Éloge du carburateur : Essai sur le sens et la valeur du travail. Traduit de l’anglais par Marc Saint-Upéry. Paris: La Découverte.</p>  
+     <p><a href="https://www.editionsladecouverte.fr/eloge_du_carburateur-9782707160065">lien vers la page de l'ouvrage</a></p>
+        <p>créer une collection : ELD717-entrainement (en ligne ou en local)</p>
+
+        </div>
+      </section>
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6>Plusieurs méthodes d'ajout de références</h6>
+          <ul>
+            <li><i class="material-icons">front_hand</i> Utilisation manuelle</li>
+            <small>1. ouvrir le logiciel (Zotero Standalone) ou la version en ligne
+            </small>
+          </br>     <small>2. créer une nouvelle référence +</small>
+            </br>     <small>3. ajouter les informations dans chacun des champs correspondants </small>
+
+            </br><small>(auteurs, date, titre, édition)
+           </small> 
+        
+          <li><i class="material-icons">link</i> Utilisation agile</li>
+        
+            <small>1. ouvrir le logiciel (Zotero Standalone)
+            </small>
+          </br>     <small>2. rechercher la référence sur le web</small>
+          </br>     <small>3. enregistrer la référence via l’extension du navigateur
+            </small>
+          </br>     <small>4. vérifier et compléter les informations</small>
+        
+          </ul>
+
+          <p>dépend de la structuration de la référence sur les pages sources</p>
+
+        </div>
+      </section>
+      <section data-background-color="#fff" data-background-image="media/zotero.svg" data-background-size="800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+
+          <h6><i class="material-icons">bolt</i> Utilisation magique</h6>
+          <ul>
+            <li>1. ouvrir le logiciel (Zotero Standalone) ou version en ligne </li>
+            <li>2. cliquer sur « Ajouter un élément par son identifiant » dans la barre d’outils Zotero</br><small>icone de baguette magique</small></li>
+            <li>3. copier-coller un numéro d’identification </br><small>ISBN - 9782707160065</small></li>
+                 </ul>
+
+        </div>
+      </section>
+
+      
+   
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Traitement de texte
+            </br><small></small></p>
+       
+
+          <p>Créer une bibliographie (export) - En local </p>
+
+<ul>
+<li>1. Clic droit sur votre collection</li>
+<li>2. Sélectionner l'option « Créer une bibliographie »</li>
+<li>3. Choisir le style (APA 7e) et la langue (Français)</li>
+<li>4. Choisir l'option Bibliographie et « Copier sur le clavier »</li>
+<li>5. Cliquer sur « Ok »</li>
+<li>6. Dans un fichier docx, coller (CTRL+V)</li>
+<small>sert à créer des bibliographies sans travail des citations</small>
+</ul>
+
+
+        </div>
+      </section>
+
+
+      <section 
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Traitement de texte
+          </br><small></small></p>
+          <p><a href="https://docs.zotero-fr.org/word_processor_plugin_usage/#">Utilisation de l'extension Zotero pour Word</a></p>
+
+<ul>
+<li>1. Ajouter Citation</li>
+<small>choix du style de citation : APA 7e</small>
+</br><small>Vue triée ou Vue classique (interface Zotero)</small>
+</br><small>ajout de page, préfixe, suffixe dans le cas de citation multiples</small>
+<li>2. Ajouter Bibliographie</li>
+
+<small>mise à jour automatique</small>
+</ul>
+
+        </div>
+      </section>
+
+      <section 
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Travail de rendu : Traitement de texte
+          </br><small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571716">Normes éditoriales</a></small></p>
+         
+<ul>
+  <li>Zotero : créer une nouvelle collection : ELD717-article pour rassembler les références pour votre article</li>
+  <small>la collection sera utilisée pour le traitement de texte et l'éditeur de texte</small>
+<li>Style bibliographiqu : APA 7e édition</li>
+<li>Citation dans le texte + Bibliographie à la fin</li>
+<small>la bibliographie ne contiendra <b>que</b> les références utilisées dans l'extrait de l'article</small>
+</ul>
+
+        </div>
+      </section>
+     
+
+ 
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Éditeur de texte
+              </br><small>dans Stylo - importer bibliographie</small></p>
+
+              <ul>
+<li>Connecter son compte Zotero avec le compte Stylo</li>
+<small>dans l'onglet du <a href="https://stylo.huma-num.fr/credentials">profil</a>/Comptes externes</small>
+<li>Dans article sur Stylo - Volet Bibliographie</li>
+<small>Importer via Zotero</small>
+              </br><small><b>attention:</b> si des modifications sont apportées dans zotero, il faudra refaire l'importation dans stylo</small>
+              </ul>
+              <p><a href="https://stylo-doc.ecrituresnumeriques.ca/fr/fonctionnalites/bibliographie/">documentation</a></p>
+          </div>
+
+
+          </section>
+
+          <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <p style="font-variant: small-caps;">Éditeur de texte
+                </br><small>dans Stylo - citer</small></p>
+  
+                <ul>
+  <li>Dans le corps du texte - ajouter citation</li>
+  <small>en copiant-collant depuis le volet bibliographie</small>
+                </br><small>ou en utilisant la fonctionnalité de citation automatique, en tapant « @ »</small>
+              </br><small>la citation doit apparaître sur ce modèle : [@nom_titre_date]</small>
+  <li>Plusieurs modes de citation</li>
+  <small>[@nom_titre_date, p. 123] en aperçu donnera (Nom date, 123)</small>
+            </br><small>[-@nom_titre_date] en aperçu donnera (date)</small>    
+            </br><small>[@nom_titre_date ; @nom_titre_date] en aperçu donnera (Nom date ; Nom date)</small>
+            </br><small>Prénom @nom_titre_date[p. 123] en aperçu donnera Nom (date, 123)</small>
+            </br><small>Nom [-@nom_titre_date ; -@nom_titre_date] en aperçu donnera Nom (date ; date)</small>
+</ul>
+                <p><a href="https://stylo-doc.ecrituresnumeriques.ca/fr/fonctionnalites/bibliographie/#int%C3%A9grer-des-r%C3%A9f%C3%A9rences-dans-votre-article">documentation</a></p>
+            </div>
+  
+  
+            </section>
+
+            <section 
+            data-transition="linear" data-transition-speed="fast">
+            <div id="fondop2">
+              <p style="font-variant: small-caps;">Travail de rendu : Éditeur de texte
+              </br><small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571717">Indications éditoriales</a></small></p>
+             
+    <ul>
+      <li>Utiliser la collection ELD717-article pour votre article dans Stylo</li>
+      
+    <li>Citation dans le texte</li>
+    <small>selon les différents modes d'édition</small>
+    <li>La bibliographie est intégrée automatiquement à la fin</li>
+    <small><b>MAIS</b> ne pas oublier de l'introduire avec un titre « Bibliographie »</small>
+
+    </ul>
+    
+            </div>
+          </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>4. Travail de rendu – modalités et précisions <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Répartition des articles
+            </br><small></small></p>
+          <ul>
+            <li><b>Article 1</b></li>
+            <small>Gabrielle, Sophie, Alexe, Lisa</small>
+            <li><b>Article 2</b></li>
+            <small>Thomas, Joelle, Katia, Arielle</small>
+            <li><b>Article 3</b></li>
+            <small>Laurie, Suzanne, Aude, Marie-Paule</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Modalités de rendu
+            </br><small></small></p>
+          <ul>
+          <li>DOCX</li>
+          <small>sur Moodle</small>
+          <li>Stylo</li>
+          <small>Partage de l'article avec margot.mellet@umontreal.ca</small>
+          </ul>
+          <p>nom du document (Word et Stylo) : VotreNom_Article</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Rappel
+            </br><small></small></p>
+          <ul>
+        <li>L'édition des articles via traitement de texte se fait selon les normes éditoriales</li>
+        <small>pas en imitation avec le pdf de l'article</small>
+          </br><small>les normes éditoriales ne sont pas exhaustives : liberté d'édition</small>
+        <li>Le résumé concerne l'article entier</li>
+        <small>mais sera le même entre le traitement et l'éditeur de texte</small>
+        <li>De préférence : si vous faîtes des modifications dans le texte : indiquer dans un commentaire</li>
+        <small>transformation de phrase, de mise en forme</small>
+            </ul>
+        </div>
+      </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+   <b>Remise de la première étape d’établissement du texte savant (30%)</b>
+      </div>
+    </section>
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

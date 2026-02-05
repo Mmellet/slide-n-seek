@@ -1,0 +1,1076 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 5 : Les modèles de légitimation des textes savants (L'évaluation par les pairs)</h5>
+          <small>Partie cours</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <p style="font-variant: small-caps;">Retour sur la séance passée
+          </br> <small>Édition scientifique : adaptation des pratiques</small>
+            <small>connaissance de sa machine – de ses fonctionnements, limites</small>
+   </p>
+            <p>Suggestion pour le cours : fin de la séance</p>
+          
+        </div>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <p style="font-variant: small-caps;">Retour sur le Travail d'Établissement du Texte Savant
+          </p>
+          <ul>
+            <li>Différence entre éditeur/traitement de texte – Fond/Forme</li>
+       
+            <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585717">Récapitulatif du travail à rendre</a></li>
+            <small>Titre « Bibliographie » en fin d'article dans Stylo</small>
+          </ul>
+          <p>rappel : bien lire la documentation donnée sur Moodle</p>
+          <small>
+            <ul>
+              <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571716">Normes éditoriales</a></li>
+              <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3571717">Indications éditoriales</a></li>
+              <li><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3552733">Grille d'évaluation</a></li>
+            </ul>
+          </small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Évaluation par les pairs <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop">
+            <p style="font-variant: small-caps;">Garantir une scientificité
+            </p>
+            <ul>
+            <li>Avancement des connaissances dans une discipline</li>
+            <li>Respect des critères universitaires et standards académiques</li>
+            <li>Prévention de l'arbitraire</li>
+             <li>Aide au travail d'accompagnement éditorial</li>
+        
+                 <small>différente de la première lecture du comité éditorial/coordination/lecture</small>
+              </ul> </div>
+  
+        </section>
+
+      
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modes de l'évaluation par les pairs
+              </br><small></small></p>
+            <ul>
+              <li><b>Double-aveugle</b></li>
+              <small>anonymat réciproque entre l'évaluateur·rice et l'auteur·e</small>
+            </br> <small>envoi de contenus anonymisés entre auteur et évaluateur par l'intermédiaire de l'éditeur</small>
+                 <li><b>Simple-aveugle</b></li>
+                 <small>anonymat de l'évaluateur·rice envers l'auteur·e</small>
+                </br>  <small>envoi d'un contenu non-anonymisé de l'auteur vers l'évaluateur - anonymisé de l'évaluateur vers l'auteur</small>
+             
+              <li><b>Ouverte</b></li>
+              <small>l'auteur·e et l'évaluateur·rice connaissent leurs identités respectives</small>
+            </br>  <small>pas d'anonymisation – envoi des documents – réception – renvoi</small>
+          
+            </ul>
+            <li>À chaque étape : vérification des documents qui sont envoyés</li>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+           
+            <table style="font-size: 26px;">
+              <thead>
+                <tr>
+                  <th>Forces</th>
+                  <th>Risques</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Moyen le plus juste pour garantir les standards académiques.</td>
+                  <td>Risque de manque de rigueur lorsque les évaluations sont rapides ou superficielles.</td>
+                </tr>
+                <tr>
+                  <td>Apporte un jugement non commercial axé sur la qualité et la contribution au savoir.</td>
+                  <td>Possibilité de biais personnels ou idéologiques, surtout dans les petites communautés académiques.</td>
+                </tr>
+                <tr>
+                  <td>Protège le processus de l'ingérence politique directe, notamment pour l'octroi de fonds.</td>
+                  <td>Tendance au conservatisme qui peut freiner les approches nouvelles ou innovantes.</td>
+                </tr>
+                <tr>
+                  <td>Aide les auteurs à améliorer leurs travaux grâce aux critiques constructives.</td>
+                  <td>Difficulté à trouver des évaluateurs qualifiés et disponibles pour des sujets très spécialisés.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Limites des modes
+              </br><small>Double ou simple aveugle</small></p>
+            <ul>
+              <li>Anonymat</li>
+             <small>le monde académique fonctionne en réseau</small>
+              <li>Objectivité</li>
+           
+              <small> « loi de l'entropie savante » ou « fossilisation » (John Leyerle)</small>
+              <li>Conflit d'intérêt</li>
+              <small>multiples et déguisés</small>
+              <li>+ question de l'accompagnement des chercheurs émergents</li>
+                  </ul>
+          </div>
+        </section>
+
+     
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Limites des modes
+            </br><small>Ouverte</small></p>
+            <ul>
+              <li>Plus une lecture qu'une évaluation</li>
+              <small>mode du dialogue</small>
+               <li>Moins de reconnaissance</li>
+               <small>auprès des institutions officielles</small>
+              <li>Moins populaire</li>
+              <small>refus de ce mode d'évaluation</small>
+            </ul>
+            <p>Deux approches de ce que peut être l'évaluation par les pairs</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Documents autour de l'évaluation
+              </br><small>fournis aux évaluateurs par la structure éditoriale</small></p>
+            <ul>
+              <li>Formulaire d'évaluation</li>
+              <small>avec plusieurs critères</small>
+            </br><small>cases à cocher ou espace de commentaires</small>
+          </br><small>décision finale : publiable en l'état, sous réserve de modifications mineures, sous réserve de modifications majeures, non-publiable</small>
+         </br><small>exemples : <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585920">Communications</a>, <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585921">Imaginations</a>, <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585922">Sens public (ancien)</a>, 
+        <a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585923">Tangence</a></small>
+          <li>Notice d'information pour les évaluateurs</li>
+          <small>description des attentes et des critères</small>
+       
+            </ul>
+            <p>2 évaluations/manuscrit au minimum (si opposées, besoin d'une troisième)</p>
+            <small>processus sélectif et long : variation du taux d'acceptation selon les structures éditoriales</small>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemples – Peer-review classique
+              </br><small></small></p>
+            <ul>
+              <li>Relecture de retours d'évaluation</li>
+              <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585930">Publiable en l'état</a></small>
+            </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585931">Modifications mineures</a></small>
+          </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585932">Modifications majeures</a></small>
+        </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585933">Refus 1</a></small>
+      </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585934">Refus 2</a></small>
+    </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585936">Refus 3</a></small>
+  </br> <small><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585937">Refus 4</a></small>
+            </ul>
+            <p>Important d'accompagner les auteurs dans la réception des évaluations</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple – Peer review ouverte
+              </br><small></small></p>
+            <ul>
+              <li>Expérimentation avec la revue <i>Sens public</i> avec Stylo et Hypothesis (outil d'annotation)</li>
+              <small>rapport : <a href="https://www.revue20.org/les-publications/rapport-de-recherche-evaluation-ouverte-par-les-pairs#fnref:2">https://www.revue20.org/les-publications/rapport-de-recherche-evaluation-ouverte-par-les-pairs#fnref:2</a></small>
+           
+              <li>lien vers l'évaluation du texte de Tony Gheeraert : <a href="https://stylo.huma-num.fr/article/6966536f5bcdc100280f9a4d/version/69665fd55bcdc100280fed23/annotate">https://stylo.huma-num.fr/article/6966536f5bcdc100280f9a4d/version/69665fd55bcdc100280fed23/annotate</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le cas des actes de colloque
+              </br><small>un cas délicat</small></p>
+            <ul>
+              <li>Sélection des articles par les directeurs du dossier</li>
+              <small>confiance en leur expertise</small>
+             
+              <li>Implication variable des directions de dossier</li>
+              <small>plus de travail de révision et évaluation</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Trop d'évaluation tue l'évaluation ?
+              </br><small></small></p>
+            <ul>
+              <li>Exemple d'une thèse qui serait publiée en monographie et candidate pour le PAES</li>
+              <small>1. évaluation des directeurs et jury de la thèse</small>
+            </br> <small>2. évaluation interne à la structure éditoriale auprès d'experts</small>
+          </br>  <small>3. évaluation interne du PAES</small>
+            </ul>
+            <p>les évaluations sont motivées chacune en fonction du contexte</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Intervention des organismes de financements
+              </br><small>comme La Fédération canadienne des sciences humaines – CFH</small></p>
+            <ul>
+           
+              <li>Le système d'octroi des subventions repose aussi sur l'évaluation par les pairs</li>
+              <small>validation scientifique</small>
+              <li>Système à double détente :</li>
+              <small>détermine l'acceptation par l'éditeur et l'obtention des subventions</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Controverses scientifiques
+              </br><small></small></p>
+            <ul>
+              <li>Hoaxes scientifiques</li>
+              <small>Affaire Sokal en 1996</small>
+            </br>    <small>Canular Sokal au carré</small>
+          
+              <li><b>Casseroles des revues</b></li>
+              <small>Cas Idriss Aberkane sur Sens public</small>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Pratique : Gestion d'évaluation <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Processus d'évaluation
+              </br><small>Étape la plus longue du processus éditorial</small>
+            </br>1. Établir une liste d'évaluateurs potentiels (5 noms)</p>
+            <ul>
+              <li>Critères de sélection</li>
+              <small>Parité : les femmes ont tendance à plus évaluer que les collègues masculins</small>
+            </br>  <small>Diversité : des approches, des francophonies, des disciplines</small>
+          </br>    <small>Impartialité : lien avec l'auteur pour éviter le conflit d'intérêt </br>(institution différente, pas de collaboration passée, ou de direction passée)</small>
+              
+          
+        <li>Francophonie : restreint le nombre de spécialistes potentiels</li>  
+        <small>certains anglophones lisent le français, possibilité de produire une évaluation en anglais pour un texte en français</small>
+          </ul>
+      </div>
+    </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Processus d'évaluation
+            </br>2. Demande – 2 à 3 évaluateurs</p>
+           <ul>
+        <li>Courriel type</li>
+        <small>avec titre + résumé de l'article</small>
+      </br>   <small>informations contextuelles (dossier) sans nom de l'auteur</small>
+           </br><small>date de réception souhaitée pour l'évaluation (3 semaines pour une article ; 1-2 mois pour un manuscrit)</small>
+          </br><small>suggestion de collègues ou autres personnes pour faire l'évaluation</small>
+        </ul>
+      </div>
+    </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Processus d'évaluation
+            </br>3. Attente de réponse (1 semaine - 1 semaine et demi)</p>
+           <ul>
+         <li>Sans réponse : nouvelle demande à un nouveau évaluateur</li>
+         <small>relance déconseillée</small>
+        </ul>
+      </div>
+    </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Processus d'évaluation
+            </br>4. Réponse </p>
+           <ul>
+
+            <li><b>Si oui</b> : envoi du document anonymisé ou non / + documentations</li>
+              <small>rappel de la date de réception souhaitée</small>
+              </br><small>possible petit rapport à mi-parcours si on est sur une durée longue</small>
+            </br><small>une fois la date de rappel dépassée : rappel poli</small>
+              
+              <li><b>Si non</b> : déterminer pourquoi</li>
+              <small>profil mal ciblé → mettre à jour les informations ou mauvaises compréhension de l'article en amont</small>
+            </br>    <small>manque de disponibilité : donner un nouveau délai ?</small>
+          </br><small>refus de la modalité de l'évaluation</small>
+        </ul>
+      </div>
+    </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Processus d'évaluation
+            </br>5. Réception de l'évaluation </p>
+           <ul>
+                       <li>Vérification des évaluations</li>
+              <small>le propos, les informations, la justesse</small>
+              </br><small>Attente des deux évaluations avant transmission à l'auteur</small>
+            </ul>
+          </div>
+        </section>
+            <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant: small-caps;">Processus d'évaluation
+                </br>6. Transmission de l'évaluation </p>
+               <ul>
+         
+              <li><b>Accompagner la réception</b> : résumé dans le courriel </li>
+            <small>date pour le retour de la version de l'article après prise en compte des évaluations</small>
+              </br><small>puis suivi de la nouvelle version, possible implication de l'évaluateur sur la nouvelle version</small>
+               </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Organisation des évaluations
+              </br><small>Pour garantir les critères de sélection des évaluateurs</small></p>
+            <ul>
+              <li>Tableau ou Banque de données pour les noms d'évaluateurs et le suivi des évaluations</li>
+              <small>disciplines, fréquence d'évaluation</small>
+            </br><small>carnet d'adresses pour les évaluateurs</small>
+                    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Répartition linguistique – Cahiers de géographie du Québec
+              </br><small>février 1988</small></p>
+            <table style="font-size: 28px;">
+              <thead>
+                <tr>
+                  <th>Langue</th>
+                  <th>Chiffre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Francophones</td>
+                  <td>287</td>
+                </tr>
+                <tr>
+                  <td>Anglophones</td>
+                  <td>73</td>
+                </tr>
+                <tr>
+                  <td>Autres</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td><b>Total</b></td>
+                  <td><b>377</b></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Répartition professionnelle – Cahiers de géographie du Québec
+              </br><small></small></p>
+            <table style="font-size: 14px;">
+              <thead>
+                <tr>
+                  <th>Discipline</th>
+                  <th>Chiffre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Géographie sociale</td>
+                  <td>86</td>
+                </tr>
+                <tr>
+                  <td>Géographie culturelle</td>
+                  <td>77</td>
+                </tr>
+                <tr>
+                  <td>Géographie historique</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>Géographie économique</td>
+                  <td>45</td>
+                </tr>
+                <tr>
+                  <td>Géographie politique</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>Géographie urbaine</td>
+                  <td>43</td>
+                </tr>
+                <tr>
+                  <td>Géographie rurale</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>Aménagement</td>
+                  <td>40</td>
+                </tr>
+                <tr>
+                  <td>Environnement</td>
+                  <td>41</td>
+                </tr>
+                <tr>
+                  <td>Population</td>
+                  <td>22</td>
+                </tr>
+                <tr>
+                  <td>Méthodes et techniques</td>
+                  <td>57</td>
+                </tr>
+                <tr>
+                  <td>Épistémologie</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td>Didactique</td>
+                  <td>15</td>
+                </tr>
+            
+                <tr>
+                  <td>Géographes</td>
+                  <td>197</td>
+                </tr>
+                <tr>
+                  <td>Aménagistes-urbanistes</td>
+                  <td>27</td>
+                </tr>
+                <tr>
+                  <td>Historiens</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>Sociologues</td>
+                  <td>20</td>
+                </tr>
+                <tr>
+                  <td>Économistes</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>Autres</td>
+                  <td>102</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Répartition géographique – Cahiers de géographie du Québec
+              </br><small>février 1988</small></p>
+            <table style="font-size: 24px;">
+              <thead>
+                <tr>
+                  <th>Lieu</th>
+                  <th>Chiffre</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Québec (Univ. Laval)</td>
+                  <td>75</td>
+                </tr>
+                <tr>
+                  <td>Québec (secteurs public/privé)</td>
+                  <td>63</td>
+                </tr>
+                <tr>
+                  <td>Montréal (Universités, INRS, etc.)</td>
+                  <td>96</td>
+                </tr>
+                <tr>
+                  <td>Autres lieux au Québec</td>
+                  <td>33</td>
+                </tr>
+                <tr>
+                  <td>Reste du Canada</td>
+                  <td>54</td>
+                </tr>
+                <tr>
+                  <td>Europe</td>
+                  <td>39</td>
+                </tr>
+                <tr>
+                  <td>États-Unis</td>
+                  <td>11</td>
+                </tr>
+                <tr>
+                  <td>Autres régions du monde</td>
+                  <td>6</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple – Sens public
+              </br><small>entre automne 2024 et automne 2025 - Dossier BnF (15 articles)</small></p>
+            <ul>
+              <li><b>Nombre</b> : 65 sollicitations</li>
+              <small>soit plus de 3 demandes par article</small>
+              <li><b>Genre</b> : 35 femmes et 30 hommes</li>
+              <small>sur 30 hommes : 11 n'ont pas répondu ; 12 ont refusé ; 7 l'ont fait</small>
+            </br>  <small>sur 35 femmes : 13 n'ont pas répondu ; 8 ont refusé ; 14 l'ont fait</small>
+              <li><b>Provenance</b> :</li>
+              <small>20 Amérique du Nord (16 Québec) ; (4 États-Unis)</small>
+            </br>  <small>44 Europe (41 France) : (3 Suisse)</small>
+            </br>  <small>1 Asie</small>
+           
+              <li><b>Succès</b> – 1 eval sur 3 pour accepter de faire le travail</li>
+              <small>22 sans suivi – pas de réponse ou réponse oui puis plus de réponse malgré les relances</small>
+            </br>  <small>21 négative – donc non direct ou d'abord oui puis rétraction</small>
+            </ul>
+          </div>
+        </section>
+            <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant: small-caps;">Exemple – Sens public
+                  </br><small>entre automne 2024 et automne 2025 - Dossier BnF (15 articles)</small></p>
+                <ul>
+            <li><b>Raisons principales</b> :</li>
+              <small>pas le temps : 9</small>
+            </br>  <small>pas spécialiste ou pas d'intérêt pour le sujet : 8</small>
+            </br>  <small>suggestion de collègues : 10</small>
+            </br>  <small>plus tard : 2</small>
+            </br>  <small>refus du mode d'évaluation : 1</small>
+            </br>  <small>refus de faire une évaluation quelle qu'elle soit : 1</small>
+            </br>  <small>courriels perdu – 2</small>
+              <li>21 évaluations complétées</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Remarques
+              </br><small></small></p>
+            <ul>
+              <li>Plus dur de trouver des évaluateurs pour des sujets nichés : mais plus susceptibles d'accepter et de s'investir dans le travail d'évaluation</li>
+              <small>Bien cibler les évaluateurs potentiels = moitié du travail</small>
+              <li>exemple : « Usages, pratiques et valorisation des herbiers numérisés dans la recherche à la BnF », article de Tassanee Alleau et Luc Menapace</li>
+              <small>sur herbiers médiévaux et renaissants … numérisation</small>
+              </br><small>difficulté à trouver des évaluateurs MAIS taux de succès de réponse à 100 %</small>
+            </br>    <small>collaboration future entre auteures et évaluatrice</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Rechercher des évaluateurs potentiels
+              </br><small></small></p>
+            <ul>
+              <li>à partir des thématiques, des perspectives disciplinaires</li>
+              <small>site des spécialistes des départements universitaires</small>
+            </br><small>dans la bibliographie de l'article</small>
+                 <li>Poste universitaire en recherche</li>
+              <small>dans des cas exceptionnels – artistes ou praticiens</small>
+          </br><small>doctorants ou post-doctorants si l'article est celui d'un étudiant</small>
+              <li>Contrôle du conflit d'intérêt – voir à partir du cv de l'auteur et des plateformes ORCID ou HAL</li>
+              <small>- s'il y a eu direction de recherche – hiérarchie ou collaboration passée</small>
+            </br>      <small>- si autres relations externes</small>
+                    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Difficultés principales
+              </br><small></small></p>
+            <ul>
+              <li><b>Variation de la rigueur</b></li>
+              <small>évaluation trop rapides, trop superficielles</small>
+                 <li><b>Biais</b></li>
+              <small>personnel = repérer les potentiels conflits d'intérêt – reste dans une communauté</small>
+            </br>       <small>idéologique = rappel de la posture de l'évaluateur dans le document aux évaluateurs</small>
+       
+              <li><b>Éditoriale/opérationnelle</b> :</li>
+              <small>difficulté d'identifier des évaluateurs (dépendamment de la documentation des expertises par les universités)</small>
+            </br>       <small>difficulté d'en trouver des disponibles (crise de l'écriture)</small>
+     </br>       <small>difficulté de tenir des délais</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Pour le travail
+              </br><small>5 évaluateurs potentiels pour votre article</small></p>
+            <ul>
+              <li>Présentation : Nom, Prénom (Institution(s) de rattachement) : justification (thématique de recherche
+                avec mention des thématiques, publication d’un ouvrage sur un sujet analogue avec titre de
+                l’ouvrage en question, participation à un projet sur le même sujet avec mention du titre du projet,
+                etc.). Source (optionnel pour identifier là où vous avez trouvez vos informations)</li>
+             
+            </ul>
+            <p>Vérifier les critères de sélection des évaluateurs</p>
+          </br><small>Auteurs pour les articles : 1. Florence Adrover ; 2. Alexandre Faye
+            Sara Aubry, 
+            Géraldine Camile, 
+            Sarah Dietz, 
+            Charles Riondet
+            Chloé Sussan-Molson, 
+            Jasmine Fejzovski ; 3. Anthony Voisard</small>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actualité de l'édition savante francophone 
+            </br><small></small></p>
+          <ul>
+            <li>Publication d'une <a href="https://reseaucirce.org/wp-content/uploads/2026/01/Charte_ethique_edition-savante_BDA_Ulaval_2025.pdf">Charte sur l'éthique dans l'édition savante</a> (Université Laval, Réseau Circé)</li>
+          <li>Rappel de Recherche de Bénévoles pour la 18e édition des Rencontres interprofessionnelles du secteur du livre  </li>
+          <small>toutes personnes intéressées : m'écrire à margot.mellet@usherbrooke.ca</small>
+          <li>Moment des annonceurs pour LQ pour le numéro 200 de Mars 2026 - LQ 50 ans</li>
+          <small>possibilité d'insérer des annonces dans les pages du numéro</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        <p><a href="https://auth.wikimedia.org/wikidatawiki/wiki/Special:CreateAccount?useformat=desktop&usesul3=1&returnto=Wikidata%3AMain+Page&centralauthLoginToken=aab119b1ab9a6b09990e5b4a5a12a4d1">Création d'un compte Wikidata</a></p>
+      </div>
+    </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

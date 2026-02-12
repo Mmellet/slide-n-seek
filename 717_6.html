@@ -1,0 +1,930 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 6 : Les métadonnées et données structurées (Les mots-clefs)</h5>
+          <small>Partie cours</small>
+        </div>
+
+      </section>
+
+
+         <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Compléments sur le conflit d'intérêts </h5>
+         
+            <p>Une personne est en conflit d'intérêt avec une autre si :</p>
+            <ul>
+              <li>Il y a direction ou codirection de travaux</li>
+              <li>Il y a situation d'interaction professionnelle avec la personne</li>
+              <li>Il y a eu liens de collaborations (projets de recherche, publications) au cours des 5 dernières années</li>
+              <li>Il y a ou il y a eu des liens personnels (ancien étudiant, parent, relation amicale ou hostile)</li>
+            </ul>
+          </div>
+        </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Les Métadonnées - principes <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition
+            </p>
+            <p>donnée relative à une autre donnée</p>
+            <p>Les métadonnées sont l'ensemble des informations normalisées qui décrivent une ressource et permettent sa découverte, sa gestion et sa réutilisation. </p>
+            <ul>
+              <li>Ensemble structuré de données normalisées</li>
+<small>selon des modèles, des schémas</small>
+              <li>Description du contenu d'un ouvrage</li>
+              <small>caractéristiques, informations contextuelles</small>
+             
+            </ul>
+            <p> <b>Fiabilité</b> et <b>Bonne interprétation</b> des contenus</p>
+            <small>Médiation</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fonctions
+            </p>
+            <ul>
+              <li><b>Décrire</b> une ressource</li>
+              <small>tout au long de son cycle de vie</small>
+                 <li><b>Identifier</b> une ressource</li>
+              <small>bien citer et suivre l'impact scientifique</small>
+              <li><b>Gérer</b> cette ressource</li>
+              <small>classer, exploiter, réutiliser, préserver</small>
+            </ul>
+            <p>particulièrement importantes dans le contexte numérique (Web sémantique)</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Plusieurs types
+            </p>
+            <ul>
+              <li><b>Descriptives</b></li>
+              <small>Titre, auteur·rice, résumé, sujets, mots‑clés, collection, public visé, langue, etc.</small>
+              <li><b>Techniques</b></li>
+              <small>Format de fichier, taille, résolution, durée, type de support, logiciel ou matériel utilisé pour créer le fichier, etc.</small>
+              <li><b>Administratives / de gestion</b></li>
+              <small>Droits d'auteur, licences, conditions de diffusion, informations juridiques, historique des versions, personnes ou institutions responsables, etc.</small>
+              <li><b>Structurelles</b></li>
+              <small>Relations entre différentes parties d'une ressource (chapitres d'un livre, dossiers et sous‑dossiers, épisodes d'une série, fichiers composant un corpus, etc.)</small>
+              <li><b>De préservation</b></li>
+              <small>Informations nécessaires pour maintenir l'accessibilité à long terme : formats, migrations, contrôles d'intégrité, dépendances logicielles, etc.</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Importance des métadonnées
+            </br><small>1. Visibilité et découvrabilité</small></p>
+           <p>Un document sans métadonnées de qualité est pratiquement invisible : il ne remonte pas dans les recherches, n’est pas recommandé et n’entre pas dans les circuits de diffusion. </p>
+          
+            <p>identification de la ressource par la machine</p>
+            <small>catalogues, bases de données, plateformes commerciales, moteurs de recherche</small>
+              </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Importance des métadonnées
+            </br><small>2. Catalogage</small></p>
+            <ul>
+              <li>Cœur du catalogage</li>
+              <small>bibliothécaires, libraires, documentalistes</small>
+              <li>Organiser les travaux par sujet, collection, niveau, etc.</li>
+              <small>regrouper, rechercher, produire des notices documentées</small>
+            </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Importance des métadonnées
+            </br><small>3. Accessibilité</small></p>
+            <ul>
+            
+              <li>Permet d'obtenir des résultats de recherche cohérents</li>
+              <small>filtre et requêtes + recommandations algorithmiques</small>
+             
+            </ul>
+            <p>Métadonnées présentes et cohérentes</p>
+            <small>pour que l'ouvrage soit plus aisément repérable, sélectionnable, achetable</small>
+          </div>
+        </section>
+
+
+			<section data-background="media/717_michel.png" data-background-size="1400px">
+				<div id="fondop2">
+
+					<h5>Exemple : <i>La Carte et le territoire</i> des deux Michel</h5>
+
+
+					<ul>
+						<li>Lévy (1999) ; Houellebecq (Goncourt, 2010)</li>
+						<li>Autour du principe de sémantique générale d'A. Korzybski, « la carte n'est pas le territoire »</li>
+						
+					</ul>
+					<p>Difficulté de distinction entre les deux ouvrages</p>
+				</div>
+			</section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Impact sur le marché et les ventes de livres
+            </br><small>Étude statistique de la BTLF</small></p>
+            <ul>
+              <li>Les titres avec métadonnées se vendent significativement plus que les titres sans métadonnées</li>
+              <li>Métadonnée importante : imagette</li>
+              <small>impact sur la découvrabilité des ventes + synergie entre les métadonnées</small>
+            
+              <li>Effet pré-parution</li>
+              <small>diffusion de métadonnées (titre, auteur, thème) et imagette avant la date de parution</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Défis d'indexation et de visibilité
+            </br><small>pour les publications savantes en français</small></p>
+            <ul>
+              <li>Moins d'indexation sur les bases de données internationale</li>
+          
+              <li>Moins de prestiges – moins lecture, moins de citation</li>
+              <li>citabilité / facteur d'impact : mesure de la citation de l'ouvrage</li>
+            </ul>
+            <p>impacts concrets sur la progression des carrières scientifiques et la reconnaissance du travail d'édition</p>
+          </div>
+        </section>
+        </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+          <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <h5>2. Les Métadonnées - techniques <i class="material-icons">
+             south
+              </i></h5>
+            </div>
+          </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeu de l'interopérabilité
+            </p>
+            <ul>
+              <li>Possibilité de passer d'un format à un autre</li>
+              <small>en préservant l'information et sa structure</small>
+            </ul>
+            <p>Besoin d'uniformité et de standardisation</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Normalisation
+          </br><small>ensemble de normes, schémas, vocabulaires, directives</small></p>
+            <ul>
+              <li>Identifiants pérennes uniques</li>
+              <small>ISBN, ISSN, DOI, URI, Orcid, etc.</small>
+              <li>Thésaurus contrôlés</li>
+              <small>pour les sujets, les mots-clefs, les concepts</small>
+            </ul>
+         
+          </div>
+        </section>
+        
+
+
+        <section data-background-image="media/717_dc.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Utilisation de schémas standardisés
+            </br><small>Dublin Core</small></p>
+            <ul>
+              <li>Standard qui permet de décrire les documents numériques par la Dublin Core Metadata Iniative (DCIM)</li>
+              <small>avec 15 propriétés de base pour décrire le contenu (Dublin Core element set)</small>
+            </br>   <small>pour le contenu : titre, description, source, langue, relation, couverture</small>
+</br><small>pour la propriété intellectuelle : créateur, contributeur, éditeur, gestion des droits</small>
+</br><small>pour l'instanciation : date, type, format, identifiant</small>
+
+            <li>et des éléments supplémentaires (Dublin Core metadata terms)</li>
+            <small>catégories : résumé, format de fichier, collection, etc.</small>
+</br><small>qualificatifs : nom de famille du créateur, etc. </small>
+            </ul>
+           <p>équivalents pour l'édition commerciale (ONIX); pour les bibliothèques (MARC)</p>   </div>
+        </section>
+
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">XML
+            </p>
+            <ul>
+              <li>Format quasi indispensable aujourd'hui</li>
+              <small>pour la diffusion sur Érudit</small>
+             <li>Exportation dans des formats spécifiques (ePub, Mobipocket)</li>
+             <small>lectures sur différents supports (tablette, liseuse)</small>
+            </ul>
+            <p>Structuration des contenus numériques</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><a href="https://www.erudit.org/xsd/article/3.0.0/en/doc/schemas/eruditarticle_xsd/schema-summary.html">XML-Érudit</a>
+            </p>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définir des liens entre les données
+            </br><small>Modèle RDF ou Resource Description Framework</small></p>
+            <ul>
+              <li>Modèle de données pour représenter et décrire des ressources sur le Web</li>
+              <li>Structure l'information en triplets (sujet, prédicat, objet) = relation</li>
+            
+              <small>Ex: "X" [sujet] "est l'auteur de" [prédicat] "Y" [objet]</small>
+             
+              <li>Modèle flexible, extensible et interopérable</li>
+              <small>parfois écrit en XML</small>
+              <li>Permet de créer des liens logiques entre les données</li>
+              <small><i>Querelle de Roberval</i> et syndicalisme</small>
+              </ul>
+          
+          </div>
+        </section>
+  
+    
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bonnes pratiques
+            </p>
+            <ul>
+              <li>Hygiène technique pour éviter le GIGO</li>
+              <small><i>garbage in, garbage out</i></small>
+             <li>Sens privilégié sur le style</li>
+             <small>pas de manipulation de l'apparence visuelle</small>
+             <li>Nettoyage du formatage</li>
+             <small>pas de copier-coller depuis Microsoft ou traitement-texte</small>
+            </ul>
+           <p>autre principe: FAIR (Findable, Accessible, Interoperable, Reusable)</p>
+          </div>
+        </section>
+
+
+       
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Les Mots-clefs <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Pour le travail
+              </br><small>5 mots-clefs pour votre article</small></p>
+            <ul>
+              <li>Respect des critères de sélection (pertinence, diversité, équilibre)</li>
+              <li>Indiquer une définition (et source)</li>
+              <li>Alignement sur les standards existants (minimum 2)</li>
+              <li>Jusitifer d'une phrase le lien à l'article</li>
+            </ul>
+            <p><a href="https://moodle.usherbrooke.ca/mod/resource/view.php?id=3585717">Récapitulatif du travail à rendre</a></p>
+         
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Critères pour édition des mots-clefs
+            </p>
+            
+            <ul>
+              <li>Pertinence</li>
+              <small>lien à l'article</small>
+              <li>Diversité</li>
+              <small>variété entre les mots-clefs</small>
+            </br><small>vocabulaire cohérent avec les standards existants</small>
+              <li>Équilibre</li>
+             <small>entre généricité et fidélité au contenu</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Structure de rendu
+            </p>
+            
+            <p>Mot-clef : définition (source). Standards (avec url ou uri selon les cas). Justification
+              (lien à l’article, équilibre avec les autres mots-clefs).</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Base de données de mots-clefs ou Thésaurus de vocabulaire contrôlé
+            </p>
+            
+            <ul>
+          <li>Identifiant <a href="https://catalogue.bnf.fr/recherche-autorite.do">Rameau</a> avec la BnF</li>
+          <li><a href="https://rvmweb.bibl.ulaval.ca/rvmweb/accueil.do">Répertoire de vedettes-matière de l'Université Laval (RVM)</a></li>
+         <li><a href="https://eur-lex.europa.eu/browse/eurovoc.html?locale=fr">Eurovoc – international</a></li>
+       
+          <li><a href="https://www.idref.fr/">IdRef</a></li>
+          <li><a href="https://vocabularies.unesco.org/browser/thesaurus/en/">Uri Unesco</a></li>
+          <li><a href="https://www.wikidata.org/">Wikidata</a></li>
+        
+          <li><a href="https://pactols.frantiq.fr/">PACTOLS</a> pour les SHS</li>
+          <li><a href="https://www.reseau-canope.fr/motbis/accueil">Motbis</a> pour la bibliothéconomie</li>
+        </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Atelier Wikidata <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qu'est ce que Wikidata ?
+            </p>
+            <ul>
+              <li>Base de données structurées collaborative, multilingue</li>
+              <small>cœur de données pour les projets de la Wikimedia Foundation</small>
+            </ul>
+            <p>Fonctionnement communautaires par fiche/notice/page</p>
+                 
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Quelles données dans Wikidata ?
+            </br><small></small></p>
+            <p></p>
+            <ul>
+              <li><b>Unités de base</b> : items/éléments (Q), propriétés (P), lexèmes</li>
+              <li>1 Élément (identifiant Q[nombre]) : un concept, une personne, un lieu, une œuvre, un évènement, etc.</li>
+              <small>avec des déclarations (triplet), alias, liens, identifiants</small>
+            </ul>
+          
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fonctionnement communautaire
+            </p>
+            <p>Tout utilisateur peut :</p>
+            <ul>
+              <li>créer des items</li>
+              <li>proposer ou discuter des propriétés</li>
+              <li>modifier les notices, ajouter des sources, corriger des erreurs</li>
+            </ul>
+            <p>Chaque modification :</p>
+            <ul>
+              <li>est versionnées</li>
+              <li>peut être surveillée</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bonnes pratiques
+            </p>
+            <ul>
+              <li><b>sourcer</b> – et privilégier des sources reconnues
+                <small>catalogues d'autorité, dictionnaires, registres officiels, publications académiques, etc.</small>
+              </li>
+              <li><b>respecter les critères de qualité</b>
+                <small>complétude : proportion des champs renseignés</small>
+                <br><small>cohérence : absence de contradictions, respect des contraintes</small>
+                <br><small>fiabilité des sources : qualité et diversité des références</small>
+              </li>
+            </ul>
+            <p>Avant de créer une page : vérifier si la page n'existe pas + assez d'informations pour répondre aux 3 critères</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Projet <a href="http://www.wikidata.org/wiki/Wikidata:Réseau_Circé">Wiki du Réseau Circé</a>
+           </p>
+           <ul>
+            <li>Structurer les informations autour des revues savantes</li>
+            <li>Réflexion sur un modèle de données Wikidata pour les revues savantes (et articles savants, et auteurs et institutions savantes)</li>
+           </ul>
+           <p>exemple de notice Wikidata pour revue : <a href="https://www.wikidata.org/wiki/Q3478606">Sens public</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Atelier
+            </p>
+            <p><b>1.</b> Modification de la page utilisateur</p>
+            <ul>
+              <li>cliquer sur votre nom Utilisateur et <b>Créer</b> à droite
+                <small>page publique mais seulement vous pouvez l'éditer</small>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p><b>2.</b> Modifications de pages existantes</p>
+            <ul>
+              <li><a href="https://www.wikidata.org/wiki/Q50814518">Cognition représentation langages</a> ou Corela</li>
+              <li><a href="https://www.wikidata.org/wiki/Q137543707">Imaginations</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p><b>3.</b> Créer une page de revue savante – par groupe</p>
+            <p>Revue possibles :</p>
+            <ul>
+              <li>1. Groupe 1 : revue Azimuts : <a href="https://revue-azimuts.fr/a-propos">site</a></li>
+              <li>2. Groupe 2 : Graphies francophones : <a href="https://graphiesfrancophones.org/indexations/">site</a></li>
+              <li>3. Groupe 3 : Travioles : <a href="https://www.entrevues.org/revues/travioles-revue-experimentale/">site</a></li>
+              <li>autre : Cascades : <a href="https://cascadesjournal.com/index.php/cascades/index">site</a></li>
+              <li>autre : Journal de la Faculté de Médecine d'Oran : <a href="https://www.jfmo-dz.net/">site</a></li>
+              
+            </ul>
+            <p>Modèle : <a href="https://www.wikidata.org/wiki/Q3428733">notice Wikidata la Revue française de sociologie</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Étapes
+            </p>
+            <ul>
+              <li>0. Vérifiez que l'élément n'existe pas déjà</li>
+              <li>1. Créer un nouvel élément</li>
+                <small>en renseignant les champs</small>
+              <li>2. Créer des entrées (selon les choix) pour Déclarations</li>
+              <li>3. Créer des entrées (selon les choix) pour Identifiants</li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actualité de l'édition savante et autres
+          </p>
+          <ul>
+            <li><a href="https://www.huma-num.fr/formations/">Formations données par HumNum</a>
+              <small>sur Isidore et autres</small>
+            </li>
+            <li>Midi de la culture – Lancement du livre blanc « Vers des politiques publiques aptes à favoriser la découvrabilité d’une diversité d’œuvres littéraires québécoises dans l’environnement numérique » 
+              <small>26 février, <a href="https://www.unescodec.chaire.ulaval.ca/fr/midi-de-la-culture-lancement-du-livre-blanc-vers-des-politiques-publiques-aptes-favoriser-la">inscription</a></small>
+            </li>
+
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        <small>Conférence de Sophie Montreuil</small>
+        <br><small>Rendu de la deuxième étape de l'article savant : <b>20 février</b></small>
+ 
+    
+    </div>
+    </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,591 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 7 : Communautés savantes et enjeux de vulgarisation</h5>
+          <small>Partie cours</small>
+        </div>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <h5>Valorisation des revues savantes francophones sur Wiki (Wikidata et Wikipédia)
+          </h5>
+          <ul>
+            <li>Documentation du travail auprès du partenariat Revue3.0</li>
+            <li>Diffusion des livrables (pages Wikidata et Wikipédia)</li>
+            <small>avec vos noms (sauf si vous ne souhaitez pas apparaître)</small>
+           
+          </ul>
+         
+          
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Wikipédia <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Origine du projet</p>
+            <ul>
+              <li>15 janvier 2001 – encyclopédie en ligne participative</li>
+              <small>créée dans le cadre du projet Nupedia (Jimmy Wales)</small>
+              <li>Nupedia (2000) : procédures de révision identiques à l'édition savante</li>
+              <small>contrôle comité scientifique + évaluation par spécialistes
+                
+              </small>
+            </br><small>rédaction lente (2 articles en novembre 2000)</small>
+              <li>Concept de wiki
+                
+              </li>
+          <small>application web pour de la publication de pages rapide</small>
+              
+            </ul>
+            <p>plus de 1 000 articles (février 2001) puis 10 000 en septembre</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Statistiques et problématique avec la francophonie</p>
+            <ul>
+              <li>Plus de 2,7 millions d'articles en français / plus de 7 millions en anglais</li>
+              <li>Contributeurs : en anglais 51 millions (300 000 actifs) ; en français 5 millions (42 000 actifs)</li>
+              <li>8<sup>e</sup> site le plus visité en France – 4 millions de visiteurs par jour</li>
+       
+              
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_wiki.png" data-background-size="900px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/717_wiki-en.png" data-background-size="900px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/717_wiki-fr.png" data-background-size="900px" background-color="#21211c">
+         
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Caractéristiques</p>
+            <ul>
+              <li>Restitution rapide – compétition avec les ouvrages généraux</li>
+              <small>gratuit et mise à jour rapide</small>
+              <li>Crise de l'encyclopédie traditionnelle</li>
+              <small>Encyclopedia Britannica</small>
+              <li>Écriture encyclopédique</li>
+              <small>ton neutre, factuel, impersonnel – pas d'opinions, pas d'ironie</small>
+            </ul>
+            <p><a href="https://fr.wikipedia.org/wiki/Aide:Style_encyclopédique">Style encyclopédique</a> et <a href="https://fr.wikipedia.org/wiki/Wikipédia:Conventions_typographiques">Conventions typographiques</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modèle contributif</p>
+            <ul>
+              <li>Écriture collaborative</li>
+              <small>révision communautaire avec administrateurs pour régler les conflits</small>
+              <li>Décisions de dé-publication</li>
+              
+              <li>Organisation communautaire</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qualité et fiabilité des données</p>
+            <ul>
+              <li>Fiabilité inégale selon la popularité des sujets</li>
+              <small>les sujets de société sont plus sujets à des biais – moins dans les sciences dures</small>
+              <li>Actions de vandalisme – manipulation scientifique</li>
+              <small>exemple : <a href="https://www.wikimedia.fr/tentative-de-manipulation-de-wikipedia-par-lequipe-deric-zemmour/">Zémmourisation</a></small>
+              <li>Absence de comité formel pour lutter contre la désinformation</li>
+              <small>pas de révision par les pairs avant publication – post-publication</small>
+            </ul>
+           
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Initiatives</p>
+            <ul>
+              <li><a href="https://sanspages.org/">sans pages</a></li>
+              <li><a href="https://fr.wikipedia.org/wiki/Wikip%C3%A9dia:BAnQ/Accueil/Actualit%C3%A9s ">ateliers BaNQ</a></li>
+              <li>au sein des universités : wikithons universitaires</li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Atelier <i class="material-icons">
+           south
+            </i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modification d'une page</p>
+            <ul>
+              <li>Modification par section dans la page</li>
+              <small>plusieurs modes visuels de l'éditeur (visuel ou en code)</small>
+              <li>Importance de <b>commenter</b> – indiquer ce qui a été modifié</li>
+              <li><b>Versionnement</b> – historique des modifications</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Recommandations pour l'édition sur Wikipédia</p>
+            <ul>
+              <li>0. Rechercher le sujet sur Wiki</li>
+              <small>le sujet ne doit pas déjà être présent</small>
+              <li>0. Vérifier l'admissibilité</li>
+              <small>suffisamment de sources externes en amont</small>
+              <li>1. Création de la page en brouillon – Sandbox</li>
+              <small>page accessible à la modification à plusieurs – espace personnel</small>
+              <li>2. Travail de la page avant publication finale</li>
+              <small>sortie de la Sandbox = transfert vers l'espace principal</small>
+              <li><b> Pas d'usage des IA</b> pour l'édition</li>
+              <small>elles n'auront pas de sources fiables</small>
+            </br><small>bloque le processus d'apprentissage de compétences + interdit dans le cadre des rendus du cours</small>
+            </ul>
+            <p><a href="https://fr.wikipedia.org/wiki/Aide:Comment_créer_un_article">Processus de création sur Wikipédia</a> ou <a href="https://www.beaux-arts.ca/sites/default/files/upload/wikipedia_tutorial_f.pdf ">autre tutoriel</a></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Conseils pour garantir une publication</p>
+            <ul>
+              <li>Respect des <b>normes de Wiki</b> : écriture encyclopédique</li>
+              <li>Respect des <b>critères</b> : complétude ; cohérence ; fiabilité des sources</li>
+              <li><b>Écriture collaborative</b> : plusieurs contributions</li>
+              <li>Utilisation du <b>volet discussion</b> : montrer une négociation collective</li>
+              <li><b>Contribution individuelle</b> des éditeurs sur d'autres pages</li>
+            </ul>
+           
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        <small>Séance de mise en commun – obligatoire (comme toutes les séances)</small>
+ 
+    
+    </div>
+    </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,972 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 9 : Les chaînes de production de l'édition savante francophone</h5>
+          <small>La finalisation et l'export du texte savant</small>
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actu</p>
+          <ul>
+            <li><a href="https://www.coalition-publi.ca/fr/">Coalition Publica</a> : <a href="https://www.coalition-publi.ca/fr/bourses-editeurs-etudiants-editrices-etudiantes-appel-2026/">Bourses pour éditrices étudiantes et éditeurs étudiants 2026</a></li>
+            <small>2 bourses de 1 500$ - date limite 12 avril</small>
+            <li>Réseau Circé : suite du <a href="https://reseaucirce.org/nouvelles/entente-pour-les-revues-publiant-en-libre-acces-sous-licences-cc/">Modèle d’entente pour les revues publiant en libre accès sous licence CC</a>
+            </br>Webinaire du PBUQ « La politique d’autoarchivage décortiquée »
+            </li>
+            <small>26 mars (11h) <a href="https://events.teams.microsoft.com/event/c5783360-d08b-4acb-83fa-f9a47e4b0a57@d27eefec-2a47-4be7-981e-0f8977fa31d8.">inscription</a>
+            </small>
+            <li>Wikimédia Canada : <a href="https://www.wikimedia.ca/wikithon-voixfranco-2026/">Wikithon #VoixFranco à Montréal, Québec et en ligne</a></li>
+            <small>dimanche 22 mars</small>
+            <li>Lettre du Book Clubs for Inmates contre la décision du Service correctionnel du Canada (SCC) sur la fermeture des postes de bibliothécaires dans les prisons</li>
+          <small><a href="https://docs.google.com/forms/d/e/1FAIpQLScqtBD2prjrQ4ud8bi9LYRhO7XYV9H7WrCYTgIjtN4C-Ev4mw/viewform">signature</a></small>    
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. La chaîne éditoriale <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition</p>
+          
+          <p>« Ensemble des méthodes, des outils et des processus qui permettent de concevoir, fabriquer, produire et diffuser un livre ou plus largement une publication. Une chaîne de publication réunit des logiciels propres à la gestion du texte et des images, mais aussi les différents rôles d’un processus éditorial que sont l’auteur, l’éditeur, le correcteur, le graphiste, etc. »
+            <small>(Antoine Fauchié)</small>
+          </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Phases de l’édition savante</p>
+            <ul>
+              <li>Soumission / réception du manuscrit</li>
+              <small>première décision éditoriale à l’issue de la lecture par le comité de rédaction</small>
+              <li>Évaluation par les pairs</li>
+              <small>deuxième décision éditoriale par le comité éditorial, avec possibles révisions et réévaluation</small>
+              <li>Édition</li>
+              <small>mise en page intellectuelle : relectures, réécritures, édition et normalisation de l’appareil critique (notes, bibliographie, index)</small>
+              </br><small>mise en page matérielle : composition pour l’imprimé, structuration XML/XHTML et insertion des métadonnées</small>
+              </br><small>versions témoins pour le contrôle qualité (CQ) et obtention du BAT (Bon à tirer)</small>
+              <li>Impression, commercialisation, diffusion</li>
+              <small>mise en stock, diffusion commerciale et institutionnelle via diffuseurs et distributeurs</small>
+              </br><small>signalement dans les catalogues (librairies, bibliothèques) et sur des plateformes comme Érudit</small>
+              </br><small>attribution et circulation d’identifiants (DOI, URI, ISBN, ISSN, etc.) et suivi de l’exploitation</small>
+            </ul>
+            <p>En plus : intégration dans des bases de données (Wikidata, bases bibliographiques, etc.) et réutilisation dans des projets de recherche</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Caractéristiques de la chaîne éditoriale savante</p>
+            <ul>
+              <li>Légitimation scientifique</li>
+              <small>évaluation par les pairs, comités de lecture, comités de subvention + qualité du travail éditorial</small>
+              <li>Poids de l’appareil critique</li>
+              <small>notes, bibliographies, index, tableaux, illustrations, etc.</small>
+              <li>Structuration fine du texte</li>
+              <small>structuration du texte, des références et des métadonnées pour permettre laréutilisation scientifique, indexation internationale et pérennité</small>
+              <li>Travail qualifié et soutiens</li>
+              <small>chaîne coûteuse en travail qualifié (éditeurs, technicien·nes, développeur·ses, documentalistes), dépendante de soutiens institutionnels</small>
+              <li>Organisation éditoriale</li>
+              <small>nécessité d’outils de gestion de projet (Asana, Jira, etc.) lorsque plusieurs projets éditoriaux et publications parallèles sont menés</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Parcours des métadonnées d'édition</p>
+      
+        <small>mobilisées tout au long de la chaîne éditoriale</small>
+            <ul>
+    <li>Insertion dans les fichiers source</li>
+              <small>documents de travail (par ex. XML avec balises spécifiques)</small>
+              <li>Insertion sur les plateformes d’édition</li>
+              <small>OJS et autres environnements de saisie : champs de description, mots‑clés, licences, informations transmises aux diffuseurs et bibliothèques</small>
+              <li>Insertion au niveau des agrégateurs</li>
+              <small>DOI, URI, ISSN, ISBN numérique, identifiants d’auteurs, formats de citation (notices « Pour citer cet ouvrage »)</small>
+              <li>Données structurées</li>
+              <small>prolongement dans des bases comme Wikidata, permettant recherche, visualisation et interconnexion entre bases</small>
+            </ul>
+            <p>Maillage entre auteur, éditeur, plateformes, agrégateurs, bibliothèques et catalogues</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Plateformes, agrégateurs et services de données</p>
+            <small>Érudit, OpenEdition, etc.</small>
+            <ul>
+              <li>Plateformes de production et de diffusion</li>
+              <small>Érudit : hébergement, archivage (avec Portico/PKP), structuration sémantique (XML‑Érudit), production de formats multiples (PDF, HTML)</small>
+              <li>Agrégateurs et services d’indexation</li>
+              <small>moissonnage des informations, référencement dans les outils de recherche (Google, Google Scholar, WorldCat, catalogues de bibliothèques)</small>
+              <li>Gestion des accès et de la facturation</li>
+              <small>gestion des modèles d’accès, de la facturation, et des politiques de diffusion</small>
+                  </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approches de la chaîne éditoriale</p>
+            <ul>
+              <li>Dimensions de la chaîne éditoriale</li>
+              <small>technique (flux de fichiers, formats, conversions), documentaire (notices, vocabulaires contrôlés, identifiants), économique et institutionnelle (modèles d’accès, subventions, politiques de diffusion)</small>
+              <li>Approches</li>
+              <small>classique : traitement de texte (rédaction, relecture) puis PAO (InDesign) en vue de l’impression ; production de formats homothétiques (PDF, epub)</small>
+            </br>
+              <small>modulaire : fonctionnement par modules, centré sur l’interopérabilité</small>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Les formats de fichiers <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Définition</p>
+            <p>[s]tructure définie de données contenues sur un support magnétique ou autre, établie selon des règles qui régissent le stockage, l'affichage, la manipulation, l'impression ou la transmission de ces données. (OQLF)</p>
+        
+            <p><b>Un format n’est pas un logiciel ni une simple extension.</b></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Critères du format</p>
+            <ul>
+              <li>Pertinence</li>
+              <small>réponse à des pratiques/besoins</small>
+              <li>Économie / Équilibre</li>
+              <small>équilibre entre rentabilité du format/performances/poids</small>
+              
+              <li>Sécurité</li>
+              <small>protection des données, restriction des utilisations</small>
+            </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Accessibilité aux spécifications du format <small>est-ce que je peux savoir comment le format a été
+                  construit ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">login</i></td>
+                <th scope="col">Ouvert</th>
+                <th scope="col">Fermé</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Spécifications connues, Interopérabilité favorisée</td>
+                <td>Spécifications inconnues, Interopérabilité limitée</td>
+
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Propriété du format </br><small>à qui le format revient-il ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">key</i></td>
+                <th scope="col">Propriétaire</th>
+                <th scope="col">Libre/Normalisé</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Entités privées, Spécificités définies par un producteur, </br>Intérêts privés</td>
+                <td>Communautés, Standards évoluant avec les pratiques, </br>Intérêts communs</td>
+
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h6>Exemples</h6>
+            <ul>
+              <li><i class="material-icons">grid_view</i> DOCX : propriétaire (Microsoft) ouvert depuis 2006</li>
+              <li><i class="material-icons">picture_as_pdf</i> PDF : propriétaire (Adobe) ouvert</li>
+              <li> Markdown : libre ouvert</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>
+                Niveaux d'information </br><small>à quelles données le format se destine-t-il ?</small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+                <col span="1" class="pouf" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">reorder</i></td>
+                <th scope="col">Corps de texte</th>
+                <th scope="col">Métadonnées</th>
+                <th scope="col">Bibliographie</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>Markdown, Texte brut</td>
+                <td>YAML, JSON</td>
+                <td>BibTeX, RDF</td>
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="1600px">
+          <div id="fondop2">
+            <table>
+              <caption>
+                </br>Rôle du format </br><small>quand et à quoi sert-il dans la chaîne ?
+                </small>
+              </caption>
+              <colgroup>
+                <col />
+                <col span="1" class="batman" />
+                <col span="1" class="flash" />
+              </colgroup>
+              <tr>
+                <td style="text-align: center;"><i class="material-icons">sync_alt</i></td>
+
+                <th scope="col">Source</th>
+                <th scope="col">de Sortie</th>
+              </tr>
+              <tr>
+                <th style="vertical-align: middle;">Caractéristiques</th>
+                <td>.doc, .docx, .txt, md, .tex, .yml, .html</td>
+                <td>.pdf, .epub, .html</td>
+
+              </tr>
+            </table>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Importance des formats</p>
+              <ul>
+                <li>Pas de neutralité : lié à un modèle de texte</li>
+                <small>caractéristiques déterminantes du format</small>
+                <li>Interopérabilité : implications sur l'archivage, la pérennité</li>
+       <li>Format pivot : organiser les données</li>
+       <small>intermédiaire entre un format et un autre (XML) pour produire des formats de lecture plus adaptés (PDF, HTML, epub)</small>
+      <li>Template ou Gabarit : lien entre le type d'information et la mise en page graphique</li>         
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><i>Exemple</i></p>
+              <ul>
+             <li>Format 1 : format source (travail) .docx</li>   
+             <small>édition des titres avec style titre</small>  
+             <li>Format 2 : format de conversion (XML)</li>
+             <small>balisage du titre avec balises correspondantes</small>
+              </br><small>+ gabarit pour indiquer le style des titres (gras, police 16, rouge)</small>
+             <li>Format 3 : format de sortie (PDF)</li>
+             <small style="font-size: 16px;font-weight: bold;color: red;">Titre</small>
+      </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><i>Exemple - chaîne classique</i></p>
+              <ul>
+             <li>Format 1 : format source (travail) .docx</li>   
+             <small>édition et relecture sur traitement de texte</small>  
+             <li>Format 2 : format de conversion (PAO)</li>
+             <small>édition et mise en page (.indd pour document ; .indt pour template)</small>
+              </br><small>+ gabarit pour indiquer le style des titres (gras, police 16, rouge)</small>
+             <li>Format 3 : format de sortie (PDF, epub, etc.)</li>
+      </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Publication depuis une source unique <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaîne d’édition modulaire</p>
+            <ul>
+              <li>Synergie des composants</li>
+              <li>Interopérabilité des formats et outils</li>
+              <li>Formats au centre</li>
+              <small>ces chaînes dépendent moins des logiciels (traitements de texte, PAO) que des formats</small>
+              <li>Pas de modèle unique</li>
+              <small>agencements, adaptations selon les projets et structures éditoriales</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Source unique</p>
+        <p> « on désigne la production de ces multiples manifestations (imprimée, numérique…) à partir d’une expression (le fameux <i>single source</i>), le plus souvent en mode automatisé. » (Taffin)</p>
+          </div>
+        </section>
+
+       
+			<section data-background-image="media/metopes.png" data-background-color="#f1eded"
+				data-background-size="1200px">
+       <div id="fondop2" style="margin-bottom: 590px">
+        <p style="font-size: 20px;">infrastructure Métopes (MRSH)</p>
+       </div>
+			</section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Multisupport, multiformat, multimodal</p>
+            <ul>
+              <li>Multisupport</li>
+              <small>plusieurs supports compatibles avec la publication (ordinateur, tablette, etc.)</small>
+              <li>Multiformat</li>
+              <small>plusieurs formats de publication (PDF pour impression, HTML pour le web, ePub pour liseuse, etc.)</small>
+              <li>Multimodal</li>
+              <small>plusieurs modes de lecture : par exemple version web avec vidéos vs PDF avec captures d’écran</small>
+               </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Avantages et limites</p>
+            <ul>
+              <li>Avantages</li>
+              <small>une seule source à laquelle se référer/à modifier/archiver</small>
+            </br><small>chaîne automatisée</small>
+              <li>Mais</li>
+              <small>un ensemble de documents sources</small>
+              </br><small>modifications des formats intermédiaires</small>
+              </br><small>mise en place de la chaîne longue, automatisation relative au projet/équipe</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/atelier.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Cas d'étude 
+              </br>
+              <small>les <i><a href="https://ateliers.sens-public.org">Ateliers de [sens public]</a></i></small></p>
+             
+  <ul>
+    <li>2018 : Monjour et Sauret</li>
+    <small>« Le principe de la collection est de proposer 
+    </br>une forme de publication multiple en accès libre 
+  </br>sur des
+      sujets divers en sciences humaines et sociales » </small>
+      <li>11 ouvrages <br>3 formats de publication
+      </br><small>(imprimé via POD, PDF, ePub)</small>
+       <br>+ 1 version numérique
+        enrichie</li>
+        
+  </ul>
+          </div>
+        </section>
+
+
+        <section data-background="media/ateliers3.png" data-background-size="1500px">
+
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Explorations conjointes des formes et formats</p>
+
+            <p style="margin-left: -30%;">1. <i>Facebook : L’école des fans</i> (Wormser 2018)
+              <span style="font-size: 25px;"><br>recueil d'essais écrits entre 2008 et 2018</span>
+              <span style="font-size: 21px;"><br>imprimé, <a
+                  href="https://ateliers.sens-public.org/facebook/media/Wormser_Facebook_2018.pdf">PDF</a>, <a
+                  href="https://ateliers.sens-public.org/facebook/media/Wormser_Facebook_2018.epub">ePub</a></span>
+            </p>
+
+            <p style="margin-left: 50%;">2. <i>L'espace numérique</i> (Méchoulan et Vitali-Rosati 2018)
+              <span style="font-size: 25px;"><br>conversation épistolaire entre 2015 et 2017</span>
+              <span style="font-size: 21px;"><br>imprimé, <a
+                  href="https://ateliers.sens-public.org/l-espace-numerique/media/Mechoulan_Vitali-Rosati_L-espace-numerique_2018.pdf">PDF</a>,
+                <a
+                  href="https://ateliers.sens-public.org/l-espace-numerique/media/Mechoulan_Vitali-Rosati_L-espace-numerique_2018.epub">ePub</a></span>
+
+            </p>
+              <small>+ Publication simultanée dans la revue <i>Sens public</i></small>
+
+          </div>
+        </section>
+
+        <section data-background="media/litteratube_complet.png" data-background-size="1400px">
+
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Explorations conjointes des formes et formats</p>
+
+            <p>3. <i>Qu’est-ce que la littéraTube ?</i> (Bonnet, Fülöp, Théval 2023)
+              <span style="font-size: 25px;"><br>étude de type manifeste</span>
+              <span style="font-size: 21px;"><br>imprimé, <a
+                  href="https://ateliers.sens-public.org/qu-est-ce-que-la-litteratube/media/bonnet-fulop-theval-litteratube-2023.pdf">PDF</a>,
+                <a
+                  href="https://ateliers.sens-public.org/qu-est-ce-que-la-litteratube/media/bonnet-fulop-theval-litteratube-2023.epub">ePub</a></span>
+              <span style="font-size: 21px;"><br>+ <a
+                  href="https://ateliers.sens-public.org/qu-est-ce-que-la-litteratube/introduction.html">version
+                  numérique (HTML) enrichie</a></span>
+                  <span style="font-size: 25px;"><br>index, glossaires, médias et encarts additionnels</span>
+                  <span style="font-size: 21px;"><br>(absents des versions PDF et imprimé)</span>
+
+            </p>
+
+          </div>
+        </section>
+
+
+        <section data-background="media/atelier.png" data-background-size="2000px">
+
+          <div id="fondop2">
+
+            <p style="font-variant: small-caps;">Deux modes de lecture</p>
+
+            <ul>
+
+            <li>1. Lecture linéaire</li>
+              <small>version papier et versions homothétiques (ePub, PDF)</small>
+            </br>   <small>appareil critique restreint</small>
+            
+
+            <li>2. Lecture non-linéraire - <a
+                href="http://www.parcoursnumeriques-pum.ca/1-pratiques/introduction.html">exemple</a></li>
+              <small>version numérique augmentée (HTML)</small>
+            </br> <small>appareil critique développé</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/SBC.jpg" data-background-color="#f1eded"
+        data-background-size="1500px">
+       <div id="fondop2" >
+        <p>Exemple de chaîne - <a href="https://docs.google.com/document/d/1y5ZeHATVeyH3x-ZA9ZmTLjTkCsahfs1oke56-VimbsM/edit?pli=1&tab=t.0">Société bibliographique du Canada</a></p>
+     <ul>
+<li>dépôt de l'auteur sur OJS</li>
+     </ul>
+     
+      </div>
+      </section>
+       
+        <section data-background-image="media/chaine-stylo-sp.png" data-background-color="#f1eded"
+				data-background-size="1300px">
+       <div id="fondop2" style="margin-bottom: 400px">
+        <p>Exemple de chaîne - Sens public (ancien)
+        </br><small>aujourd'hui dépôt sur Stylo</small>
+        </p>
+       </div>
+			</section>
+
+         
+      <section data-background-image="media/JDH.png" data-background-color="#f1eded"
+      data-background-size="1500px">
+     <div id="fondop2" style="margin-bottom: 400px">
+      <p>Exemple de chaîne -<a href="https://journalofdigitalhistory.org/en">Journal of Digital History</a></p>
+     </div>
+    </section>
+
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>4. Atelier <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Export Stylo</p>
+            <ul>
+              <li>1. export avec les exports génériques </li>
+             <small>sur votre compte Stylo : export DOCX, PDF, HTML avec différents choix d'export</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Export Stylo</p>
+            <ul>
+              <li>1. export avec les exports revues</li>
+              <small>outil d’export avec gabarits de revues : <a href="https://export.stylo.huma-num.fr/">export.stylo.huma-num.fr</a></small>
+            </br><small>test avec ID : 69a05788162d86642c16522c</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Suivi du travail de groupe Wiki</p>
+          <ul>
+            <li>Choisir une instance éditoriale</li>
+            <li>Rassembler un ensemble d'informations sur l'instance</li>
+            <small>travail sur document en commun - autonomie de groupe</small>
+          </ul>
+          </div>
+        </section>
+ 
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        <ul>
+          <li>Lecture du <a href="hhttps://sens-public.org/articles/1781/">texte de Tony Glinoer</a></li>
+          <li>Venue de Vincent Larrivière</li>
+        </ul>
+      </div>
+        </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

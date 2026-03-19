@@ -1,0 +1,652 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 10 : Les modes d'accès et licences</h5>
+          <small>Libre accès, licences ouvertes et DRM</small>
+        </div>
+      </section>
+
+    
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <h5>1. Voies de publication <i class="material-icons">south</i></h5>
+     
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes traditionnels (pré-numériques)</p>
+          <ul>
+            <li><b>Compte d'éditeur</b></li>
+            <small>Droits cédés à l'éditeur; suivi éditorial et risque commercial</small>
+            <li><b>Compte d'auteur</b></li>
+            <small>Peu ou pas de suivi éditorial; l'auteur porte davantage le risque</small>
+            <li>Avec le numérique : essor du <b>libre accès</b> (surtout en édition savante)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Définition du libre accès</p>
+          <ul>
+            <li><b>Mise à disposition en ligne</b></li>
+            <small>Contenu libre (culture du libre) ou soumis à des droits de propriété intellectuelle</small>
+            <li><b>Diffusion rapide</b> et étendue des résultats</li>
+            <li>Exigences des organismes de financement : mise en libre accès immédiate + licence ouverte</li>
+   <li>Mouvement de la science ouverte</li>
+   <small>mouvement caractérisé par la volonté commune de ses adhérents d'amener, via le Web, plus de
+    collaboration, de transparence et d'ouverture dans la réalisation de leurs pratiques
+    scientifiques. (OQLF, 2014)</small>
+            </ul>
+        </div>
+      </section>
+
+
+			<section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Plusieurs libres</p>
+          <ul>
+            <li>Voie <span style="color: green;">verte</span> : dépôt institutionnel payant / gratuit (auteur)</li>
+            <li>Voie <span style="color: rgb(236, 203, 14);">dorée</span> : accès en ligne immédiat libre (instance éditoriale)</li>
+            <li>Voie <span style="color: #595854;">diamantée</span> : accès en ligne sous licence libre (association/organisation)</li>
+          </ul>
+        </div>
+			</section>
+
+
+      <section data-background="media/oav.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Voie verte
+            </br><small>caractéristiques</small></p>
+          <ul>
+            <li>Publication et mise en circulation à la responsabilité de l'auteur</li>
+            <small>dépôt institutionnel
+              </br>archives ouvertes comme HAL, Internet Archive
+              </br>site personnel</small>
+            <li>Qualité de l'édition et de la structuration des données variante</li>
+            <small>peu de visibilité sur la proportion de cette voie</small>
+            <li>Potentiellement payante</li>
+            <small>selon les solutions de publication choisies</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background="media/oaj.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Voie dorée
+            </br><small>caractéristiques</small></p>
+          <ul>
+            <li>Publication et mise en circulation par les revues dites « en accès ouvert »</li>
+            <small>accessibilité directe et immédiate</small>
+            <li>Choix techniques revenant à l'éditeur</li>
+            <small></small>
+            <li>Coûts à l'instance éditoriale et à l'auteur</li>
+            <small>modèle de financement « auteur-payeur »</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background="media/oap.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Voie diamantée
+            </br><small>caractéristiques</small></p>
+          <ul>
+            <li>Publication et mise en circulation par des organisations non-commerciales</li>
+            <small>accessibilité directe et immédiate</small>
+            <li>Droits d'auteurs + Licence libre</li>
+            <small>par défaut les licences Creatives Commons</small>
+            <li>Gratuité pour l'auteur et le lecteur</li>
+            <small>subventionnement des instances éditoriales par les institutions de recherche</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background="media/oan.png" data-background-size="500px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Autres voies</p>
+          <ul>
+            <li>Voie de bronze</li>
+            <small>publication libre accès immédiat via l'éditeur mais sans licence libre identifiable</small>
+            <li>Voie hybride</li>
+            <small>accès via abonnement et APC à l'auteur</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background="media/717_voies.svg" data-background-size="1000px">
+
+      </section>
+
+</section>
+
+<section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+  <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <h5>2. Licences Creative Commons <i class="material-icons">south</i></h5>
+
+  </div>
+</section>
+
+      <section data-background="media/cc2.png" data-background-size="700px">
+
+        <div id="fondop2">
+
+          <h5>Licences Creative Commons</h5>
+
+          <ul>
+            <li>2002 : Licences numériques par l'organisation Creative Commons</li>
+            <small>association pour le développement d'alternatives aux droits de propriété intellectuelle</small>
+            <li>Extension du droit d'auteur dans le numérique</li>
+            <li>6 licences de propriété</li>
+            <small>+ 1 domaine public [CC-Zero]</small>
+          </ul>
+
+        </div>
+      </section>
+      <section data-background="media/cc2.png" data-background-size="700px">
+
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Conditions principales des licences</p>
+
+          <ul>
+            <li><i class="material-icons">
+              person
+              </i>  Attribution [BY]</li>
+            <small>créditer l'auteur</small>
+            <li><i class="material-icons">
+              money_off
+              </i> Pas d'utilisation commerciale [NC]</li>
+            <small>refuser la reproduction, la diffusion à des fins commerciales</small>
+            <li><i class="material-icons">
+              share
+              </i>  Partage dans les mêmes conditions [SA]</li>
+            <small>autoriser la reproduction, la diffusion sous les mêmes conditions que le travail original</small>
+            <li><i class="material-icons">
+              tune
+              </i>  Pas de modification [ND]</li>
+            <small>refuser la modification du travail original</small>
+          </ul>
+
+        </div>
+      </section>
+
+      <section data-background="media/cc.png" data-background-size="700px">
+
+
+      </section>
+
+      <section data-background="media/" data-background-size="1400px">
+
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Autre licences
+            </br><small>pour logiciels libres et créations numériques</small></p>
+
+          <ul>
+            <li>Licences Open Source / Libres / Art Libre / Licences GNU</li>
+            <small>modification, distribution, utilisation commerciale
+            </small>
+          </ul>
+
+        </div>
+      </section>
+
+			<section data-background-image="media/717_lessig.jpg" data-background-size="1200px">
+				<div id="fondop2">
+					<h5>Culture libre</h5>
+
+					<p>« Une culture libre n’est pas une culture sans aucune propriété, pas plus qu’un marché libre
+						n’est un marché dans lequel tout est gratuit. Le contraire d’une culture libre est une « culture
+						de permissions » : une culture au sein de laquelle les créateurs peuvent créer uniquement avec
+						la permission des puissants, ou des créateurs du passé. » <small></br><i>Culture libre</i>, L.
+							Lessig </small></p>
+				</div>
+			</section>
+
+
+			<section data-background-image="media/guedon.jpg" data-background-size="1400px">
+				<div id="fondop2">
+
+					<h5>Libre accès</h5>
+
+
+					<p>« caractéristique principale des documents numériques » </br>Jean-Claude Guédon
+						<a href="http://www.parcoursnumeriques-pum.ca/1-pratiques/introduction.html">2014</a></p>
+            <small>à voir aussi : <a href="https://apropos.erudit.org/synthese-colloque-acfas-2023-2/">Synthese colloque ACFAS 2023</a></small>
+				</div>
+			</section>
+
+
+			<section data-background="media/DRM.png" data-background-size="1300px">
+				<div id="fondop2">
+					<p style="font-variant: small-caps;"><i>Digital Rights Management</i></p>
+
+					<ul>
+						<li>Outils de gestion de droits numériques</li>
+					
+            <small>Contrôle des usages : accès, copie, impression, modification, distribution</small>
+            <li>Types de restrictions</li>
+            <small>économiques, institutionnelles, dispositifs/format, éditoriales</small>
+   
+					</ul>
+		
+
+				</div>
+			</section>
+      </section>
+
+     
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <h5>3. Discussion du texte de Tony Gheerart</h5>
+      
+        </div>
+      </section>
+     
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        
+        </div>
+      </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

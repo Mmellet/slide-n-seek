@@ -1,0 +1,800 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+  
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 11 : Valorisation et découvrabilité de l’édition savante francophone</h5>
+         
+        </div>
+      </section>
+
+
+      <section data-background-image="media/wikiscan.png" data-background-size="1400px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Complément Wiki - <a href="https://fr.wikiscan.org">WikiScan</a></p>
+
+<p>envoi par courriel de votre nom d'utilisateur (je vous contacterai le cas échéant si je ne le trouve pas)</p>
+           </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actu</p>
+          <ul>
+            <li><b>HAL</b> a 25 ans !</li>
+            <small>archive ouverte depuis 2001 (CNRS/CCSD) — <a href="https://www.ouvrirlascience.fr/hal-a-25-ans/">Ouvrir la science : HAL a 25 ans</a> — <a href="https://feedback.guestviews.co/application/shorten/siteccsd/homescreen">livre d’or en ligne</a></small>
+            <li>Baromètre de la science ouverte : modèle français adopté par le Japon</li>
+            <small><a href="https://www.ouvrirlascience.fr/le-japon-adopte-le-modele-francais-du-barometre-de-la-science-ouverte/">Le Japon adopte le modèle français du baromètre de la science ouverte</a> (<a href="https://barometredelascienceouverte.esr.gouv.fr/">BSO</a>)</small>
+           <li><a href="https://www.livrescanadabooks.com/fr/Reports/Guides-de-marches/Universitaire-et-savant/L-exportation-des-livres-savants-et-universitaires-guide-pour-les-editeurs-canadiens-de-langue-francaise-2e-edition-2026">L'exportation des livres savants universitaires</a></li>
+           <small>Guide pour les éditeurs canadiens de langue française - Livres Canada Books</small>
+            <li>Colloques ACFAS (Trois-Rivières - 11-15 mai)</li>
+            <small><a href="https://www.acfas.ca/evenements/congres/programme/93/enjeux-recherche/1/c"> L’évaluation par les pairs à l’épreuve de la science ouverte</a> - 14 mai</small>
+          <br> <small><a href="https://www.acfas.ca/evenements/congres/programme/93/300/305/c">Métamorphoses dialogiques des humanités numériques</a> - 14-15 mai</small>
+        <br><small><a href="https://www.acfas.ca/evenements/congres/programme/93/enjeux-recherche/16/c">La découvrabilité des contenus culturels, médiatiques et scientifiques</a> - 14 mai</small></ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <h5>1. Problématiques de valorisation et découvrabilité <i class="material-icons">south</i></h5>
+     
+        </div>
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Découvrabilité</p>
+          <ul>
+            <li>Disponibilité en ligne</li>
+            <small>repérer des contenus au-delà de la recherche explicite</small>
+            <li>Capacité à être repéré</li>
+            <small>moteurs, réseaux de données et recommandations</small>
+            <li>Deux dimensions</li>
+            <small>trouvabilité + sérendipité</small>
+          </ul>
+       <br>
+            <br> <small><i>Mission franco-québécoise sur la découvrabilité en ligne des contenus culturels francophones (rapport 2020)</i></small>
+        </div>
+      </section>
+
+
+
+			<section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Enjeux francophones</p>
+          <ul>
+            <li>Diffusion en français = enjeux scientifiques &amp; culturels</li>
+            <small>rappel mission de l'ACFAS</small>
+            <li>Contexte éditorial spécifique</li>
+            <small>contrainte de découvrabilité commerciale et de viabilité</small>
+       <li>Organiser les ressources de la langue française</li>
+       <small>Office national de la langue française</small>
+          <br><small><a href="https://www.frantext.fr/">Frantext</a> : base de données (ATILF)</small>
+        
+        <br>   <small><a href="https://isidore.science/">Isidore</a> : base de données (HumaNum)</small></ul>
+        </div>
+			</section>
+
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Enjeux savants
+            <br><small>public &amp; langue commune</small></p>
+          <ul>
+            <li>Public en science : producteurs de connaissance aussi lecteurs</li>
+            <small>rôles multiples (éditeur, auteur, évaluateur)</small>
+            <li>Langue commune : pression vers l’anglais</li>
+            <small>normes disciplinaires, prestige, facteur d’impact</small>
+            <li>Diversifier la langue sans perdre la découvrabilité</li>
+            <small>comment rester repérable dans un système centré sur une langue ?</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Évaluer la citabilité
+            <br><small>Facteur d’impact</small></p>
+          <ul>
+            <li>Science Citation Index (SCI), Garfield 1975</li>
+            <small></small>
+            <li>Indicateur de la visibilité d'une revue scientifique</li>
+
+            <small>indirectement : sur la base des citations des articles publiés sur les 2 années précédentes</small>
+          <br><small>exemple : Nature ou Science autour de 45-50</small>
+            <li>Guider l'acquisition des bibliothèques</li>
+            <small>citation = capital symbolique</small>
+            <li>Problématiques et biais</li>
+            <small>concentration sur un faible pourcentage de publications</small>
+        <br><small>pas de prise en compte du contexte disciplinaire, de citation, thématique, linguistique</small>
+      <br><small>incite à l'auto-citation</small>   
+      </ul>
+        </div>
+      </section>
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Évaluer la citabilité
+            <br><small>autres indicateurs</small></p>
+          <ul>
+            <li>CiteScore, 2016 par Elsevier (<a href="https://www.scopus.com/pages/home#basic">Scopus</a>)</li>
+            <small>nombre de citations reçues par document publié et évalué par les pairs</small>
+            <li>Source Normalized Impact Factor (SNIP)</li>
+            <small>potentiel de citation en fonction de la différences de fréquence de citation entre les disciplines</small>
+          
+            <li>Scimago Journal Rank (SJR)</li>
+            <small>indicateur de prestige avec le niveau de prestige de la revue et de la discipline </small>
+             
+      </ul>
+      <p>problématiques des indicateurs bibliométriques : en faveur de l'anglais et des disciplines STIM</p>
+        </div>
+      </section>
+
+      <section data-background="media/717_facteurs.png" data-background-size="600px">
+
+       
+      </section>
+    </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+            <div id="fondop2">
+              <h5>2. Bonnes pratiques et efforts institutionnels <i class="material-icons">south</i></h5>
+     
+        </div>
+      </section>
+
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Étudier le terrain de l'édition savante francophone</p>
+         <p><a href="https://www.carl-abrc.ca/wp-content/uploads/2017/07/GTEPC_rapport_final_FR.pdf">Groupe de travail sur l’édition savante au Canada</a>
+          rapport de 2017</p>
+        </div>
+      </section>
+
+
+
+<section data-background="media/717_index.png" data-background-size="800px">
+
+  <div id="fondop2">
+
+    <h5>Recommandations et standards</h5>
+
+    <ul>
+    <li>Accès libre</li>   
+    <small>accès diamant + licences ouvertes</small>
+    <li>Avoir des structures communes</li>
+    <small>liées au contexte francophone (POA, Érudit)</small>
+    <br><small>former des bonnes pratiques (Métopes, BTLF)</small>
+    </ul>
+
+  </div>
+</section>
+
+
+<section data-background="media/717_index.png" data-background-size="800px">
+
+  <div id="fondop2">
+          <p style="font-variant: small-caps;">Charte des bonnes pratiques
+          <br><small>Marin Dacos et Dominique Roux - Groupe BSN7</small>
+          </p>
+          <ul>
+            <li>Citabilité</li>
+            <small>URL courte, normes bibliographiques, indexation (ex. DOAJ)</small>
+            <li>Interopérabilité</li>
+            <small>identifiants pérennes, métadonnées standardisées, granularité + multilingue</small>
+            <li>Accessibilité</li>
+            <small>formats standards ouverts (XML)</small>
+            <li>Ouverture</li>
+            <small>diversité des usages</small>
+            <li>Durabilité</li>
+            <small>offre tarifaire transparente, adaptée, raisonnable, proportionnée</small>
+          <br><small>+ offre d'archivage</small>
+          </ul>
+        </div>
+      </section>
+
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Efforts institutionnels en cours
+          <br><small></small>
+          </p>
+          <ul>
+           <li>Politiques d'évaluation plus qualitatives</li>
+           <small>repenser le modèle d'évaluation par les pairs - rééquilibrer le multilinguisme</small>
+          <li>Reconnaissance institutionnelle</li>
+          <small>valorisation des chercheur.e.s qui publient en français</small>
+          <li>Incitatifs ciblés</li>
+          <small>ex. FRQ, exigences de part d’articles en français</small>
+          <li>Campagnes de valorisation</li>
+          <small>ex. <a href="https://www.erudit.org/public/documents/Tisser_savoirs_2025.pdf"><i>Tisser les savoirs</i></a></small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Piste - Traduction automatique
+          </br><small>ACFAS 2025</small>
+          </p>
+          <ul>
+            <li>Apport possible à la découvrabilité et au multilinguisme</li>
+            <small>particulièrement pour les disciplines où la terminologie est homogène</small>
+            <li>Limites</li>
+            <small>nuances, négations, disciplines SHS plus conceptuelles - cas des intraduisibles</small>
+            <li>Baliser les usages</li>
+            <small>corpus spécialisés, humain dans la boucle, données et coût environnemental</small>
+          </ul>
+        </div>
+
+      </section>
+
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+
+					<h5>Résumé</h5>
+<ul>
+<li>Valorisation : système de reconnaissance</li>
+<small>pairs, institutions, financement, qualité éditoriale</small>
+<li>Découvrabilité : travail éditorial</li>
+<small>métadonnées, structuration, indexation</small>
+</ul>
+<p>leviers pour la commercialisation et la diffusion</p>
+        </div>
+
+      </section>
+    </section>
+
+    <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Atelier Wikipédia et travail de groupe<i class="material-icons">south</i></h5>
+   
+      </div>
+    </section>
+
+
+    <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Groupes et revues</p>
+
+        <ul>
+        <li>Revue de droit de l'Université de Sherbrooke (RDUS)</li>  
+        <small>Sophie, Katia, Marie-Paule</small> 
+        <li>Revue Azimuts</li>
+        <small>Joëlle, Gabrielle, Thomas</small>   
+        <li>Revue NCRE</li>
+        <small>Suzanne, Aude, Alexe</small> 
+        <li>Revue Crescentis</li>
+        <small>Lisa, Arielle, Laurie</small>
+        </ul>
+            </div>
+    </section>
+
+    <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Création de votre page Wikipédia pour la revue = 1 page/groupe</p>
+
+        <ul>
+          <li>0. Rechercher le sujet sur Wiki</li>
+          <small>le sujet ne doit pas déjà être présent</small>
+          <li>0. Vérifier l'admissibilité</li>
+          <small>suffisamment de sources externes en amont</small>
+          <li>--> <b>1. Création de la page en brouillon – Sandbox</b></li>
+          <small>page accessible à la modification à plusieurs = 1 personne du groupe</small>
+          <li>2. Travail de la page avant publication finale</li>
+          <small>sortie de la Sandbox = transfert vers l'espace principal</small>
+                 </ul>
+        <p><a href="https://fr.wikipedia.org/wiki/Aide:Comment_créer_un_article">Processus de création sur Wikipédia</a> ou <a href="https://www.beaux-arts.ca/sites/default/files/upload/wikipedia_tutorial_f.pdf ">autre tutoriel</a></p>
+      </div>
+    </section>
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+					<p style="font-variant: small-caps;">Réflexion par groupe sur la structure de la page</p>
+
+					<ul>
+						<li>Quelles sections ? sous-sections ?</li>
+            <small>organisation des informations</small>
+            <li>Mise en commun</li>
+            <small>pour définir un gabarit de page Wikipédia pour une revue savante francophone</small>
+					</ul>
+		
+
+				</div>
+			</section>
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+					<p style="font-variant: small-caps;">Réflexion par groupe sur les métadonnées de la page</p>
+
+					<ul>
+						<li>Quels types de métadonnées obligatoires ?</li>
+            <small>ou optionnels pour décrire l'objet</small>
+            <li>Mise en commun</li>
+            <small>pour définir un gabarit des métadonnées Wikipédia francophone</small>
+					</ul>
+		
+
+				</div>
+			</section>
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+					<p style="font-variant: small-caps;">InfoBox / InfoBoîte</p>
+
+					<ul>
+						<li>Sommaire des données principales</li>
+            <small>type d'information = information</small>
+            <li>Différents types : <a href="https://fr.wikipedia.org/wiki/Aide:Liste_d%27Infobox">Liste</a></li>
+            <small>dont <a href="https://fr.wikipedia.org/wiki/Mod%C3%A8le:Infobox_Ouvrage">Infobox Ouvrage</a> et <a href="https://fr.wikipedia.org/wiki/Mod%C3%A8le:Infobox_Revue ">Infobox Revue</a></small>
+					</ul>
+		<p>création contrôlée - niveau expert</p>
+
+				</div>
+			</section>
+
+
+      <section data-background="media/717_index.png" data-background-size="800px">
+
+        <div id="fondop2">
+					<p style="font-variant: small-caps;">Ajouter une infobox</p>
+
+					<ul>
+            <li><b>Au tout tout tout début de la page Wikipédia :</b></li>
+					<li>Éditeur visuel</li>
+          <small>+ Insérer Modèle : recherchez Infobox Revue</small>
+          <li>Éditeur de code</li>
+          <small>copier-coller le code depuis la page de l'<a href="https://fr.wikipedia.org/wiki/Mod%C3%A8le:Infobox_Revue">Infobox Revue</a></small>
+          </ul>
+<p>compléter les différents paramètres</p>
+<small><a href="https://fr.wikipedia.org/wiki/Aide:Infobox">Aide</a></small>
+				</div>
+			</section>
+   
+
+    <section data-background="media/717_index.png" data-background-size="800px">
+
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Lien avec Wikidata
+      </br><small>dépôt central des données structurées</small>
+</p>
+        <ul>
+        <li>Type particulier d'infoboîtes : Les <a href="https://fr.wikipedia.org/wiki/Cat%C3%A9gorie:Mod%C3%A8le_infobox_utilisant_Wikidata">Les infobox utilisant Wikidata</a></li>
+        <small>capables d'aller chercher les informations dans Wikidata et Wikimédia</small>
+        </br><small>l'infobox Revue n'est pas une infobox Wikidata</small>
+          <li>Sur la page Wikipédia <b>lorsque publiée</b>: Outils - volet de droite</li>
+          <small>Élément Wikidata</small>
+              </ul>
+            
+      </div>
+    </section>
+
+
+    <section data-background="media/717_index.png" data-background-size="800px">
+
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">Travail de groupe</p>
+
+      </div>
+    </section>
+
+
+  </section>
+     
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+         
+        
+        </div>
+      </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
+

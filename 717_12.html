@@ -1,0 +1,714 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - L'édition savante francophone - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 12 : Les enjeux des revues savantes francophones</h5>
+          
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actu</p>
+          <ul>
+            <li>Réseau Circé — chronique régulière dans le magazine de l'ACFAS <i>Ibidem</i></li>
+            <small>présentation le 11 mai, 12 h – 13 h 30, Atrium C.E.U., UQTR — <a href="https://www.acfas.ca/evenements/congres/programme/93/ibidem-reseau-circe/">Congrès ACFAS</a></small>
+            <li>Webinaire PBUQ — licences Creative Commons (rediffusion)</li>
+            <small><a href="https://reseaucirce.org/evenements/webinaire-conversation-pratique-sur-les-licences-creative-commons-et-leurs-impacts/">Réseau Circé</a></small>
+            <li><i>Environmental Health Perspectives</i> — fermeture puis reprise par l'ACS</li>
+            <small>Archives numériques récupérées — <a href="https://pubs.acs.org/journal/evhpaz">ACS</a></small>
+            <li>Les Belles Lettres — nouvelle collection de sources médiévales</li>
+            <small><a href="https://actualitte.com/article/130054/edition/les-belles-lettres-lancent-une-nouvelle-collection-de-sources-medievales">ActuaLitté</a></small>
+            <li>BookReconciler (ArXiv) — projet de gestion des métadonnées de livres, interopérabilité (OpenRefine, Wikidata, etc.)</li>
+            <small><a href="https://arxiv.org/abs/2512.10165">Annonce</a> · <a href="https://actualitte.com/article/130064/technologie/bookreconciler-l-outil-qui-reconcilie-les-livres-">ActuaLitté</a></small>
+            <li>PUM sur OpenEdition — catalogue en ligne progressif</li>
+            <small><a href="https://books.openedition.org/pum/allbookset">books.openedition.org/pum</a> — ex. <a href="https://books.openedition.org/pum/93 ">collection Bibliothèque du Nouveau Monde</a></small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Profil des revues savantes <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Historique</p>
+            <ul>
+              <li>Cercles littéraires (XVIIe siècle)</li>
+              <small>première structuration des sociétés savantes</small>
+               <li>Institutionnalisation</li>
+              <small>au Canada : Actes de la Société royale du Canada (1882) ; <i>Queen's Quarterly</i> (1893)</small>
+              </br><small>Années 1920 : <i>L'Ingénieur</i>, <i>L'Actualité économique</i> (1925), <i>Les Cahiers des Dix</i> (1936), <i>Revue d'histoire de l'Amérique française</i> (1947)…</small>
+          <li>Numérisation et Croissance</li>
+          <small>exploration des possibilités numériques (ex. <i>Surfaces</i>)</small>
+            </br><small>Augmentation exponentielle (2003–2013) : 800 mille articles en 1980 à 5 millions en 2018 ; 3 500 nouvelles revues en 2013</small>
+          <li>Enjeux contemporains</li>  
+          <small>soutien, bonnes pratiques, uniformisation des modèles</small>
+          </ul>
+            <p>forme de publication savante la plus répandue</p>
+            <small></small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeux de la culture numérique</p>
+            <ul>
+              <li>Nouvelles dynamiques culturelles</li>
+              <small>découvrabilité, accessibilité, valorisation</small>
+             <li>Outils et technologies disponibles</li>
+             <small>garantir une diversité des cultures et pratiques éditoriales</small>
+           <li>Changement des pratiques de lecture et écriture (Éditorialisation)</li>
+           <small>nouveaux publics, nouvelles formes de publication, interdisciplinarités</small>
+                             </ul>
+                             <p>Mutation des métiers de l'édition</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Politique du libre accès</p>
+            <ul>
+            <li>Déplacement des coûts</li>
+            <li>Changement des modèles économiques</li>
+            <small>abandon des abonnements, changement de livrables</small>
+         
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple : <i><a href="http://intermedialites.com/en/home/">Intermédialités</a></i> (UdeM)</p>
+            <ul>
+              <li>jusqu'en 2013 : Publication 2 numéros papier par an + numéro électronique</li>
+              <small>soutien du CRI, CRSH, FRQSC </small>
+            </br><small>revenus avec les locations de pages et abonnements</small>
+            <li>aujourd'hui : Publication 2 numéros électroniques par an</li>
+            <small>3 formats : HTML, PDF, ePub + diffusion sur Érudit</small>
+          </br><small>contenus multimédia</small>
+          <li>Évolution des tarifs d'accès</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Soutiens institutionnels</p>
+            <ul>
+              <li>Organismes subventionnaires</li>
+              <small>CRSH, FRQSC</small>
+              <li>Crowdfunding et souscription des lecteurs</li>
+              <li>Infrastructures et projets de recherche</li>
+              <small>Circé, Revue3.0, Chaire de découvrabilité, <a href="https://reseau-reperes.fr/"> Repères</a> (pépinières)</small>
+            </br><small>culture/communauté des Humanités numériques</small>
+           
+            </ul>
+            <p>tension entre un modèle économique non rentable et un caractère indispensable de la publication savante</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_erudit-nb.png" data-background-size="1800px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Érudit</p>
+           <ul><li>2024 : 9 375 articles</li></ul>
+          </div>
+        </section>
+      <section data-background-image="media/717_erudit-revue.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Érudit</p>
+           <ul><li>190 revues en libre accès, 104 sous barrière mobile, 76 revues archivées </li>
+          <small>21 nouvelles revues en 2025 + archives dont <a href="https://www.erudit.org/fr/revues/cah/">Les Cahiers Anne Hébert 2014-2019</a></small></ul>
+          </div>
+        </section>
+        <section data-background-image="media/717_erudit-fr.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Érudit</p>
+           <ul>
+            <li>99% des articles sont en libre accès</li>
+            <small>69% des revues en 2024</small>
+           </br><small>6 revues passées en libre accès en 2025</small>
+           <li>50% des revues déclarées bilingues ou plurilingues</li>
+           </ul>
+          </div>
+        </section>  
+   
+
+        <section data-background-image="media/717_erudit-canada.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Érudit</p>
+           <ul><li>176 revues francophones au Canada (144 sur Érudit)</li>
+          <small>134 Québec, 28 Ontario, 4 Colombie-Britannique, 3 Alberta, 2 Manitoba, 3 Nouvelle-Écosse, 2 Nouveau Brunswick</small>
+          
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_shs-fr.png" data-background-size="1400px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Critères d'admissibilité à Érudit</p>
+            <ul>
+              <li>Évaluation par les pairs (plusieurs modalités)</li>
+              <li>Rédacteur·rice/Directeur·rice : professeur.e l'enseignement postsecondaire canadien</li>
+              <li>1/3 du comité éditorial affilié à l'enseignement postsecondaire canadien</li>
+              <small>ou à une OBNL canadienne</small>
+              <li>Revue publiée depuis au moins 2 ans</li>
+              <small>avec évaluation par les pairs</small>
+              <li>6 articles originaux évalués par an</li>
+              <li>Pas de frais aux auteurs (APC) ; politique de droits et licences claire</li>
+              <li>Revues étudiantes : supervision professorale + rattachement institutionnel</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouvelle formule de soutien partenarial</p>
+            <ul>
+             <li>Soutien important : 2024-2025 (1, 93 millions de dollars distribués aux revues savantes)</li>      
+            <li>Ancien modèle</li>
+          <small>différence revues avec abonnement ou en libre accès</small>
+        <li>Nouveau modèle pour 2027 (avec plan d'ajustement financier de 3 ans)</li>
+        <small>1. montant de base (60%) : même pour toutes les revues</small>
+            </br><small>2. montant complémentaire (40%) : selon les consultations sur Érudit + publications</small>
+            </br><small>3. montant addtionnel : pour les revues en libre accès immédiat</small>
+        </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_erudit-soutien.png" data-background-size="1400px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">OpenEdition</p>
+            <ul>
+              <li>2024: 1 315 000 documents publiés</li>
+              <li>82 millions de visites</li>
+              <small>47 millions pour OpenEdition Journals</small>
+              <li>69% des documents en français</li>
+              <li>649 revues</li>
+              <small>501 de France, 19 de Belgique, 15 du Canada, 13 de Suisse, etc.</small>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/717_oe-profil.png" data-background-size="1000px" background-color="#21211c">
+        
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">OJS</p>
+            <ul>
+                 <li>Largement utilisé par les revues sur Érudit</li>
+                 <small>55% des revues sur Érudit utilisent OJS</small>
+                 <li>Nouvelle version 3.5</li>
+           <small><a href="https://docs.pkp.sfu.ca/learning-ojs/about-ojs/en/#whats-new ">nouvelle structure et fonctionnalités</a></small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problématiques des infrastructures</p>
+            <ul>
+              <li>Projet Revue2.0 : le soutien ne reflète pas toujours la diversité des pratiques éditoriales</li>
+ 
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_elsevier.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Fonctionnement rentable - Elsevier</p>
+            <ul>
+              <li>16% des revues scientifiques mondiales</li>
+              <small>avec Springer Nature, Wiley Blackwells, et Taylor and Francis = 40% du marché (oligopole)</small>
+              <li>Rentabilité sur principe de prestige</li>
+              <li>Rentabilité élevée côté éditeurs commerciaux vs logique de contribution au savoir en milieu universitaire</li>
+              <small>rentabilité commerciale priviligiée au détriment de la contribution au savoir</small>
+              </br><small>réactions : politiques de libre accès, boycotts</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Résumé</p>
+            <ul>
+              <li>Diffusion rapide des résultats</li>
+              <li>Légitimation par les pairs et validation institutionnelle</li>
+              <li>Travail éditorial (vérification, normes, formats)</li>
+              <li>Point d'entrée vers la chaîne numérique, plateformes, bonnes pratiques</li>
+              <li>Médiation entre communautés scientifiques, institutions et publics élargis</li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Atelier : idéation d'une revue savante<i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Chaîne éditoriale (rappel)</p>
+            <ul>
+              <li>1. Soumission du manuscrit ou de l'article</li>
+              <li>2. Évaluation</li>
+              <small> (pairs, comités, recommandations)</small>
+              <li>3. Préparation éditoriale </li>
+              <small>(révision, normalisation, appareil critique, références)</small>
+              <li>4. Mise en forme</li>
+              <small>(imprimé et/ou numérique)</small>
+              <li>5. Publication sur la revue</li>
+              <small>+ diffuseurs</small>
+              <li>6. Signalement et indexation</li>
+              <small> (métadonnées, identifiants)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Outils de gestion et suivi des tâches</p>
+            <ul>
+              <li>Outils possibles : Notion, Todoist, Asana, Monday, Trello, Jira…</li>
+              <small>assignation de tâches, étiquettes, suivi des étapes, etc.</small>
+    <li>Suivi sous la forme d'une ligne choronologique : chemin du texte jusqu'à la publication</li>
+                   </ul>
+                   <p>pour atelier : travail en équipe de 3-4 personnes</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Imaginer la chaîne éditoriale d'une revue savante <small> avec :</small></p>
+            <ul>
+           <li>Formats de travail et livrables</li>
+           <small>de départ, de traitement, de sortie</small>
+           <li>Outils/Logiciels utilisés</li>
+           <small>avec les tâches / intervenants</small>
+           <li>Licences et type de publications</li>
+           <li>Documentation et ressources</li>
+           <small>normes éditoriales, politiques IA, politiques évaluations, etc.</small>
+           <li>Partenaires (?)</li>
+           <small>aggrégateurs, diffuseurs, institutions, centre de recherche etc.</small>
+<li>Archivage (?)</li>
+                   </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+      </div>
+        </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

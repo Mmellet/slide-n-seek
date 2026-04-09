@@ -1,0 +1,764 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD717 - Séance 13 - Les autres formats savants - H2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD717 - Hiver 2026 - Margot Mellet</div>
+      <section data-background-image="media/717_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+
+          <h2>ELD717 | L'édition savante francophone</h2>
+          <h5 style="font-size: 30px;">Séance 13 : Les autres formats savants</h5>
+          
+        </div>
+
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Petite actu</p>
+          <ul>
+            <li>Coalition for Advanced Research Assessment — Collection CoARA (outils et ressources pour l'évaluation de la recherche)</li>
+            <small><a href="http://www.coara.org/collection">coara.org/collection</a></small>
+            <li>Bilan Gaspard 2025 publication</li>
+            <small><a href="https://app.cyberimpact.com/newsletter-view-online?ct=VL_xwHZ7AkEdsY5amyVnHShKb2BXTve-d_tZpoMvTJaHnFCaSgYLwetowWwNS_YNviYuwIBZGw_6ORQH2mdwx7B4rKrc_Ps7Js8_poBEmMdkdk5XmptGLZBbOWT95L81">source</a></small>
+            <li>SODEC — distinction du programme d'aide aux éditeurs de livres et programme d'aide aux librairies</li>
+            <small>dépôt pour le 7 mai</small>
+            <li>Crédit d'impôt remboursable édition de livres de la SODEC — rencontre d'information</li>
+            <small><a href="https://events.teams.microsoft.com/event/7a4f93ff-4da6-4747-aa83-14b35766877a@8bc5c7a6-5660-4adb-87fe-97bca4de17ec">inscription</a></small>
+            <li>Prix du Canada 2026 — 5 livres / 4 000 $ ; résultats le 10 juin</li>
+            <small><a href="https://www.federationhss.ca/fr/programmes-politiques/prix-du-canada">10 finalistes</a></small>
+            <li>Mort de Jacques Michon — histoire du livre au Québec</li>
+            <small><i>Histoire de l'édition littéraire au Québec</i> (Fides) ; <i>Histoire du livre et de l'imprimé au Canada</i> (PUM / PUMT)</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Formats savants et les alternatives<i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Formats principaux</p>
+            <ul>
+             
+              <li><strong>Monographie</strong> — format le plus valorisé</li>
+              <small>processus long, coûteux</small>
+              <li><strong>Article</strong> — format le plus courant</li>
+              <small>diffusion rapide, importance des métadonnées</small>
+              <li><strong>Actes de colloque</strong> — moyenne reconnaissance</li>
+              <small>publication collective, mutation du format</small>
+              <li><strong>Comptes rendus</strong> — peu de valorisation</li>
+              <small>individuel, peu/pas évaluation</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Problématiques contemporaines</p>
+            <ul>
+              <li>Légitimation par les pairs ≠ visibilité ni circulation du savoir</li>
+              <small>conflit d'intérêt, biais</small>
+              <li>Temporalité — retards importants sur certaines chaînes</li>
+              <small>motif de la prépublication</small>
+              <li>Diversité des pratiques  — harmonisation difficile</li>
+              <small>variations entre les normes éditoriales</small>
+              <li>Coûts de production</li>
+              <small>baisse des achats institutionnels</small>
+               </ul>
+          </div>
+        </section>
+
+      
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Les alternatives
+              <small>objectifs</small>
+            </p>
+            <ul>
+              <li>Repenser les modèles traditionnels</li>
+              <small>interdisciplinarité, liberté, diversité</small>
+              <li>Réduire les pratiques opaques ou inégalitaires</li>
+              <small>vers plus de transparence des processus et reproductibilité</small>
+              <li>Atteindre d'autres publics</li>
+              <small>vulgarisation</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contenu « savant » et formes plus libres</p>
+            <ul>
+              <li>Modèle classique : thèse, démonstration, sources, analyses</li>
+              <li>Modèle plus essayiste : plus libre</li>
+              <small>tonalité parfois polémique ou personnelle, mélange d'analyses, opinions, anecdotes</small>
+             
+            </ul>
+            <p style="font-size: 26px;">exemple : <i>L'espace numérique</i> aux Ateliers sens public, et à la revue <i>Sens public</i>
+            </br><small>conversation par courriel de E. Méchoulan et M. Vitali-Rosati</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Recherche-création</p>
+            <ul>
+              <li>Double démarque</li>
+              <small>« toutes les démarches et approches de recherche favorisant la création qui visent à produire de nouveaux savoirs esthétiques, théoriques, méthodologiques, épistémologiques ou techniques » (FRQSC)</small>
+            <li>En littérature : M. Delvaux, <a href="https://sens-public.org/articles/1617/">Sur le bas-côté : des femmes</a></li>     
+            <li>En sociologie, Social Science Fiction</li>
+            <small>utilisation des techniques narratives de sf comme outils méthodologiques pour tester des hypothèses politiques</small>
+          </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Actes de colloque : transformations</p>
+            <ul>
+              <li>Glissement vers le <strong>dossier thématique</strong> de revue</li>
+              <li>Diffusion en ligne</li>
+              <small>ex. colloque Humanistica sur <a href="https://hal.science/HUMANISTICA-2023/browse/latest-publications">HAL</a></small>
+              <li>Renversement de modèle</li>
+              <small>dossier <a href="https://journals.openedition.org/terminal/11544"><i>Écouter (à) l'écran</i></a> à Terminal (OpenEdition)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Formats brefs - 2 perspectives</p>
+            <ul>
+              <li>1. Annoncer ou prolonger un format long</li>
+              <small>compte rendu, critique, entretien, lancement, balado, etc.</small>
+              <li>2. Produre de façon <strong>autonome</strong>  des connaissances</li>
+              <small>alternatives à part entière</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouveaux formats savants : Documentation</p>
+            <ul>
+              <li><strong>Datasets</strong></li>
+              <small>code, documentation d'expériences — reproductibilité </small>
+              <li><strong>Protocoles et méthodes</strong></li>
+              <small>policy papers ou registered reports - description des pratiques et méthodologies</small>
+              <li><strong>Carnets de recherche</strong></li>
+              <small>blogs scientifiques et littéraires, notes de recherche</small>
+              <li><strong>Tutoriels</strong></li>
+              <small>ex. <a href="https://programminghistorian.org/fr/">The Programming Historian</a></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouveaux formats savants : Valorisation et Patrimoine</p>
+            <ul>
+              <li>Plateforme de billets</li>
+              <small><a href="https://www.raccoursci.com/faq/">RaccourSci</a> (ACFAS / AUF)</small>
+              <li>Entretiens, formats courts médiatisés</li>
+          
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Nouveaux formats savants : Édition collaborative et développement continu</p>
+            <ul>
+                     <li><strong>Articles vivants</strong> </li>
+                     <small>mises à jour après publication ; versions successives ; évaluation post-publication</small>
+              <li>Projets collaboratifs</li>
+              <small>wiki, éditions critiques numériques : <a href="https://www.dossiers-flaubert.fr/">Dossiers Flaubert</a> · <a href="https://ebalzac.com/">eBalzac</a> · <a href="https://frankensteinvariorum.org/">Frankenstein Variorum</a></small>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Atelier : exploration de formats brefs<i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Imaginez en équipe, pour votre revue</p>
+            <ul>
+              <li>1. un format bref innovant pour la publication savante</li>
+              <li>2. un format de valorisation/découvrabilité d'une publication</li>
+            </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+      <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Atelier : les subventions des revues savantes<i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Subventions revues</p>
+            <ul>
+              <li><strong>FRQSC</strong> — <a href="https://frq.gouv.qc.ca/programme/soutien-aux-revues-scientifiques-re-2025-2026/">Soutien aux revues scientifiques</a> : 25 000 $/an sur 4 ans ; prochain concours en 2028 ; dépôt en octobre, résultats en avril</li>
+              <li><strong>CRSH</strong> — <a href="https://sshrc-crsh.canada.ca/fr/financement/occasions/aide-revues-savantes/2025/concours.aspx">Aide aux revues savantes</a> : jusqu'à 42 400 $/an (émergentes) ou 52 000 $/an (établies) sur 3 ans ; prochain concours en 2027 ; dépôt en septembre, résultats en mars</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">FRQSC — admissibilité</p>
+            <ul>
+              <li>Demandeur : chercheur universitaire</li>
+              <li>moyenne de publication : ≥ 10 articles évalués par les pairs par an</li>
+              <small>et ≥ 2 expert·e·s du domaine</small>
+              <li>≥ 50 % de contenu en français ; libre accès diamant ; indexation <strong>DOAJ</strong></li>
+                     </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">FRQSC — critères</p>
+            <ul>
+              <li>Qualité et impact</li>
+              <small>40 pts</small>
+              <li>Diffusion</li>
+              <small>30 pts</small>
+              <li>Gouvernance</li>
+              <small>30 pts</small>
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">FRQSC — dossier</p>
+            <ul>
+              <li>Formulaire en ligne</li>
+              <li>CV commun canadien</li>
+              <li>Justification du budget</li>
+              <small>2 pages</small>
+              <li>Tableaux de publication</li>
+              <small>nombre d'articles évalués par les pairs par an, acceptés et rejetés</small>
+              <li>Listes des évaluateur·rice·s</li>
+              <li>Listes des articles publiés</li>
+              <li>Lettre d'engagement de la revue pour Érudit</li>
+              <li>Organigramme de l'équipe éditoriale</li>
+              <li>Lettre de soutien de l'institution</li>
+                </ul>
+                <p>+ pour les nouvelles revues : description de 10 pages + publication</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">CRSH — admissibilité</p>
+            <ul>
+              <li>Demandeur : chercheur universitaire</li>
+              <li>Publication évaluée par les pairs</li>
+              <li>Publication en français ou en anglais</li>
+              <li>Comité de rédaction affilié à un établissement postsecondaire canadien</li>
+              <small>ou à une OBNL canadienne</small>
+              <li>Publication en accès diamant et licence ouverte</li>
+              <li>Indexation au DOAJ</li>
+              <li>Selon les revues</li>
+              <small>établie : 2 numéros/an avec ≥ 3 articles pairs chacun, ou 6 articles pairs/an hors numéro</small>
+            </br><small>émergente : 1 numéro avec ≥ 3 articles pairs, ou 3 articles pairs hors numéro</small>
+             </ul>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">CRSH — critères</p>
+            <ul>
+              <li>Qualité et valeur de la revue</li>
+              <small>40 pts</small>
+              <li>Orientation rédactionnelle</li>
+              <small>30 pts</small>
+              <li>Nature et efficacité des stratégies de diffusion</li>
+              <small>30 pts</small>
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">CRSH — dossier</p>
+            <ul>
+              <li>Formulaire en ligne</li>
+         
+              <li>Description de la revue</li>
+              <small>3 pages</small>
+              <li>Processus d'évaluation</li>
+              <small>1 page</small>
+              <li>Équipe éditoriale</li>
+              <small>1 page</small>
+              <li>Comités de rédaction</li>
+              <small>tableaux de 4 pages</small>
+              <li>Instructions envoyées aux évaluateur·rice·s</li>
+              <li>Listes des évaluateur·rice·s</li>
+              <small>2 pages</small>
+              <li>Liste des auteurs publiés</li>
+              <li>Liste des articles publiés</li>
+            
+            </ul>
+            </div>
+            </section>
+
+            <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+              <div id="fondop2">
+                <p style="font-variant: small-caps;">CRSH — dossier</p>
+                <ul>
+        
+                  <li>Justification du budget</li>
+                  <small>2 pages</small>
+                  <li>Statistiques de consultation</li>
+                  <small>3 pages</small>
+                  <li>Exclusion d'évaluateur·rice·s</li>
+                  <small>1 page</small>
+                </ul>
+                </div>
+                </section>
+
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Travail en équipe</p>
+            <ul>
+              <li>Admissibilité : Que changer pour être admissible ?</li>
+              <li>Identifier les données à produire</li>
+              <small>arguments, estimation du temps</small>
+              <li>Noter les questions pour la mise en commun</li>
+           
+            </ul>
+          </div>
+        </section>
+        <section data-background-image="media/717_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">CRSH — calcul du budget (bonus)</p>
+            <ul>
+    <li>1 800 $/article</li>
+    <small>émergente : LA immédiat, sans APC</small>
+    <li>1 000 $/article</li>
+    <small>établie : LA immédiat, avec APC</small>
+    <li>1 800 $/article</li>
+    <small>établie : LA différé ≤ 12 mois, sans APC</small>
+    <li>2 000 $/article</li>
+    <small>établie : LA diamant immédiat, sans abonnement ni APC</small>
+           
+            </ul>
+            </div>
+            </section>
+
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/717_index.png" data-background-size="1800px"
+      data-transition="linear" data-transition-speed="fast">
+      <div id="fondop2">
+        <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+      </div>
+        </section>
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

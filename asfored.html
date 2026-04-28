@@ -1,0 +1,603 @@
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>ASFORED - Synthèse édition au Québec</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="reveal">
+  <div class="slides">
+    <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+    <div class="footer">- Margot Mellet</div>
+    <section data-background-image="media/chute.png" data-background-size="1600px" background-color="#21211c">
+      <div id="fondop">
+
+        <h2>Rencontre d'accueil</h2>
+        <h5 style="font-size: 24px;">L'édition et les programmes d'édition au Québec</h5>
+        <small>DALL - Campus de Longueuil - 28 avril - Margot Mellet</small>
+         </div>
+
+    </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px">
+        <section data-background-image="media/chute.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h5>1. (petite) Histoire de l'édition au Québec <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        <section data-background-image="media/chute.png" data-background-size="2000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Avant 1764 : période coloniale</p>
+            <ul>
+              <li>Dépendance à l'économie française</li>
+              <li>Existence du livre par l'importation</li>
+              <small>du livre français d'auteurs français</small>
+            
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_ellis.png" data-background-size="1100px" background-color="#21211c">
+          <div id="fondop2" style="margin-top:400px">
+         <p style="font-size: 20px;">ELLIS, Henry. <i>Voyage de la baye de Hudson, fait en 1746 & 1747, pour la découverte du passage de Nord-ouest :
+          contenant une description exacte des côtes & l'histoire naturelle du pays, avec une relation historique de toutes
+          les expéditions faites jusqu'ici pour la découverte d'un passage plus court aux Indes Orientales, & des preuves
+          évidentes de la réalité de ce passage.</i> A Paris : Chez Ballard fils, imprimeur libraire, MDCCXLIX [1749], 2 vol.</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/716_gazette.jpg" data-background-size="600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">1764 : début de l'imprimerie locale</p>
+            <ul>
+              <li><i><a href="https://collections.banq.qc.ca/ark:/52327/4265866">La Gazette de Québec</a></i>, 21 juin 1764, journal bilingue par Brown & Gilmore</li>
+              <li><i>La Gazette littéraire de Montréal</i> (1778)</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_gazette-maintenant.png" data-background-size="1600px">
+          <div id="fondop2">
+          </br>
+        encore actif :    <a href="https://www.qctonline.com/">Quebec Chronicle-Telegraph</a></small>
+            </ul>
+            </div>
+        </section>
+
+        <section data-background-image="media/716_garand.jpg" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">XIXe - début XXe : industrialisation et marché local</p>
+            <ul>
+              <li>Libraires-grossistes au centre de la diffusion</li>
+              <small>Beauchemin, Garneau, Granger</small>
+              <li>Éditeur-Imprimeur-Diffuseur et Édition à compte d'auteur</li>
+              <li>Premières maisons canadiennes</li>
+              <small>Éditions Lévesque, Éditions Édouard Garand, <i>Le roman canadien</i></small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_ixe13.jpg" data-background-size="600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Seconde Guerre mondiale : le temps des éditeurs québécois</p>
+            <ul>
+              <li>1940 : baisse de production en France occupée</li>
+              <li>Licence <b>exceptionnelle</b> de reproduction des livres français au Canada/Québec.</li>
+              <li>Émergence des maisons d'édition québécoises</li>
+              <small>Éditions du Bavard et Éditions Police-Journal (1944)</small>     
+            </br><small>Agent IXE-13, L'As des espions canadiens (Pierre Saurel/Daigneault)</small>
+  
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_charbonneau.jpg" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Après-guerre : retour et tensions</p>
+            <ul>
+              <li>Retour des éditeurs français et reconfiguration du secteur</li>
+            <small>faillite de beaucoup de maisons entre 1946 et 1949</small>
+           <li>Guerre idéologique et d'affirmation</li>
+           <small>Querelle « La France et nous » (1947)</small>
+                   </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_bulletin.png" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modèle du livre moderne (1950-1980)</p>
+            <ul>
+             <li>Mise en place d'un système-livre propre au Québec</li>
+             <small>premiers programmes de financement public, Loi 51 (Loi sur le développement des entreprises québécoises dans le domaine du livre)</small>
+            <li>Affirmation d'une littérature/culture québécoise</li> 
+             
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_12.jpg" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeux contemporains</p>
+            <ul>
+             <li>Mondialisation : concentration et pression sur la rentabilité</li>  
+             <small>12 août - <i>J'achète un livre québécois</i></small> 
+             <li>Culture numérique</li>
+             <small>Entrepôt numérique ANEL/De Marque, Agrégateur de revues Érudit, etc.</small>
+             <li>Diversité</li>
+           <small>culture féministe - Éditions de la Pleine Lune</small>
+            </br><small>culture autochtone - Mémoires d'encrier, Éditions Hannenorak</small>
+          </br><small>culture zine - Zine de zines</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_.png" data-background-size="500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Caractéristiques de l'édition au Québec</p>
+            <ul>
+             <li>Petit marché, forte identité culturelle et francophone</li>
+             <li>Souveraineté culturelle par interventionnisme public fort</li>
+             <li>Importante bibliodiversité</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_secret-edition.webp" data-background-size="1500px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Vitalité du milieu</p>
+            <ul>
+           <li>Balado <a href="https://www.anel.qc.ca/secrets-dedition/">« Secrets d'édition »</a> (ANEL)</li>
+           <li><i>Dictionnaire historique des gens du livre au Québec</i> (Fides)</li>
+           <li>Plateforme <a href="https://www.pavillons.ca/a-propos">Pavillons</a> - feuilleton littéraire numérique</li>
+            </ul>
+          </div>
+        </section>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px">
+        <section data-background-image="media/chute.png" data-background-size="2000px">
+          <div id="fondop2">
+            <h5>2. Présentation des programmes <i class="material-icons">south</i></h5>
+          </div>
+        </section>
+
+        
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">De quels programmes parle-t-on ?
+          </br><small>Deux programmes de 2<sup>e</sup> cycle</small></p>
+         
+<ul>
+  <li><a href="https://www.usherbrooke.ca/admission/programme/564/diplome-detudes-superieures-specialisees-de-2e-cycle-en-edition/">Diplôme d'études supérieures spécialisées</a></li>
+  <small>30 crédits, 4 cours obligatoires, 2 cours à option, 1 activité de synthèse </small>
+  <li><a href="https://www.usherbrooke.ca/admission/programme/45H/microprogramme-de-2e-cycle-en-edition/">Microprogramme</a></li>
+  <small>15 crédits, structure souple - choix libre</small>
+</ul>
+
+<p>Cours offerts le soir au Campus de Longueuil</p>
+<small>en présence sauf exception</small>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/735_chaine.jpg" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Former aux métiers de l'édition
+          </br><small>unique au Québec</small></p>
+         
+<ul>
+  <li>Apprentissages pratiques et théoriques</li>
+  <small>édition, production, commercialisation du livre</small>
+ <li>Horaire conciliant travail-études-vie personnelle</li>
+ <small>cours offerts le soir - Campus de Longueuil</small>
+ <li>Ouverture aux candidatures internationales</li>
+</ul>
+
+
+        </div>
+      </section>
+
+     
+      <section data-background-image="media/programme-cours.png" data-background-size="1800px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Une offre riche et polyvalente
+          </br><small></small></p>
+         
+<ul>
+ <li>Compétence/Connaissance fondamentale en édition</li>
+ <small>cours obligatoires</small>
+</br><small>édition du manuscrit, production du livre, gestion de projet, histoire de l'édition</small>
+ <li>Choix d'une spécialisation</li>
+ <small>cours à option</small>
+</br><small>commercialisation / droit et administration / pratiques littéraires</small>
+ <li>Choix d'une orientation</li>
+ <small>activité de synthèse</small>
+</br><small>Rapport de recherche / Stage en entreprise</small>
+</ul>
+
+
+        </div>
+      </section>
+
+      <section data-background-image="media/chute.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Des cours donnés par des professionnels de l'édition
+          </br><small></small></p>
+         
+<ul>
+ <li>Éditeur.rice, Responsable de production, Coordinateur.rice de ventes, Responsable des droits, Auteur.rice</li>
+</ul>
+
+
+        </div>
+      </section>
+
+      <section data-background-image="media/programme-conversation.jpg" data-background-size="1600px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Des activités d'insertion professionnelle
+          </br><small></small></p>
+         
+<ul>
+ <li>Rencontres avec des professionnels</li>
+ <small>conférences</small>
+ <li>Opportunités d'échanges avec les gens du milieu</li>
+ <small>entretiens</small>
+ <li>Visites et ateliers encadrés</li>
+ <small>découverte des pratiques</small>
+ <li>Stage en entreprise</li>
+ <small>insertion professionnelle (175h)</small>
+</ul>
+
+
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/programme-salon.webp" data-background-size="1600px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Des opportunités de participation à la vie culturelle
+          </br><small></small></p>
+         
+<ul>
+ <li>Offres de bénévolat</li>
+ <small>salons, lancements, foires</small>
+ <li>Accès privilégié</li>
+ <small>PASS au salon du livre de Montréal</small>
+ <li>Opportunités d'emplois</li>
+ <small>temps partiel</small>
+</ul>
+
+
+        </div>
+      </section>
+
+
+      <section data-background-image="media/programme-fides.png" data-background-size="2000px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Un lieu d'expertise
+          </br><small>Histoire du livre et de l'édition</small></p>
+         
+<ul>
+ <li><a href="https://www.usherbrooke.ca/grelq">Groupe de recherches et d'études sur le livre au Québec (GRÉLQ)</a></li>
+<li>Équipe de recherche en études queer au Québec (ÉRÉQQ)</li>
+ <li><a href="http://versus.recherche.usherbrooke.ca/">Groupe de recherche en études littéraires et culturelles comparées au Canada et au Québec (VersUS)</a></li>
+</ul>
+
+<small></small>
+        </div>
+      </section>
+
+      <section data-background-image="media/729_lecture.png" data-background-size="1800px"class="fond-section">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Nos diplômé.e.s ont du talent
+          </br><small>et une carrière</small></p>
+         
+<ul>
+ <li>créateur.rice de maisons d'édition, éditeur.rice, responsable, gestionnaire</li>
+</ul>
+
+<p><a href="https://www.usherbrooke.ca/dall/etudes/programmes/par-domaine/edition/parcours">Page témoignages/parcours de diplômées et diplômés</a></p>
+<small></small>
+        </div>
+      </section>
+
+      </section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      transition: "slide",
+      dependencies: [
+        {
+          src: "lib/js/classList.js",
+          condition: function() { return !document.body.classList; }
+        },
+        {
+          src: "plugin/markdown/marked.js",
+          condition: function() { return !!document.querySelector("[data-markdown]"); }
+        },
+        {
+          src: "plugin/markdown/markdown.js",
+          condition: function() { return !!document.querySelector("[data-markdown]"); }
+        },
+        {
+          src: "plugin/highlight/highlight.js",
+          async: true,
+          condition: function() { return !!document.querySelector("pre code"); },
+          callback: function() { hljs.initHighlightingOnLoad(); }
+        },
+        { src: "plugin/zoom-js/zoom.js", async: true },
+        { src: "plugin/notes/notes.js", async: true }
+      ]
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Visualisation SVG</title>
+	<style>
+		* { box-sizing: border-box; }
+
+		body {
+			margin: 0;
+			padding: 1.5em;
+			background-color: #d5d2dc;
+			color: #000;
+			font-family: 'Source Sans Pro', Verdana, Geneva, Tahoma, sans-serif;
+			line-height: 1.4;
+		}
+
+		h1 {
+			margin: 0 0 0.5em;
+			font-size: 1.4em;
+			font-weight: 600;
+			text-transform: uppercase;
+		}
+
+		.nav {
+			margin-bottom: 1.5em;
+		}
+
+		.nav a {
+			color: #3b44ac;
+			margin-right: 1em;
+		}
+
+		.hint {
+			margin: 0 0 1em;
+			font-size: 0.9em;
+			opacity: 0.85;
+		}
+
+		.graph-frame {
+			border: double mediumturquoise;
+			width: 1200px;
+			max-width: 100%;
+			height: 600px;
+			overflow: auto;
+			padding: 5px;
+			background: #fff;
+		}
+
+		.img-zoom-container {
+			position: relative;
+			display: inline-block;
+		}
+
+		.img-zoom-container img {
+			display: block;
+			vertical-align: top;
+		}
+
+		.img-zoom-lens {
+			position: absolute;
+			border: 2px solid #3b44ac;
+			background-color: rgba(59, 68, 172, 0.12);
+			width: 400px;
+			height: 120px;
+			cursor: crosshair;
+			z-index: 2;
+			display: none;
+			pointer-events: none;
+		}
+
+		.img-zoom-result {
+			border: 1px solid mediumturquoise;
+			width: 1200px;
+			max-width: 100%;
+			height: 480px;
+			margin-top: 1em;
+			background-repeat: no-repeat;
+			background-color: #fff;
+		}
+
+		.error {
+			padding: 1em;
+			background: rgba(255, 255, 255, 0.9);
+			border: 1px solid #c00;
+		}
+	</style>
+</head>
+<body>
+	<nav class="nav">
+		<a href="javascript:history.back()">← Retour</a>
+		<a id="raw-link" href="#" target="_blank" rel="noopener">Ouvrir le SVG brut ↗</a>
+	</nav>
+
+	<h1 id="graph-title">Visualisation</h1>
+	<p class="hint">Déplacez le curseur sur le graphique : le cadre suit la souris et la zone agrandie s'affiche en dessous.</p>
+
+	<div id="content">
+		<div class="graph-frame">
+			<div class="img-zoom-container">
+				<img id="myimage" alt="">
+			</div>
+		</div>
+		<div id="myresult" class="img-zoom-result"></div>
+	</div>
+
+	<script>
+		function imageZoom(imgID, resultID) {
+			var img = document.getElementById(imgID);
+			var result = document.getElementById(resultID);
+			var lens = document.createElement("DIV");
+			lens.setAttribute("class", "img-zoom-lens");
+			img.parentElement.insertBefore(lens, img);
+
+			var displayW = img.offsetWidth;
+			var displayH = img.offsetHeight;
+			if (!displayW || !displayH) {
+				return false;
+			}
+
+			var naturalW = img.naturalWidth || displayW;
+			var naturalH = img.naturalHeight || displayH;
+			var ratioX = naturalW / displayW;
+			var ratioY = naturalH / displayH;
+
+			var zoomFactor = 3.5;
+			var lensW = Math.min(220, Math.max(90, displayW * 0.12));
+			var lensH = Math.min(120, Math.max(40, displayH * 0.04));
+			lens.style.width = lensW + "px";
+			lens.style.height = lensH + "px";
+
+			var cx = (result.offsetWidth / lensW) * zoomFactor;
+			var cy = (result.offsetHeight / lensH) * zoomFactor;
+
+			result.style.backgroundImage = "url('" + img.src + "')";
+			result.style.backgroundSize = (naturalW * cx) + "px " + (naturalH * cy) + "px";
+			result.style.backgroundRepeat = "no-repeat";
+
+			img.addEventListener("mouseenter", function () {
+				lens.style.display = "block";
+			});
+			img.addEventListener("mouseleave", function () {
+				lens.style.display = "none";
+			});
+			img.addEventListener("mousemove", moveLens);
+			img.addEventListener("touchmove", moveLens);
+			lens.addEventListener("mousemove", moveLens);
+			lens.addEventListener("touchmove", moveLens);
+
+			moveLens({ clientX: img.getBoundingClientRect().left + displayW / 2, clientY: img.getBoundingClientRect().top + displayH / 2 });
+
+			function moveLens(e) {
+				var pos, x, y, bx, by;
+				if (e.preventDefault) { e.preventDefault(); }
+				pos = getCursorPos(e);
+				x = pos.x - (lensW / 2);
+				y = pos.y - (lensH / 2);
+				if (x > displayW - lensW) { x = displayW - lensW; }
+				if (x < 0) { x = 0; }
+				if (y > displayH - lensH) { y = displayH - lensH; }
+				if (y < 0) { y = 0; }
+				lens.style.left = x + "px";
+				lens.style.top = y + "px";
+				lens.style.display = "block";
+				bx = x * ratioX;
+				by = y * ratioY;
+				result.style.backgroundPosition = "-" + (bx * cx) + "px -" + (by * cy) + "px";
+			}
+
+			function getCursorPos(e) {
+				var rect = img.getBoundingClientRect();
+				var clientX = e.touches ? e.touches[0].clientX : e.clientX;
+				var clientY = e.touches ? e.touches[0].clientY : e.clientY;
+				return {
+					x: clientX - rect.left,
+					y: clientY - rect.top
+				};
+			}
+
+			return true;
+		}
+
+		function initViewer() {
+			var params = new URLSearchParams(window.location.search);
+			var src = params.get("src");
+			var title = params.get("title");
+			var content = document.getElementById("content");
+
+			if (!src) {
+				content.innerHTML = '<p class="error">Paramètre <code>src</code> manquant. Exemple : <code>svg-viewer.html?src=ccla/lexique_auteurs.svg</code></p>';
+				return;
+			}
+
+			if (title) {
+				document.title = title;
+				document.getElementById("graph-title").textContent = title;
+			} else {
+				var filename = src.split("/").pop().replace(/\.svg$/i, "").replace(/_/g, " ");
+				document.title = filename;
+				document.getElementById("graph-title").textContent = filename;
+			}
+
+			document.getElementById("raw-link").href = src;
+
+			var img = document.getElementById("myimage");
+			var frame = document.querySelector(".graph-frame");
+			var maxWidth = Math.min(1180, frame.clientWidth - 10);
+			var zoomReady = false;
+
+			function startZoom() {
+				if (zoomReady) { return; }
+				img.style.width = maxWidth + "px";
+				img.style.height = "auto";
+				requestAnimationFrame(function () {
+					if (imageZoom("myimage", "myresult")) {
+						zoomReady = true;
+					}
+				});
+			}
+
+			img.onload = startZoom;
+			img.onerror = function () {
+				content.innerHTML = '<p class="error">Impossible de charger le fichier : <code>' + src + '</code></p>';
+			};
+			img.src = src;
+			if (img.complete && img.naturalWidth) {
+				img.onload();
+			}
+		}
+
+		initViewer();
+	</script>
+</body>
+</html>

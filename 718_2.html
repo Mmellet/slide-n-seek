@@ -1,0 +1,1127 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2026 - Margot Mellet</div>
+      <section data-background-image="media/718_index.png" data-background-size=" 1500px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD718 | Édition numérique</h2>
+          <h5 style="font-size: 30px;">10 septembre : Culture numérique 1</h5>
+          <small>Jeudi de 18h30 à 21h20</small>
+          </br><small>Les environnements de l’édition numérique</small>
+        </div>
+      </section>
+
+
+
+            <!-- ========== Environnements numériques – Internet et le Web (2.docx) ========== -->
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Environnements numériques <i class="material-icons">south</i></h5>
+            <small>Internet et le Web — fondements des environnements numériques</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+    
+            <p><i class="material-icons">add_road</i> Internet / Web <i class="material-icons">local_shipping</i></p>
+            <table style="font-size: 20px; width: 100%;">
+              <thead>
+                <tr><th></th><th>Internet</th><th>Web</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Nature</td>
+                  <td>Infrastructure de réseaux et de protocoles</td>
+                  <td>Service / système hypertexte parmi d’autres</td>
+                </tr>
+                <tr>
+                  <td>Fonction</td>
+                  <td>Interconnecter machines et réseaux</td>
+                  <td>Naviguer entre ressources via hyperliens</td>
+                </tr>
+                <tr>
+                  <td>Autres services</td>
+                  <td>Courriel, streaming, jeux…</td>
+                  <td>—</td>
+                </tr>
+              </tbody>
+            </table>
+                </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">1. Internet</p>
+            <ul>
+            
+              <li>Réseau informatique mondial — années 1960</li>
+              <small>télécommunication multidirectionnelle</small>
+              <li>Origines du projet (années 1950) : résister aux attaques physiques</li>
+              <small>besoins militaires états-uniens</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/arpanet.png" data-background-size="1300px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Premier réseau</p>
+            <ul>
+              <li>Travaux de Paul Baran (informaticien, physicien et mathématicien américain)</li>
+              <small>communication par paquets</small>
+              <li>Développement du réseau Arpanet</li>
+              <small>par Robert Taylor au centre Arpa (
+                <i>Advanced Research Projects Agency Network</i>)
+              </small>
+            </br><small>première connexion entre 4 universités (1969)
+            </br><small>UCLA, SRI, UCSB, Utah</small> </small>
+          </br><small>Échange entre machines différentes + fonctionnement par noeuds</small>
+           
+            </ul>
+            <p>Prémices militaires, scientifiques, privés</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/TCP-IP.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Protocoles TCP/IP (années 1970)</p>
+            <ul>
+              <li><b>IP</b> (<i>Internet Protocol</i>) — adresse unique de la machine</li>
+              <li><b>TCP</b> (<i>Transmission Control Protocol</i>) — connexion, découpage et réassemblage des paquets</li>
+            </ul>
+            <p>→ mise en réseau / inter-networking</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/alohanet.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">De l’Arpanet à l’Internet</p>
+            <ul>
+              <li>Multiplication  des réseaux</li>
+              <small>Minitel (1978), Ethernet (1980), Usenet (1980), AlohaNet (Université d'Hawaï)</small>
+              <li>1983 — Arpanet adopte TCP/IP</li>
+              <small>Deux branches : MILNET (militaire) / Internet (civil, universitaire)</small>
+            </ul>
+            <p>Arpanet devient le réseau <i>entre</i> tous les réseaux</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/web.png" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">2. le Web</p>
+            <ul>
+              <li>Projet WorldWideWeb / WWW (début des années 1990)</li>
+              <small>Robert Caillau et Tim Berners-Lee (CERN)</small>
+            </br><small>projet pour <b>organiser</b> et <b>relier</b> l’information sur le réseau par le système <b>hypertexte</b></small>
+          <li>1993 - leg du Web au domaine public</li>  
+          </ul>
+            <p>Résoudre un chaos documentaire entre des collaborateurs</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/nelson.jpeg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Principe de l'hypertexte</p>
+            <ul>
+              <li>Texte / ensemble textuel permettant de lier une ressource à une autre</li>
+              <small>lien : hyperlien ou lien hypertexte</small>
+            </br><small>formes pré-numériques : index, notes, renvois</small>
+              <li>Dépasser la linéarité du texte</li>
+              <small>littératures hypertextuelles : ex. <i>Patchwork Girl</i> (S. Jackson)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/memex.png" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Hypertexte avant le Web</p>
+            <ul>
+              <li><b>Vannevar Bush</b> (1945) — Memex</li>
+              <small>bureau électromécanique ; réseau personnel de documents = mini-Web</small>
+              <li><b>Ted Nelson</b> — terme « hypertexte »</li>
+              <small>projet Xanadu : dépôt mondial de littérature</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Trois standards techniques</p>
+            <ul>
+              <li><b>URL</b> (<i>Uniform Resource Locator</i>) — localiser une ressource dans un hyperlien</li>
+              <li><b>HTML</b> (<i>HyperText Markup Language</i>) — décrire pages et liens</li>
+              <li><b>HTTP</b> (<i>HyperText Transfer Protocol</i>) — transférer les ressources sur Internet</li>
+            </ul>
+            <small>Web : premier navigateur avec système hypertexte</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/mosaic.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Popularisation</p>
+            <ul>
+              <li>1993 — Web public : chacun peut mettre des documents en lien</li>
+              <li>Nvaigateur NCSA Mosaic</li>
+              <small>bases des interfaces : défilement, barre latérale</small>
+              <li>Guerre des navigateurs</li>
+              <small>Internet Explorer, Apache, Google, etc. </small>
+            </br><small>Standards du W3C pour tous les navigateurs</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Générations du Web</p>
+            <ul>
+              <li><i class="material-icons">library_books</i> <b>Web 1.0</b> — lecture, statique</li>
+              <small>premières numérisations</small>
+              <li><i class="material-icons">groups</i> <b>Web 2.0</b> — social / collaboratif</li>
+              <small>créer et éditer en temps réel — Wikipédia, plateformes sociales</small>
+              <li><i class="material-icons">emoji_objects</i> <b>Web 3.0</b> — sémantique / personnalisation</li>
+              <small>pages dynamiques adaptées aux profils — publicités, profilages</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/cailliau.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+         
+            <p>« Moi, j'ai toujours rêvé d'une république de citoyens responsables, mais où est elle ? Les géants
+              du Web sont des impérialistes qu'on distingue à peine des États totalitaires, qui décident de ce
+              qui est acceptable ou non.</br> Le Web, c'est Facebook et du commercial, rien d'autre. </br>Je ne veux
+              plus y aller » <small></br> Robert Cailliau </small></p>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/web.jpeg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Niveaux de Web
+            </br><small>niveaux d'indexation - accessibilité des contenus</small></p>
+            <ul>
+              <li><b>1. Web de surface</b> — moteurs classiques</li>
+              <small>sites publics, blogues, presse, wiki…</small>
+              <li><b>2. Web profond</b> — non / mal indexé</li>
+              <small>login, formats, pages dynamiques, exclusions</small>
+              <li><b>3. Dark web</b> — volontairement masqué</li>
+              <small>réseaux particuliers (ex. Tor)</small>
+            </ul>
+            <p>publier ≠ trouvable</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Pour résumer</p>
+            <ul>
+              <li>Le Web : 1 service d’Internet parmi d’autres</li>
+              <small>système hypertexte public</small>
+              <li>Environnements numériques non neutres</li>
+              <small>militaires / scientifiques · anglophones / états-uniens</small>
+            </ul>
+            <p><small>de prime abor, les environnements numériques ne sont pas pensés pour la littérature</small></p>
+          </div>
+        </section>
+
+      </section>
+
+
+      <!-- ========== 2. Révolution digitale (2.docx) ========== -->
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Révolution digitale <i class="material-icons">south</i></h5>
+            <small>vers l’édition numérique</small>
+          </div>
+        </section><section data-background-image="media/hyper.webp" data-background-size="1800px">
+          <div id="fondop2">
+            <h5>Lignes du temps : <span style="color: rgb(212, 134, 170);">support</span> / <span
+                style="color: rgb(88, 158, 131);">mécanique</span></h5>
+            <table style="font-size:16px;">
+              <tr border="1px">
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                  <td class="fragment" data-fragment-index="2" style="font-size:20; color: rgb(212, 134, 170);">
+                  <b>I<sup>er</sup> siècle après J.C.</b> </br> Papyrus au Parchemin</td>
+                <td class="fragment" data-fragment-index="3" style="font-size:20; color: rgb(212, 134, 170);">
+                  <b>751-1250</b> </br> Parchemin au Papier</td>
+                <td class="fragment" data-fragment-index="4" style="font-size:20; color: rgb(88, 158, 131)">
+                  <b>XIV<sup>e</sup></b> </br> Xylographie</td>
+                <td class="fragment" data-fragment-index="5" style="font-size:20; color: rgb(88, 158, 131)"><b>1450</b>
+                  </br>Imprimerie Gutenberg</td>
+                <td class="fragment" data-fragment-index="7" style="font-size:20; color: rgb(88, 158, 131)"><b>1883</b>
+                  </br> composition de plomb à la photogravure par T. & R. Annan à Glasgow</td>
+                <td class="fragment" data-fragment-index="8" style="font-size:20; color: rgb(88, 158, 131)"><b>fin
+                    XX<sup>e</sup></b> </br> Impression numérique</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Trois mouvements hérités</p>
+            <ul>
+              <li><b>Mécanisation</b> — automatisation des gestes</li>
+              <li><b>Démocratisation</b> — ouverture des expertises</li>
+              <li><b>Discrétisation</b> — de l'unité de la page/volume au caractère</li>
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/718_mimeographe.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Résurgences dans l’édition numérique</p>
+            <ul>
+              <li>Impression à la demande — déjà en paléoédition (copistes)</li>
+              <small>motivations économiques, logistiques, écologiques</small>
+              <li>Cohérence outil/gestes — mécanisation de la presse</li>
+              <small>des cassetins aux claviers (+ raccourcis clavier)</small>
+              <li>Auto-édition — édition personnelle</li>
+              <small>presses personnelles comme le Miméographe </small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/pao.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Publication assistée par ordinateur (années 1960)</p>
+            <ul>
+              <li>PAO</li>
+              <small>InDesign, Affinity…</small>
+              <li>Ordinateur + imprimante → conception accessible</li>
+              <small>« bedrooms génération » · regain d’édition personnelle</small>
+        
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/offset.avif" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Édition numérique professionnelle
+            </br><small>1. Impression offset</small></p>
+            <ul>
+              <li>Évolution presse / lithographie</li>
+              <li>Plaque métallique (cliché)</li>
+              <small>4 plaques = 1 page</small>
+              <small></small>
+            </ul>
+            <p>coût élevé · grands tirages · journaux, affiches, catalogues</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/impression.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"></br><small>2. Impression numérique</small></p>
+            <ul>
+              <li>Impression directe</li>
+              <small>jet d’encre, laser, 3D</small>
+            </ul>
+            <p>faible tirages · PME</p>
+  
+          </div>
+        </section>
+
+      </section>
+
+
+      <!-- ========== 3. Premiers projets d’édition numérique (2.docx) ========== -->
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Retour sur la définition d’édition numérique <i class="material-icons">south</i></h5>
+            <small>Premiers projets</small>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/hart.jpg" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Projet Gutenberg</p>
+            <ul>
+              <li>Michael Hart, 1971, Materials Research Lab (Illinois)</li>
+              <small>4 juillet : <i>Declaration of Independence</i> sur Arpanet à 6 personnes</small>
+            </br> <small>puis <i>Bible</i>, <i>Alice au pays des merveilles</i>, etc.</small>
+              <li>Première bibliothèque numérique</li>
+              </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/incunable.png" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Incunables numériques</p>
+            <ul>
+              <li>Premiers essais de transformation du livre imprimé vers les environnements numériques</li>
+              <small>traduction littérale imprimé → numérique</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/gutenberg2.png" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Incunables numériques</p>
+            <ul>
+              <li>Aujourd’hui : ~80&nbsp;000 ebooks gratuits</li>
+              <li>Processus d'édition</li>
+              <small>avant : 1. saisie à la main ; 2. corrections et relectures ; 3. mise en page HTML</small>
+            </br><small>aujourd'hui techniques d'OCR</small>
+            <li>Différents formats de lecture en plusieurs langues</li>
+            <small>HTML, pdf, Epub, Mobi</small>
+            </ul>
+            <p></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bibliothèques et marchés numériques
+            </br><small>pour les livres papiers</small></p>
+            <ul>
+              <li>Wikibooks · Google Books (numérisation massive)</li>
+              <li>1995 — Amazon (première grande librairie électronique)</li>
+              <li>1997 — Gallica (BnF) / 2015 — BAnQ numérique</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Bibliothèques numériques
+            </br><small>défis pour les œuvres nativement numériques</small></p>
+            <ul>
+              <li>Corpus peu établi · supports hétérogènes et éphémères</li>
+              <li>Peu de dépôt légal, de catalogage, de critique</li>
+              <li>Risques de disparition (technique, humaine, économique)</li>
+                    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              <a href="https://lqm.uqam.ca/fr/projets.html" target="_blank">LQM</a>
+              · <a href="https://lqm.uqam.ca/fr/projet/patrimoine-litteraire-numerique-pline.html" target="_blank">PLiNe</a> pour Patrimoine littéraire numérique
+              </br><small>documenter · organiser · conserver · faire découvrir</small>
+            </p>
+            <table style="font-size: 15px; width: 100%;">
+              <thead>
+                <tr>
+                  <th>Type</th>
+                  <th>Sous-projet</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Catalogue / description</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/catalogue-des-oeuvres-litteraires-numeriques-du-quebec-colin.html" target="_blank">COLiN</a>
+                    <small style="font-size: medium;"> — fiches d’œuvres (Omeka&nbsp;S, Wikidata)</small></td>
+                </tr>
+                <tr>
+                  <td>Répertoire / personnes</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/repertoire-des-ecrivaines-numeriques.html" target="_blank">Répertoire des écrivain·es numériques</a>
+                    <small style="font-size: medium;"> · <a href="http://repertoire.ecrituresnumeriques.ca" target="_blank">repertoire.ecrituresnumeriques.ca</a></small></td>
+                </tr>
+                <tr>
+                  <td>Archive / médiation</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/opuscules.html" target="_blank">Opuscules</a>
+                    <small style="font-size: medium;"> — web app, audio &amp; vidéo d’événements</small></td>
+                </tr>
+                <tr>
+                  <td>Édition / accès (domaine public)</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/bibliotheque-mobile-de-litterature-quebecoise.html" target="_blank">Bibliothèque mobile</a>
+                    <small style="font-size: medium;"> · <a href="https://www.bibliotheque-mobile.quebec/" target="_blank">bibliotheque-mobile.quebec</a></small></td>
+                </tr>
+                <tr>
+                  <td>Prêt scolaire</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/biblius.html" target="_blank">Biblius</a>
+                    <small style="font-size: medium;"> · <a href="https://projetbiblius.ca" target="_blank">projetbiblius.ca</a></small></td>
+                </tr>
+                <tr>
+                  <td>Découvrabilité</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/creer-du-lien.html" target="_blank">Créer du lien</a>
+                    <small style="font-size: medium;"> — Wikimedia / Wikidata</small></td>
+                </tr>
+                <tr>
+                  <td>Histoire / recherche</td>
+                  <td><a href="https://lqm.uqam.ca/fr/projet/microhistoire-des-pratiques-litteraires-en-contexte-numerique.html" target="_blank">Microhistoire des pratiques…</a></td>
+                </tr>
+              </tbody>
+            </table>
+                      </div>
+        </section>
+
+
+        <section data-background-image="media/.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"><a href="https://recherche.julie-blanc.fr/timeline-publishing/">Ligne du temps des technologies d'édition numérique (1963-2018)</a>, Julie Blanc</p>
+                  </div>
+        </section>
+
+        <section data-background-image="media/dacos.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Retour à la définition d'édition numérique au fil du temps
+            </br><small>Dacos &amp; Mounier — terminologie</small></p>
+            <ul>
+              <li><b>Électronique</b> — numérisation de textes d’autres supports</li>
+              <li><b>Numérique</b> — textes nativement numériques</li>
+              <li><b>En réseau</b> — partage, écriture collaborative</li>
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/guedon.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"></p>
+             <p>« L'édition électronique, ce n'est ni plus ni moins que le contenu des réseaux
+              électroniques. En effet, éditer c'est faire paraître, c'est publier. Publier, c'est rendre public, c'est
+              mettre un message dans une forme telle que l'on puisse y avoir accès à certaines conditions. Tout
+              fichier numérisé est donc susceptible de jouer un rôle de communication. »
+            </p>
+            <p>(Guédon, <i>L'édition savante et l'autoroute électronique</i>, 1994)</p>
+
+          </div>
+        </section>
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h4>Discussion — lecture </h4>
+            <small>Poirier &amp; Genêt — « La fonction éditoriale et ses défis »</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Le devenir numérique de la fonction éditoriale</p>
+            <ul>
+              <li>Fonction éditoriale plus présente que jamais</li>
+              <small>médias en ligne, plateformes, blogs, moteurs</small>
+              <li>Redistribuée à d'autres acteurs</li>
+              <small>(Epron &amp; Vitali-Rosati)</small>
+              <li>Nouvelle expertise à acquérir</li>
+              <small>formats, plateformes, structuration, promotion · SODEC</small>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <!-- ========== 4. Le livre numérique (2.docx) ========== -->
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Le livre numérique <i class="material-icons">south</i></h5>
+            <small>architectures et remédiations</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/torah.jpg" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Architectures d’informations</p>
+            <ul>
+              <li><b>Volumen / rotulus</b></li>
+              <small>rouleau · déroulement · deux mains · peu d’annotation · peu de séparation</small>
+              <li><b>Codex</b></li>
+              <small>cahiers · marges pour écrire · appropriation de la lecture</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/marges.png" data-background-size="1600px">
+          <div id="fondop2">
+            <h6>Espaces d'appropriation de lecture</h6>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/.png" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Deux principes du codex bouleversés</p>
+            <ul>
+              <li>1. <i>Libro unitario</i> — un objet physique par œuvre</li>
+              <small>un objet physique par œuvre</small>
+              <li>2. Mode de l’imprimé qui matérialise le texte</li>
+            </ul>
+            <p>livre numérique : plutôt une <b>version</b> distribuée en réseau</p>
+          </div>
+        </section>
+
+
+        
+        <section data-background-image="media/ludovico.jpg" data-background-size="600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Mouvements entre les médias</p>
+            <p>« Tout nouveau médium prétend toujours posséder des caractéristiques supérieures à celles du document
+              imprimé, et se trouver ainsi en situation de le supplanter. »</p>
+
+            <p><small>(Ludovico, <i>La mutation de l'édition depuis 1894</i>, 2016)</small></p>
+          </div>
+        </section>
+
+
+        <section data-background="media/bolter-grusin.jpg" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">La notion de remédiation</p>
+            <p>« [t]out média s’approprie les techniques, les formes et la signification sociale d’autres médias et
+              tente de rivaliser avec eux ou de les refaçonner au nom du réel. Dans notre culture, un média ne peut
+              jamais opérer isolément parce qu’il doit entrer en relation, de respect ou de rivalité, avec d’autres
+              médias. »</p>
+
+            <p><small>(Bolter et Grusin, <i>Remediation: Understanding New Media</i>, 2003)</small></p>
+
+          </div>
+        </section>
+        
+        <section data-background="media/" data-background-size="1700px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Formes des remédiations du livre</br>
+            1. version homothétique</p>
+            <small>forme la plus répandue, moins coûteuse, protégée</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/marguerite.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>versions textes (PDF, texte brut) simplifiées</p>
+          </div>
+        </section>
+
+        <section data-background="media/" data-background-size="1700px">
+
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">2. livre enrichi ou édition augmentée
+           </p> <small>forme en émergence, explore les possibilités du format numérique</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/pum.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>
+              articulation de versions avec contenus propres à chaque support
+            </p>
+            <small>
+              Collection « Parcours numériques » des Presses Universitaires de Montréal
+            </small>
+          </div>
+        </section>
+
+        <section data-background="media/" data-background-size="1700px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;"> 3. livre numérique ou nativement numérique
+            </p><small>sans référence ni original imprimée</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/nativement.png" data-background-size="1400px">
+          <div id="fondop2">
+            <p>littérature hypertextuelle</p>
+            <small><i>afternoon, a story</i> (Joyce, 1990), <i>Patchwork Girl</i> (Jackson 1995)</small>
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Stratégies culturelles </br>des relations imprimé/numérique</p>
+            <small>version homothétique pour élargir la visibilité </br> version enrichie pour l'exploration d'une
+              recherche </br> livre nativement numérique correspondant à un projet esthétique</small>
+
+          </div>
+        </section>
+
+        <section data-background="media/autofiction.png" data-background-size="1200px" background-color="#21211c">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Renversement d'une influence</p>
+            <small>inversion de la remédiation où l'édition numérique fait référence (autofiction, blogue littéraire)</small>
+
+          </div>
+        </section>
+
+
+        <section data-background-image="media/" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Débat sur le livre - Imaginaires de la fin du livre</p>
+            <p>« L’imprimerie qui, à dater de 1436, régna si despotiquement sur nos esprits, me semble menacée de mort,
+              à mon avis, par les divers enregistreurs du son qui ont été récemment découverts et qui peu à peu vont
+              largement se perfectionner. »</p>
+            <small>(Uzanne et Robida, <i>La fin des livres</i>, 1894)</small>
+                </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Intrication moderne entre imprimé et numérique</p>
+            <p>« Aujourd'hui la culture numérique n'existe pas en dehors ou à côté de la culture numérique. »</p>
+            <small>(Birkerts, <i>The Gutenberg Elegies</i>, 2006)</small>
+          </div>
+        </section>
+
+        <section data-background="media/.png" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contexte d'émergence</p>
+            <ul>
+
+              <li>1970 - Crise du livre imprimé avec la montée du prix du papier</li>
+       
+              <li>1990 - Mouvement de recul des ventes en SHS francophones
+
+              </li>
+              <small>signe d'une recherche de nouveaux marchés (Chartier 2005) </br> </small>
+              <li>Début du marché en 2003</li>
+              <small>Epub</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/ina.jpeg" data-background-size="1200px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Petite pépite pour la route :</p>
+            <small>syndrome <a href="https://www.ina.fr/ina-eclaire-actu/video/i13043985/le-livre-de-poche-et-le-mepris">« et d'un seul coup ils se sont
+                retrouvés avec Sartre dans les mains »</a></small>
+          </div>
+        </section>
+
+
+      </section>
+      <section data-background="media/718_index.png" data-background-size="1400px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Exemples de questions pour examen</p>
+          <ul>
+<li>QCM : Internet et le Web :</li>
+<small> a) sont strictement synonymes ;</small>
+          </br><small>b) le Web est l'infrastructure, Internet est un service hypertexte ; </small>
+          </br><small>c) Internet est l'infrastructure, le Web est un service hypertexte parmi d'autres ; </small>
+        </br><small>d) TCP/IP n'existe que sur le Web.</small>
+<li>Question à développement : Fonction éditoriale redistribuée : la fonction a-t-elle disparu ? Qui l’exerce aujourd’hui, et quelles expertises nouvelles ? (donnez des exemples)</li>
+<small></small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px"
+        data-transition="linear" data-transition-speed="fast">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pour la semaine prochaine :</p>
+          <p>à lire : <a href="https://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre9.html">« Les formats »</a>, V. Boulétreau et B. Habert</p>
+            </div>
+      </section>
+
+
+
+
+    </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

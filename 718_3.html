@@ -1,0 +1,931 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - A2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+
+      <div class="footer">ELD718 - Automne 2026 - Margot Mellet</div>
+
+      <section data-background-image="media/718_index.png" data-background-size="1500px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD718 | Édition numérique</h2>
+          <h5 style="font-size: 30px;">17 septembre : Culture numérique 2</h5>
+          <small>Les formats et le texte numérique</small>
+        </div>
+      </section>
+
+
+      <section data-background="media/718_index.png" data-background-size="1400px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Exemples de questions pour examen</p>
+          <ul>
+<li>QCM : Internet et le Web : <small>(plusieurs réponses possibles)</small></li>
+<small> a) sont strictement synonymes ;</small>
+          </br><small>b) le Web est l'infrastructure, Internet est un service hypertexte ; </small>
+          </br><small>c) Internet est l'infrastructure, le Web est un service hypertexte parmi d'autres ; </small>
+        </br><small>d) le Web repose sur HTTP/HTML et s'appuie sur l'infrastructure Internet (TCP/IP).</small>
+<li>Questions à développement :</li>
+<small>1. Fonction éditoriale redistribuée : la fonction a-t-elle disparu ? Qui l’exerce aujourd’hui, et quelles expertises nouvelles ? (donnez des exemples)</small>
+</br><small>2. En quoi le choix d’un format (ePub, PDF, Kindle…) est-il aussi un choix de modèle éditorial et de politique culturelle (chaîne québécoise, Loi 51, DRM)&nbsp;?</small>
+</br><small>3. Distinguez formats ouvert/fermé, propriétaire/libre et source/sortie. Illustrez chaque paire avec au moins un exemple vu en cours.</small>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ========== 1. Suite livre numérique ========== -->
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Livre numérique — suite <i class="material-icons">south</i></h5>
+            <small>architectures, modèles, stratégies culturelles</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/edition.jpg" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Imprimé ↔ numérique</p>
+            <p><small>Aujourd’hui la culture de l’imprimé n’existe plus indépendamment des autres médias.</small></p>
+            <small>(Sven Birkerts, <i>The Gutenberg Elegies</i>)</small>
+            <ul>
+              <li>Concurrence, mais aussi retour nostalgique / hybridité</li>
+            </ul>
+          </div>
+        </section>
+        <section data-background="media/718_index.png" data-background-size="1600px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Contexte d'émergence</p>
+            <ul>
+
+              <li>1973-75 - Crise du livre imprimé avec la montée du prix du papier</li>
+              <small>1e choc pétrolier; inflation générale; nouvelles normes environnementales</small>
+       
+              <li>1990 - Mouvement de recul des ventes en SHS francophones
+
+              </li>
+              <small>signe d'une recherche de nouveaux marchés (Chartier 2005) </br> </small>
+              <li>Début du marché commercial en 2003</li>
+              <small>livre-application, ePub → voir partie 4</small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Système-livre numérique au Québec
+              </br><small>années 2000</small></p>
+            <ul>
+              <li><i class="material-icons">storage</i> Cédérom savant · entrepôt numérique · livrel commercial</li>
+              <li><i class="material-icons">cloud</i> <b>De Marque</b> — agrégateur / distributeur numérique</li>
+              <li><i class="material-icons">local_shipping</i> Messagerie <b>ADP</b> (Québécor) — diffuseur-distributeur <i>physique</i></li>
+              <small>stock, retours</small>
+              <li><i class="material-icons">storefront</i> <b>leslibraires.ca</b> — vente numérique</li>
+              <small>particuliers et collectivités</small>
+              <li><i class="material-icons">school</i> <b>Biblius</b> — prêt scolaire</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="cover" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qualités du livre Numérique</br><small> (Dacos &amp; Mounier)</small></p>
+            <ul>
+              <li>Maniabilité · conservation · navigation · enrichissement · protections</li>
+            
+              <small>qualités qui dépendent du dispositif et <b>surtout</b> du format</small>
+            </ul>
+          
+          </div>
+        </section>
+
+        <section data-background-image="media/editions.png" data-background-size="1400px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Modèles du livre
+              </br><small>1 édition = 1 identité (tradition, culture, public)</small></p>
+            <ul>
+              <li>L’éditeur «&nbsp;patrimonialise par le format&nbsp;» (Luneau)</li>
+             <small>par le visuel, le toucher, les aspects matériels</small>
+                 <li>Format = imposer une forme</li>
+              <small>manipulation · public · prix · chaîne de coûts</small>
+        
+            </ul>
+            <p>Chaque édition (même numérique) est une réinterprétation du codex</p>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Stratégie culturelle
+              </br><small>accorder / différencier l’imprimé et le numérique</small></p>
+     
+              <p>La version numérique est-elle l'extension simple du papier  </br>ou une entité propre ?
+              </br><small>Cas difficiles&nbsp;: livres-objets (Oie de Cravan, Noroît…)</small>
+              </p>
+                     </div>
+        </section>
+
+      </section>
+
+      <!-- ========== 2. Format numérique ========== -->
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/brut.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Le format numérique <i class="material-icons">south</i></h5>
+            <small>écriture · document · conventions techniques</small>
+          </div>
+        </section>
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h4>Discussion — lecture </h4>
+            <small><a href="https://www.parcoursnumeriques-pum.ca/1-pratiques/chapitre9.html">« Les formats »</a>, V. Boulétreau et B. Habert</small>
+          </div>
+        </section>
+        <section data-background-image="media/718_oignon.webp" data-background-size="1000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Écriture numérique — trois strates
+              </br><small>métaphore de l’oignon</small></p>
+            <ul>
+              <li><i class="material-icons">exposure_zero</i> Codage binaire (0, 1)</li>
+              <small>écriture <b>par</b> / selon la machine</small>
+              <li><i class="material-icons">code</i> Logiciel, formats, structuration</li>
+              <small>écriture <b>pour</b> la machine</small>
+              <li><i class="material-icons">edit</i> Interaction / affichage</li>
+              <small>écriture <b>avec</b> la machine</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/718_ascii.png" data-background-size="900px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Encodage des caractères
+              </br></p>
+            <ul>
+              <li>1960 — <i>American Standard Code for Information Interchange</i> ou ASCII</li>
+              <small>grille de concordance · ~128 signes · standard ouvert et libre</small>
+              <li>1980 — Unicode (aujourd'hui UTF-8)</li>
+              <small>~150&nbsp;000 caractères / 150 écritures</small>
+            </ul>
+
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Document numérique
+              </br><small>plusieurs approches selon les niveaux</small></p>
+            <ul>
+              <li><i class="material-icons">content_cut</i> Vue séquentielle</li>
+              <small>manipulation du texte (rechercher, couper, coller…)</small>
+              <li><i class="material-icons">list</i> Vue arborescente</li>
+              <small>structuration (mots → phrases → paragraphes → sections)</small>
+              <li><i class="material-icons">analytics</i> Vue métadonnées</li>
+              <small>qualification (auteur, date, mots-clés)</small>
+              <li><i class="material-icons">format_size</i> Vue stylistique (facultative)</li>
+              <small>image du texte (police, marges, couleurs)</small>
+            </ul>
+            <p><b>Distinction entre le Style et la Sémantique</b></p>
+            <small>grossir une police ≠ faire un titre</small>
+          </div>
+        </section>
+
+       
+
+        <section data-background-image="media/brut.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Qu’est-ce qu’un format&nbsp;?
+              </br><small>convention de structuration</small></p>
+            <p>« Structure définie de données […] établie selon des règles qui régissent le stockage, l’affichage, la manipulation, l’impression ou la transmission de ces données. »
+          </br> <small><a href="https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8368613/format-de-fichier">OQLF</a></small>
+          </p>  <ul>
+              <li><i class="material-icons">rule</i> Convention qui forme et délimite l’utilisabilité</li>
+                    </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/brut.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Critères du format
+              </br></p>
+            <ul>
+              <li><b>Pertinence</b> — pratiques / besoins</li>
+              <small>PDF&nbsp;: Adobe 1993 (Acrobat) pour figer une mise en page indépendante du dispositif</small>
+              <li><b>Économie</b> — équilibre technique / performance / lourdeur</li>
+              <li><b>Efficacité</b> — légèreté vs fonctionnalités complexes</li>
+              <li><b>Sécurité</b> — protection, pérennité, contrôle d’usage</li>
+            </ul>
+            <p><small>Choix du format // projet éditorial</small></p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Catégorie 1 : Ouvert / fermé
+              </br><small>accès aux spécifications</small></p>
+            <table style="width:100%">
+              <tr>
+                <th>Ouvert</th>
+                <th>Fermé</th>
+              </tr>
+              <tr>
+                <td>Spécifications publiques
+                  </br><small>interopérabilité favorisée</small>
+                </td>
+                <td>Spécifications secrètes
+                  </br><small>conversion difficile</small>
+                </td>
+              </tr>
+              <tr>
+                <td><small>HTML, LaTeX, Markdown…</small></td>
+                <td><small>DOC / DOCX jusqu’en 2006…</small></td>
+              </tr>
+            </table>
+              </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Catégorie 2 : Propriétaire / libre
+              </br><small>à qui le format appartient-il&nbsp;?</small></p>
+            <table style="width:100%">
+              <tr>
+                <th>Propriétaire</th>
+                <th>Libre / normalisé</th>
+              </tr>
+              <tr>
+                <td>Entité privée · intérêts privés
+                  </br><small>DOCX, PDF (Adobe), Kindle…</small>
+                </td>
+                <td>Communauté · standards évolutifs
+                  </br><small>TXT, HTML, XML, ePub, Markdown…</small>
+                </td>
+              </tr>
+            </table>
+               </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Catégorie 3 : Source / sortie
+              </br><small>intervention dans la chaîne</small></p>
+            <ul>
+              <li><b>Source</b> (travail)&nbsp;: DOC, DOCX, TXT, MD, TeX, HTML, SLA…</li>
+              <li><b>Sortie</b> (diffusion)&nbsp;: PDF, ePub, HTML…</li>
+            
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/brut.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Non-neutralité du format ≠ habillage
+              </br><small></small></p>
+            <ul>
+              <li><i class="material-icons">settings</i> Définition <b>technique</b> (interopérabilité, pérennité)</li>
+              <li><i class="material-icons">menu_book</i> Forme <b>culturelle</b> / modèle (qui lit&nbsp;? comment&nbsp;?)</li>
+              <li><i class="material-icons">payments</i> Dépendance <b>économique</b></li>
+              <small>exemple du format Adobe Flash Player</small>
+                        </ul>
+          </div>
+        </section>
+
+
+      </section>
+
+      <!-- ========== 3. Formats du livre numérique ========== -->
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Formats du livre numérique <i class="material-icons">south</i></h5>
+         
+          </div>
+        </section>
+
+        <section data-background="media/epub.svg" data-background-size="1000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">ePub
+              </br><small>norme ouverte commune</small></p>
+            <ul>
+              <li><b>1998</b> — Open eBook (OEB) · SoftBook Press</li>
+              <li><b>2005/2007</b> — IDPF (<i>International Digital Publishing Forum</i>) → ePub</li>
+              <small>réponse à la prolifération des formats ~1999–2000</small>
+              <li><b>2013</b> — norme internationale par l'Union internationale des éditeurs</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background="media/epub.png" data-background-size="1000px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">ePub — caractéristiques
+              </br><small>conteneur HTML + CSS</small></p>
+            <ul>
+              <li><i class="material-icons">folder_zip</i> Archive de fichiers (chapitres, médias, table des matières)</li>
+              <li><i class="material-icons">open_in_browser</i> Libre et ouvert</li>
+              <li><i class="material-icons">aspect_ratio</i> Mise en page <b>flottante</b></li>
+              <small>recomposable et compatible</small>
+              <li>Homothétique</li>
+              <small>concurrence (jeunesse enrichie, apps, Amazon…)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/frog.png" data-background-size="800px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Extension accessible — FROG
+              </br><small>MOBiDYS, 2016 — <i>FRee your cOGnition</i></small></p>
+            <ul>
+              <li>Lecteurs·rices en situation de handicap dys.</li>
+              <small>400 coups · Biblius · projet Lireedoo (Montréal)</small>
+              
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Autres formats-dispositifs</br><small>Amazon</small></h3>
+                <ul>
+                  <li>MOBI ou mobipocket</li>
+                  <small>format propriétaire pour appareils Amazon</small>
+                  <li>AZW ou KF8 (Kindle Format 8)</li>
+                  <small>format propriétaire pour les appareils Kindle</small>
+                </ul>
+              </div>
+            </section>
+
+
+            <section data-background-image="media/718_index.png" data-background-size="1600px">
+           
+
+              <div id="fondop2">
+                <h3>Autres formats
+                </br><small>ouverts</small></h3>
+                <ul>
+                  <li>PDF pour <i>Portable Document Format</i></li>
+                  <small>sortie · page fixe · Acrobat Pro ≠ écriture fluide</small>
+                  <li>HTML</li>
+                  <small>format/langage pour la gestion des hypertextes · souple</small>
+                </ul>
+              </div>
+            </section>
+
+
+            <section data-background-image="media/718_index.png" data-background-size="1600px">
+              <div id="fondop2">
+              <h3>Autres formats
+              </br><small></small></h3>
+              <ul>
+              <li><b>IBA</b></li>
+              <small>Apple (appareils IOS) · interactif</small>
+              <li><b>RTF</b> pour <i>Rich Text Format</i></li>
+              <small>échange historique entre traitements de texte riche</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Exemple comparatif — Manifeste du FLQ
+              </br><small>même texte · quatre formats · <a href="exemples-formats-manifeste/">dossier</a></small></p>
+            <ul>
+              <li><i class="material-icons">picture_as_pdf</i> <b>PDF classique</b> — page fixe, justification, en-têtes</li>
+              <li><i class="material-icons">accessibility</i> <b>PDF accessible</b> — balisé, TdM, contraste, corps agrandi</li>
+              <li><i class="material-icons">menu_book</i> <b>ePub illustré</b> — reflow + images Wikimedia</li>
+              <li><i class="material-icons">language</i> <b>HTML exploratoire</b> — glossaire, filtres, réseau, galerie</li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">DRM — <i>Digital Rights Management</i>
+              </br><small>gestion/protection des droits numériques</small></p>
+            <ul>
+              <li><i class="material-icons">lock</i> Contrôler accès, copie, impression, modification, distribution</li>
+                <li>Abus commerciaux</li>
+              <small>ex. retrait de <i>1984</i> sur Kindle (2009)</small>
+            </ul>
+            <p>principe de la version</p>
+          </div>
+        </section>
+
+      </section>
+
+      <!-- ========== 4. Marché du livre numérique ========== -->
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>4. Marché du livre numérique <i class="material-icons">south</i></h5>
+            <small>tendances · acteurs · avantages · politique culturelle</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_evol.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Tendances 2012–2021
+              </br><small>déplacement/équilibrage vers le numérique</small></p>
+            <ul>
+              <li>Production imprimée&nbsp;: <b>−22&nbsp;%</b></li>
+              <li>Production numérique&nbsp;: <b>+32&nbsp;%</b></li>
+              <li>Autoédition numérique en forte croissance</li>
+              <small>ex.&nbsp;: de 451 à 813 pour le livre imprimé ; 22 → 161 individus autoédités en numérique</small>
+            </ul>
+            <p>Nuance : jusqu’en 2021 inclus&nbsp;: pas de dépôt légal obligatoire pour les ISBN numériques au même titre</p>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Avantages
+              </br><small></small></p>
+            <ul>
+              <li>Réduction des coûts</li>
+              <li>Meilleure conservation · gain d’espace</li>
+              <li>Facilité de mises à jour</li>
+              <li>Commodité de consultation / navigation</li>
+              <li>Enrichissement hypertextuel, interactif, multimédial</li>
+            </ul>
+            <p>argument de vente pour la version imprimée / passage progressif à une culture du livre numérique
+            </p>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeux d'accessibilité
+              </br><small>livre adapté/accessible</small></p>
+               <ul>
+              <li>Facteurs d'accès : prix, littératie et littératie numérique</li>
+              <li>Développement de formats adaptés</li>
+<small>DAISY : <i>Digital Accessible Information System</i> format de fichier qui permet la lecture à voix haute et la navigation tactile</small>
+              <small>livres audio, FROG ou PDF-UA</small>
+               </ul>
+              </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Enjeu politique 
+              </br><small>ANEL, mémoire, 2016, révision de la Loi 51</small></p>
+            <p>« Contrairement à ce qu’on aurait pu prétendre aux premières heures de la commercialisation du livre numérique ou livrel québécois, l’inclusion de ce produit culturel dans la Loi 51 apparaît néfaste aux yeux des membres de l’ANEL.Considérant le développement fort anarchique de ce marché, les mutations à prévoir du produit (son passage de l’homothétique au livre numérique enrichi par exemple), l’arrivée probable d’acteurs éloignés de la chaîne du livre et tenant surtout compte du temps que le législateur aura pris pour réfléchir à l’actualisation de cette loi, soit pas loin de 35 ans, faire une place au livre numérique dans la Loi 51 serait aujourd’hui contreproductif. »</p> 
+            </div>
+        </section>
+
+      </section>
+
+      <!-- ========== 5. Discussion ========== -->
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>5. Démonstration </h5>
+              </div>
+        </section>
+
+    </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Résumé
+            </br><small>Un format = modèle du texte</small></p>
+          <ul>
+        
+            <li>Choisir un format = positionnement éditorial et technique</li>
+            <li><i class="material-icons">block</i> ≠ logiciel (pas «&nbsp;format Word&nbsp;»)</li>
+            <li><i class="material-icons">extension</i> ≠ simple extension (.docx)</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background="media/718_index.png" data-background-size="1400px">
+
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Exemples de questions pour examen</p>
+          <ul>
+<li>QCM : Le format PDF : <small>(plusieurs réponses possibles)</small></li>
+<small> a) est libre et fermé ;</small>
+          </br><small>b) est propriétaire et ouvert ; </small>
+          </br><small>c) est uniquement un format source d’écriture ; </small>
+        </br><small>d) est principalement un format de sortie (mise en page figée, indépendante du dispositif).</small>
+<li>Questions à développement : Qu’est-ce qu’un « livre accessible » ? En quoi l’accès au livre dépasse-t-il la seule question du prix ?</li>
+
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pour la semaine prochaine :</p>
+          <ul>
+            <li>Atelier — Édition Affinity 1</li>
+            <li>Installation <a href="https://www.affinity.studio/download">Affinity</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        </div>
+      </section>
+
+
+    </div>
+
+
+      <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

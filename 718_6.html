@@ -1,0 +1,1028 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - Culture numérique 3 - A2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+      <div class="footer">ELD718 - Automne 2026 - Margot Mellet</div>
+
+      <section data-background-image="media/718_index.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD718 | Édition numérique</h2>
+          <h5 style="font-size: 30px;">8 octobre : Culture numérique 3</h5>
+          <small>Chaînes éditoriales numériques, métadonnées, licences et science ouverte</small>
+        </div>
+      </section>
+
+
+
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. La chaîne éditoriale <i class="material-icons">south</i></h5>
+            <small>fonctionnements et enjeux</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Chaîne éditoriale
+              </br> <small>définition</small></p>
+            <p>Ensemble des méthodes, des outils et des processus qui permette de concevoir, fabriquer,
+              produire et diffuser un livre ou plus largement une publication. Une chaîne de publication
+              réunit des logiciels propres à la gestion du texte et des images, mais aussi les différents
+              rôles d’un processus éditorial que sont l’auteur, l’éditeur, le correcteur, le graphiste,
+              etc. </br><small>(Fauchié 2024)</small></p>
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">
+              Artisans du livre
+              </br> <small>expertises et littératies de la chaîne</small></p>
+            <ul>
+              <li>réviseur·euse·s ou secrétaires</li>
+              <small>qualité stylistique et syntaxique via traitement de texte ou versions papier</small>
+              <li>graphistes</li>
+              <small>mise en page via PAO</small>
+              <li>imprimeurs</li>
+              <small>production par machines offset ou numériques</small>
+              <li>diffuseurs</li>
+              <small>identification et communication sur les réseaux</small>
+              <li>distributeurs</li>
+              <small>stocker, préparer, expédier</small>
+              <li>libraires et bibliothécaires</li>
+              <small>contact avec le lectorat</small>
+            </ul>
+  <p>+ Nouveaux acteurs numériques : producteurs numériques, webmestres, développeurs…</p>
+         
+
+           </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Acteurs actualisés</p>
+            <ul>
+              <li>Librairies : prolongement web <b>ou</b> acteurs nativement numériques</li>
+              <small>tension avec vente directe éditeur / méga-librairies</small>
+              <li>Bibliothèques : investissements massifs pour le livre numérique</li>
+            
+              <small>Fonction aussi en évolution (Lankes, <i>Exigeons de meilleures bibliothèques</i>)</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Linéarité idéale vs réalité</p>
+            <ul>
+              <li>« Chaîne » suggère A → B vers la publication</li>
+               <small>Or allers-retours auteur ↔ édition, </small></br>
+              <small>densification aux phases de révision et de réception,</small></br>
+              <small>après production : diffusion, communication, distribution = <b>ramifications</b></small>
+            </ul>
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_chaineLivre.png" data-background-size="700px">
+          
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Phases contemporaines</p>
+            <table>
+              <thead><tr><th>Phase</th><th>Pratiques</th></tr></thead>
+              <tbody>
+                <tr><td>Texte</td><td>Acquisition / comité ; révision, nettoyage, épreuves</td></tr>
+                <tr><td>Livre</td><td>Stylage, MEP, iconographie, devis, épreuve imprimeur</td></tr>
+                <tr><td>Produit</td><td>Métadonnées, ISBN, dépôt ; commercialisation ; droits / foires</td></tr>
+                <tr><td>Transversal</td><td>Admin / contrats / subventions</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approches de la chaîne numérique
+            </br>1. Chaîne classique informatisée</p>
+            <ul>
+              <li>Traitement de texte — écriture / relecture</li>
+              <li>PAO — mise en page / templates</li>
+              <li>Exports PDF, ePub — souvent <b>homothétiques</b></li>
+            </ul>
+            <small>Informatisation de la chaîne imprimée plus que refonte épistémologique</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Approches de la chaîne numérique
+            </br>2. Chaîne modulaire</p>
+            <ul>
+              <li>Modules dynamiques / <b>interopérables</b> / interchangeables</li>
+              <small>un ou plusieurs modules liés à des standards pour une ou plusieurs
+                fonctions</small>
+              </br>
+                <small>liée aux formats libres et ouverts</small>
+                
+                <li>Exploratoire</li>
+                <small>agencement et adaptation selon les projets et les objectifs</small>
+            </br>    <small>pas de logiciels attribués</small>
+              <li>Distinction ≠ opposition</li>
+              <small>peut inclure un logiciel de traitement de texte</small>
+            </ul>
+            <small>Mise en perspective de la chaîne traditionnelle</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Publication depuis une source unique
+          </br>  <small><i>single source publishing</i></small></p>
+            <ul>
+              <li>À partir d’une <b>source de vérité</b> → plusieurs manifestations</li>
+          <small>édition
+            multisupport, multiformat ou multimodale</small>
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Les « multi »</p>
+            <ul>
+              <li>Multisupport</li>
+              <small>plusieurs supports compatibles avec la publication<br>
+                papier ou numérique</small>
+              <li>Multiformat</li>
+              <small>plusieurs formats de publication   
+              </br>HTML, ePub, PDF, etc.</small>
+              <li>Multimodal
+              </li>
+                <small>plusieurs modes de lecture
+                </br>version PDF statique, version numérique enrichie/augmentée</small>
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Plusieurs manifestations à partir d'une source de référence</p>
+            <p>[...] quand on parle d’édition multi-supports, on désigne la production de ces multiples manifestations
+              (imprimée, numérique…) à partir d’une expression (le fameux <i>single source</i>), le plus souvent en mode
+                automatisé. (Taffin 2023)</p>        
+            </div>
+        </section>
+
+        <section data-background="media/ssp2.png" data-background-size="1200px">
+          <div id="fondop2" style="margin-top:-32%">
+
+
+          </div>
+        </section>
+
+        <section data-background="media/metopes.jpg" data-background-size="1000px">
+
+          <div id="fondop2" style="margin-top:-32%">
+
+
+          </div>
+        </section>
+
+        <section data-background="media/pandoc.png" data-background-size="1000px">
+
+          <div id="fondop2" style="margin-top:-32%">
+
+
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Avantages / complexités</p>
+            <ul>
+              <li>Avantages : cohérence de la source, collaboration, archivage</li>
+              <li>Complexités : rarement un seul fichier ; mise en place longue ; expérimentation ; styles séparés de la structure</li>
+            </ul>
+            
+            <small>Même structure sémantique → plusieurs mises en forme selon les exports</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_lankes.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Cas : <a href="https://ateliers.sens-public.org/exigeons-de-meilleures-bibliotheques/index.html"><i>Exigeons de meilleures bibliothèques</i></a>, Lankes 2018</p>
+            <small>Ateliers de [sens-public] — Monjour &amp; Sauret</small>
+            <ul>
+              <li>Imprimé (POD) · ePub · PDF · version numérique enrichie</li>
+              <li>Multiformat <b>et</b> multimodal</li>
+               </ul>
+            <small>Deux modes de lecture : linéaire (papier / homothétique) vs non-linéaire (enrichi)</small>
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Hybridité / post-numérique</p>
+            <p>Si l'imprimé devient de plus en plus un bien de valeur ou de collection et
+              que l'édition numérique continue de croître comme prévu, les deux pourraient se croiser plus
+              fréquemment, ce qui pourrait donner naissance à de nouvelles formes hybrides.
+          </br><small>(Ludovico 2012)</small></p>
+
+          
+
+          </div>
+        </section>
+
+     
+
+      </section>
+
+
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Métadonnées <i class="material-icons">south</i></h5>
+            
+          </div>
+        </section>
+
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Usages</p>
+            <ul>
+              <li>Classement / catalogage (sujet, collection…)</li>
+              <li>Citation, conservation, recommandation</li>
+              <li>Échanges entre systèmes</li>
+            </ul>
+            <p style="font-variant: small-caps;">Impact commercial (BTLF)</p>
+            <ul>
+              <li>Lien direct qualité métadonnées ↔ performance commerciale</li>
+              <li>Imagette de couverture</li>
+              <li>Métadonnées <b>pré-parution</b></li>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Deux registres</p>
+            <table>
+              <thead><tr><th>Registre</th><th>Contenu</th></tr></thead>
+              <tbody>
+                <tr><td>Réglementaire</td><td>ISBN, CIP, dépôt légal BAC / BAnQ</td></tr>
+                <tr><td>Marché</td><td>ONIX, THEMA, BISAC, BTLF, TAMIS, Excel distributeurs</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Identifiants</p>
+            <ul>
+              <li>ISBN - International Standard Book Number (ISSN pour articles)</li>
+              <small>composition : numéro du pays = 978 - groupe linguistique - numéro d'éditeur - numéro de publication - clef de contrôle</small>
+           
+              <li>URI (Uniform Resource Identifier)</li>
+              <small>URL et URN </small>
+                <li>DOI (Digital Object Identifier) par Association of American Publishers</li>
+              <small>alternative à l'URI</small>
+            </br>  <small>demande auprès de Crossref pour les publications académiques</small>
+           </br>  <small>avec des frais d'abonnements : 1 $/DOI article ; 2-3$/DOI livre</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/717_dc.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Dublin Core</p>
+            <ul>
+              <li>Standard qui permet de décrire les documents numériques par la Dublin Core Metadata Iniative (DCIM)</li>
+              <small>avec 15 propriétés de base pour décrire le contenu (Dublin Core element set)</small>
+            </br>   <small>pour le contenu : titre, description, source, langue, relation, couverture</small>
+</br><small>pour la propriété intellectuelle : créateur, contributeur, éditeur, gestion des droits</small>
+</br><small>pour l'instanciation : date, type, format, identifiant</small>
+
+            <li>et des éléments supplémentaires (Dublin Core metadata terms)</li>
+            <small>catégories : résumé, format de fichier, collection, etc.</small>
+</br><small>qualificatifs : nom de famille du créateur, etc. </small>
+            </ul>
+           <p>équivalents pour l'édition commerciale (ONIX); pour les bibliothèques (MARC)</p>   
+           
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">RDF ou Resource Description Framework</p>
+            <ul>
+              <li>Modèle de données pour représenter et décrire des ressources sur le Web</li>
+              <li>Structure l'information en triplets (sujet, prédicat, objet) = relation</li>
+            
+              <small>Ex: "X" [sujet] "est l'auteur de" [prédicat] "Y" [objet]</small>
+             
+              <li>Modèle flexible, extensible et interopérable</li>
+              <small>parfois écrit en XML</small>
+              <li>Permet de créer des liens logiques entre les données</li>
+              <small><i>Le chat noir</i> de Poe et gothique</small>
+              </ul>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Algorithmes de recommandation</p>
+            <ul>
+              <li><b>Collaborative filtering</b> — profils d’usagers similaires</li>
+              <small>peut recommander Kev Lambert… et des brosses à dents</small>
+              <li><b>Content-based filtering</b> — similarité de métadonnées / thèmes</li>
+              <small>peut recommander Kev Lambert… et Genet</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Filière québécoise</p>
+            <ul>
+              <li>ISBN (y compris numériques) · CIP BAnQ · dépôt</li>
+              <li>Fiches BTLF · outil <b>Gaspard</b> (2019)</li>
+              <li>ONIX · BISAC / THEMA</li>
+              <li><b>TAMIS</b> (Les Libraires) — robot de découvrabilité</li>
+            </ul>
+            <small>Format de sortie (PDF / EPUB) indissociable du référencement</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h4>Discussion — lecture </h4>
+            <small><a href="https://actualitte.com/article/126938/technologie/bien-exploiter-les-metadonnees-un-atout-concurrentiel-pour-tous-les-editeurs">« Bien exploiter les métadonnées »</a>, N. Gary</small>
+          </div>
+        </section>
+
+      </section>
+
+      
+
+
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Infrastructure numérique au Québec <i class="material-icons">south</i></h5>
+            <small>entrepôts, agrégateurs, prêts</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Entrepôt et agrégateur</p>
+            <ul>
+              <li><b>Entrepôt</b> — service aux <b>éditeurs</b> : dépôt fichiers + métadonnées → distribution points de vente, stats, facturation, parfois prêts biblio</li>
+              <small>Prologue numérique · ADP · Cantook (ANEL / De Marque)</small>
+              <li><b>Agrégateur</b> — marché <b>institutionnel</b> : regroupe des corpus pour collections / abonnements</li>
+              <small>Canadian Electronic Library · Érudit</small>
+            </ul>
+            <small>Un même acteur peut toucher aux deux fonctions</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Acteurs clés</p>
+            <table>
+              <thead><tr><th>Acteur</th><th>Rôle</th></tr></thead>
+              <tbody>
+                <tr><td>Prologue numérique (2010)</td><td>Entrepôt : conversion, stockage, stats, facturation</td></tr>
+                <tr><td>Messagerie ADP</td><td>Entreposage, CQ automatisé, négociations avec partenaires, facturation</td></tr>
+                <tr><td>Cantook (ANEL / De Marque)</td><td>Fichiers + métadonnées ; distribution libraires ; prêts</td></tr>
+                <tr><td>Bibliopresto / pretnumerique.ca</td><td>OSBL ; prêts</td></tr>
+              </tbody>
+            </table>
+                   </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>4. Autoédition <i class="material-icons">south</i></h5>
+           
+          </div>
+        </section>
+
+        
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Notions</p>
+            <table>
+              <thead><tr><th>Notion</th><th>Sens</th></tr></thead>
+              <tbody>
+                <tr><td>Compte d’auteur</td><td>Financement par l'auteur (en tout / partie) ; l’éditeur assume moins/pas le risque</td></tr>
+                <tr><td>Autoédition</td><td>Édition par l'auteur</td></tr>
+                <tr><td>Autopublication</td><td>Mise en ligne sur plateforme de lecture</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section data-background-image="media/716_sarah.jpg" data-background-size="1000px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Compte d’auteur — pratiques abusives</p>
+      
+  
+              <ul>
+                <li>cas de Christine Labrecque (<i>Sarah, fille du dragon</i>, 2013 Marcel Broquet)</li>
+              </ul>
+  
+            </div>  
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Autoédition
+            </br><small>et culture numérique</small></p>
+          <ul>
+            <li>Années 2000 : début des plateformes numériques d'autoédition</li>
+            <small>Lulu.com (2002) ; Fondation Fleur de Lys (2003) ; Blurb (2005) ; Kindle Direct Publishing (2007)</small>
+          <li>Offre de mise en ligne, export, impression</li>
+          <small>+ services de révision linguistique, de commercialisation, de communication et de
+            promotion</small>
+          
+          </ul>   </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+     
+            <div id="fondop2">
+              <p style="font-variant: small-caps;">Autoédition
+                </br><small>modalités</small></p>
+              <ul>
+                <li> Moindre coûts de réalisation</li>
+                <small>mais coûts invisibles</small>
+                <li> Solution écologique</li>
+                <small>mode de l'impression à la demande</small>
+              <li> Liberté de décision</li>
+              <small>responsabilités supplémentaires</small>
+              <li> Redevances supplémentaires</li>
+              <small>varient entre 100% et 10% selon les plateformes</small>
+            <li>  Liberté d'engagement</li> 
+            <small>seul répondant</small> 
+            </ul>
+            </div>
+        </section>
+
+        <section data-background="media/autoedition.jpg" data-background-size="1000px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Autoédition
+              </br><small>exemples de plateformes</small></p>
+            <ul>
+              <li>Hugo</li>
+              <small>production d'ePub, PDF, DOCX, Mobi ; ø commercialisation ou impression</small>
+              <li>BouquinBec</li>
+              <small>sélection par un comité éditorial ; $$ services et commercialisation</small>
+            <li>Direct Livre</li>
+            <small>impression uniquement ; $$ distribution ; ø livres numériques</small>
+            </ul>
+          </div>
+        </section>
+
+        <section data-background-image="media/homme.jpg" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Anti-édition</p>
+            <ul>
+              <li>Nabe, <i>L’homme qui arrêta d’écrire</i> — hors système</li>
+              <li>« Auto-édition pour quelqu’un qui est déjà connu »</li>
+              <li>Volonté de se situer hors circuit = critique de l’exclusivité éditoriale</li>
+            </ul>
+          </div>
+        </section>
+
+      </section>
+
+
+      <section data-background-image="media/" data-background-size="1600px" background-color="#21211c">
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>5. Licences et science ouverte <i class="material-icons">south</i></h5>
+         
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+         
+            <p style="font-variant: small-caps;">Tension entre droits du livre et philosophie du web</p>
+            <small>« brisons les barrières de l'ignorance et de l'illétrisme », premier slogan du Projet
+              Gutenberg</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">Prise en compte du droit du livre</p>
+          <ul>
+            <li>2000 - <i>Distributed Proofreaders</i> par Charles Franks pour soutenir la numérisation des livres du
+              domaine public</li>
+            <small>vérification des conditions légales, océrisation, relecture et correction x 3, mise en forme x
+              2</small>
+              <li>2007 - <i>Distributed Proofreaders Canada</i></li>
+              <small>valorisation d'un patrimoine ou d'une thématique nationale, respect du droit d'auteur</small>
+         
+          </ul></div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Libre accès / science ouverte</p>
+            <ul>
+              <li>Libre accès : mise à disposition (culture du libre <b>ou</b> sous régime de Propriété Intellectuelle)</li>
+              </ul>
+            </div>
+        </section>
+        <section data-background="media/lessig.jpg" data-background-size="1400px">
+
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Culture libre</p>
+
+            <p>« Une culture libre n’est pas une culture sans aucune propriété, pas plus qu’un marché libre
+              n’est un marché dans lequel tout est gratuit. </br>Le contraire d’une culture libre est une « culture
+              de permissions » : </br>une culture au sein de laquelle les créateurs peuvent créer uniquement avec
+              la permission des puissants, ou des créateurs du passé. » </br><small></br>(<i>Culture libre</i>, L.
+                Lessig 2015)</small></p>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Licences Creative Commons</p>
+            
+            <ul>
+              <li>2002 : Licences numériques par l'organisation Creative Commons</li>
+              <small>association pour le développement d'alternatives aux droits de propriété intellectuelle</small>
+              <li>Extension du droit d'auteur dans le numérique</li>
+       
+            </ul>
+              </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+          <div id="fondop2">
+            <p style="font-variant: small-caps;">Licences Creative Commons</p>
+          
+            <ul>
+              <li><b>BY</b> — attribution</li>
+              <li><b>NC</b> — pas d’usage commercial</li>
+              <li><b>SA</b> — partage dans les mêmes conditions (ex. Wikipédia)</li>
+              <li><b>ND</b> — pas de modification</li>
+            </ul>
+            <small>Combinaisons → plusieurs licences CC + domaine public</small>
+          </div>
+        </section>
+
+
+      <section data-background="media/cc.png" data-background-size="700px">
+
+
+      </section>
+
+      <section data-background="media/" data-background-size="1400px">
+
+        <div id="fondop2">
+
+          <p style="font-variant: small-caps;">Autre licences
+            </br><small>pour logiciels libres et créations numériques</small></p>
+
+          <ul>
+            <li>Licences Open Source / Libres / Art Libre / Licences GNU</li>
+            <small>modification, distribution, utilisation commerciale
+            </small>
+          </ul>
+
+        </div>
+      </section>
+
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pour la semaine prochaine</p>
+         <p>installer <a href="https://sigil-ebook.com/sigil/download/">Sigil</a></p>
+        </div>
+      </section>
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">À la semaine prochaine !</p>
+        </div>
+      </section>
+
+    </div>
+
+    </div>
+
+      <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

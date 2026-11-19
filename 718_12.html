@@ -1,0 +1,870 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - Environnements numériques et CMS - A2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+      <div class="footer">ELD718 - Automne 2026 - Margot Mellet</div>
+
+      <!-- Titre -->
+      <section data-background-image="media/718_index.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD718 | Édition numérique</h2>
+          <h5 style="font-size: 30px;">19 novembre : Environnements numériques et CMS</h5>
+          <small>Publier un site web — création, hébergement, nom de domaine</small>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Publier un site web</p>
+          <ul>
+            <li>Donner accès aux navigateurs</li>
+            <small>aux fichiers HTML, CSS, JavaScript</small>
+            <li>pour afficher l’information</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Client / serveur</p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Côté</th>
+                <th>Rôle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><b>Client</b></td>
+                <td style="text-align:left;">Navigateur : on saisit une URL → requête <b>HTTP</b></td>
+              </tr>
+              <tr>
+                <td><b>Serveur</b></td>
+                <td style="text-align:left;">Ordinateur (physique ou virtuel) qui <b>sert</b> les fichiers ; le navigateur les interprète</td>
+              </tr>
+            </tbody>
+          </table>
+          <small>Un serveur stocke et délivre ; chez soi, en data center, ou via un prestataire.</small>
+        </div>
+      </section>
+
+
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Trois étapes récurrentes</p>
+          <ul>
+            <li>1. Créer un site web</li>
+            <small>HTML à la main, ou avec un CMS</small>
+            <li>2. Choisir un hébergeur</li>
+            <small>espace où sont stockées les données</small>
+            <li>3. Avoir un nom de domaine</li>
+            <small>adresse web — URL</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">1. Créer un site web</p>
+          <ul>
+            <li>En HTML à la main</li>
+            <li>ou avec un CMS <i>(Content Management System)</i> 
+            </br>ou avec SSG <i>(Static Site Generator)</i></li>
+             </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">2. Choisir un hébergeur</p>
+          <ul>
+            <li>Espace où vont être stockées les données</li>
+            <li>certains systèmes hébergent et publient</li>
+            <small>GitHub Pages, WordPress…</small>
+           
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">3. Avoir un nom de domaine</p>
+          <ul>
+            <li>Adresse web — URL</li>
+            <small>via des services en ligne (registrars)</small>
+            <li>parfois couplé à l’hébergement</li>
+            <li>coûts variables selon l’extension et le prestataire</li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de création</br>
+            <small>1. À la main (HTML et CSS)</small></p>
+          <ul>
+            <li>HTML : balises du texte</li>
+            <li>CSS <i>(Cascade Style Sheets)</i> : allure, mise en page</li>
+            <li>+ JavaScript : fonctionnalités</li>
+            <small>recherche, boutons avec effet…</small>
+          
+            <li>Long, complexe, technique</li>
+            <small><b>Mais</b> : vous avez la main sur tout ce qui constitue le site</small>
+              </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de création</br>
+            <small>2. Via CMS</small></p>
+          <ul>
+            <li>Interfaces plus ou moins simplifiées</li>
+            <small>WordPress (~43 % des sites), Squarespace, Wix</small>
+            <li>Modèles plus complexes</li>
+            <small>Drupal, Ghost — interfaces graphiques</small>
+            <li>Vraiment techniques : générateurs de sites statiques</li>
+            <small>Hugo, Eleventy — pas d’interface graphique</small>
+          
+            <li>Création facilitée</li>
+            <small>Mais contrainte aussi par des modèles / templates</small>
+                    <li>Souvent : offre d’hébergement et options payantes</li>
+            <small>ou du « tout-en-un » comme WordPress.com</small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Le choix d’outil oriente la publication</p>
+          <ul>
+                   </ul>
+          <pre style="font-size: 20px; text-align: left; box-shadow: none;"><code>[ Création ]
+HTML à la main | CMS (WP, Drupal, Ghost, SPIP…) | SSG (Hugo, Eleventy…)
+                    \             |              /
+                     \            |             /
+                      v           v            v
+              [ Hébergeur + (souvent) nom de domaine ]
+                              |
+                              v
+     Client (navigateur) ←HTTP→ Serveur (fichiers HTML/CSS/JS…)</code></pre>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Tableau récapitulatif</br>
+            <small>3 temps</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Étape</th>
+                <th>Options</th>
+                <th>Coûts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="text-align:left;"><b>Création / gestion / publication</b></br>
+                  <small>avec quoi j’édite / publie ?</small></td>
+                <td style="text-align:left;">WordPress.org, WordPress.com, Wix, Squarespace, Drupal, Ghost, SPIP, Hugo, Eleventy, HTML à la main</td>
+                <td style="text-align:left;">Outil souvent gratuit ; </br>services / thèmes / apps souvent payants</td>
+              </tr>
+              <tr>
+                <td style="text-align:left;"><b>Hébergement</b></br>
+                  <small>où sont stockés mes fichiers ?</small></td>
+                <td style="text-align:left;">Playground, Local, GitHub Pages, o2switch, Infomaniak, Hostinger, OVH, LWS, CHATONS…</td>
+                <td style="text-align:left;">Gratuit (essai / local / pages) → ~5–20 $ CA/mois → + cher (cloud / managé)</td>
+              </tr>
+              <tr>
+                <td style="text-align:left;"><b>Nom de domaine</b></br>
+                  <small>quelle est l’adresse de mon site ?</small></td>
+                <td style="text-align:left;">.ca, .com, .org, .quebec… via CanSpace, HostPapa, OVHcloud CA, Gandi…</td>
+                <td style="text-align:left;">~10–30 $ CA/an selon l’extension</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Options de création</br>
+            <small>1/2</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Type</th>
+                <th>Gestion</th>
+                <th>Hébergement</th>
+                <th>Points forts</th>
+                <th>Limites</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML / CSS à la main</td>
+                <td>Fichiers</td>
+                <td>Éditeur de code</td>
+                <td>Non</td>
+                <td style="text-align:left;">Contrôle total</td>
+                <td style="text-align:left;">Long et technique</td>
+              </tr>
+              <tr>
+                <td>Hugo / Eleventy (SSG)</td>
+                <td>Générateur statique</td>
+                <td>Code + Markdown</td>
+                <td>Non</td>
+                <td style="text-align:left;">Rapide, sûr, versionnable</td>
+                <td style="text-align:left;">Courbe technique ; pas d’UI</td>
+              </tr>
+              <tr>
+                <td>WordPress.org</td>
+                <td>CMS libre</td>
+                <td>Tableau de bord WP</td>
+                <td>À choisir à part</td>
+                <td style="text-align:left;">Standard</td>
+                <td style="text-align:left;">Maintenance ; coût = hébergement + domaine</td>
+              </tr>
+              <tr>
+                <td>WordPress.com</td>
+                <td>CMS commercial</td>
+                <td>Interface WP bridée</td>
+                <td>Oui</td>
+                <td style="text-align:left;">Simple, hébergé</td>
+                <td style="text-align:left;">Extensions / thèmes limités sans plan payant</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Options de création</br>
+            <small>2/2</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Option</th>
+                <th>Type</th>
+                <th>Gestion</th>
+                <th>Hébergement</th>
+                <th>Points forts</th>
+                <th>Limites</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wix / Squarespace</td>
+                <td>Constructeur tout-en-un</td>
+                <td>Éditeur WYSIWYG</td>
+                <td>Oui</td>
+                <td style="text-align:left;">Design rapide, tout inclus</td>
+                <td style="text-align:left;">Modèles contraignants</td>
+              </tr>
+              <tr>
+                <td>Drupal</td>
+                <td>CMS libre</td>
+                <td>Back-office puissant</td>
+                <td>Non</td>
+                <td style="text-align:left;">Sites complexes / institutionnels</td>
+                <td style="text-align:left;">Plus lourd à administrer</td>
+              </tr>
+              <tr>
+                <td>SPIP</td>
+                <td>CMS libre</td>
+                <td>Back-office</td>
+                <td>Non</td>
+                <td style="text-align:left;">Simple</td>
+                <td style="text-align:left;">Moins grand public que WP</td>
+              </tr>
+              <tr>
+                <td>Ghost</td>
+                <td>CMS / publication</td>
+                <td>Interface dédiée</td>
+                <td>Souvent proposé</td>
+                <td style="text-align:left;">Écriture / blog soigné</td>
+                <td style="text-align:left;">Moins généraliste que WP</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Options d’hébergement</br>
+            <small>1/2 — gratuit / léger</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Hébergeur</th>
+                <th>Type</th>
+                <th>Coût</th>
+                <th>Nom de domaine</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>WordPress Playground</td>
+                <td>Navigateur</td>
+                <td>0 $ CA</td>
+                <td>Non</td>
+              </tr>
+              <tr>
+                <td>GitHub Pages</td>
+                <td>Statique</td>
+                <td>0 $ CA (public)</td>
+                <td>github.io ou domaine perso</td>
+              </tr>
+              <tr>
+                <td>Netlify / Cloudflare Pages</td>
+                <td>Statique</td>
+                <td>Gratuit → payant selon usage</td>
+                <td>Souvent oui</td>
+              </tr>
+              <tr>
+                <td>Hébergement institutionnel</td>
+                <td>Université / labo</td>
+                <td>Souvent 0 $ CA</td>
+                <td>Parfois sous-domaine</td>
+              </tr>
+              <tr>
+                <td>CHATONS / Framasoft-like</td>
+                <td>Alternatif / éthique</td>
+                <td>Variable (don, cotisation…)</td>
+                <td>Variable</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Options d’hébergement</br>
+            <small>2/2 — mutualisé / managé</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Hébergeur</th>
+                <th>Type</th>
+                <th>Coût (ordre de grandeur)</th>
+                <th>Nom de domaine</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CanSpace (CA)</td>
+                <td>Mutualisé</td>
+                <td>~5–10 $ CA/mois</td>
+                <td>Offert sur engagement annuel</td>
+              </tr>
+              <tr>
+                <td>HostPapa (CA)</td>
+                <td>Mutualisé</td>
+                <td>Promo ~1–3 $ CA/mois puis ~9–16 $</td>
+                <td>Souvent offert 1 an</td>
+              </tr>
+              <tr>
+                <td>Web Hosting Canada</td>
+                <td>Mutualisé</td>
+                <td>Promo ~4 $ CA/mois puis ~7 $</td>
+                <td>Selon offre</td>
+              </tr>
+              <tr>
+                <td>OVHcloud Canada</td>
+                <td>Mutualisé</td>
+                <td>Promo ~1–5 $ ; renouvellement ~8–12 $</td>
+                <td>Offert 1 an souvent</td>
+              </tr>
+              <tr>
+                <td>PlanetHoster</td>
+                <td>Mutualisé / multi-datacenter</td>
+                <td>~8–15 $ CA/mois (Montréal possible)</td>
+                <td>Offert 1 an</td>
+              </tr>
+              <tr>
+                <td>Hostinger Premium</td>
+                <td>Mutualisé</td>
+                <td>Promo ~4–6 $ puis ~15 $ CA/mois</td>
+                <td>Offert 1 an souvent</td>
+              </tr>
+              <tr>
+                <td>Kinsta / WP managé</td>
+                <td>Managé WordPress</td>
+                <td>~45–430+ $ CA/mois</td>
+                <td>À part</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Nom de domaine</br>
+            <small>ou registrar</small></p>
+          <table style="font-size: 18px; width: 100%;">
+            <thead>
+              <tr>
+                <th>Extension</th>
+                <th>Ordre de prix / an</th>
+                <th>Remarques</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>.ca</td>
+                <td>~12–26 $ CA</td>
+                <td style="text-align:left;">Pertinent pour projets canadiens / québécois (CIRA)</td>
+              </tr>
+              <tr>
+                <td>.com</td>
+                <td>~12–25 $ CA</td>
+                <td style="text-align:left;">Le plus « international »</td>
+              </tr>
+              <tr>
+                <td>.org</td>
+                <td>~15–28 $ CA</td>
+                <td style="text-align:left;">Associations, projets savants</td>
+              </tr>
+              <tr>
+                <td>.quebec</td>
+                <td>Souvent ~30–50+ $ CA</td>
+                <td style="text-align:left;">Identité québécoise ; plus cher que .ca</td>
+              </tr>
+              <tr>
+                <td>.fr</td>
+                <td>~8–25 $ CA</td>
+                <td style="text-align:left;">Conditions / éligibilité pour .fr</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Atelier CMS - WordPress.com</p>
+          
+        </div>
+      </section>
+
+
+
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">à la semaine prochaine</p>
+        </div>
+      </section>
+
+    </div>
+
+    </div>
+
+
+      <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>

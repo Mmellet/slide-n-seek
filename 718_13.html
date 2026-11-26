@@ -1,0 +1,993 @@
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>ELD718 - Édition numérique - Design du livre numérique - A2026</title>
+
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=computer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=computer" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_downward" />
+ <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL'0,
+        'wght'400,
+        'GRAD'0,
+        'opsz'24
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Next et previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+
+      .prev,
+      .next,
+      .text {
+        font-size: 11px
+      }
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+
+    #fondop2 {
+      background-color: white;
+      border: 2px solid transparent;
+      opacity: 0.89;
+      width: 115%;
+      margin-left: -70px;
+
+      border-color: rgba(235, 202, 221, 0.432);
+    }
+
+    #fondop {
+
+      background-color: white;
+      border: 5px solid transparent;
+      opacity: 0.9;
+      border-color: rgba(235, 234, 202, 0.432);
+
+
+    }
+
+    #fondop3 {
+      font-family: OutputSans;
+      background-color: rgba(255, 255, 255, 0.466);
+      border: 2px solid transparent;
+      border-image: url("https://media.istockphoto.com/id/177800708/fr/photo/feuilles-de-papier-de-fond.jpg?s=612x612&w=0&k=20&c=ieKHJORoY4ie0DKvKgk6zG5p8x3tVqSTIxFMJLd5Aj0=") 10 round;
+      opacity: 0.93;
+    }
+
+    #fondop5 {
+      background-color: rgba(255, 255, 255, 0.151);
+      height: 600px;
+      width: 160%;
+      display: inline;
+      position: static;
+
+    }
+
+    .reveal a:hover {
+
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .reveal a {
+      color: rgb(39, 111, 114);
+      font-weight: 50;
+    }
+
+    .reveal h1,
+    .reveal h2,
+    .reveal h3,
+    .reveal h4,
+    .reveal h5,
+    .reveal h6 {
+      color: rgb(40, 55, 71);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 35px;
+      line-height: 1.5;
+      letter-spacing: normal;
+      text-transform: uppercase;
+      text-shadow: none;
+      word-wrap: break-word;
+    }
+
+    /*
+    .icone-liste li::before {
+  font-family: 'Material Icons';
+  content: '\e2c6'; /* Code de l'icône "attachment" 
+  font-size: 18px; /* Taille de l'icône 
+  margin-right: 10px; /* Un peu d'espace entre l'icône et le texte 
+}
+*/
+
+    table {
+      border: 1px solid rgb(140 140 140);
+      letter-spacing: 1px;
+    }
+
+    caption {
+      caption-side: bottom;
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    thead,
+    tfoot {
+      border: 1px solid rgb(160 160 160);
+      background-color: rgba(240, 233, 239, 0.356);
+    }
+
+    th,
+    td {
+      padding: 8px 10px;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    td:last-of-type {
+      text-align: center;
+      border: 1px solid rgb(160 160 160);
+    }
+
+    tbody>tr:nth-of-type(even) {
+      background-color: rgb(237 238 242);
+    }
+
+    tfoot th {
+      text-align: right;
+    }
+
+    tfoot td {
+      font-weight: bold;
+    }
+  </style>
+
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+</head>
+
+<body>
+
+  <div class="reveal">
+
+    <div class="slides">
+      <img src="media/logo.png" alt="" width="15%" style="margin-left: -120%;"></img>
+      <div class="footer">ELD718 - Automne 2026 - Margot Mellet</div>
+
+
+      <section data-background-image="media/718_index.png" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop">
+          <h2>ELD718 | Édition numérique</h2>
+          <h5 style="font-size: 30px;">26 novembre : Design du livre numérique</h5>
+          </div>
+      </section>
+
+     
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Chaque maison « patrimonialise par le format »</p>
+            <small>identité visuelle · choix de production · design</small>
+        </br>   <small>comment la version numérique <b>s’accorde</b> ou <b>se différencie</b>-t-elle de l’identité imprimée ?</small>
+             
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Promesses des années 1990 / Réalité de la modernité</p>
+          <ul>
+            <li>Attente d’une lecture multimédia (images animées, 3D, récit interactif)</li>
+            <small>révolution du livre au sens d’une nouvelle culture de lecture</small>
+            <li>Surtout des scans de mauvaise qualité en PDF et Tradition encore centrée sur l’imprimé — même pour l’EPUB</li>
+           
+             </ul>
+             <p><b>PDF</b> et <b>EPUB</b> = formes dominantes</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Limites du ebook · surproduction</p>
+          <ul>
+            <li>Culture du spam / saturation de catalogues</li>
+            <small><i>Kindle’voke Ghost Writers</i> (2012) — Luc Gross (Traumawien) + Bernhard Bauch</small>
+          </br>  <small>bots → commentaires YouTube → livres structurés → publication Kindle ~2 $</small>
+            <li>Même problématique avec la production IA </br>— réponses : labels « création / fabrication humaine »</li>
+            <small><a href="https://www.creationhumaine.fr/">creationhumaine.fr</a> · <a href="https://www.fabricationhumaine.org/">fabricationhumaine.org</a></small>
+          </ul>
+        </div>
+      </section>
+
+
+      <section>
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>1. Générateurs / machines littéraires <i class="material-icons">south</i></h5>
+            <small>les débuts de la littérature numérique</small>
+          </div>
+        </section>
+
+      <section data-background-image="media/poem.jpeg" data-background-size="1800px" background-color="#21211c">
+        <div id="fondop2" style="margin-top: 365px; margin-right: 517px;font-size: 26px;">
+					<p style="font-variant: small-caps;">M.U.C. (Manchester)</p>
+					<small>Christopher Strachey · 1952</small>
+					<ul>
+						<li style="font-size: 26px;">première œuvre de poésie générative</li>
+						<small>lettre d'amour générée par une machine</small>
+					</br><small>critique queer de l’hétéronormativité des lettres d’amour</small>
+					</br><small>"you are my [adjective] [noun]. my [adjective] [noun] [adverb] [verbs] your [adjective] [noun]."</small>
+				</ul>
+			</br>
+					</div>
+      </section>
+
+
+			<section data-background-image="acfas/strachey.png" data-background-size="1600px" background-color="#21211c">
+				<div id="fondop2">
+					
+					<small>recomposition 2014 · <a href="https://nickm.com/memslam/after_strachey/love_letters.html">Nick Montfort</a></small>
+			</div>
+			</section>
+
+      
+			<section data-background-image="media/baudot.jpeg" data-background-size="900px" background-color="#21211c">
+				<div id="fondop2">
+					<p style="font-variant: small-caps;">Machine de Baudot · 1964</p>
+					<small>Jean A. Baudot · UdeM · première production de vers assistée par ordinateur</small>
+					</br><small><a href="https://archive.org/details/xfoml0001"><i>La Machine à écrire mise en marche et programmée par Jean A. Baudot</i></a></small>
+				<ul>
+
+					<li>Dictionnaire de mots</li>
+					<small><i>Manuel de français de quatrième année</i></small>
+				</br><small>extraits de Victor Hugo</small>
+				<li>Algorithme combinatoire</li>
+				<small>+ série de règles syntaxiques</small>
+				</ul>	
+				
+				</div>
+			</section>
+
+			<section data-background-image="media/doueihi.jpg" data-background-size="1800px" background-color="#21211c">
+				<div id="fondop2">
+				
+					<p style="font-variant: small-caps;">Modèle 1
+					</br><small><i>Manuel de français de quatrième année</i></small>
+	  
+	  
+				  </p>
+	  
+				  <ul style="font-size: 28px;">
+					<li>L'automne et le champs transportent quelquefois une couronne.</li>
+					<li>Les campagnes trahissent l'effort.</li>
+					<li>Les crocodiles rapides oublieront les courses vives comme une peine pittoresque.</li>
+		
+					<li>Le robinet travaille.</li>
+					<li>Les couronnes et la pluie se regardent dans la chouette.</li>
+					<li>L'histoire sauve la compote derrière le vent.</li>
+		
+				  </ul>
+	  
+				</div>
+			</section>
+
+			<section data-background-image="media/hugo.webp" data-background-size="1800px" background-color="#21211c">
+				<div id="fondop2">
+			
+					<p style="font-variant: small-caps;">Modèle 2
+					</br><small><i>extraits de Victor Hugo</i></small>
+				  </p>
+	  
+				  <ul style="font-size: 28px;">
+				  <li>Les lueurs aristocratiques et les ailes souveraines profanent la justice même.</li>
+							  <li>Les espaces augustes entrent en pleine nuit, car les brousailles funèbres dominent les
+								  brumes.</li>
+							  <li>Des bronzes tordus et des tremblements ne se sauveront plus.</li>
+	  
+	  
+	  </ul>
+	  
+				</div>
+			</section>
+
+
+      <section data-background-image="media/sintext.png" data-background-size="1400px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Postérité des générateurs</p>
+          <ul>
+            <li>Sintext — Barbosa &amp; Cavalheiro, 1993</li>
+						<small>générateur de générateurs en C++</small>
+            <li>Générateurs de texte</li>
+						<small>règles + dictionnaire + algorithme · imiter le langage</small>
+						<li>Générateurs combinatoires</li>
+						<small>fragments préconstruits · pastiche d’une forme</small>
+			 </ul>
+          <p>Littérature conceptuelle, niche</p>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="cover" background-color="#21211c">
+				<div id="fondop2">
+					<p style="font-size: 26px;">Ce qui m’intéresse dans la génération, ce n’est pas le texte qui s’affiche. Ce texte-là est un moment comme un autre, on s’en fout. […] Ce qui m’intéresse, c’est cette capacité à produire à l’infini et à générer un univers que je ne suis pas capable de faire. C’est donc un autre substitut qui transmet une pensée qui dit. Peut-être est-ce un fantasme d’éternité. […] Écrire n’est plus produire un texte donné, mais établir des modèles abstraits de texte. L’originalité ne réside plus dans le produit, mais dans les modalités de production.<small>(Balpe, 1991)</small>
+	
+				</div>
+			</section>
+
+      <section data-background-image="media/desordre.jpg" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Désordre.net — Philippe de Jonckheere (2001)
+          </br><small><a href="https://desordre.net"><i>desordre.net</i></a></small></p>
+          <ul>
+            <li>Site en constante expansion, reconstitution, modification</li>
+             <li>Navigation = flânerie au hasard</li>
+            <small>Articulation entre combinatoire et hypertexte</small>
+          </ul>
+        </div>
+      </section>
+      </section>
+
+      <section>
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>2. Littératures hypertextuelles <i class="material-icons">south</i></h5>
+              </div>
+        </section>
+
+      <section data-background-image="media/nelson.jpeg" data-background-size="cover" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Définition</p>
+          <ul>
+            <li>Littérature qui joue avec la navigation et rompt la linéarité du récit</li>
+             <small>Genette (littéraire) · Ted Nelson (informatique) </br> <b>nœuds</b> + <b>liens</b></small>
+                 </ul>
+        </div>
+      </section>
+
+
+      <section data-background-image="media/afternoon.png" data-background-size="1100px" background-color="#21211c">
+				<div id="fondop2" style="margin-top: -240px;margin-right: 600px;">
+					<p style="font-variant: small-caps;"><i>afternoon: a story</i>
+					</br><small>Michael Joyce · 1987 · Storyspace · Eastgate</small></p>
+					<small>539 nœuds · 950 liens · choix oui/non · fins multiples</small>
+					<p style="font-size: 24px;"><small>Peter cherche à savoir si son ex-femme et son fils sont dans l’accident…</small></p>
+				</div>
+			</section>
+
+			<section data-background-image="media/patchwork.jpeg" data-background-size="1700px" background-color="#21211c">
+				<div id="fondop2" style="margin-right: 420px;">
+					<p style="font-variant: small-caps;"><i>Patchwork Girl</i></p>
+					<small>Shelley Jackson · 1995 · Eastgate Systems</small>
+					</br><small>suite de Frankenstein · identité et corps recomposés</small>
+					<p style="font-size: 24px;"><small>nœuds = parties du corps / du texte · éclatement narratif</small>
+				</p>
+					</div>
+			</section>
+
+
+
+      <section data-background-image="media/skin.jpg" data-background-size="700px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;"><i>SKIN</i> — Shelley Jackson (2003–)</p>
+          <ul>
+            <li>Récit publié sur la peau de volontaires (tatouages)</li>
+            <small>un mot = une personne</small>
+            <li>Texte non publié ailleurs ; morts des « mots » = altération de l’œuvre</li>
+            <small><a href="https://ineradicablestain.com/skinmap.html">skinmap</a> · un mot mort → projet arrêté</small>
+            <li>Extension : ~200 vidéos des mots → poème à lexique limité</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Les hypertextes aujourd’hui</p>
+          <ul>
+            <li><b>Storyspace 3</b></li>
+            <small>encore en vente chez Eastgate</small>
+            <li><b>Twine</b> (twinery.org)</li>
+            <small>gratuit, multi-OS, export HTML</small>
+            <li>Inform 7</li>
+            <small>par commande</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Espaces de publication &amp; archives</p>
+          <ul>
+            <li>Pas d’équivalent commercial d’Eastgate</li>
+            <li><b><a href="https://nt2.uqam.ca/">NT2</a></b> (UQAM) : répertoire et conservation des œuvres hypermédiatiques</li>
+            <li><b>bleuOrange</b> (2008–2021) — dissoute en 2022 ; archive <a href="https://the-next.org/collections/29 ">The NEXT</a></li>
+            <li>Figura</li>
+              
+             <li><a href="https://collection.eliterature.org/">Electronic Literature Collection (ELO)</a></li>  
+          <li><a href="https://newmediawritingprize.co.uk/">New Media Writing Prize</a></li>
+          </ul>
+        </div>
+      </section>
+      </section>
+
+      <section>
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>3. Troisième génération de littérature <i class="material-icons">south</i></h5>
+         
+          </div>
+        </section>
+
+      <section data-background-image="media/afolio.jpg" data-background-size="600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">@folio 
+          </br>   <small>Pierre Schweitzer — dès 1996 · codex électronique</small></p>
+          <ul>
+            <li>Baladeur de textes / support de lecture nomade (Strasbourg, 1996)</li>
+            <small> fac-similés reliés en hypertexte, feuilletage, onglets tactiles</small>
+            
+            <li>+ Mot@mot : logiciel compagnon</li>
+            <small>découpe <b>mot à mot</b> les pages scannées, images-mots</small>
+             </ul>
+        </div>
+      </section>
+     
+      <section data-background-image="media/abrupt.jpg" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Abrüpt · <a href="https://abrupt.cc/">abrupt.cc</a></p>
+          <ul>
+          </br><small><a href="https://abrupt.cc/frederic-neyrat/cosmos-experimental/"><i>Cosmos expérimental</i></a></small>
+        </br><small><a href="https://abrupt.cc/marcel-deburas/la-fin-des-temps-ne-vient-pas/"><i>La fin des temps ne vient pas</i></a></small>
+        </br><small><a href="https://abrupt.cc/c-jeanney/la-langue-de-la-girafe/"><i>La langue de la girafe</i></a></small>  
+      
+        </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/gitterature.png" data-background-size="cover" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Antilivres / Gittérature</p>
+          <ul>
+            <li><a href="https://www.antilivre.org/#manifeste">antilivre.org</a> — index des créations</li>
+            <li>Gittérature : <a href="https://antilivre.gitlab.io/gitterature/">antilivre.gitlab.io/gitterature</a></li>
+            <li>Cyberpoétique Abrüpt — outil : terminal</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/abrupt-home.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Abrüpt · <a href="https://abrupt.cc/">abrupt.cc</a></p>
+          <ul>
+            <li>Chaîne : Markdown, YAML, Make, Pandoc, LaTeX</li>
+            <li>Sorties : HTML  · PDF sans DRM · parfois EPUB · dépôt Git</li>
+            <small>+ repo Git </small>
+            </ul>
+        </div>
+      </section>
+
+    
+
+      <section data-background-image="media/alto-revolutions.jpg" data-background-size="900px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Éditions Alto</p>
+          <ul>
+            <li><i>Révolutions</i> (Fortier &amp; Dickner, 2014) : <a href="https://editionsalto.com/livres/revolutions">editionsalto.com/livres/revolutions</a></li>
+            <small>calendrier républicain · majordome Jeeves</small>
+            <li>Papier : livre-objet, tirage limité (1793 puis 1806)</li>
+            <li>+ Numérique 2014 : site gratuit, un mot par jour</li>
+            <small>aujourd’hui aussi EPUB/PDF ~15 $</small>
+                    </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/alto-borodine.jpg" data-background-size="900px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;"><i>Les douze Borodine</i> — Alto (2025)</p>
+          <ul>
+            <li>Tanguay &amp; Dickner</li>
+            <small>2054 : Internet n’existe plus</small>
+            <li>Vingtaine d’auteurices)</li>
+            <small>Alex Leslie, Anakana Schofield, Catherine Leroux, Marie-Andrée Gill, Kaie Kellough, Sean Michaels, etc.</small>
+           <li>Jeu : Ressources inhumaines (Inhuman Resources), avril 2025 avec Affordance Studio (Finnegan Motors)</li>
+            <li>Papier comme pièce à conviction</li>
+            <small>31$ couverture rigide</small>
+                 </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/pavillons.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Pavillons · <a href="https://www.pavillons.ca/accueil">pavillons.ca</a></p>
+          <ul>
+            <li>Mai 2022 — Comtois, Lamarre, Moreau</li>
+            <li>Plateforme : créations québécoises inédites</li>
+            <small>« littérature de l’à présent »</small>
+            <li>Mode feuilleton + accompagnement éditorial / promotionnel</li>
+            <li>Abonnement mensuel · mécénat · certificat cadeau · partenaire LQM</li>
+            <small></small>
+          </ul>
+        </div>
+      </section>
+      </section>
+
+      <section>
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>4. Point sur les alternatives <i class="material-icons">south</i></h5>
+            <small><i>Expanded publishing</i></small>
+          </div>
+        </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Dans les contenus</p>
+          <ul>
+             <li>vidéo embarquée</li>
+            <li>annotations dynamiques</li>
+            <li>versionnement</li>
+               </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/arena.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Dans les contenus
+          </br><small>Collecte automatisée / web scraping pour composer et réagencer</small></p>
+          <ul>
+            <ul>
+            <li><a href="https://www.are.na/">Are.na</a></li>
+            <li>Plateforme indépendante de recherche-création (~2007)</li>
+            <li>Tableaux / planches d’inspiration : liens, images, textes, vidéos</li>
+            <small>sans pub, sans algorithme de recommandation · canal privé ou public</small>
+            <li>+ <b><a href="https://print.are.na/">print.are.na</a></b> : transforme le tableau en livre PDF (+ HTML/CSS)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/printed.JPG" data-background-size="1400px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Library of Printed Web — Paul Soulellis (2013)</p>
+          <ul>
+            <li>Archive physique de livres d’artistes, fanzines et imprimés issus du Web</li>
+            <small>Capture d’écran + moissonnage</small>
+            <li>244 oeuvres et 130 artistes</li>
+            <li>Reprise par le MoMA en 2017</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Modes de publication</p>
+          <ul>
+            <li><b>Publication au fil de l'eau</b> — publier pendant que ça se fait</li>
+             <li><b>Web-to-print</b> — l’imprimé généré depuis HTML/CSS</li>
+            <small>Print Are.na · Paged.js</small>
+          </br> <small>Knight Lab</small>
+                    </ul>
+        </div>
+      </section>
+
+     
+
+      <section data-background-image="media/archet.webp" data-background-size="1400px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Dans les démarches créatives </br>Écriture profilaire — Anne Archet</p>
+          <ul>
+            <li>Intégrer le profil public de l’auteur·ice dans le récit</li>
+            <small>éditorialisation · pionnière du web québécois · <a href="https://archet.net">archet.net</a></small>
+            <li>Textes érotiques en parodie (Remue-ménage, Lux éditeur)</li>
+            <li>Aussi : Victoria Welby — annonce d’autrice de location sur Leboncoin</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/viedelicorne.jpg" data-background-size="900px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;"><i>Vie de licorne</i> (2017–)</p>
+          <ul>
+            <li>Web-feuilleton créé en mai 2017, toujours en cours</li>
+            <small><a href="https://viedelicorne.blog/">viedelicorne.blog</a></small>
+            <li>Courts épisodes (souvent dialogues)</li>
+            <li>Narratrice « Anne » / « Moi » : identité publique ↔ fiction</li>
+            <li>Mode : publication au fil de l’eau · communauté dans le temps</li>
+            <small>romance / « eau de rose » politique et queer</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/hyphes.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;"><i>Hyphes</i> (2022–)</p>
+          <ul>
+            <li>« Mycélium littéraire » en forme de wiki : ni début ni fin</li>
+            <small><a href="https://hyphes.net/">hyphes.net</a> · depuis le 13 juin 2022</small>
+            <li>Hyphes narratifs + hyphes encyclopédiques</li>
+            <small>lecture au hasard ou par fils · historique des versions · réécriture permanente</small>
+            <li>« Se perdre sur Wikipedia, mais en fiction »</li>
+            <small>révision : Chris Chung · wiki auto-hébergé</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Enjeux et limites</p>
+          <ul>
+            <li>1. Pas de public de masse — modèle économique difficile</li>
+            <small>mais au Québec : milieu d’exception subventionné</small>
+            <li>2. Coût et intensité du travail pour les petites structures</li>
+            <small>mais permet aussi de se faire remarquer</small>
+            <li>3. Marginalisation culturelle / risque du trop niche</li>
+            <small>changement de mode post-Covid (direct, live…)</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Outils de projet collectif
+          </br><small>pour un collectif en ligne</small></p>
+          <ul>
+            <li>Archive of Our Own (AO3)</li>
+            <small>Organization for Transformative Works, 2008</small>
+          </br><small>non-commercial - bénévoles - archives ouvertes riches</small>
+            <li>Wattpad</li>
+            <small>plateforme canadienne 2006</small>
+            <small>modèle commercial</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/manifold.png" data-background-size="700px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Outils de projet collectif
+          </br><small>par un collectif en ligne</small></p>
+          <ul>
+            <li><a href="https://manifoldapp.org/ ">Manifold</a></li>
+            <small>plateforme open source (CUNY Graduate Center + University of Minnesota Press)</small>
+          </br><small>une bibliothèque de projet</small>
+          <li>Import : EPUB, HTML, Markdown, Word, Google Docs + médias</li>
+          <li>Annotation sociale · groupes de lecture · texte itératif</li>
+             
+        </ul>
+        </div>
+      </section>
+
+
+
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+            <h5>Tableaux récapitulatifs <i class="material-icons">south</i></h5>
+            <small>Aide-mémoire — Design du livre numérique du futur</small>
+          </div>
+        </section>
+
+        <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+          <div id="fondop2">
+          <p style="font-variant: small-caps;">1. Formats du livre</p>
+          <ul>
+            <li><b>ePub / EPUB 3</b> — HTML/CSS/XML · reflow · multimédia · ouvert</li>
+            <small>roman, essai, manuel ; livrel standard</small>
+            <li><b>PDF</b> — page / impression · ouvert* · homothétique, POD</li>
+            <li><b>MOBI / AZW / KF8</b> — Kindle · propriétaire · Amazon</li>
+            <li><b>HTML</b> — livre-web · ouvert · Abrüpt, antilivres</li>
+            <li><b>IBA / apps</b> · <b>DAISY / PDF-UA</b> · <b>MD / XML</b> · <b>Audio</b></li>
+            <small>*souvent verrouillé par DRM</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">Reflowable vs Fixed-layout</p>
+          <ul>
+            <li><b>Reflowable</b> — texte s’adapte à l’écran / préférences</li>
+            <small>roman, essai, manuel · pas de « p. 12 » → titres / liens</small>
+            <li><b>Fixed-layout (FXL)</b> — page dessinée fixe ; zoom / pan</li>
+            <small>BD, album, magazine · composition proche print</small>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">2. Modes multi</p>
+          <ul>
+            <li><b>Multisupport</b> — plusieurs objets de lecture</li>
+            <small>ex. <i>Révolutions</i> (objet rare + site)</small>
+            <li><b>Multiformat</b> — plusieurs fichiers, idéalement une source</li>
+            <small>ex. Abrüpt (HTML + PDF + EPUB + Git)</small>
+            <li><b>Multimodal</b> — texte + voix + image + geste</li>
+            <small>ex. EPUB 3 vidéo ; livre-app</small>
+          </ul>
+          <small>≠ live / web-to-print / single source / autoporté</small>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">3. Types / remédiations</p>
+          <ul>
+            <li><b>Homothétique</b> — proche du papier · PDF « page », EPUB classique</li>
+            <li><b>Enrichi / augmenté</b> — texte + médias · EPUB 3, Parcours numériques</li>
+            <li><b>Nativement numérique</b> — conçu pour le numérique · <i>Afternoon</i>, Twine</li>
+            <li><b>Hybride</b> — papier ↔ écran · Alto (<i>Révolutions</i>, <i>Borodine</i>), POD</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="2000px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">4. Outils — avantages / inconvénients (1/2)</p>
+          <ul>
+            <li><b>Sigil / Calibre</b> — + contrôle EPUB · − technique, exports parfois sales</li>
+            <li><b>Affinity / InDesign / Scribus</b> — + maquette fine · − homothétique, EPUB limité</li>
+            <li><b>Pandoc + Markdown</b> — + single source, Git · − courbe d’apprentissage</li>
+            <li><b>Twine</b> — + gratuit, HTML · − peu « livre-objet » commercial</li>
+            <li><b>Storyspace</b> — + guard fields · − payant, Mac, pérennité</li>
+            <li><b>WordPress / CMS</b> — + familiarité · − templates, dépendance</li>
+          </ul>
+        </div>
+      </section>
+
+      <section data-background-image="media/718_index.png" data-background-size="1600px" background-color="#21211c">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">4. Outils — avantages / inconvénients (2/2)</p>
+          <ul>
+            <li><b>Manifold</b> — + OA, annotation · − install, public académique</li>
+            <li><b>AO3</b> — + tags, archive · − pas un outil de design maison</li>
+            <li><b>Wattpad</b> — + masse, feedback · − algo, monétisation</li>
+                     <li><b>Are.na / print</b> — + sans algo, web-to-print · − niche</li>
+            <li><b>TimelineJS / StoryMapJS</b> — + prêts à l’emploi · − formats imposés</li>
+          </ul>
+        </div>
+      </section>
+
+      
+      </section>
+
+      
+      <section data-background-color="#fff" data-background-image="media/718_index.png" data-background-size="1600px">
+        <div id="fondop2">
+          <p style="font-variant: small-caps;">À dans deux semaines !</p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [{
+            src: 'lib/js/classList.js',
+            condition: function () {
+              return !document.body.classList;
+            }
+          },
+          {
+            src: 'plugin/markdown/marked.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/markdown/markdown.js',
+            condition: function () {
+              return !!document.querySelector('[data-markdown]');
+            }
+          },
+          {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            condition: function () {
+              return !!document.querySelector('pre code');
+            },
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src: 'plugin/zoom-js/zoom.js',
+            async: true
+          },
+          {
+            src: 'plugin/notes/notes.js',
+            async: true
+          }
+        ]
+      });
+
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName('head')[0].appendChild(link);
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1
+        }
+        if (n < 1) {
+          slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+
+</body>
+
+</html>
